@@ -5,9 +5,11 @@ app = Flask(__name__)
 def index():
     return 'this is index view'
 
+@app.route('/home')
+def home():
+    return 'this is home view'
 
-
-@app.route('login')
+@app.route('/login')
 def login():
     return 'this is login view'
 
