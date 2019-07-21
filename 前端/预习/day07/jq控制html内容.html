@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<input type="button" value="改文字" />
+		<h1>我是默认的文字</h1>
+	</body>
+	<script type="text/javascript">
+		$('input').click(function(){
+			//设置html显示的内容
+			$('h1').html('<a href="#">我是js生成的</a>')
+			//获取html内容
+			alert($('h1').html())
+		})
+	</script>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.list_con {
+				width: 600px;
+				margin: 50px auto 0;
+			}
+			
+			.inputtxt {
+				width: 550px;
+				height: 30px;
+				border: 1px solid #ccc;
+				padding: 0px;
+				text-indent: 10px;
+			}
+			
+			.inputbtn {
+				width: 40px;
+				height: 32px;
+				padding: 0px;
+				border: 1px solid #ccc;
+			}
+			
+			.list {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				margin-top: 20px;
+			}
+			
+			.list li {
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.list li span {
+				float: left;
+			}
+			
+			.list li a {
+				float: right;
+				text-decoration: none;
+				margin: 0 10px;
+			}
+		</style>
+		<script src="../预习/day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="list_con" id="app">
+			<h2>TO DO LIST</h2>
+			<!--
+				加了v-model就好了
+				v-model="txt" 双向绑定,txt就是一个变量了
+				注意:input 文本输入框使用v-mode才可以将text输入的文本内容提取出来
+			-->
+			<input type="text" v-model="txt" id="inp"/>
+			<input type="button" id="btn1" value="增加" class="input_btn" @click="fnAdd(txt)" />
+
+			<ul id="list" class="list">
+				<!--注意是对li才使用v-for-->
+				<!--
+					v-for="(item,index) in content"
+					记得获取index索引
+				-->
+				<!--循环输出,输出的是一整条li内容-->
+				<li v-for="(item,index) in content">
+					<!--{{item}} 取出值-->
+					<span>{{ item }}</span>
+					<a href="#" class="up" @click="fnUp(index)">↑</a>
+					<a href="#" class="down" @click="fnDown(index)">↓</a>
+					<a href="#" class="del" @click="fnDel(index)">delete</a>
+				</li>
+			</ul>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				//定义需要输出的数据
+				content: ['学习html', '学习Python', '学习Ruby','学习C#','学习golang'],
+				//txt是文本输入框input text的输入的值,这里默认设置初值为空.
+				//注意是字符串类型
+				//保存文本框
+				txt: '',
+			},
+			methods: {
+				//添加
+				fnAdd: function(txt) {
+					if(txt == '') {
+						alert('请输入内容')
+						return
+					}
+					//添加数据,务必使用this.注意:这里的this是指vm这个Vue()类所创建的当前对象.
+					//下面的所有操作都是在这个对象上进行的,所以必须加this.
+					this.content.push(this.txt)
+					//清空文本输入的内容
+					this.txt = ''
+					//获取焦点.注意:直接使用js语言实现获取焦点的功能
+					//不要犹豫.直接使用js
+					document.getElementById("inp").focus()
+				},
+				
+				//删除
+				fnDel: function(index) {
+					//index接收事件传来的参数
+					//splice删除数组的方法,
+					//第一个参数是从什么位置开始,
+					//第二个参数是删除几个元素
+					this.content.splice(index, 1)
+				},
+				
+				//上移
+				fnUp: function(index) {
+					if(index == 0) {
+						alert('到顶了,不要再点了!')
+						return
+					}
+					//不考虑删除,添加自己到前面元素的前面
+					this.content.splice(index - 1, 0, this.content[index])
+					//再把自己删掉,删除一个元素
+					this.content.splice(index + 1, 1)
+
+				},
+				
+				//下移
+				fnDown: function(index) {
+					//注意:是对content进行判断.对vue里面的对象操作都是对data中的变量
+					//进行操作,和body中的标签无关了.
+					if (index == this.content.length -1 ) {
+						alert('到底了,不要再点了!')
+						return
+					}
+					//先添加到指定位置
+					this.content.splice(index + 2, 0, this.content[index])
+					//再删除
+					this.content.splice(index, 1)
+				},
+
+				
+			}
+		})
+	</script>
+
+</html>
+
+<!--
+	todolist
+-->

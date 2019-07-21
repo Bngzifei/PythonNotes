@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../day10/js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{fnRever}}</h1>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				txt:'hello'
+			},
+			//methods 是定义函数,是专门给事件调用的
+//			methods:{
+//				fnRever:function(){
+//					return this.txt = this.txt.split('').reverse().join('')
+//				}
+//			}
+			//computed 计算属性专门给html直接调用的.页面一刷新就直接调用计算属性
+			computed:{
+				fnRever:function(){
+					return this.txt = this.txt.split('').reverse().join('')
+				}
+			}
+		})
+	</script>
+</html>
+<!--
+	模板内的表达式非常便利,但是设计它们的初衷是用于简单运算的.
+	在模板中放入太多的逻辑会让模板过重且难以维护
+	
+	一般带有复杂逻辑的表达式,使用计算属性
+	
+-->

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main1.css" />
+	</head>
+
+	<body>
+		<input type="button" id="btn01" value="弹出弹框" />
+		<div class="pop_main" id="pop">
+			<!--阴影部分的弹窗整体-->
+			<div class="pop_con">
+				<!--弹窗的具体内容部分-->
+				<!--一共三部分1.提示头部2.提示信息3.提示时间部分-->
+				<div class="pop_title">
+					<!--头-->
+					<h3>系统提示</h3>
+					<a href="#" id="shutoff">x</a>
+				</div>
+
+				<div class="pop_detail">
+					<!--具体信息-->
+					<p class="pop_text">亲!请关注近期的优惠活动</p>
+				</div>
+
+				<div class="pop_footer">
+					<!--底部时间提示-->
+					还有<span id="count">5</span>秒自动关闭弹窗
+				</div>
+
+			</div>
+
+			<div class="mask"></div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var oBtn = document.getElementById("btn01")
+		//显示对话框
+		var oPop = document.getElementById("pop")
+		//关闭对话框
+		var oShut = document.getElementById("shutoff")
+		//计数器
+		var oCount = document.getElementById("count")
+		var timer = null
+
+		//设置点击事件 ,点击按钮弹出提示框
+		oBtn.onclick = function() {
+			//显示提示框
+			oPop.style.display = 'block'
+			//定义弹窗显示的时间值
+			var timeleft = 5
+
+			timer = setInterval(function() {
+				//时间减1
+				timeleft -= 1
+				//显示改变后的时间值
+				oCount.innerHTML = timeleft
+				//当时间减为0时候,隐藏弹窗,将显示的时间值重置,并且关闭定时器
+				if(timeleft <= 0) {
+					oPop.style.display = 'none'
+					oCount.innerHTML = 5
+					clearInterval(timer)
+				}
+			}, 1000)
+
+			//设置点击关闭弹窗按钮事件
+			oShut.onclick = function() {
+				//隐藏对话框
+				oPop.style.display = 'none'
+				oCount.innerHTML = 5
+				clearInterval(timer)
+			}
+
+		}
+	</script>
+
+</html>

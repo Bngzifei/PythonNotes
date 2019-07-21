@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../day09/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		var student = new Object()
+		student.name = 'Pneg'
+		student.age = 23
+		student.locations = 'China'
+		var data = JSON.stringify(student)
+		$.ajax({
+			type:"post",
+			url:"/get_json_data",
+			async:true,
+			data:data,
+			success:function(msg){alert(msg.time)}
+		});
+	</script>
+</html>

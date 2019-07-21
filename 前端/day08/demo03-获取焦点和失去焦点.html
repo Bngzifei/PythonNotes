@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<input type="text" name="" id="" value="" />
+	</body>
+	<script type="text/javascript">
+		//获取焦点
+		$('input').focus(function(){
+			console.log('当文本框获取到焦点的时候被调用')
+		})
+		//失去焦点
+		$('input').blur(function(){
+			console.log('当文本框失去焦点的时候被调用')
+		})
+	</script>
+</html>
+<!--
+	获取焦点:
+	和鼠标进入事件的区别是需要点击,拿到光标之后需要点击一下
+	一般用在网易新闻里面的表单提交注册的时候的校验提示信息
+-->

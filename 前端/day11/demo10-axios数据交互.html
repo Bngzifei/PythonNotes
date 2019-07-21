@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			在进行数据交互的时候,必须引入这两个库:vue和axios.它们是相互依赖的
+		-->
+		<script src="../预习/day10/js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../预习/day11/js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<div id="app">
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vb = new Vue({
+			el: '#app',
+			data:{},
+			//进行前后端的数据交互必须写在mounted里面
+			mounted: function() {
+				
+				axios({
+						//注意:json中是不允许//或者/**/进行注释的,不支持.有专门的注释函数.
+						url: 'json.json',
+						method: 'get',
+					})
+					//成功回调函数
+					.then(function(data) {
+						//注意:vue交互的时候,需要多写一个data
+						alert(data.data)
+						alert(data.data.name)
+						alert(data.data.age)
+						
+						console.log(data.data)
+						console.log(data.data.name)
+						console.log(data.data.age)
+						alert('ok!')
+					})
+					//失败回调函数
+					.catch(function() {
+						alert('fail!!!')
+					})
+			}
+		})
+	</script>
+
+</html>
+<!--
+	axios数据交互:必须整个程序启动之后才行,必须写到mounted方法里面
+-->

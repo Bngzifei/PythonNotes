@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="div1">
+			<div id="">
+				<div id="">
+					<span id="">
+						第一个
+					</span> 这是第一个div
+				</div>
+				<div id="">
+					<span id="">
+						第一个
+					</span> 这是第一个div
+				</div>
+
+				<span id="">
+						第一个
+					</span> 这是第一个div
+			</div>
+			<span id="">
+						第一个
+					</span> 这是第一个div
+		</div>
+	</body>
+	<script type="text/javascript">
+		//层次选择器,表示div下面所有的span.不管是儿子还是孙子.全部
+		//$('#div1 span').css('color','red')
+		//层次选择器,表示div下面的儿子span,只保证是div的下一级.下下一级就不会取到了
+		$('#div1>span').css('color', 'red')
+	</script>
+
+</html>
+<!--
+	
+	层次选择器
+	
+-->
+	
+<!--
+	键盘事件
+	获取焦点和失去焦点
+	兄弟元素
+	选中选择器:checked表示选中选择器
+	正则
+	事件冒泡
+	元素添加
+	委托事件.delegate(参数1,参数2,参数3)
+	层次选择器 > 包含关系
+	
+-->

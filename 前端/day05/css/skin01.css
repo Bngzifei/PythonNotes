@@ -1,0 +1,11 @@
+body {
+	background: green;
+}
+/*是两个input按钮都是圆角的这种.不是其中的一个是圆角,另外一个是方形*/
+input {
+	width: 200px;
+	height: 100px;
+	background: pink;
+	border: 0px;
+	border-radius: 10px;
+}

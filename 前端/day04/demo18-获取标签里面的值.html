@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			执行的時候是自上而下,当放在这里的时候就...
+			如果希望在head标签里面执行,那么需要添加一个入口函数
+		-->
+		<script type="text/javascript">
+			//表示窗口的意思,onload表示加载js里面的函数,原因是js是解释型语言,程序从上到下的执行,执行
+			//到document.getElementById("txt")的时候程序不认识txt属性,所以加window.onload之后,
+			//程序执行到window.onload的时候会停住,跳过后面的function(){}部分,直接往下走,
+			//当需要执行function(){}部分的时候才会去加载函数.也就是说这样就把js部分的代码和html代码分离开了,
+			//相互独立.互不影响
+			
+			window.onload = function(){
+				
+				//获取文本框
+				var oTxt = document.getElementById("txt")
+				//获取按钮
+				var oBtn =  document.getElementById("btn")
+				oBtn.onclick = function(){
+					//value获取input文本框的值
+					var val = oTxt.value
+					alert(val)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="txt" value="哈哈" />
+		<input type="button" id="btn"  value="点击我" />
+	</body>
+	<!--<script type="text/javascript">
+		///获取文本框
+		var oTxt = document.getElementById("txt")
+		//获取按钮
+		var oBtn =  document.getElementById("btn")
+		// 设置按钮的点击事件,当点击按钮去的时候就会调用函数里面的方法
+		oBtn.onclick = function(){
+			var value = oTxt.value
+			alert(value)
+		}
+	</script>-->
+</html>
+<!--
+	获取标签里面的值:value
+-->

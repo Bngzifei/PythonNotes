@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			table{
+				width: 1000px;
+				height: 50px;
+				border: 1px solid black;
+			}
+			tr,td{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<!--表格合并-->
+	<body>
+		<table>
+			<tr>
+				<!--
+					
+				td rowspan="2" 表示行合并,如果想合并几行,就写几
+				如果实现合并的时候,记得把多余的代码注释掉
+				-->
+				<td rowspan="2">指标</td>
+				<!--
+					td colspan="2" 列合并
+				-->
+				<td colspan="2">招生数</td>
+				<!--<td>招生数</td>-->
+				<td colspan="2">在校生数</td>
+				<!--<td>在校生数</td>-->
+				<td colspan="2">毕业生数</td>
+				<!--<td>毕业生数</td>-->
+			</tr>
+			<tr>
+				<!--<td>指标</td>-->
+				<td>万人</td>
+				<td>比上年增长(%)</td>
+				<td>万人</td>
+				<td>比上年增长(%)</td>
+				<td>万人</td>
+				<td>比上年增长(%)</td>
+			</tr>
+			<tr>
+				<td>普通高等学校</td>
+				<td>3.14</td>
+				<td>10.1</td>
+				<td>9.67</td>
+				<td>5.2</td>
+				<td>2.53</td>
+				<td>-0.8</td>
+			</tr>
+		</table>
+	</body>
+</html>

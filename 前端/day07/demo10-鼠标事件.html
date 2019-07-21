@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 300px;
+				background: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		
+	</body>
+	<script type="text/javascript">
+//		$('div').click(function(){
+//			console.log('鼠标被点击了')
+//		})
+//----------------------------------------------
+//		$('div').mousedown(function(){console.log('当鼠标按下的时候,被调用的事件')})
+//-------------------------------------------------
+//		$('div').mouseup(function(){console.log('当鼠标抬起的时候,被调用的事件')})
+//-------------------------------------------------
+//		$('div').mousemove(function(){console.log('当鼠标移动的时候,被调用的事件')})
+//--------------------是鼠标在外部移入标签内部的时候(-----------------------------
+		//实际上是一个悬停效果.
+//		$('div').mouseover(function(){console.log('当鼠标移动在上方的时候,被调用的事件')})
+//---------------------------鼠标的进入事件----------------------
+//		$('div').mouseenter(function(){console.log('当鼠标进入标签的时候,被调用的事件')})
+//---------------------------鼠标的离开事件----------------------
+		$('div').mouseleave(function(){console.log('当鼠标离开标签的时候,被调用的事件')})
+	</script>
+</html>
+<!--
+	焦点获取...
+	鼠标事件
+-->

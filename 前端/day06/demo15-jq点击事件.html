@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background: pink;
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>哈哈哈哈</div>
+		<div>哈哈哈哈</div>
+		<div>哈哈哈哈</div>
+		<div>哈哈哈哈</div>
+		<div>哈哈哈哈</div>
+	</body>
+	<script type="text/javascript">
+		//点击事件:和js不同,没有on,不是onclick()
+		//把所有的都会变成红色
+		//如果想点一个变一个,使用this  类似python中的self
+		$('div').click(function(){
+//			$('div').css({
+//				'background':'red'
+//			})
+//---------------------------------------
+			//this 表示当前点击的对象
+			$(this).css({
+				'background':'red'
+			})
+		})
+	</script>
+</html>
+<!--
+	点击事件
+-->

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.talk_con {
+				width: 600px;
+				height: 500px;
+				border: 1px solid #666;
+				margin: 50px auto 0;
+				background: #f9f9f9;
+			}
+			
+			.talk_show {
+				width: 580px;
+				height: 420px;
+				border: 1px solid #666;
+				background: #fff;
+				margin: 10px auto 0;
+				overflow: auto;
+			}
+			
+			.talk_input {
+				width: 580px;
+				margin: 10px auto 0;
+			}
+			
+			.whotalk {
+				width: 80px;
+				height: 30px;
+				float: left;
+				outline: none;
+			}
+			
+			.talk_word {
+				width: 420px;
+				height: 26px;
+				padding: 0px;
+				float: left;
+				margin-left: 10px;
+				outline: none;
+				text-indent: 10px;
+			}
+			
+			.talk_sub {
+				width: 56px;
+				height: 30px;
+				float: left;
+				margin-left: 10px;
+			}
+			
+			.atalk {
+				margin: 10px;
+			}
+			
+			.atalk span {
+				display: inline-block;
+				background: #0181cc;
+				border-radius: 10px;
+				color: #fff;
+				padding: 5px 10px;
+			}
+			
+			.btalk {
+				margin: 10px;
+				text-align: right;
+			}
+			
+			.btalk span {
+				display: inline-block;
+				background: #ef8201;
+				border-radius: 10px;
+				color: #fff;
+				padding: 5px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--对话区域-->
+		<div class="talk_con">
+			<!--输出内容显示区域-->
+			<div class="talk_show" id="words">
+				<div class="atalk"><span>A说：吃饭了吗？</span></div>
+				<div class="btalk"><span>B说：还没呢？你呢?</span></div>
+			</div>
+			<div class="talk_input">
+				<!--这里是三个部分:1.下拉框 2.输入的文本框 3.发送按钮-->
+				<select class="whotalk" id="who">
+					<option value="0">A说:</option>
+					<option value="1">B说:</option>
+				</select>
+
+				<input type="text" class="talk_word" id="talkwords" />
+				<input type="button" class="talk_sub" id="talksub" value="发送" />
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//内容展示框
+		var oWords = document.getElementById("words")
+		//发送按钮
+		var oBtn = document.getElementById("talksub")
+		//文本输入框,接收输入的信息
+		var oTalk = document.getElementById("talkwords")
+		//下拉框,谁在说
+		var oWho = document.getElementById("who")
+
+		//给发送按钮设置点击事件,点击事件就是一个函数.点击按钮之后的程序代码都写在这个函数里面
+		oBtn.onclick = function() {
+			//又因为输入信息为空实际情况下是不允许的,所以这里需要先进行输入信息是否为空的判断,如果是空,就给出提示信息
+			//if(oTalk.value==null)   注意:不可以这样进行判断,错误的
+			if(oTalk.value==''){
+				alert('输入信息不能为空')
+				//同时使用return终止后续程序的执行,为空的情况下不执行后面的程序.
+				return
+			}
+			
+			
+			if(oWho.value == 0) {
+				//下拉框value等于0就是A说,使用字符串拼接将输入的文本信息显示在内容展示框中
+				//因为输出的信息是追加在之前信息的后面的,不是覆盖,所以这里使用+=,而不是=
+				oWords.innerHTML += '<div class="atalk"><span>A说: '+oTalk.value+'</span></div>'
+			} else {
+				//否则就是B说
+				oWords.innerHTML += '<div class="btalk"><span>B说: '+oTalk.value+'</span></div>'
+			}
+			//因为每次输入的信息发送完之后,这个信息还在输入框里面,交互不友好,如果别使用还得删除之前的输入信息
+			//所以需要在  发送信息到显示框之后   把文本输入框中的信息清空
+			oTalk.value = null
+			//又因为每次在输入信息之后,当需要再次输入信息的时候总要手动点击鼠标去进入输入文本框,即焦点需要手动获取
+			//所以我们这里需要设置成文本框自动获取焦点.即不需要人为的去点击文本输入框
+			oTalk.focus()
+			//又因为当输入的信息超过一个屏幕的时候,显示页面的滚动条按道理应该和微信qq一样自动往下移动,而这里是滚动条一直在显示界面最开始的地方,所以需要设置文本框显示界面自动往下走
+			//值随便设定,9999999是随意的,无所谓
+			oWords.scrollTop = '9999999999'
+		}
+		
+	</script>
+
+</html>

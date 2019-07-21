@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<h1>增林苑</h1>
+		<div>
+			<h1>错误的回答:晚安</h>
+			<h1>正确的回答:我感觉你晚上肯定会失眠</h>
+			<p>会想我</p>
+			<p>会想我</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//所有孩子
+//		$('div').children().css({
+//			'color':'red'
+//		})
+//		------------------
+		//选择元素的父亲
+		$('p').parent().css({
+			'background':'red'
+		})
+	</script>
+</html>
+<!--
+	父亲parent()
+	孩子children()
+-->

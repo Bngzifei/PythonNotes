@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../day10/js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<!--
+			专门做数据交互的一个库,和vue是相互依赖.引完vue再引axios
+		-->
+		<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div id="app">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			
+			mounted:function(){
+				//如果要用axios,一定要放在mounted回调函数中
+				axios({
+					//数据地址
+					url:'myJson.json',
+					//请求方式,提交方式
+					method:'get'
+				})
+				//设置发送给服务器的数据
+//				data:{
+//					aa:'abc',
+//					bb:'bcd',
+//				},
+				
+				.then(function(data){
+					//和ajax不同,需要多进入一层data
+					console.log(data.data.name)
+					console.log(data.data.age)
+					console.log(data.data.arr)
+					alert(data.data.name)
+					alert(data.data.age)
+					alert(data.data.arr)
+				})
+				.catch(function(){
+					alert('2')
+				})
+			}
+		})
+	</script>
+</html>
+<!--
+	vue没有集成ajax功能,要使用ajax,可以使用vue官方推荐的axios库来做ajax的交互.
+-->
