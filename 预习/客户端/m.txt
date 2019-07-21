@@ -1,0 +1,29 @@
+/home/python/Desktop
+总用量 128
+drwxr-xr-x  26 root root  4096 8月  30 10:59 ./
+drwxr-xr-x  26 root root  4096 8月  30 10:59 ../
+drwxr-xr-x   2 root root  4096 8月  26 16:21 bin/
+drwxr-xr-x   3 root root  4096 3月  18  2017 boot/
+drwxrwxr-x   2 root root  4096 5月  16  2016 cdrom/
+-rw-r--r--   1 root root   898 8月  30 10:59 Desktop
+drwxr-xr-x  19 root root  4380 8月  31 08:10 dev/
+drwxr-xr-x 148 root root 12288 8月  31 08:10 etc/
+drwxr-xr-x   4 root root  4096 8月  28 17:43 home/
+drwxr-xr-x  22 root root  4096 3月  22  2017 lib/
+drwxr-xr-x   2 root root  4096 3月  22  2017 lib32/
+drwxr-xr-x   2 root root  4096 3月  22  2017 lib64/
+drwxr-xr-x   2 root root 12288 3月  22  2017 libx32/
+drwx------   2 root root 16384 5月  16  2016 lost+found/
+drwxr-xr-x   4 root root  4096 5月  16  2016 media/
+drwxr-xr-x   3 root root  4096 5月  17  2016 mnt/
+drwxr-xr-x   6 root root  4096 12月 16  2016 opt/
+dr-xr-xr-x 287 root root     0 8月  31 08:09 proc/
+drwx------   6 root root  4096 12月 16  2016 root/
+drwxr-xr-x  31 root root   980 8月  31 08:15 run/
+drwxr-xr-x   2 root root 12288 3月  22  2017 sbin/
+drwxr-xr-x   2 root root  4096 4月  19  2016 snap/
+drwxr-xr-x   3 root root  4096 5月  17  2016 srv/
+dr-xr-xr-x  13 root root     0 8月  31 08:09 sys/
+drwxrwxrwt  14 root root  4096 8月  31 08:57 tmp/
+drwxr-xr-x  13 root root  4096 5月  17  2016 usr/
+drwxr-xr-x  14 root root  4096 4月  21  2016 var/
