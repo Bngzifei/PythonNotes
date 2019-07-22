@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			input {
+				width: 600px;
+				height: 50px;
+				position: relative;
+				left: 500px;
+				top: 200px;
+				border: 1 solid #00CCFF;
+			}
+			
+			ul {
+				background: #CECECE;
+				width: 566px;
+				height: auto;
+				position: relative;
+				left: 500px;
+				top: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<input type="text" name="" id="" value="" />
+		<ul>
+			<!--<li>我要的数据</li>-->
+		</ul>
+
+	</body>
+	<script type="text/javascript">
+		//360请求的数据地址
+		//https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8&encodeout=utf-8&format=json&fields=word&word=b
+		//https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=c
+		//https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=r&json=1&p=3&sid=22778_1447_27209_21109_20930&req=2&csor=1&cb=jQuery110205428894335449497_1539595948072&_=1539595948075
+		
+		
+		//https://www.sogou.com/suggnew/ajajjson?key=d&type=web&ori=yes&pr=web&abtestid=7&ipn=&t=1539596974409&suguuid=e9946a66-8c79-4500-abee-3cf3baf19aeb&ip=119.136.88.60&iploc=4403&suid=E19D5C713120910A000000005B9F8E29&yyid=null&pid=sogou&policyno=null&mfp=null&hs=https&mp=1&prereq_a=&sugsuv=00F10B56715C9CDC5B8FBDDA9D6AB011&sugtime=1539596974959
+		
+		//https://www.sogou.com/suggnew/ajajjson?callback=jQuery112407566418122903793_1539599150124&key=d&type=web&ori=yes&pr=web&abtestid=7&ipn=&t=1539596974409&suguuid=e9946a66-8c79-4500-abee-3cf3baf19aeb&ip=119.136.88.60&iploc=4403&suid=E19D5C713120910A000000005B9F8E29&yyid=null&pid=sogou&policyno=null&mfp=null&hs=https&mp=1&prereq_a=&sugsuv=00F10B56715C9CDC5B8FBDDA9D6AB011&sugtime=1539596974959
+//		&_=1539599150125
+
+//https://www.sogou.com/suggnew/ajajjson?key=b&type=web&ori=yes&pr=web&abtestid=7&ipn=&t=1539651151438&suguuid=b55e3b46-67e7-4ede-b4e2-87c9612880a8&ip=113.92.158.1&iploc=4403&suid=E19D5C713120910A000000005B9F8E29&yyid=null&pid=sogou&policyno=null&mfp=null&hs=https&mp=1&prereq_a=&sugsuv=00F10B56715C9CDC5B8FBDDA9D6AB011&sugtime=1539651152458
+		//url=''
+		//?开始才是我提交的数据
+		//键盘事件
+		//https://www.sogou.com/suggnew/hotwords?callback=jQuery1124048609286446954636_1539601284582&v=1539601041234&_=1539601284584
+		var timestamp = (new Date()).valueOf()
+//		alert(timestamp)
+		$('input').keyup(function(e) {
+			//alert('aa')
+			$.ajax({
+					type: "get",
+					url: "https://www.sogou.com/suggnew/hotwords",
+//					https://www.sogou.com/suggnew/hotwords?v=1539653607895
+//					url: "https://sug.so.360.cn/suggest",
+					async: true,
+					//如果是跨域请求,需要在json后加p
+					//就是在不同域名之间进行数据请求交互
+					dataType: 'jsonp',
+					//拿到服务器返回的数据
+					//请求的时候需要把后面的数据作为参数请求给服务器
+					//https://www.sogou.com/suggnew/hotwords?v=1539600057482
+//-----------------------------------------------------------------分割线--------------------------------------------------
+//					data:{
+//						callback:"suggest_so",
+//						encodein:"utf-8",
+//						encodeout:"utf-8",
+//						format:"json",
+//						fields:"word",
+//						word:"b",
+//						
+//						
+//					}
+//-----------------------------------------------------------------分割线--------------------------------------------------
+//					data: {
+//						key:"a",
+//						type:"web",
+//						ori:"yes",
+//						pr:"web",
+//						abtestid:"7",
+////						ipn:"",
+//						t:timestamp,
+//						suguuid:"7662abea-b05c-4a09-876a-a8220908b2f1",
+////						ip:"113.92.158.1",
+////						iploc:4403,
+//						suid:"E19D5C713120910A000000005B9F8E29",
+////						yyid:"null",
+//						pid:"sogou",
+////						policyno:"null",
+////						mfp:"null",
+//						hs:"https",
+////						mp:"1",
+////						prereq_a:"",
+//						sugsuv:"00F10B56715C9CDC5B8FBDDA9D6AB011",
+////						sugtime:timestamp
+//					}
+//-----------------------------------------------------------------分割线--------------------------------------------------
+//						sugtime:1539651576124
+//						sugtime:1539596974409
+//						
+//						
+//						
+//					
+//					}
+					data:{				
+						v:timestamp,
+					}
+
+				})
+				//请求成功
+				.done(function(data){
+					alert(data)
+				})
+//					//以后查看数据,都要通过控制台查看
+					
+					//清除之前的数据,然后再添加10条新的数据
+//					$('ul').html('')
+//					//遍历 获取每个数据
+//					for(var i = 0; i < data.result.length; i++) {
+//						//拼接成列表css样式
+//						var oLi = '<li>' + data.result[i].word + '</li>'
+//
+//						//添加到ul列表中
+//						$('ul').append(oLi)
+//
+//						//控制台输出
+//						console.log(data.result[i].word)
+//					}
+//					//alert('ok')
+//					console.log(data)
+
+				
+				//请求失败
+				.fail(function() {
+					alert('fail')
+				})
+		})
+	</script>
+
+</html>

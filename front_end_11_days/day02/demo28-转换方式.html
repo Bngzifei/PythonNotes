@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 300px;
+				background: pink;
+				/*
+				 display: inline;表示显示  显示成行内标签
+				 * */
+				display: inline;
+			}
+			a{
+				width: 300px;
+				height: 300px;
+				background: yellow;
+				/*
+				 display: block; 显示成块标签
+				 * */
+				display: block;
+				/*
+				 display: inline-block; 显示成行内块标签,a,span,label三个标签设置宽和高的时候必须转成这个inline-block才可以设置宽高
+				 * */
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<!--
+		标签之间的转化
+	-->
+	<body>
+		<!--
+			div转成行内标签
+		-->
+		<h1>把块标签div转成行内标签</h1>
+		<div>
+			我是一个div块标签
+		</div>
+		<!--
+			行内转成块
+		-->
+		<h1>行内转成块</h1>
+		<a href="#">我是行内标签</a>
+	</body>
+</html>

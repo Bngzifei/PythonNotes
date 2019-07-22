@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#div1{
+				width: 300px;
+				height: 300px;
+				background: greenyellow;
+				margin: 10px;
+			}
+			#div2{
+				width: 300px;
+				height: 300px;
+				background: red;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button"  value="淡入" id="btn01"/>
+		<input type="button"  value="淡出" id="btn02"/>
+		<input type="button"  value="淡入/淡出" id="btn03"/>
+		<div id="div1"></div>
+		<div id="div2"></div>
+	
+	</body>
+	<script type="text/javascript">
+		$('#btn01').click(function(){
+			//fadeIn() 淡入
+			$('#div1').fadeIn(2000)
+			$('#div2').fadeIn(1000)
+		})
+		
+		$('#btn02').click(function(){
+			//fadeOut() 淡出
+			$('#div1').fadeOut()
+			$('#div2').fadeOut(1500)
+		})
+		
+		$('#btn03').click(function(){
+			//fadeToggle() 淡入/淡出  开关函数,自动识别
+			$('#div1').fadeToggle()
+			$('#div2').fadeToggle()
+			
+		})
+	</script>
+</html>
+<!--
+	淡入淡出效果
+-->

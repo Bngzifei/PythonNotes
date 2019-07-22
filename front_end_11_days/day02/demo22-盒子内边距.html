@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:300px;
+				height:300px;
+				background: pink;
+				/*
+				 文字内容距离四周都有20px
+				 padding:内边距
+				 内边距一般用在父子关系的元素里面,表示元素的内容和父亲元素的距离					
+				 如果只有一个参数,表示是距离四周
+				 * */
+				/*padding: 20px;*/
+				/*如果是两个参数,第一个表示上下,第二个表示左右*/
+				/*padding: 10px 20px;*/
+				/*三个参数,第一个表示上,第二个是左右,第三个是下*/
+				/*padding: 10px 20px 30px;*/
+				/*四个参数:第一个上,第二个参数右,第三个下,第四个左.顺时针方式*/
+				padding: 10px 20px 30px 40px;
+			}
+		</style>
+	</head>
+	<!--
+		盒子模型 内边距
+		标签大小:border+padding+content三个才是一个标签的实际大小
+		使用文字标签,系统自动添加16px的外边距
+	-->
+	<body>
+		<div>
+			<p>黑马程序员</p>
+		</div>
+	</body>
+</html>

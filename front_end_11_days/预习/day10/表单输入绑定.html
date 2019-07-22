@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--v-model绑定此表单保存到自定义属性中
+				v-model='自定义属性'
+			-->
+			<input type="text" v-model="txt" />
+			<h1>把数据打印到这:{{txt}}</h1>
+			<select v-model="sel">
+				<!--
+					option加value属性的目的:为了保存一些我能够更好的判断信息.
+					关于保存信息的问题:
+					如果没有value默认保存文字
+					有value就保存value的值
+				-->
+				<option value="0">大班</option>
+				<option value="1">中班</option>
+				<option value="2">小班</option>
+				<option value="3">小小班</option>
+			</select>
+			{{sel}}
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				//把用户输入文本框中的内容保存到这里
+				txt:'',
+				//保存下拉框的内容.保存信息的时候要注意:要给一个默认值
+				sel:'0'
+			}
+		})
+	</script>
+</html>

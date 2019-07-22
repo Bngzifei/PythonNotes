@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.list_con {
+				width: 600px;
+				margin: 50px auto 0;
+			}
+			
+			.inputtxt {
+				width: 550px;
+				height: 30px;
+				border: 1px solid #ccc;
+				padding: 0px;
+				text-indent: 10px;
+			}
+			
+			.inputbtn {
+				width: 40px;
+				height: 32px;
+				padding: 0px;
+				border: 1px solid #ccc;
+			}
+			
+			.list {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				margin-top: 20px;
+			}
+			
+			.list li {
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.list li span {
+				float: left;
+			}
+			
+			.list li a {
+				float: right;
+				text-decoration: none;
+				margin: 0 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="list_con">
+			<h2>To do list</h2>
+			<!--文本框-->
+			<input type="text" name="" id="txt1" class="inputtxt">
+			<!--添加按钮-->
+			<input type="button" name="" value="增加" id="btn1" class="inputbtn">
+
+			<ul id="list" class="list">
+				<li>
+					<span>学习html</span>
+					<a href="javascript:;" class="up"> ↑ </a>
+					<a href="javascript:;" class="down"> ↓ </a>
+					<a href="javascript:;" class="del">删除</a>
+				</li>
+				<li>
+					<span>学习css</span>
+					<a href="javascript:;" class="up"> ↑ </a>
+					<a href="javascript:;" class="down"> ↓ </a>
+					<a href="javascript:;" class="del">删除</a>
+				</li>
+				<li>
+					<span>学习javascript</span>
+					<a href="javascript:;" class="up"> ↑ </a>
+					<a href="javascript:;" class="down"> ↓ </a>
+					<a href="javascript:;" class="del">删除</a>
+				</li>
+			</ul>
+
+		</div>
+	</body>
+		<script type="text/javascript">
+			//获取文本输入框的内容
+			//都是点击'增加'按钮的时候,把内容追加到ul的内部
+			$('#btn1').click(function(){
+				var oTxt = $('#txt1')
+				if (oTxt.val()=='') {
+					alert('请输入内容')
+					return
+				}
+				//保存节点
+				//记住:显示的内容不叫值不可以使用val()
+				//一般有val()的元素是input中的输入框
+				//还有复选框中的value.意思就是必须有value属性才可以去使用
+				//.val()
+				var oLi = '<li>'+'<span>'+oTxt.val()+'</span>'+
+				'<a href="#" class="up">↑</a>'+
+				'<a href="#" class="down">↓</a>'+
+				'<a href="#" class="delete">删除</a>'+'</li>'
+				
+				//把内容追加到ul的内部最后面
+				$('#list').append(oLi)
+				//清空内容
+				oTxt.val('')
+				//获取焦点
+				oTxt.focus()
+				
+			})
+//			-------------------------分割线----------------------
+			//删除按钮,把自己当前的li删掉
+			$('body').delegate('.del','click',function(){
+				$(this).parent().remove()
+			})
+			
+			//上移:把自己的内容,添加到我的上一个li中
+			$('body').delegate('.up','click',function(){
+				//判断我当前li的上一个,如果个数为0(我自己是最上面的那个了)
+				if ($(this).parent().prev().length ==0) {
+					alert('亲,已经到顶了,不要再点了!!!')
+					return
+				}
+				//添加
+				$(this).parent().prev().before($(this).parent())
+			})
+			
+			//下移
+			$('body').delegate('.down','click',function(){
+				//如果当前的索引值,和li的总个数-1,相等的话(说明我就是最后一个)
+				if ($(this).parent().index()==$('#list li').length-1) {
+					alert('亲,到底了,不要再点了!!!')
+					return
+				}
+				//添加
+				$(this).parent().next().after($(this).parent())
+			})
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+</html>

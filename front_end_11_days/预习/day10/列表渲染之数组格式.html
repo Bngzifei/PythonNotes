@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			
+			<ul>
+				<li v-for="(item,index) in movie">
+					<a href="#">{{index+1}}.{{item}}</a>
+				</li>
+			</ul>
+			<input type="button"  value="删除某个" @click="fnDel" />
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				//只要我这个movie里面的数据删掉其中一个,html里面也会跟着删掉
+				movie:['复仇者3','我不是程序员','前任3','葫芦娃','芳华']
+			},
+			methods:{
+				fnDel:function(){
+					//如果要对数组进行增删改查,就要用数组提供的方法
+//					this.movie.splice(0,2)
+					//先从0的位置开始删,每次删2个数据.然后在删除的位置添加'被我删了'
+					this.movie.splice(0,3,'被我删了','被我删了1','被我删了11')
+				}
+			}
+		})
+	</script>
+</html>
+<!--splice:  vt. 拼接；接合；使结婚-->

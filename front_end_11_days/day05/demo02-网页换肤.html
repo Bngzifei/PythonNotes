@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--引入皮肤一,默认指定皮肤一-->
+		<link rel="stylesheet" type="text/css" href="css/skin01.css" id="skin" />
+
+	</head>
+
+	<body>
+		<h1>网页换肤</h1>
+		<!--
+			妈的,就是这里 id="btn1" 多一个空格都不行,btn1和""之间不能有空格,格式化代码也没用
+		-->
+		<input type="button" id="btn1" value="皮肤一 " />
+		<input type="button" id="btn2" value="皮肤二 " />
+	</body>
+
+	<script type="text/javascript">
+		var oBtn1 = document.getElementById("btn1")
+		var oBtn2 = document.getElementById("btn2")
+		//获取皮肤的css
+		var oSkin = document.getElementById("skin")
+
+		//设置点击事件函数,分别选择不同的皮肤
+		oBtn1.onclick = function() {
+			//因为不是style里面的属性,所以中间就不要加style了,是link的属性.href:是超链接的意思.是hypertext reference的简写
+			oSkin.href = 'css/skin01.css'
+		}
+		oBtn2.onclick = function() {
+			oSkin.href = "css/skin02.css"
+		}
+	</script>
+
+</html>
+<!--网页换肤-->
+<!--
+	等下回来继续看这个,这个是不懂的,手抖啊,多一个空格
+-->

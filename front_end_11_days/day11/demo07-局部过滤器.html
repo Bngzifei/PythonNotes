@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../预习/day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--不优雅-->
+			<!--<p>商品的价格:{{"$"+price}}</p>-->
+			<!--
+				RMB就是一个函数名,定义一个新函数的作用
+			-->
+			<p>商品的价格:{{ price|RMB }}</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var nb = new Vue({
+			el:'#app',
+			data:{
+				price:88.88
+			},
+			//自定义过滤器filters.注意:这是局部过滤器,注意位置在vue对象里面
+			//这样就比较优雅
+			filters:{
+				//RMB是一个函数,本质就是一个函数
+				RMB:function(val){
+					if (val=='') {
+						return
+					}
+					return "￥" + val
+				}
+			}
+		})
+	</script>
+</html>
+<!--
+	局部过滤器filters:本质就是函数.就是为了优雅
+-->

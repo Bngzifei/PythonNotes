@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			引入vue库
+		-->
+		<script src="../预习/day10/js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--
+				{{}}:表示vue的语法,胡子语法.往页面输出显示内容.里面是一个变量
+				只要是这样写{{}},就表示它是一个变量.
+			-->
+			{{msg}}
+		</div>
+	</body>
+	<script type="text/javascript">
+		//创建vue对象,对象名字是vm,名字可以随意取.
+		var vm = new Vue({
+			//el需要对应一个标签,绑定到id上面.建议绑定id,也可以绑定class.建议是id,id唯一
+			//告诉系统id=app的div区域交给vue进行管理
+			el:'#app',
+			//data表示vue里面的数据,展示给用户看
+			data:{
+				msg:'hello vue!'
+			}
+		})
+	</script>
+</html>
+<!--
+	vue入门:
+	三种语法:js,jq,vue
+	天天吃饭也没见过你说不要
+	angular,react,vue
+	就是来展示页面的东西.
+	可以作为js库使用,也可以作为组件来组装构建界面,然后使用自动化工具生成单页面
+-->
+<!--
+	vue的核心是一个允许采用简洁的模板来声明式的将数据渲染进dom的系统.
+	el属性是标签,当vue对象创建之后,这个标签内的区域就被vue接管,在这个区域内就可以使用
+	vue对象中定义的属性和方法
+	
+	当一个vue实例被创建的时候,它向Vue的响应式系统中加入了其data对象中能找到的所有属性.
+	当这些属性的值发生改变时候,视图将会产生"响应".即匹配更新为新的值.
+	还可以在Vue实例中定义方法.通过方法来改变实例data对象中的数据,数据改变了,
+	视图中的数据也改变
+-->

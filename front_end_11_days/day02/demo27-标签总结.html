@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background: red;
+			}
+			/*
+			 a标签,span标签,label标签设置宽和高之后没效果.所以不可以设置宽和高,
+			 如果想要设置,那么必须转换成行内块标签显示才行 display:inline-block
+			 
+			 行标签就三个:a标签,span标签,label标签是常用的.  img是行内块标签
+			 * */
+			a{
+				width: 100px;
+				height: 100px;
+				background: yellow;
+			}
+			img{
+				width: 100px;
+				height: 100px;
+				
+			}
+		</style>
+	</head>
+	<!--
+		标签总结
+		
+	-->
+	<body>
+		<h1>标签总结:所有的标签,一共就三种</h1>
+		<h3>第一种:块级标签,代表是:h1-h6,div,p,ul,li,ol</h3>
+		<h3>块级标签特点:1.所有标签独占一行2.可以设置宽和高</h3>
+		<div>查看源码的时候独占一行</div>
+		hjkjhj
+		
+		
+		<h3>第二种:行内标签,代表是:a,span,label</h3>
+		<h3>行内标签特点:1.所有标签都是并排显示 ,即同一行显示 2.不可以设置宽和高</h3>
+		<a href="#">黑马程序员</a>
+		bbbbb
+		
+		
+		<h3>第三种:行内块标签,代表是:img</h3>
+		<h3>行内块标签特点:1.所有标签都是并排显示  (同一行显示的意思)2.可以设置宽和高(意思就是吸收了其他两个的优点)</h3>
+		<img src="../day01/img/banner.jpg"/>
+		ccccccc
+	</body>
+</html>

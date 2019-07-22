@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 590px;
+				height: 470px;
+				border: 4px solid green;
+				margin: 50px auto;
+				/*设置相对定位
+				 如果希望图片作为参照物的话,那么必须让长辈是相对定位,子辈是绝对定位
+				 * */
+				position: relative;
+				left: 0px;
+				top: 0px;
+			}
+			.left{
+				width: 50px;
+				height: 90px;
+				background: pink;
+				position: absolute;
+				left: 0px;
+				/*设置成自身高度的一半*/
+				top: 50%;
+				margin-top: -45px;
+			}
+			.right{
+				width: 50px;
+				height: 90px;
+				background: pink;
+				position: absolute;
+				left: 540px;
+				/*设置成自身高度的一半*/
+				top: 50%;
+				margin-top: -45px;
+			}
+			</style
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="img/xlx.jpg"/>
+			<span class="left"></span>
+			<span class="right"></span>
+		</div>
+	</body>
+</html>
+<!--
+	案例:电商网站的组合键定位
+	模仿京东
+	一半情况下,都使用绝对定位,基本不用相对定位
+	因为相对定位会占据位置
+	绝对位置不会占据位置
+	只有一种情况,寻找原点位置的时候,以某个元素作为参照物的时候,才会使用相对位置
+-->

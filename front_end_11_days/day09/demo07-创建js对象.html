@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		//-------------------第一种:new-----------------
+		//创建一个js对象
+		//		var person = new Object()
+		//		//设置对象的属性
+		//		person.name = '中行越'
+		//		person.address = '岛国'
+		//		//输出
+		//		console.log(person.name)
+		//		console.log(person.address)
+		//-------------第二种-------------------------		
+		//构造器实现  Java的构造函数直接把属性传到对象里面
+		//构造函数方式
+		function person(name, age) {
+			this.name = name
+			this.age = age
+		}
+		//创建一个构造函数
+		var person = new person('韩三国', 18)
+		console.log(person.name)
+		console.log(person.age)
+		
+	</script>
+
+</html>
+<!--
+	数据交互
+	先要创建对象  new object
+	两种方式
+	
+-->

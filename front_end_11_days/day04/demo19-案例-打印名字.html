@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="txt"/>
+		<input type="button" id="btn" value="打印" />
+		<h1 id="app">姓名是:</h1>
+	</body>
+	<script type="text/javascript">
+		//获取按钮标签
+		var oBtn = document.getElementById("btn")
+		//文本
+		var oTxt = document.getElementById("txt")
+		// h1标签
+		var oApp = document.getElementById("app")
+		// 设置点击事件
+		oBtn.onclick = function(){
+			var val = oTxt.value
+			//设置名字,innerHTML 是 修改标签里面的内容
+			//具体实现多的效果就是会把之前h1标签显示的"姓名是"这三个字换成下面的val的值加上"姓名是"三个字
+			oApp.innerHTML = "姓名是:" + val
+			//alert('哈哈哈')
+		}
+		
+	</script>
+</html>
+<!--
+	打印名片
+	回来再看下
+	script就是脚本的意思
+-->

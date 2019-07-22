@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.walk_show{
+				width: 120px;
+				height: 182px;
+				border: 1px solid #333333;
+				margin: 50px auto;
+				overflow: hidden;
+				position: relative;
+			}
+			.walk_show img{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<p>使用下面图片制作关键帧动画</p>
+		<img src="img/walking.png" alt="人走路"/>
+		<div class="walk_show">
+			<img src="img/walking.png" alt="人走路" id="img01"/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var oImg = document.getElementById("img01")
+		var nowleft = 0
+		
+		setInterval(function(){
+			//一次走120个像素
+			nowleft -= 120
+			//判断在框里面至少有一个人,一共是8个人,那么就是7*120 = 840
+			if (nowleft<-840) {
+				nowleft=0
+			}
+			oImg.style.left = nowleft + 'px'
+			
+		},100)
+		
+	</script>
+</html>
+
+<!--
+	结束之后再看下作业2和作业3
+-->

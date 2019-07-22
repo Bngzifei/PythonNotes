@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.talk_con {
+				width: 600px;
+				height: 500px;
+				border: 1px solid #666;
+				margin: 50px auto 0;
+				background: #f9f9f9;
+			}
+			
+			.talk_show {
+				width: 580px;
+				height: 420px;
+				border: 1px solid #666;
+				background: #fff;
+				margin: 10px auto 0;
+				overflow: auto;
+			}
+			
+			.talk_input {
+				width: 580px;
+				margin: 10px auto 0;
+			}
+			
+			.whotalk {
+				width: 80px;
+				height: 30px;
+				float: left;
+				outline: none;
+			}
+			
+			.talk_word {
+				width: 420px;
+				height: 26px;
+				padding: 0px;
+				float: left;
+				margin-left: 10px;
+				outline: none;
+				text-indent: 10px;
+			}
+			
+			.talk_sub {
+				width: 56px;
+				height: 30px;
+				float: left;
+				margin-left: 10px;
+			}
+			
+			.atalk {
+				margin: 10px;
+			}
+			
+			.atalk span {
+				display: inline-block;
+				background: #0181cc;
+				border-radius: 10px;
+				color: #fff;
+				padding: 5px 10px;
+			}
+			
+			.btalk {
+				margin: 10px;
+				text-align: right;
+			}
+			
+			.btalk span {
+				display: inline-block;
+				background: #ef8201;
+				border-radius: 10px;
+				color: #fff;
+				padding: 5px 10px;
+			}
+		</style>
+		<script src="../预习/day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="talk_con" id="app">
+			<div class="talk_show" id="words">
+				<!--
+					所有的A说B说都是在这里展示,所以使用for循环
+					:class  控制class
+				-->
+				<div :class="[it.who=='A' ? 'atalk': 'btalk' ]" v-for="it in content">
+					<span> {{it.who}} 说: {{it.say}}</span>
+				</div>
+			</div>
+
+			<div class="talk_input">
+				<!--
+					v-model="sel" 下面需要绑定操作.所以这里要进行v-model设置操作
+				-->
+				<select class="whotalk" id="who" v-model="sel">
+					<option value="0">A说:</option>
+					<option value="1">B说:</option>
+				</select>
+
+				<input type="text" class="talk_word" id="talkwords" v-model="txt" />
+				<input type="button" value="发送" class="talk_sub" id="talksub" @click="fnAdd">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//这里不行,会被vue覆盖,失效了
+//		var talkwords = document.getElementById("talkwords")
+//		if (talkwords=='') {
+//			alert('发送消息为空,请重新输入')
+//			return
+//		}
+//		纯js执行顺序:从上往下,从左往右
+//		如果有vue代码,vue会重置整段js代码,vue优先被执行.vue的执行顺序:先执行事件,再执行其他
+		var vb = new Vue({
+			el:'#app',
+			data:{
+				//定义对话框的数据,会被循环输出.
+				//定义数据都是这样:什么数据可变就保存什么数据
+				
+				//content里面保存的是a说或者b说的聊天记录
+				content:[
+				//数组形式:数组嵌套数组,不太好取值,容易混.
+//					['A','吃饭了吗?']
+//					['A','吃饭了吗?']
+//					['A','吃饭了吗?']
+
+
+					//建议使用数组嵌套字典的形式保存,比较清晰,易读.
+					//也容易在外面被调用,直接使用.key的方式就可以调用对应的value
+					{ who:'A',say:'吃饭没?' },
+					{ who:'B',say:'还没' },
+					{ who:'B',say:'号不好' },
+					{ who:'B',say:'号不好' },
+					{ who:'A',say:'号不好' },
+					{ who:'A',say:'号不好' },
+					{ who:'A',say:'号不好' },
+//					--------------------最佳方式:-----------------
+					//因为div中谁说话,说的内容,说的样式三个地方可变,所以也可以写成以下方式
+//					{ who:'A',say:'号不好', tclass:'atalk'},
+//					{ who:'A',say:'号不好', tclass:'btalk'},
+				],
+				
+				//保存文本框的内容
+				txt:'',
+				
+				//绑定下拉框
+				sel:'0',
+			},
+			methods:{
+				fnAdd:function(){
+					//在显示界面输出对话内容,其实就是往content数组里面追加数据.
+					//追加数据就要求跟它原来的数据结构一模一样的格式
+					//首先判断输入的内容不为空
+					if (this.txt=='') {
+						alert('发送消息为空,请输入信息')
+						return
+					}
+					//追加.注意:这里通过下拉框绑定操作之后,获取值进行判断是谁说的
+					this.content.push({ who:this.sel=='0'?'A':'B',say:this.txt })
+					
+					//js代码,和vue外部的js有关联.外部先得有 var talkwords 这个实例化操作
+					//才能获取到输入框
+					//文本框获取焦点.实现的效果是消息发送之后,自动获取到光标在输入框位置
+					talkwords.focus()
+					
+					//清空输入框,将上次输入的信息自动清空.
+					this.txt=''
+					
+					//滚动条自动向下,在使用vue的时候,滚动条是先执行,再输出我们说的话
+					//所以就会出现差位(即滚动条不在最底部),所以需要加个定时器实现延时操作 
+					//让滚动条在最底部:加定时器,实现先先输出对话内容,后执行滚动条
+					setTimeout(function(){
+						document.getElementById("words").scrollTop='99999'},1)
+				}
+			}
+		})
+		//js和vue混用的时候,vue的优先级高,那么在执行的时候vue会重新加载页面
+		//然后再进行自上而下的代码执行.这样就会把前面的js代码覆盖刷新了,vue中的js代码
+		//如果和前面的js代码有关系,那么就不再起效果了
+		//一般写js,都是写在vue的后面
+		var talkwords = document.getElementById("talkwords")
+		//这里文本框再次获取焦点,效果是第一次程序启动之后就获取,不需要手动点击获取
+		talkwords.focus()
+		
+	</script>
+</html>
+<!--
+	聊天对话框:数据双向绑定.
+-->

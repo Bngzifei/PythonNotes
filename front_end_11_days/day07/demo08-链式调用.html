@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>
+			玩玩:王硬要,不信男人的谎言
+			对对对:
+			比如:比如我不喜欢你
+		</p>
+		<input type="button" name="" id="" value="链式调用" />
+	</body>
+	<script type="text/javascript">
+		$('input').click(function(){
+			//当我点击按钮的时候,先隐藏再显示,并且改变文字
+//			$('p').css({'color':'red'}).hide(2000).show(2000)
+			//如果是,号,可以不加{}
+			//如果是:号,就要加{}
+			$('p').css('color','red').hide(2000).show(2000)
+		})
+	</script>
+</html>
+<!--
+	链式方式调用
+-->

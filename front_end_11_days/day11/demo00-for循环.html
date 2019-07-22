@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script src="../预习/day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<!--<ul id="app">
+			<li v-for="i in items"></li>
+		</ul>-->
+		<!--
+			快捷键:#app + tab键
+		-->
+		<div id="app">
+			<ul>
+				<!--
+					迭代数组
+					在vue里面,所有设置属性的时候只能使用指令:v-的形式
+					aList:是data里面的aList数组
+					index表示索引
+				-->
+				<li v-for="(item,index) in aList">
+					<!--
+						{{item}}  取出数组中的每个元素
+					-->
+						{{item}} :{{index}}
+				</li>
+			</ul>
+			<ul>
+				<!--
+					key是键
+				-->
+				<li v-for="(item,key) in oPerson">{{key}}: {{item}}</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				//存放数据,数据类型可以是数组,或者对象
+				//列表是,号分隔
+				aList:['中华民国','中国台湾','中国香港'],
+				//对象是key-value的形式.
+				oPerson:{name:'利玛窦',age:19}
+			}
+		})
+	</script>
+</html>
+<!--
+	渲染列表:v-for指令将这一组数据渲染到页面.就是取出来的意思.
+	数组for循环
+	对象for循环
+-->

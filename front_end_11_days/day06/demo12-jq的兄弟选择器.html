@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<ul>
+			<li>搬砖都班禅的这吗辛苦</li>
+			<li>以逸待劳</li>
+			<li class="two">龙:why?</li>
+			<li>啦啦啦啦</li>
+			<li>kill</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		//选择li索引是2元素的兄弟,注意:不包括2自己.同级元素(除自己之外)
+		$('li').eq(2).siblings().css({
+			'color':'red'
+		})
+	</script>
+</html>
+<!--
+	亲戚选择器
+	eta 的意思 : abbr. 预计抵达时间（estimated time of arrival）
+	siblings:兄弟姐妹；同科
+-->

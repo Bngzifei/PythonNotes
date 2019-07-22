@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.list_con {
+				width: 1000px;
+				height: 200px;
+				border: 1px solid #000;
+				margin: 50px auto 0;
+				background-color: #f0f0f0;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.list_con ul {
+				list-style: none;
+				width: 2000px;
+				height: 200px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.list_con li {
+				width: 180px;
+				height: 180px;
+				float: left;
+				margin: 10px;
+			}
+			
+			.btns_con {
+				width: 1000px;
+				height: 30px;
+				margin: 50px auto 0;
+				position: relative;
+			}
+			
+			.left,
+			.right {
+				width: 30px;
+				height: 30px;
+				background-color: gold;
+				position: absolute;
+				left: -40px;
+				top: 124px;
+				font-size: 30px;
+				line-height: 30px;
+				color: #000;
+				font-family: 'Arial';
+				text-align: center;
+				cursor: pointer;
+				border-radius: 15px;
+				opacity: 0.5;
+			}
+			
+			.right {
+				left: 1010px;
+				top: 124px;
+			}
+		</style>
+		<script src="../day07/js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../预习/day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="list_con" id='slide'>
+
+			<ul id="list" :class="list" >
+				<!--for循环遍历-->
+				<li v-for="item in content">
+					<a href="#"><img :src="item[1]" alt="无对应水果" /></a>
+				</li>
+			</ul>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+					el: '#list',
+					data: {
+						content: [
+							['进口柠檬', 'img/goods0001.jpg'],
+							['玫瑰香葡萄', 'img/goods0002.jpg'],
+							['大兴大棚草莓', 'img/goods0003.jpg'],
+							['吐鲁番梨光杏', 'img/goods0004.jpg'],
+							['黄肉桃', 'img/goods0005.jpg'],
+							['进口西梅', 'img/goods006.jpg'],
+							['香梨', 'img/goods007.jpg'],
+							['栗子', 'img/goods008.jpg'],
+							['海南香蕉', 'img/goods009.jpg'],
+							['青苹果', 'img/goods010.jpg'],
+							['山莓', 'img/goods011.jpg'],
+							['奇异果', 'img/goods012.jpg'],
+							['蜜桔', 'img/goods013.jpg'],
+							['脐橙', 'img/goods014.jpg'],
+							['椰子', 'img/goods015.jpg']
+						],
+						
+						
+
+					},
+//					methods: {
+//						fnCh: function() {
+//								var num = 0,
+//								var time = null,
+//								time = setInterval(function() {
+//									//每隔100调用一下定时器
+//									num -= 10
+//									//业务逻辑
+//									//判断图片是否到末尾
+//									if(num < -1000) {
+//										//需要重置num.只要到了1000,就重置
+//										num = 0
+//									}
+//									this.list.css({
+//										'left': num + 'px'
+//									})
+//								}, 100)
+//						    }
+					})
+
+				//-----------------------------------------分割线----------------------------------------------------		
+						$('.list_con').hover(function() {
+							//鼠标进入停止滚动
+							clearInterval(time)
+						}, function() {
+							//鼠标移开继续滚动
+							time = setInterval(function() {
+								//每隔100调用一下定时器
+								num -= 10
+								//业务逻辑
+								//判断图片是否到末尾
+								if(num < -1000) {
+									//需要重置num.只要到了1000,就重置
+									num = 0
+								}
+								$('#list').css({
+									'left': num + 'px'
+								})
+							}, 100)
+						})
+
+				//-----------------------先写下面的部分:----------------
+
+						var num = 0
+						var time = null
+						//代码有重复的,最好封装一下
+						time = setInterval(function() {
+							//每隔100调用一下定时器
+							num -= 10
+							//业务逻辑
+							//判断图片是否到末尾
+							if(num < -1000) {
+								//需要重置num.只要到了1000,就重置
+								num = 0
+							}
+							$('#list').css({
+								'left': num + 'px'
+							})
+						}, 100)
+	</script>
+
+</html>

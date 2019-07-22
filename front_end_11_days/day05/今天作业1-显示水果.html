@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		<ul class="con clearfix" id="list">
+			<!--<li>
+				<a href="#"><img src="img/goods002.jpg" alt="无对应水果"/></a>
+				<h4>商品名字:</h4>
+			</li>-->
+			
+		</ul>
+	</body>
+	<script type="text/javascript">
+		//定义一个数组,存放水果名字和对应水果的图片路径
+		var aData = [
+		['进口柠檬','img/goods001.jpg'],['玫瑰香葡萄','img/goods002.jpg'],
+		['大兴大棚草莓','img/goods003.jpg'],['吐鲁番梨光杏','img/goods004.jpg'],
+		['黄肉桃','img/goods005.jpg'],['进口西梅','img/goods006.jpg'],
+		['香梨','img/goods007.jpg'],['栗子','img/goods008.jpg'],
+		['海南香蕉','img/goods009.jpg'],['青苹果','img/goods010.jpg'],
+		['山莓','img/goods011.jpg'],['奇异果','img/goods012.jpg'],
+		['蜜桔','img/goods013.jpg'],['脐橙','img/goods014.jpg'],
+		['椰子','img/goods015.jpg']
+		]
+		
+		//取出列表元素
+		var oList = document.getElementById("list")
+		//定义一个空字符串
+		var sTr = ''
+		for (var i = 0; i < aData.length; i++) {
+			//拼接
+			sTr += 
+			'<li>'+
+				'<a href="#">'+'<img src="'+aData[i][1]+'" alt="无对应水果"/>'+'</a>'
+				+'<h4>'+aData[i][0]+'</h4>'
+			+'</li>'	
+		}
+		//在页面中显示拼接后的字符串
+		oList.innerHTML = sTr
+		
+	</script>
+</html>

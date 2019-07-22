@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.heima,.flip1,.flip2,.flip3{
+				
+				text-align: center;
+				background: greenyellow;
+				border: 1px solid black;
+				margin: 0;
+			}
+			.flip1,.flip2,.flip3{
+				background: #EE87B4;
+			}
+			.heima{
+				display: none;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="heima">
+			<p>黑暗料理</p>
+		</div>
+		<p class="flip1">点击我1</p>
+		<p class="flip2">点击我2</p>
+		<p class="flip3">点击我3</p>
+	</body>
+	<script type="text/javascript">
+		$('.flip1').click(function(){
+			//向下卷起
+			$('.heima').slideDown(2000)
+		})
+		
+		$('.flip2').click(function(){
+			//向上卷起
+			$('.heima').slideUp(2000)
+		})
+		
+		$('.flip3').click(function(){
+			//内部自动判断向上还是向下.是上面两个的合成
+			$('.heima').slideToggle(2000)
+		})
+	</script>
+</html>
+<!--
+	向下展开/向上卷起
+	slide:滑动,滑落
+	flip:轻击
+-->
+	
