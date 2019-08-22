@@ -17,8 +17,8 @@ print(type(foo.hello))   # <class 'method'>
 print(type(Foo))         # <class 'type'>
 
 temp = Foo               # 赋值给其他变量
-Foo.var = 11            # 增加参数
-print(Foo)              # 作为函数参数
+Foo.var = 11             # 增加参数
+print(Foo)               # 作为函数参数
 
 def init(self,name):
     self.name = name
