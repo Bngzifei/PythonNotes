@@ -14,8 +14,8 @@ else:
 finally:
 	close()
 
-打开文件/关闭文件 的中间把资源保存/标价起来了
-这样就称之为上下文
+打开文件/关闭文件 的中间过程把资源保存/标记(就是做个记号,表示这个资源文件被使用了,被谁使用,使用到哪一步等等) 起来了,
+这样就称之为上下文.
 
 格式:
 打开
@@ -31,7 +31,7 @@ finally:
 """
 
 
-class myFile:
+class MyFile:
 	"""文件类,取代open类,和open类相似"""
 	def __init__(self, name, mode):
 		self.name = name
@@ -51,20 +51,22 @@ class myFile:
 
 if __name__ == '__main__':
 	"""
-	1.>obj = myFile('app.txt','rb') 执行,调用类初始化完成一个对象obj
+	1.>obj = MyFile('app.txt','rb') 执行,调用类初始化完成一个对象obj
 	2.>通过调用对象obj的__enter__方法获取资源<上文>  --->给 as 后面的file
-	3.>with正常代码中可以正常使用获取到的资源
+	3.>with正常代码中 可以正常使用获取到的资源
 	4.>在退出with语句块的时候,关闭资源的时候调用obj的__exit__方法,进入下文,释放资源
-	
+
 	"""
 
-	with myFile('app.txt', 'rb') as file:
+	with MyFile('app.txt', 'rb') as file:
 		print(file.read(8))
 
 """
 总结:
 实现支持with操作的类--->叫上下文管理器  同理 __iter__/__next__的叫 迭代器类
-实现__enter__方法  上文  提供资源
-实现__exit__方法   下文  关闭资源
+实现__enter__方法  上文:  提供资源
+实现__exit__方法   下文:  关闭资源
 
+__enter__:意思就是进入资源
+__exit__:意思就是退出资源
 """

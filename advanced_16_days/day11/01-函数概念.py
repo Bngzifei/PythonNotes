@@ -9,6 +9,9 @@ func()
 res = func
 
 res()
+# 可以看到func函数的id(在python里面id就是地址的意思)和res的id是一样的,这样就说明地址也是一样的,这样的操作 就是  引用
+print(id(func))
+print(id(res))
 
 
 # func:定义函数的时候其实就是定义了一个对象

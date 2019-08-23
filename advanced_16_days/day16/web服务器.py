@@ -99,7 +99,7 @@ class HTTPServer:
 def main():
 	# 获取程序运行所需的参数<端口>   python3  1.py  8080  argv:['x.py',8080]
 	if len(sys.argv) < 2:
-		print('参数使用出错,应该是形如:python3 .\07-web服务器-命令行参数控制内部绑定的端口.py 8080')
+		print('参数使用出错,应该是形如:python3 07-web服务器-命令行参数控制内部绑定的端口.py 8080')
 	# 端口号是一个数字
 	port = int(sys.argv[1])
 
