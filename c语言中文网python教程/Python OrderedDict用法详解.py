@@ -129,7 +129,6 @@ b
 """
 通过上面的输出结果可以看出,使用OrderedDict的mobe_to_end()方法
 可以方便地将指定的key-value对移动到OrderedDict的任意一端.
-而pop
-
+而popitem()方法则可用于弹出并返回OrdeedDict任意一端的key-value对.
 
 """
