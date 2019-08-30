@@ -70,3 +70,4 @@ print(f.closed)  # 该文件目前仍然是打开的,没有关闭故为False
 # 访问文件对象打开的文件名
 print(f.name)  # open_test.py
 
+
