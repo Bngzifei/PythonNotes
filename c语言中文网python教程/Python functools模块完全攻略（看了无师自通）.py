@@ -361,14 +361,23 @@ print(test.__doc__)
 执行test函数
 test
 test函数的说明信息
+<<<<<<< HEAD
 这是个啥?
 https://gio.ren/w/AovVzzoz
+=======
+
+>>>>>>> develop-1.0.0
 如果注释掉程序中第 5 行代码，此时将不能让 wrapper 函数看上去像 test 函数。如果再次运行该程序，将看到如下输出结果：
 调用被装饰函数
 执行test函数
 wrapper
 None
+<<<<<<< HEAD
 加入齐塔
 https://qiita.com/registration
+=======
+
+
+>>>>>>> develop-1.0.0
 """
 
