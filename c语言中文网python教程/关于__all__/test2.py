@@ -20,8 +20,4 @@ z: 6
 test: <function test at 0x00D216F0>
 [Finished in 0.1s]
 
-<<<<<<< HEAD
 """
-=======
-"""
->>>>>>> 8d88b392556029dd11a11fec0faf31a66e39ac8a
