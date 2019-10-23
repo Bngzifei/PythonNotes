@@ -1,0 +1,78 @@
+git 删除远端分支:
+
+1.先查看远端分支:git branch -a
+
+2.删除指定的远端分支: git push origin --delete 1.0.0/feture/lb-fix-test
+sangfor@vt0066 MINGW64 /d/git_pro/Python-Notes (develop-1.0.0)
+$ git push origin --delete 1.0.0/feture/lb-fix-test
+To https://github.com/Bngzifei/Python-Notes.git
+ - [deleted]         1.0.0/feture/lb-fix-test
+
+拉取代码:
+执行:
+拉取最新代码
+git fetch --all
+从云服务器回退到上一个版本:
+git reset --hard origin/5.8.7R2/feature/add-service-delete-itest
+
+
+git fetch -- .
+git reset --hard origin/5.8.7R2/feature/add-service-delete-itest
+
+git fetch -- .
+git reset --hard origin/5.8.7R2/feature/add-service-delete-itest
+
+
+创建并切换分支:
+git checkout -b 分支名
+
+只切换分支:
+git checkout 分支名
+
+查看当前状态:
+git status
+
+添加:
+git add 指定的修改后的文件
+
+提交到本地:
+git commit -m [类型]详细信息
+
+推送到远程:
+git push origin 远程指定的分支(一般都是自己当前所在的分支名)
+
+合并分支:
+git merge 子分支(就是你从主分支切出来的自己的分支,你在这个分支上面进行编码操作之后,需要先切换回主分支,然后执行这个命令)
+
+回退到指定版本:
+git reset hard --版本号
+
+获取远程分支master并merge到当前分支:
+git pull origin master
+
+图示当前分支历史:
+git show-branch
+
+撤销提交dfb02e6e4f2f7b573337763e5c0013802e392818:
+git revert dfb02e6e4f2f7b573337763e5c0013802e392818
+
+注意:一定要先查看git status 当前状态之后,再去执行.add 或者 commit 的操作.
+
+
+
+修改分支名:
+
+1.git branch -m 旧的分支名 新的分支名(新建新分支并切换到新分支)
+2.git push -u origin 新分支(将新分支推送到远程)
+3.git push -u origin :旧分支(删除远程的旧分支)
+
+注意:修改完分支名之后还需要重新提交合并merge请求.
+
+
+合并多次提交:
+
+git rebase -i 起始点(注意不是自己开始的那个,是其他人开始的那个节点,合并的时候并不包括这个节点)
+接着按s合并多次提交commit
+接着按#注释掉提交记录说明
+最后 git push origin 你远端对应的分支 -f
+这样就可以了.
