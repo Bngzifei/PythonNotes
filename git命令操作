@@ -76,3 +76,119 @@ git rebase -i 起始点(注意不是自己开始的那个,是其他人开始的�
 接着按#注释掉提交记录说明
 最后 git push origin 你远端对应的分支 -f
 这样就可以了.
+
+
+解决在Git 命令输出中的中文文件名显示问题。
+git config --global core.quotepath false
+
+
+同时更新两个分支:
+git push origin -u 当前所在分支:另外一个新的分支
+
+git push origin 分支a:分支b
+分支a就是你当前所在分支对应的远程分支
+分支b是你的a分支合并到的(或者说需要同步更新的目标分支)的分支
+
+直接把分支改动推送到合并的目标分支
+git push origin 5.9.0R2/feature/lb-add-test-case:5.9.0R2/feature/add-itests -f
+
+
+配置git多远端:
+git remote add acloud xxx(url)
+git pull acloud
+git push acloud xxx(branch)
+
+
+删除远端分支:
+git branch -r -d origin/branch-name
+git push origin :branch-name
+
+删除远程分支:
+使用命令 git push origin --delete Chapater6   可以删除远程分支Chapater6
+
+git stash pop  冲突解决
+git stash show -p | git apply && git stash drop
+
+
+多次合并commit:
+
+1. git add .
+
+2. git commit --amend
+
+3. 不需要填commit信息
+
+4. 直接git push 远端 -f
+
+
+
+sublime多行操作:
+多行同时操作:ctrl + alt + 向下箭头/向上箭头
+
+sublime 全部选中一起修改: alt + ctrl + 下箭头 选中,然后按ctrl + d
+
+
+Python在真实的linux环境中的安装路径:
+/usr/lib/python2.7/site-packages
+
+
+shell终端修改显示颜色和样式等的命令:
+PS1="\[\e[01;31m\]\u@\h \[\e[01;36m\]\w \[\e[01;32m\]o \[\e[00m\]"
+
+批量杀掉进程:
+ps -aux|grep "pytest"|awk '{print "kill -9 "$2}'|sh
+
+这里是批量杀死进程名包含xxx的进程，记录做个备忘:
+ps aux|grep pytest|awk '{print $2}'|xargs kill -9
+
+杀掉pytest进程的命令:
+ps aux | grep 'python -m pytest' | awk '{print $2}' | xargs kill -9
+
+
+pytest 插件介绍:
+官方文档:
+https://docs.pytest.org/en/latest/_modules/_pytest/hookspec.html#pytest_collection
+
+测试库集合链接:
+https://github.com/china-testing/python-api-tesing
+
+
+
+git stash 操作:
+
+git stash list : 显示当前缓存区的文件
+
+然后你就可以 执行 git stash clear  :注意这是清空你所有的内容
+
+git stash drop stash@{0}  这是删除第一个队列
+
+git 使用在一个分支写完之后,可以先在这个分支的基础上新建一个分支,然后再推送,然后再去远端提合并请求
+
+
+
+有时候会想把github上的文件删除，但是本地仓库里的文件想保留下来该怎么办，只要用三条命令就能完成了:
+git rm --cached filename/-r directory
+git commit "xxxx"
+git push
+
+
+
+
+9. .gz格式:
+解压1：gunzip FileName.gz
+解压2：gzip -d FileName.gz
+压缩：gzip FileName
+
+.tar.gz格式:
+解压：tar zxvf FileName.tar.gz
+压缩：tar zcvf FileName.tar.gz DirName
+解压至指定目录:  tar zxvf FileName.tar.gz -C ./DirName
+
+
+10. 打一个发行包,直接上传至pypi,可以使用 pip install 安装包名字 这个命令安装的
+python setup.py sdist
+
+
+python -m 中的-m参数是将库中的模块用作脚本去执行.相当于 import xxx模块名 导入后使用.
+
+
