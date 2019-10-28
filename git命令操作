@@ -109,6 +109,9 @@ git push origin :branch-name
 git stash pop  冲突解决
 git stash show -p | git apply && git stash drop
 
+git 查看远程仓库地址:
+git remote -v
+
 
 多次合并commit:
 
