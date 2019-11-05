@@ -43,6 +43,3 @@ plt.yticks([50000, 70000, 100000], [r"挺好", r"优秀", r"火爆"])
 
 # 调用show()函数显示图形
 plt.show()
-
-链接：https: // pan.baidu.com / s / 1T6DyB2TEXnRttFv_KErs6A
-提取码：9bat

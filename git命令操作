@@ -200,3 +200,95 @@ https://www.cnblogs.com/Zzbj/default.html?page=1
 
 
 
+修改CentOS ll命令以 K 为单位显示文件大小
+
+1.编辑 .bashrc 文件：
+  vim /root/.bashrc
+
+2.找到 alias ll 行修改为(如果没有直接添加该行)：
+  alias ll='ls -lh --color=auto'
+
+3.运行 source /root/.bashrc 使得修改配置生效：
+  source /root/.bashrc
+
+4.再次运行 ll 查看效果：ll
+  total 12K
+
+
+
+ll 是 ls -l的别名，之所所以 ll出现错误是因为没有定义别名.
+
+如果要实现ll 命令，可以做如下操作：
+
+1.编辑 ~./bashrc 添加 ls -l 的别名为 ll即可
+   
+   vi /root/.bashrc
+
+2.编辑文件内容:
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ll='ls -l'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+PS1="\[\e[01;31m\]\u@\h \[\e[01;36m\]\w \[\e[01;32m\]o \[\e[00m\]"
+
+
+3.按下: 后再按wq保存
+
+4.执行source ~./bashrc 使得配置修改生效
+
+5.终端执行ll即可看到命令已生效
+
+
+
+systemctl status docker
+
+
+如果遇到:
+
+Error response from daemon: Container 144f241075e3f088907c8e105bda1f9c4033af285c62580c751b3245c6a4c39a is not running
+
+
+1.查看当前所有docker镜像:
+  
+  docker ps -a
+
+
+2.启动镜像:
+  
+  docker start 镜像对应的id
+
+
+3.进入测试环境:
+ 
+  docker exec -it  镜像名称 /bin/bash
+
+
+
+systemctl daemon-reload
+service docker restart
+
+
+
+window7 主机   远程的ubuntu的主机    ubuntu中的docker(acloud镜像:其本质就是改装版的centos系统镜像iso) 三者之间的关系:
+
+形式上彼此之间互相独立.
+
+ubuntu中的acloud镜像寄存在ubuntu主机.
+
+之前使用pycharm远程编译环境时,是windows通过ssh连接ubuntu主机,调用其中的python编译器
+现在使用ubuntu中的docker(acloud)python 编译器时,
+需要先把acloud中的端口映射(就是关联,暴露出来,意思就是留一个入口给宿主机ubuntu,
+这样才能让外部的windows主机来访问到docker中的acloud的python编译器)
+
+修改docker中的配置信息,使其支持使用tcp协议
+ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
+
