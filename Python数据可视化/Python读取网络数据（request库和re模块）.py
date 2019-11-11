@@ -19,7 +19,8 @@ from urllib.request import *
 # 定义一个函数读取lishi.tianqi.com的数据
 
 def get_html(city, year, month):
-    url = "http://lishi.tianqi.com/" + city + "/" str(year) + str(month) + ".html"
+    url = "http://lishi.tianqi.com/" + city + \
+        "/" + str(year) + str(month) + ".html"
 
     # 创建请求
     request = Request(url)
@@ -51,4 +52,58 @@ for month in months:
     patten = re.compile(
         "<divclass='tqtongji2'>(.*?)</div><divstyle='clear:both'>")
     table = re.findall(patten, text)
-    patten1 = re.compile("<ul>(['01',
+    patten1 = re.compile("<ul>(.*?)</ul>")
+    uls = re.findall(patten1, table[0])
+
+    for url in urls:
+        # 定义解析天气信息的正则表达式
+        patten2 = re.compile("<li>(.*?)</li>")
+        lis = re.findall(patten2, url)
+        # 解析得到日期数据
+        d_str = re.findall(">(.*?)</a>", lis[0])[0]
+        try:
+            # 将日期字符串格式化化为日期
+            cur_day = datetime.strptime(d_str, "%Y-%m-%d")
+            # 解析得到高气温和最低气温
+            high = int(lis[1])
+            low = int(lis[2])
+        except ValueError:
+            print(cur_day, "数据出现错误")
+        else:
+            # 计算前后两天数据的时间差
+            diff = cur_day - prev_day
+            # 如果前后两天数据的时间差不是相差一天,说明数据有问题
+            if diff != timedelta(days=1):
+                print("%s之前少了%d天的数据" % (cur_day, diff.days - 1))
+            dates.append(cur_day)
+            highs.append(high)
+            lows.append(low)
+            prev_day = cur_day
+
+
+# 配置图形
+fig = plt.figure(dpi=128, figsize=(12, 9))
+
+# 绘制最高气温的折线图
+plt.plot(dates, highs, c="red", label="最高气温", alpha=0.5, linewidth=2.0)
+
+
+# 再绘制一条折线
+plt.plot(dates, lows, c="blue", label="最低气温", alpha=0.5, linewidth=2.0)
+
+# 为两个数据的绘图区域填充颜色
+plt.fill_between(dates, highs, lows, facecolor="blue", alpha=0.1)
+
+# 设置标题
+plt.title("广州%s年最高气温和最低气温" % year)
+
+
+# 为两条坐标轴设置名称
+plt.xlabel("日期")
+# 该方法绘制斜着的日期标签
+fig.autofmt_xdate()
+plt.ylabel("气温（℃）")
+
+# 显示图例
+plt.legend()
+ax = plt.gca()
