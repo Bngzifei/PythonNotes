@@ -60,6 +60,54 @@ print(dq)  # deque([40, 30, 20, 10, 3, 4, 5, 6, 7, 8], maxlen=10)
 
 append和popleft都是原子操作,也就是说deque可以在多线程程序中安全地当作先进先出的栈使用,而使用者不需要担心
 资源锁的问题.
+
+
+除了deque之外,还有其他的Python标准库也有对队列的实现.
+
+queue
+	
+	提供了同步(线程安全)类Queue,LifoQueue和PriorityQueue,不同的线程可以利用这些数据类型来交换信息.这三个
+	类的构造方法都有一个可选参数maxsize,它接收正整数作为输入值,用来限定队列的大小.但是在满员的时候,这些类不会
+	扔掉旧的元素来腾出位置.相反,如果队列满了,它就会被锁住,直到另外的线程移除了某个元素而腾出了位置.这一特性让
+	这些类很适合用来控制活跃线程的数量.
+
+multiprocessing
+
+	这个包实现了自己的Queue,它跟queue.Queue类似,是设计给进程间通信用的.同时还有一个专门的multiprocessing.JoinableQueue
+	类型,可以让任务管理变得更方便.
+
+asyncio
+	
+	Python3.4新提供的包,里面有Queue,LifoQueue,PriorityQueue和JoinableQueue,这些类受到queue和multiprocessing模块的影响,
+	但是为异步编程里的任务管理提供了专门的便利.
+
+heapq
+	
+	跟上面三个模块不同的是,heapq没有队列类,而是提供了heappush和heappop方法,让用户可以把可变队列当作堆队列或者优先队列来使用.
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 
 
