@@ -107,7 +107,9 @@ def best_promo(order):
 
 """
 inspect.getmembers函数用于获取对象(这里是promotions模块)的属性.第二个参数是可选的判断条件(一个布尔值函数).
-我们使用的是inspect.isfunction,只获取模块中的函数
+我们使用的是inspect.isfunction,只获取模块中的函数.
+
+动态收集促销折扣函数更为显示的一种方案是使用简单的装饰器
 
 """
 
