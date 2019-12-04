@@ -243,7 +243,7 @@ PS1="\[\e[01;31m\]\u@\h \[\e[01;36m\]\w \[\e[01;32m\]o \[\e[00m\]"
 
 3.按下: 后再按wq保存
 
-4.执行source ~./bashrc 使得配置修改生效
+4.执行source /root/.bashrc 使得配置修改生效
 
 5.终端执行ll即可看到命令已生效
 
@@ -292,3 +292,89 @@ ubuntu中的acloud镜像寄存在ubuntu主机.
 修改docker中的配置信息,使其支持使用tcp协议
 ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375
 
+
+源码方式安装 lrzsz库:
+https://www.cnblogs.com/cocoajin/p/11731787.html
+
+
+
+我们都知道安装了lrzsz工具的linux系统环境；
+
+在shell里可以非常方便的上传和下载linux里面的文件；
+
+通常的安装方式：
+
+yum install lrzsz 
+
+sudo apt-get install lrzsz
+
+ 
+
+那么当无法用软件包方式安装时；可以直接使用源码方式安装；
+
+1. 下载tar.gz的源码包：https://www.ohse.de/uwe/releases/lrzsz-0.12.20.tar.gz
+
+2. 在linux环境使用wget下载或curl
+
+   wget https://www.ohse.de/uwe/releases/lrzsz-0.12.20.tar.gz
+
+3. 解压：
+
+   tar -xzvf lrzsz*.tar.gz
+
+4. 编译安装：
+   
+   先进入lrzsz库解压后的路径,然后执行下面命令
+
+　　./configure
+
+　　make
+    
+    make install
+
+5: 环境配置：
+
+  默认安装在了 了/usr/local/bin/ 目录；
+
+  需要在/usr/bin目录做软连接；
+
+　　cd /usr/bin
+
+　　ln -s /usr/local/bin/lrz rz
+
+　　ln -s /usr/local/bin/lsz sz　
+
+ 
+
+6：如果遇到 rz 上传文件失败，请尝试使用sudo rz
+
+7: 可以把 rz,sz权限设置成777，解决权限问题
+
+   sudo chmod 777 /usr/libal/bin/lrz
+
+   sudo chmod 777 /usr/libal/bin/lsz
+
+
+
+mysql 授权:
+grant all privileges on *.* to 'yangxin'@'%' identified by 'yangxin123456' with grant option;
+
+
+二、导入数据库
+使用 mysql 命令导入
+使用 mysql 命令导入数据库格式如下：
+
+mysql -u用户名 -p 数据库名 < 数据库名.sql
+
+三. 导出数据库
+
+如果你需要导出整个数据库的数据，可以使用以下命令：
+
+$ mysqldump -uroot -p 数据库名 > database_dump.sql
+
+
+四:mysql 使用 \G 行变列查询报错:
+ERROR:  No query specified
+出现此错误是sql不合法原因：
+
+\G后面不能再加分号;，因为\G在功能上等同于;，如果加了分号，那么就是;;(2个分号)，SQL语法错误
