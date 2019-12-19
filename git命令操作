@@ -378,3 +378,19 @@ ERROR:  No query specified
 出现此错误是sql不合法原因：
 
 \G后面不能再加分号;，因为\G在功能上等同于;，如果加了分号，那么就是;;(2个分号)，SQL语法错误
+
+有些时候数据库配置有改动,则先去查找mysql的配置路径:
+
+导出数据库:
+mysqldump --socket=/var/run/mysqld/mysql.sock -uroot -p cloudmanager >cloudmanager.sql
+
+
+导入:
+mysql --socket=/var/run/mysqld/mysql.sock -uroot -p cloudmanager < cloudmanager.sql
+
+
+CentOS踢出已登录用户的方法:
+  
+  先按下w查看用户终端号
+  
+  pkill -kill -t pts/1 (pts/1为w指令看到的用户终端号)
