@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*.all{
+				width: 502px;
+				height: 302px;
+				line-height: 200%;
+				background: whitesmoke;
+			}
+			h3{
+				width: 502px;
+				height: 40px;
+				font-family: "微软雅黑";
+				background: #90ee90;
+			}
+		
+			.user{
+				width: 240px;
+				height: 28px;
+				margin-bottom:30px;
+				margin-left:100px;
+			}
+			.password{
+				width: 240px;
+				height: 28px;
+				margin-bottom:30px;
+				margin-left:100px;
+			}
+			p{
+				margin-left:100px;
+			}
+			.submit{
+				width: 90px;
+				height: 28px;
+				
+			}
+			.reset{
+				width: 90px;
+				height: 28px;
+				
+			}*/
+			
+			/*最外层的盒子
+			  计算盒子真实宽度:本身宽度+内边距宽+边框宽
+			  502+10+2=514
+			  
+			 * */
+			.login{
+				width: 490px;
+				height: 290px;
+				/* auto 加上后就是居中的效果*/
+				margin: 0px auto;
+				border: 1px solid black;
+				padding: 5px;
+			}
+			/*
+			 设置标题
+			 * */
+			.login_title{
+				background: #90ee90;
+				width: 490px;
+				height: 40px;
+				/*距离下面40个 像素*/
+				margin-bottom: 40px;
+				
+			}
+			/*用户登录 文字*/
+			.login .login_title h3{
+				/*去掉自动加的外边距*/
+				margin: 0px;
+				
+				 /*垂直方向居中显示,让用户登录四个字在竖直方向的中间*/
+				 
+				
+				line-height: 40px;
+				/*
+				 标题距离标题的div盒子的距离
+				 * */
+				padding-left:5px;
+			}
+			
+			/*行内标签*/
+			.login div label{
+				width: 100px;
+				/*background: pink;*/
+				/*转成行内块标签,因为需要设置label的宽度和高度*/
+				display: inline-block;
+				text-align: right;
+			}
+			
+			.login div input{
+				
+				width: 238px;
+				height: 26px;
+				/*注意:在设置input的时候,系统会默认添加边框和内边距.*/
+				border: 1px solid black;
+				padding: 0px;
+				/*距离下边30px*/
+				margin-bottom:30px;
+				
+			}
+			.login .btn input{
+				width: 100px;
+				height: 30px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div class="all">
+			<h3>用户登录</h3>
+			<label class="user">用户名:</label><input type="text" /><br />
+			<label class="password">密&nbsp;&nbsp;&nbsp;码:</label><input type="password" /><br />
+			<p>
+				<input type="submit" value="提交" class="submit"/>
+				<input type="reset" value="重置" class="reset"/>
+			</p>
+		</div>-->
+		
+		<!--最外层盒子-->
+		<div class="login">
+			<!--登录框上面的标题-->
+			<div class="login_title">
+				<h3>用户登录</h3>
+			</div>
+			<!--登录提交的表单
+				只要是提交到服务器的代码,必须写到form表单
+			-->
+			<form >
+				<!--一行就是一部分-->
+				<div>
+					<!--用户名的文本输入框-->
+					<label>用户名:&nbsp;</label><input type="text" />
+				</div>
+				<div>
+					<!--密码输入框-->
+					<label>密&nbsp;&nbsp;&nbsp;码:&nbsp;</label><input type="password" />
+				</div>
+				<!--提交重置按钮-->
+				<div class="btn">
+					<!--label标签进行占位,使提交按钮和用户名和密码输入框保持对齐-->
+					<label></label>  
+					<input type="submit" value="提交"/>
+					<input type="reset" value="重置"/>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

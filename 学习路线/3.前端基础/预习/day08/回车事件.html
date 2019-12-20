@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<input type="text" />
+		<h1>接收内容:</h1>
+	</body>
+	<script type="text/javascript">
+		//键盘事件的每个按键.每按一下,就会触发一下
+		$('input').keyup(function(e){
+			//键盘的每个按键,都有一个键盘码
+			//获取每个按键的键盘码
+			//console.log(e.keyCode)
+			if (e.keyCode == 13) {
+				//13代表回车事件
+				$('h1').html('接收内容:'+$(this).val())
+			}
+		})
+	</script>
+</html>

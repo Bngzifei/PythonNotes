@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>龙岩:玩那干啥</p>
+		<input type="button" id="btn01" value="隐藏" />
+		<input type="button" id="btn02" value="显示" />
+		<input type="button" id="btn03" value="隐藏/显示" />
+	</body>
+	<script type="text/javascript">
+		$('#btn01').click(function(){
+			//点击按钮隐藏p标签
+			$('p').hide(2000)
+		})
+		
+		$('#btn02').click(function(){
+			//点击按钮显示p标签
+			$('p').show(2000)
+		})
+		
+		$('#btn03').click(function(){
+			//点击按钮显示和隐藏p标签.就是上面两个的综合效果
+			$('p').toggle(2000)
+		})
+	</script>
+</html>
+<!--
+	隐藏/显示
+	hide/show
+-->

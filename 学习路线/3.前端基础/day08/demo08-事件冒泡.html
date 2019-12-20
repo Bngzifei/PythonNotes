@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#grandfather {
+				width: 500px;
+				height: 500px;
+				background: red;
+			}
+			
+			#father {
+				width: 300px;
+				height: 300px;
+				background: green;
+			}
+			
+			#son {
+				width: 100px;
+				height: 100px;
+				background: blue;
+				position: absolute;
+				left: 0;
+				top: 520px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+			document 树: 简称 dom树
+			先放的在下面,最后放的在上面
+			后来者居上
+		-->
+		<div id="grandfather">
+			<div id="father">
+				<div id="son">
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('#grandfather').click(function() {
+			alert('grandfather')
+		})
+		$('#father').click(function() {
+			alert('father')
+			//阻止冒泡
+			return false
+		})
+		$('#son').click(function() {
+			alert('son')
+			return false
+		})
+	</script>
+
+</html>
+<!--
+	事件冒泡:讲的贼专业
+	就是一个事件会穿透下去
+	一层一层的传下去
+	方向只会向下,不会向上
+-->
+
+<!--
+	
+	什么是事件冒泡 ?
+	
+		在一个对象上触发某类事件（比如单击onclick事件），
+		如果此对象定义了此事件的处理程序，那么此事件就会调用这个处理程序.
+		如果没有定义此事件处理程序或者事件返回true，那么这个事件会向这个对象的父级对象传播，
+		从里到外，直至它被处理（父级对象所有同类事件都将被激活）,
+		或者它到达了对象层次的最顶层，即document对象（有些浏览器是window）。
+		
+	事件冒泡的作用: 
+	
+		事件冒泡允许多个操作被集中处理（把事件处理器添加到一个父级元素上，
+		避免把事件处理器添加到多个子级元素上），它还可以让你在对象层的不同级别捕获事件。
+		
+	阻止事件冒泡 :
+	
+		事件冒泡机制有时候是不需要的，需要阻止掉，通过 event.stopPropagation() 来阻止.
+		阻止默认行为,阻止表单提交
+		
+	合并阻止操作:实际情况,一般把阻止冒泡和阻止默认行为合并起来写,合并写法:return false
+	
+-->

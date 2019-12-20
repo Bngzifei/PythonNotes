@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<select name="">
+			<option value="北京">北京</option>
+			<option value="上海">上海</option>
+			<option value="深圳">深圳</option>
+		</select>
+	</body>
+	<script type="text/javascript">
+		//change()当下拉框发生改变的时候调用的函数
+		//三级联动事件
+		$('select').change(function(){
+			//alert($(this).html())
+			alert($(this).val())
+
+		})
+	</script>
+</html>
+<!--
+	改变事件:change
+-->

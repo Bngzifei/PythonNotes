@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 层级选择器:中间通过空格进行连接 千万不能丢掉空格
+			 前面的标签是后面标签的长辈元素,后面是前面的子元素
+			 比如:下面的div标签里面有p标签.那么取出div中的p就是以空格相连
+			 * */
+			
+			div p {
+				color: blue;
+			}
+			
+			div h1 {
+				color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+			层级选择器:也叫做后代选择器
+		-->
+		<div>
+			<p>黑马很黑</p>
+		</div>
+
+		<div>
+			<h1>黑马不黑就不叫黑马了</h1>
+		</div>
+	</body>
+
+</html>
+<!--
+	层次选择器:存在包含关系的选择器,以空格连接
+-->

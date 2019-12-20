@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			div {
+				width: 300px;
+				height: 300px;
+				background: pink;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" value="按钮" />
+		<div></div>
+	</body>
+	<script type="text/javascript">
+		$('input').hover(function(){
+			//类似伪类选择器的效果.移入显示div
+			$('div').css({'display':'block'})
+		},function(){
+			//移出,不显示
+			$('div').css({'display':'none'})
+		})
+	</script>
+
+</html>

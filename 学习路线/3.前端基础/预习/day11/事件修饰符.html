@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--阻止单机事件继续传播-->
+			<a v-on:click.stop="doThis"></a>
+			<!--提交事件不再重载页面-->
+			<form v-on:submit.prevent="onSubmit"></form>
+			<!--修饰符可以串联-->
+			<a v-on:click.stop.prevent="doThis"></a>
+			<!--只有修饰符-->
+			<form v-on:submit.prevent></form>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				
+			},
+			methods:{
+				
+			}
+		})
+	</script>
+</html>
+<!--
+	实际开发中,事件绑定有时候牵涉到阻止事件冒泡以及阻止默认行为,在vue可以加上事件修饰符
+-->

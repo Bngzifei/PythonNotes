@@ -1,0 +1,9 @@
+body {
+	background: yellow;
+}
+/*是两个按钮都是方形,不是只有按钮二是方形*/
+input {
+	width: 200px;
+	height: 100px;
+	border: 0px;
+}

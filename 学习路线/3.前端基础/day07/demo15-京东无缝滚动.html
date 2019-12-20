@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>无缝滚动</title>
+		<!--外链式导入jq文件-->
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body,
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.list_con {
+				width: 1000px;
+				height: 200px;
+				border: 1px solid #000;
+				margin: 50px auto 0;
+				background-color: #f0f0f0;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.list_con ul {
+				list-style: none;
+				width: 2000px;
+				height: 200px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.list_con li {
+				width: 180px;
+				height: 180px;
+				float: left;
+				margin: 10px;
+			}
+			
+			.btns_con {
+				width: 1000px;
+				height: 30px;
+				margin: 50px auto 0;
+				position: relative;
+			}
+			
+			.left,
+			.right {
+				width: 30px;
+				height: 30px;
+				background-color: gold;
+				position: absolute;
+				left: -40px;
+				top: 124px;
+				font-size: 30px;
+				line-height: 30px;
+				color: #000;
+				font-family: 'Arial';
+				text-align: center;
+				cursor: pointer;
+				border-radius: 15px;
+				opacity: 0.5;
+			}
+			
+			.right {
+				left: 1010px;
+				top: 124px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="list_con" id='slide'>
+			<!--快捷键是:  ul>(li>a)*10  -->
+			<ul id="list">
+				<li>
+					<a href="#"><img src="img/goods001.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods002.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods003.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods004.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods005.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods001.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods002.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods003.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods004.jpg" alt="商品图片" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/goods005.jpg" alt="商品图片" /></a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//无缝滚动的原理:复制对应的图片,走到最后一张的时候,瞬间回到第0张的位置
+			//hover格式:hover(函数1,函数2)  就是这个样子 hover(function(){},function(){}) 
+			$('.list_con').hover(function(){
+				//鼠标进入停止滚动
+				clearInterval(time)
+			},function(){
+				//鼠标移开继续滚动
+				time = setInterval(function(){
+				//每隔100调用一下定时器
+				num -= 10
+				//业务逻辑
+				//判断图片是否到末尾
+				if (num<-1000) {
+					//需要重置num.只要到了1000,就重置
+					num = 0
+				}
+				$('#list').css({
+					'left':num + 'px'
+				})
+			},100)
+			})
+			
+			
+//			-----------------------先写下面的部分:----------------
+
+			var num = 0
+			var time = null
+			//代码有重复的,最好封装一下
+			time = setInterval(function(){
+				//每隔100调用一下定时器
+				num -= 10
+				//业务逻辑
+				//判断图片是否到末尾
+				if (num<-1000) {
+					//需要重置num.只要到了1000,就重置
+					num = 0
+				}
+				$('#list').css({
+					'left':num + 'px'
+				})
+			},100)
+			
+		
+	</script>
+
+</html>
+<!--
+	总结:
+	1.封闭函数的闭包
+	2.排它思想
+	3.分布动画
+	4.淡入淡出
+	5.向上/向下卷起
+	6.显示/隐藏
+	7.停止动画
+	8.jq链式调用
+	9.鼠标事件
+	10.鼠标进入/离开事件
+	11.表单事件
+	12.改变事件
+-->

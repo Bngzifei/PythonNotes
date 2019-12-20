@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		var fnAlert = (a, b) => {
+			alert(a * b)
+		}
+		fnAlert(5, 5)
+
+		var fnAlert = a => {
+			alert(a)
+		}
+		fnAlert(5)
+//		--------------------
+		// 通过匿名函数赋值来定义函数
+		/*
+		var fnRs = function(a,b){
+		    var rs = a + b;
+		    alert(rs);
+		}
+		fnRs(1,2);
+		*/
+	</script>
+
+</html>
+<!--
+	可以把箭头函数理解成匿名函数的第二种写法,箭头函数的作用是可以在对象中
+	绑定this,解决了js中的this指定混乱的问题
+-->
+<!--
+	js之前没有模块的功能.之前都是使用js库
+	ES6中一个js文件就是一个模块
+	注意:需要先导出后,才能被其他js文件导入
+-->

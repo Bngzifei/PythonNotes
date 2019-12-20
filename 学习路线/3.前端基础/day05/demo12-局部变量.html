@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		//调用
+		func_name()
+		console.log("局部变量的值:"+str)//这样会报错,如果是局部变量,在函数外部是没办法进行调用的
+		//定义函数,注意str 是局部变量
+		function func_name(){
+			var str = "号不卡"
+		}
+	</script>
+</html>
+<!--
+	作用域:作用范围
+	局部变量
+-->

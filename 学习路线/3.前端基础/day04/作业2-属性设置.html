@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.set_con{
+				width: 900px;
+				height: 350px;
+				border: 1px solid #666;
+				margin: 50px auto 0;
+			}
+			.left_set{
+				width: 299px;
+				height: 330px;
+				float: left;
+				border-right: 1px solid #666;
+				/*距离顶部20px*/
+				padding-top: 20px;
+				
+			}
+			.left_set label{
+				float: left;
+				width: 80px;
+				height: 40px;
+				line-height: 40px;
+				text-align: left;
+				text-indent: 20px;
+				margin-top: 10px;
+				font-size: 12px;
+				
+			}
+			.left_set input{
+				padding: 0px;
+				width: 198px;
+				height: 38px;
+				border: 1px solid #999;
+				float: left;
+				margin-top: 10px;
+				text-indent: 10px;
+				outline: none;
+			}
+			.left_set .setbtn{
+				width: 99px;
+				height: 40px;
+				border: 0px;
+				background: #0181CC;
+				color: #fff;
+				text-indent: 0px;
+				margin-left:80px;
+				font-size: 16px;
+				margin-top: 20px;
+				
+			}
+			.right_show{
+				width: 600px;
+				height: 350px;
+				float: left;
+				overflow:auto;
+				
+			}
+			.box{
+				width:100px;
+				height: 100px;
+				border:5px solid #000;
+				background: gold;
+				margin: 50px auto 0;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="set_con">
+			<div class="left_set">
+				
+					<div>
+						<label>宽度:</label>
+						<input type="text" value="100px" id="input01"/>
+					</div>
+					
+					
+					<div>
+						<label>高度:</label>
+						<input type="text" value="100px" id="input02"/>
+					</div>
+				
+				
+				
+					<div>
+						<label>背景色:</label>
+						<input type="text" value="gold" id="input03"/>
+					</div>
+			
+				
+				
+					<div>
+						<label>边框:</label>
+						<input type="text" value="5px solid #000" id="input04"/>
+					</div>
+				
+				
+					<div>
+						<label>圆角:</label>
+						<input type="text" value="0px" id="input05"/>
+					</div>
+
+			
+					<div>
+						<input type="button" value="设置" class="setbtn" id="input06"/>
+					</div>
+				
+				
+			</div>
+			
+			<div class="right_show">
+				<div class="box" id="box"></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		// js代码
+		var oInput01 = document.getElementById("input01")
+		var oInput02 = document.getElementById("input02")
+		var oInput03 = document.getElementById("input03")
+		var oInput04 = document.getElementById("input04")
+		var oInput05 = document.getElementById("input05")
+		var oBtn = document.getElementById("input06")
+		var oBox = document.getElementById("box")
+		
+		oBtn.onclick = function(){
+			var sVal01 = oInput01.value
+			var sVal02 = oInput02.value
+			var sVal03 = oInput03.value
+			var sVal04 = oInput04.value
+			var sVal05 = oInput05.value
+			
+			oBox.style.width = sVal01
+			oBox.style.height = sVal02
+			oBox.style.backgroundColor = sVal03
+			oBox.style.border = sVal04
+			oBox.style.borderRadius = sVal05
+		}
+	</script>
+</html>

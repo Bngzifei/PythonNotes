@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.blue{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<button>切换css类</button>
+		<p>正经了</p>
+		<h1>竟然这样</h1>
+		<h2>是人性扭曲</h2>
+		<p>还是道德沦丧</p>
+	</body>
+	<script type="text/javascript">
+		$('button').click(function(){
+			//自动判断当前标签里是否有blue类
+			$('p,h1,h2').toggleClass('blue')
+		})
+		
+	</script>
+</html>
+<!--
+	操作css中的属性
+	style中的属性在jq中都是css()的属性
+	toggleClass:自动判断
+	等下回去看看,导入jq务必注意
+	不行就去看报错日志
+-->

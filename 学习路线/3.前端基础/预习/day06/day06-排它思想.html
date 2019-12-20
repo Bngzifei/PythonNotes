@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-1.12.4.min.js" ></script>
+		<style type="text/css">
+			li{
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				background: #ccc;
+				margin: 50px;
+				font-size: 50px;
+				line-height: 80px;
+				text-align: center;
+				/*
+				 把鼠标指针变成手指
+				 * */
+				cursor: pointer;
+			}
+			.cur{
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		$('li').click(function(){
+			//自己添加类名cur
+//			$(this).addClass('cur')
+//			其他兄弟去掉类名
+//			$(this).siblings().removeClass('cur')
+//			简化版,实现的效果就是鼠标点哪个,哪个变色.其余的都恢复原来的颜色.不清粗就自己试试
+//			$(this).addClass('cur').siblings().removeClass('cur')
+
+//			下面的也是这样的效果
+			$(this).css({'background':'pink'})
+			$(this).siblings().css({'background':'#ccc'})
+		})
+	</script>
+</html>

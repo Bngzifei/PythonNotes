@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="list">
+			<li>前任3</li>
+			<li>钢铁侠</li>
+			<li>复仇者</li>
+			<li>葫芦娃</li>
+			<li>金刚大战哥斯拉</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		var aMovie = ['前任3','钢铁侠','复仇者','葫芦娃','金刚大战哥斯拉']
+		//获取标签中的属性值
+		var oList = document.getElementById("list")
+		for(var i=0;i<aMovie.length;i++){
+			oList.innerHTML += '<li><a href="#"</li>' +aMovie[i] + '</a></li>'
+		}
+		
+	</script>
+</html>

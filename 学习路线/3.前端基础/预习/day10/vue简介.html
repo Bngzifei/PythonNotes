@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--
+			vue的结构需求,必须是一个id绑定一个div标签
+		-->
+		<div id="app">
+			<!--
+				胡子语法:{{}}  两个{}表示往页面输出内容
+			-->
+			<p>{{ message }}</p>
+			<button @click="fnChangeMsg">改变数据和视图</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//创建vue的基本语法  注意Vue的V是大写不可以是小写否则报错
+		var vm = new Vue({
+			//绑定的那个id(元素)
+			el: '#app',
+			//自定义属性,vue几乎都是对这一块进行操作的
+			data: {
+				//自定义属性的名称,保存相关信息
+				message: 'hello world!'
+			},
+			methods:{
+				fnChangeMsg:function(){
+					this.message = 'hello vue.js!'
+				}
+			}
+			
+		})
+	</script>
+
+</html>
+<!--
+	前端三大新框架:angular,react,vue
+	可以作为一个js库来使用,也可以用它做全套的工具来构建系统界面,
+	这些可以根据项目的需要灵活选择,所以,
+	vue是一套构建用户界面的渐进式框架
+	
+	vue的核心库只关注视图层,vue的目标是通过尽可能简单的api实现响应的数据绑定.在这一点上vue类似于后台的模板语言
+	
+	vue也可以将界面拆分成一个一个的组件,通过组件来构建界面,然后使用自动化工具来生成单页面,(SPA-single page application)系统
+-->
+
+<!--
+	首先通过将vue作为一个js库来使用.
+	每个vue应用都是通过实例化一个新的vue对象开始
+	当一个vue实例被创建的时候,它向vue的响应式系统中加入了其data对象中能找到的所有的属性.
+	当这些属性的值发生改变时,视图将会产生响应,即匹配更新为新的值.
+	还可以在vue实例中定义方法,通过方法来改变实例中data对象中的数据 ,
+	数据改变了,视图中的数据也随之改变
+-->

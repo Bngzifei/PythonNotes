@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+//		var num01 = 10
+//		var num02 = 20
+//		var num03 = '王倩:2年前,被拉到单身群.....'
+//		---------字符串拼接---------------
+		//var val = num01 + num02 + num03
+		//碰到字符串就是连接,字符串默认会自动连接
+		//var val = num01 + num03 + num02
+//		console.log(val)
+		//运行快捷键:ctrl + R
+//		-----------字符串转整数------------
+//		var num01 = '10'
+//		var num02 = '20'
+//		//parseInt(num01):包装类,字符串转成number中的整数
+//		var val = parseInt(num01) + parseInt(num02)
+//		console.log(val)
+//		------------字符串转小数-----------
+//		var num01 = '1.1'
+//		var num02 = '2.2'
+//		//parseFloat(num01):字符串转成number中的小数
+//		var val = parseFloat(num01) + parseFloat(num02)
+//		console.log(val)
+//	   --------------字符串切割--------------
+//		var str = '2018-10-11'
+//		var str1 = '20181011'
+//		split('-') 表示切割字符串,参数是分隔符
+//		var val = str.split('-')
+//		console.log(val)
+		//输出 ["2018", "10", "11"],是一个数组
+//		----------字符串元素索引--------------
+//		var str = 'abbdbc'
+//		//查询当前字符在字符串的位置
+//		var val = str.indexOf('c')
+//		console.log(val)
+//		------------字符串截取----------------
+//		var str = 'hdjfjdhfj'
+//		//字符串的截取:第一个参数是开始位置,第二个是结束位置,注意:不包含结束位置
+//		
+//		var val = str.substring(3,6)
+//		//如果是一个参数,从开始位置一直截取到最后
+//		var val = str.substring(3)
+//		//如果是-1,表示截取整个字符串
+//		var val = str.substring(-1)
+//		console.log(val)  //输出:fjd
+//		------------字符串反转----------------
+		var str = 'hkljhjk'
+		//报错:字符串不能直接反转,必须是先转成数组才可以
+		//str.split('') 字符串转成了数组
+		//var val = str.reverse()
+		//.join('') 把数组转成字符串
+		//str.split('').reverse() 是一个数组
+		var val = str.split('').reverse().join('')
+		
+		console.log(val)
+		
+		
+	</script>
+
+</html>
+<!--
+	回顾:
+	js修改属性,什么时候要加style?
+	js如果在body上面,那么就要加window.onload()
+	js如果在body下面,那么就直接写js,不要加window.onload()
+	字符串操作
+-->
