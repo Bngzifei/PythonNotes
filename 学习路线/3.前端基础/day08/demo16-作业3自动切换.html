@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			body {
+				width: 500px;
+				margin: 150px auto;
+			}
+			
+			ul li {
+				background: url(img/radio.gif) no-repeat left 3px;
+				padding-left: 20px;
+				margin-bottom: 10px;
+			}
+			
+			ul li.cur {
+				background-position: left -17px;
+			}
+			
+			ol li {
+				background: url(img/duo1.png) no-repeat left 0;
+				padding-left: 25px;
+				line-height: 22px;
+				margin-bottom: 10px;
+			}
+			
+			ol li.cur {
+				background-image: url(img/duo2.png);
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="radio" />
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<ul>
+			<li class="cur">我虽然是li 但我可以变为单选按钮</li>
+			<li>我虽然是li 但我可以变为单选按钮</li>
+			<li>我虽然是li 但我可以变为单选按钮</li>
+			<li>我虽然是li 但我可以变为单选按钮</li>
+		</ul>
+		<ol>
+			<li class="cur">我虽然是li 但我可以变为多选按钮</li>
+			<li>我虽然是li 但我可以变为多选按钮</li>
+			<li>我虽然是li 但我可以变为多选按钮</li>
+			<li>我虽然是li 但我可以变为多选按钮</li>
+		</ol>
+	</body>
+	<script type="text/javascript">
+		$('ul li').click(function() {
+			$(this).addClass('cur').siblings().removeClass('cur')
+		})
+		//toggleClass:来回切换类名  'ol li'  中间以空格相连,表示ol包含li.ol里面的li选择器
+		//toggleClass:开关.点了之后会切换,可以自己判断
+		//cur:current 当前的意思
+		$('ol li').click(function() {
+			$(this).toggleClass('cur')
+		})
+	</script>
+
+</html>

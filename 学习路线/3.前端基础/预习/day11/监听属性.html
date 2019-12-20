@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{num}}</h1>
+			<input type="button"  value="递增"  @click="num++"/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				num:0
+			},
+			watch:{
+				num:function(newval,oldval){
+					console.log(newval + '/'+oldval)
+				}
+			}
+		})
+	</script>
+</html>
+<!--
+	监听属性：作用是监听某属性值的变化，从而做出相应的操作。
+	监听属性是一个对象，它的  键（就是字典key） 是要监听的对象或者 变量,
+	值一般是函数.
+	当你监听的元素发生变化的时候,需要执行的函数.这个函数有两个形参,第一个是当前值,
+	第二个是变化后的值.
+	
+-->

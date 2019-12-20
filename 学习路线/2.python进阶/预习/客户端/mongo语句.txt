@@ -1,0 +1,5 @@
+mongo db数据库插入语句：
+db.pythonSpider.insert({"url":"www.google.com"})
+删除该数据库：
+db.dropDatabase()
+{ "dropped" : "pythonSpider", "ok" : 1 }

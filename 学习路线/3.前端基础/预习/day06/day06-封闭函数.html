@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		//定义aa函数
+		function aa(){
+			alert('我是第一个aa')
+		}
+		//封闭函数.以后开发的时候写代码建议都写在封闭函数中.能够调用外面的数据,但是覆盖不了别人的数据
+		//调用函数
+		aa()
+		(function(){
+			function aa(){
+			alert('我是第一个aa')
+		}
+		aa()
+		})()
+		
+	</script>
+</html>
+<!--
+	封闭函数作用:是js中匿名函数的另外一种写法
+	1.可以创造一个独立的空间,在封闭函数内定义的变量和函数不会影响外部同名的函数和变量,可以避免命名冲突,在页面上引入多个js文件时候,用这种方式添加js文件比较安全
+	
+	
+	格式就是:
+	(function(){函数定义及调用})()
+-->

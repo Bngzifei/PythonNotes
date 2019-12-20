@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var person = {
+			//创建属性,设置属性
+			name:'李大锤',
+			age:23,
+			//还可以创建方法,方法添加到js对象
+			showName:function(){
+				alert(this.name)
+				alert(this.age)
+			}
+		}
+		//调用showName()
+		person.showName()
+	</script>
+</html>
+<!--
+	添加方法:在创建js对象的时候除了可以定义属性,还可以定义方法,直接添加到所创建的js对象上.
+	这个方法只属于这个对象
+	
+-->

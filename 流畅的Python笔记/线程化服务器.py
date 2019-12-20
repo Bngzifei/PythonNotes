@@ -1,0 +1,22 @@
+"""
+
+"""
+
+from socketserver import TCPServer, ThreadingMixIn, StreamRequestHandler
+
+
+class Server(ThreadingMixIn, TCPServer):
+    pass
+
+
+class Handler(StreamRequestHandler):
+
+    def handler(self):
+        addr = self.request.getpeername()
+        print("Got connection from:", addr)
+        self.wfile.write("Thank you for connecting")
+
+
+server = Server(("", 1234), Handler)
+
+server.serve_forever()  # 注意这里不要写错了,是serve_forever(),是个动词

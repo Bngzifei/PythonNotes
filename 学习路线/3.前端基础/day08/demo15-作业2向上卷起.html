@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.box{
+				width:500px;
+				height:300px;
+				border:4px solid #000;
+				margin:50px auto;
+				position: relative;
+			}
+			p{
+				position:absolute;
+				left:0;
+				/*
+				 底部为0 .如果还往下,就不行.所以效果上是往上
+				 * */
+				bottom:0;
+				background:rgba(0,0,0,0.5);
+				color:#fff;
+				margin:0;
+				width:480px;
+				height:50px;
+				line-height:50px;
+				padding-left:20px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/02.jpg"/>
+			<p>这是桃花啊~~~~</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('.box').hover(function(){
+			$('p').stop().slideDown(200)
+		},function(){
+			$('p').stop().slideUp(200)
+		})
+	</script>
+</html>

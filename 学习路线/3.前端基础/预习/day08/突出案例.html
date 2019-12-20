@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{background: #000000;}
+			img{
+				width: 320px;
+				margin: 35px;
+				/*这是竖着显示*/
+				/*display: block;*/
+				/*这是横着显示*/
+				/*display: inline-block;*/
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/03.jpg"/>
+		<img src="img/04.jpg"/>
+		<img src="img/05.jpg"/>
+	</body>
+	<script type="text/javascript">
+		$('img').hover(function(){
+			//鼠标移入
+			$(this).siblings().stop().animate({'opacity':'0.3'},1000)
+		},function(){
+			//鼠标移出
+			$(this).siblings().stop().animate({'opacity':'1'},1000)
+		})
+	</script>
+</html>
+<!--
+	opacity: n. 不透明；不传导；暧昧
+-->

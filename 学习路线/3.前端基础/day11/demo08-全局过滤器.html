@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../预习/day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<!--
+				Yuan:就是一个函数名的效果,一个变量
+			-->
+			<p>商品的价格是:{{price|Yuan}}</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//定义全局过滤器
+		//本质就是定义了一个函数.函数名是Yuan
+		//参数val就是实际的price
+		//注意:全局过滤器位置是在最开始.
+		Vue.filter('Yuan', function(val) {
+			if(val == '') {
+				return
+			}
+			return val + "元"
+		})
+		var mn = new Vue({
+			el: '#app',
+			data: {
+				price: 9999.99
+			},
+		})
+	</script>
+
+</html>
+<!--
+	全局过滤器:filter
+	对象是否可以渲染?  对象是可以渲染的
+-->

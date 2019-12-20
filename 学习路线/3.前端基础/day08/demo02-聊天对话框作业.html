@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.talk_con {
+				width: 600px;
+				height: 500px;
+				border: 1px solid #666;
+				margin: 50px auto 0;
+				background: #f9f9f9;
+			}
+			
+			.talk_show {
+				width: 580px;
+				height: 420px;
+				border: 1px solid #666;
+				background: #fff;
+				margin: 10px auto 0;
+				overflow: auto;
+			}
+			
+			.talk_input {
+				width: 580px;
+				margin: 10px auto 0;
+			}
+			
+			.whotalk {
+				width: 80px;
+				height: 30px;
+				float: left;
+				outline: none;
+			}
+			
+			.talk_word {
+				width: 420px;
+				height: 26px;
+				padding: 0px;
+				float: left;
+				margin-left: 10px;
+				outline: none;
+				text-indent: 10px;
+			}
+			
+			.talk_sub {
+				width: 56px;
+				height: 30px;
+				float: left;
+				margin-left: 10px;
+			}
+			
+			.atalk {
+				margin: 10px;
+			}
+			
+			.atalk span {
+				display: inline-block;
+				background: #0181cc;
+				border-radius: 10px;
+				color: #fff;
+				padding: 5px 10px;
+			}
+			
+			.btalk {
+				margin: 10px;
+				text-align: right;
+			}
+			
+			.btalk span {
+				display: inline-block;
+				background: #ef8201;
+				border-radius: 10px;
+				color: #fff;
+				padding: 5px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="talk_con">
+			<div class="talk_show" id="words">
+				<!--追加内容，追加一整条div标签-->
+				<div class="atalk"><span>A说：吃饭了吗？</span></div>
+				<div class="btalk"><span>B说：还没呢，你呢？</span></div>
+			</div>
+			<div class="talk_input">
+				<!--下拉框-->
+				<select class="whotalk" id="who">
+					<option value="0">A说：</option>
+					<option value="1">B说：</option>
+				</select>
+				<!--文本框-->
+				<input type="text" class="talk_word" id="talkwords">
+				<!--发送按钮-->
+				<input type="button" value="发送" class="talk_sub" id="talksub">
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//实现步骤:
+		//1.获取文本框的内容
+		//2.点击发送按钮,把文本中的内容,根据html的结构追加上去
+		//3.判断是谁说的,A说就调用atalk的结构,B说就调用btalk.
+
+		//页面一刷新,就自动获取焦点
+		//可以点击,然后查看源码
+		//文本框
+		var oTxt = $('#talkwords')
+		//盒子
+		var oBox = $('#words')
+		//添加内容
+		addContent()
+
+		//定义回车键事件
+		oTxt.keyup(function(e) {
+
+			if(e.keyCode == 13) {
+//				console.log(e)
+				if($('#who').val() == 0) {
+					//A说
+					oBox.html(oBox.html() + '<div class="atalk"><span>A说：' + oTxt.val() + '</span></div>')
+				} else {
+					oBox.html(oBox.html() + '<div class="btalk"><span>B说：' + oTxt.val() + '</span></div>')
+				}
+				//清空文本输入框内容.是一点击的时候就清空
+				oTxt.val('')
+			}
+
+			//获取焦点,方便用户
+			$('#talkwords').focus()
+			//滚动条向下滚
+			$('#words').scrollTop(999999)
+		})
+
+		//定义添加内容函数
+		function addContent() {
+			$('#talksub').click(function() {
+				//把内容输出到盒子
+				//				alert('aa')
+				if($('#who').val() == 0) {
+					//注意空格
+					oBox.html(oBox.html() + '<div class="atalk"><span>A说：' + oTxt.val() + '</span></div ')
+				} else {
+					oBox.html(oBox.html() + '<div class="btalk"><span>B说：' + oTxt.val() + '</span></div>')
+				}
+				//清空文本输入框内容.是一点击的时候就清空
+				oTxt.val('')
+			})
+
+		}
+	</script>
+
+</html>
+<!--
+	这个作业出错了,等下再来看 ,注意空格
+	看下快捷键的写法
+-->

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+				<style type="text/css">
+			.list_con {
+				width: 600px;
+				margin: 50px auto 0;
+			}
+			
+			.inputtxt {
+				width: 550px;
+				height: 30px;
+				border: 1px solid #ccc;
+				padding: 0px;
+				text-indent: 10px;
+			}
+			
+			.inputbtn {
+				width: 40px;
+				height: 32px;
+				padding: 0px;
+				border: 1px solid #ccc;
+			}
+			
+			.list {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				margin-top: 20px;
+			}
+			
+			.list li {
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.list li span {
+				float: left;
+			}
+			
+			.list li a {
+				float: right;
+				text-decoration: none;
+				margin: 0 10px;
+			}
+		</style>
+		<script src="../预习/day10/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="list_con" id="app">
+			<h2>TO DO LIST</h2>
+			<!--
+				加了v-model就好了
+			-->
+			<input type="text" v-model="txt" />
+			<input type="button" id="btn1" value="增加" class="input_btn" @click="fnAdd(txt)"/>
+			
+			<ul id="list" class="list">
+				<li v-for="(item,index) in content">
+					<!--for循环遍历-->
+					<span>{{item}}</span>
+					<a href="#" class="up" @click="fnUp(index)">↑</a>
+					<a href="#" class="down" @click="fnDown(index)">↓</a>
+					<a href="#" class="del" @click="fnDel(index)">delete</a>
+				</li>
+			</ul>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				content:['学习html','学习Python','学习Ruby'],
+				txt:''
+			},
+			methods:{
+				fnAdd:function(txt){
+					if (txt=='') {
+						alert('空值')
+						return
+					}
+					this.content.push(this.txt)
+					//置为空
+					this.txt=''
+				},
+				fnUp:function(index){
+					if (index==0) {
+						alert('到顶了,不要再点了!')
+						return
+					}
+					
+					this.content.splice(index-1,0,this.content[index])
+					//再把自己删掉
+					this.content.splice(index+1,1)
+						
+				},
+				
+				fnDown:function(index){
+//					if (index == this.ul.length -1 ) {
+//						alert('到底了,不要再点了!')
+//						return
+//					}
+					
+					this.content.splice(index+2,0,this.content[index])
+					this.content.splice(index,1)
+				},
+				
+				fnDel:function(index){this.content.splice(index,1)}
+			}
+		})
+	</script>
+</html>

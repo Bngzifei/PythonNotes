@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<input type="text" name="" id="txt" value="" />
+		<input type="button" name="" id="" value="" />
+		<h1>输出内容:</h1>
+	</body>
+	<script type="text/javascript">
+		//键盘事件  参数e
+		$('#txt').keyup(function(e){
+			console.log('当我们在敲击键盘时候被调用')
+			//keycode:13
+			//key:Enter   就是回车键
+			//e可以获取到键盘上面的属性值
+			//平时玩的手机,遥控器驱动开发(也是平台开发)都是有这个事件
+			//为了安全才使用银行自带的输入法,不会使用原生的输入法
+			//底层的驱动会拿到你点击的key值,然后可以对应出按键值.不安全
+			console.log(e)
+			if (e.keyCode==13) {
+				alert('这是回车键')
+			}
+		})
+	</script>
+</html>
+<!--
+	键盘事件
+-->

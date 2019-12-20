@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-1.12.4.min.js" ></script>
+		<style type="text/css">
+			/*
+			 选择器   选择所有的标签
+			 * */
+			.box{
+				width: 320px;
+				position: fixed;
+				right: 0;
+				bottom: 0;
+			}
+			img{
+				/*垂直方向对齐*/
+				vertical-align: top;
+			}
+			span{
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 20px;
+				height: 20px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="360/up.png"/>
+			<img src="360/down.png"/>
+			<span></span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('span').click(function(){
+			$('.box').animate({'bottom':'-165px'},1000)
+			.animate({'right':'-320px'},1000,function(){
+				alert('开机速度不错,请继续保持!!!')
+			})
+		})
+	</script>
+</html>

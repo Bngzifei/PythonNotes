@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height:300px;
+				background:pink;
+				/*
+				 内边距的作用:隔开盒子与内容之间的距离.一般用于父子级别的关系,意思就是盒子里面装的东西,一个div里面的东西距离div的上下左右距离就是内边距
+				 * */
+				/*padding: 50px; 四周50px*/
+				/*padding: 20px 50px;上下20 左右50px*/
+				/*padding: 10px 30px 60px 90px; 上右下左*/
+				/*以下这么设置实际上就把div标签的位置定死了,在坐标系中的位置就唯一确定了,也可以理解为是div标签距离body标签的距离是left50px,bottom50px*/
+				padding-left: 50px;
+				padding-bottom: 50px;
+			}
+			/*这么写是确定div标签里面的p标签的位置*/
+			p{
+				margin:0;
+				padding-top:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div><p>哈哈哈</p></div>
+	</body>
+</html>
