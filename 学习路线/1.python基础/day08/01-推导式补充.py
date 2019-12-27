@@ -23,3 +23,8 @@ dict1 = {'name': 'zhangsan', 'age': 18}  # key-value互换位置
 # dict2 = {dict1[key] :key for key in dict1}
 dict2 = {value: key for key, value in dict1.items()}
 print(dict2)
+
+
+list1 = ["1","2","3","3"]
+
+set1 = {int(s) for s in list1 if int(s) >=2}  # {2,3}

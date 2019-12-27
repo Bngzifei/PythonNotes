@@ -9,7 +9,7 @@
 # 计算移动平均值的高阶函数,不保存所有历史值,但有缺陷
 def make_averager():
 	count = 0  # 不可变类型
-	total = 0  # 不不可变类型
+	total = 0  # 不可变类型
 	
 	def averager(new_value):
 		nonlocal count,total  # 使用nonlocal关键字使其可以重新绑定,成为自由变量
@@ -44,7 +44,5 @@ count = count + 1(重新绑定其实就是赋值操作,=号左边的count和=号
 
 这种处理方式就是把内部函数需要修改的变量如count和total存储为可变对象(如字典或简单的实例),
 并且把那个对象绑定给一个自由变量.
-
-
 
 """

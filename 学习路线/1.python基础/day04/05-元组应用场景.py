@@ -1,13 +1,13 @@
 """一.元组是自动组包的默认类型"""
-# a = 10, 20  # 如果把多个值赋值给一个变量时,它会自动把多个数据组包成元组
-# print(a)
-# print(type(a))
-# tuple1 = (10, 20, 30)  # ValueError: too many values to unpack (expected 2)
-# a, b, c = tuple1  # 如果一个元组赋值给多个变量时,如果元组中元素个数和变量数一致,会自动赋值给每个变量,解包,拆包
-# print(a)
-# print(b)
-# print(c)
-# 组包是应用最多的地方
+a = 10, 20  # 如果把多个值赋值给一个变量时,它会自动把多个数据组包成元组
+print(a)  # (10,20)
+print(type(a)) # tuple
+tuple1 = (10, 20, 30)  # ValueError: too many values to unpack (expected 2)
+a, b, c = tuple1  # 如果一个元组赋值给多个变量时,如果元组中元素个数和变量数一致,会自动赋值给每个变量,解包,拆包
+print(a)
+print(b)
+print(c)
+组包是应用最多的地方
 # a = 10  # 20
 # b = 20  # 10
 #

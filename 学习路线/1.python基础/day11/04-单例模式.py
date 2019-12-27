@@ -85,3 +85,16 @@ user5.name = '小1小小超'
 # print(user5)  # 2个
 # print(user6)
 # print(user2.name)
+
+
+
+def singleton(cls):
+    """单例类装饰器"""
+    _instance = {}
+
+    def _singleton(*args, **kargs):
+        if cls not in _instance:
+            _instance[cls] = cls(*args, **kargs)
+        return _instance[cls]
+
+    return _singleton

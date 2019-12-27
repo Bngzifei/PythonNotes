@@ -100,4 +100,3 @@ Pixel = namedtuple("Pixel", Point._fields + Color._fields)
 # 创建Pixel对象,分别为x,y,red,green,blue字段赋值
 pix = Pixel(11,22,128,255,0)
 print(pix)  # Pixel(x=11, y=22, red=128, green=255, blue=0)
-

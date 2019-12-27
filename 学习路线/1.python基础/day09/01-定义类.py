@@ -52,7 +52,6 @@
 
 
 # 类和方法只会执行一次
-
 class Dog:
 	"""定义狗类"""
 
@@ -68,11 +67,7 @@ dog1 = Dog()  # 实际上是一个全局变量,这里我们将保存一个对象
 dog1.drink()  # 对象.方法()       Pycharm提示:    v:变量 variable,f:函数 function,m:方法 method c:类 class
 print(dog1)  # <__main__.Dog object at 0x0000018ABAE7B208>
 
-
-"""
 # print(self)和print(dog1)的值一样了. 这样就说明self就是dog1
 # 调用方法时不需要手动添加实参,解释器会自动添加一个实参给形参(位置参数)
 
-
-"""
 

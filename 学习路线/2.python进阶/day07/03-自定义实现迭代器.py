@@ -58,7 +58,7 @@ if __name__ == '__main__':
 	判断:
 		isinstance(对象,类型)  判断对象是否是xxx类型  返回值是True或者False
 		isinstance(对象,迭代器类型)
-		isinstance(对象,Iterator)  # 首先要导入 fron collections import Iterator
+		isinstance(对象,Iterator)  # 首先要导入 from collections import Iterator
 		
 2.> 实现迭代器
 		魔法方法: Python 预先自定义功能的方法.
