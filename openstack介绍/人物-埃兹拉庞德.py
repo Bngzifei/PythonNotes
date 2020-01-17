@@ -237,17 +237,8 @@ TCP的拥塞控制方法
 		在RED的操作中,最难处理的就是丢弃概率p的选择,因为p并不是个常数.对每一个到达的分组,都必须计算丢弃概率p的数值.IETF曾经推荐在互联网中的路由器使用RED机制.
 
 
-
-
-
-
-
-
-
-
-
-
-
+优秀的项目地址:
+https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts?utm_source=gold_browser_extension
 
 
 
