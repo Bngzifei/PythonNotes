@@ -26,14 +26,16 @@ import re
 
 res = re.match(r'world', 'hello world 123')
 res1 = re.search(r'world', 'hello world 123')
-print(res.group())  # 没有匹配到,直接报错 AttributeError: 'NoneType' object has no attribute 'group'
+# 没有匹配到,直接报错 AttributeError: 'NoneType' object has no attribute 'group'
+print(res.group())
 print(res1.group())  # world
 
 """1. 匹配一个字符(元字符)"""
 
 # .点字符: 表示任意一个字符<\n换行符除外,\n换行,是一个字符,\是转义的作用>
 print(len('\n'))  # 长度是1 说明一个字符
-print(re.search(r'叶问.', '叶问\n').group())  # 也是没有匹配,直接报错,AttributeError: 'NoneType' object has no attribute 'group'
+# 也是没有匹配,直接报错,AttributeError: 'NoneType' object has no attribute 'group'
+print(re.search(r'叶问.', '叶问\n').group())
 print(re.search(r'叶问.', '叶问kk').group())  # 叶问k
 
 # []字符: 表示集合中的任意1个字符,注意格式:[字符],字符不需要加''引号,类似白名单的概念
@@ -122,7 +124,8 @@ print(re.search(r'^\w{4,16}.*m$', 'Q604244167$$$$$m').group())
 
 """匹配  分组 匿名分组 """
 # |  或者 ,匹配 | 左右两边任何一个表达式
-print(re.search(r'^\w{4,16}@qq.com$|^\w{4,16}@sina.com$', '2604244167@qq.com').group())
+print(re.search(r'^\w{4,16}@qq.com$|^\w{4,16}@sina.com$',
+                '2604244167@qq.com').group())
 
 # (|)  匹配()中|左右两边的任何一个表达式. 分组的意义:将数据从整体提取出来.     和[]不一样 []匹配单个字符, ()匹配一个字符串
 print(re.search(r'^\w{4,16}@(qq|sina).com$', '2604244167@sina.com').group())
@@ -138,15 +141,18 @@ print(re.search(r'^(\d{3,4})-(\d{6,8})$', '0755-12345678').group(2))
 # 如果有了() 分组,就写成 .group(1)表示 第一个分组,一个()就是一个分组
 data = '郑一峰:274667266@qq.com:683760w:15069065451:19870504'
 result = re.match(r'(.+):(.+):(.+):(\d{11}):(\d{8})', data)
-print(result.group(1, 2, 3, 4, 5))  # ('郑一峰', '274667266@qq.com', '683760w', '15069065451', '19870504')
+# ('郑一峰', '274667266@qq.com', '683760w', '15069065451', '19870504')
+print(result.group(1, 2, 3, 4, 5))
 # 匿名分组
 """引用 匿名分组  分组: \分组编号 """
 # 引用分组  如果在后面的正则需要使用前面的分组数据.把前面匹配到的数据在后续使用的位置继续使用
 # r'() \分组编号' 记得在\分组编号之前加空格
 
-print(re.search(r'^(\d{3,4})-(\d{6,8}) \1-\2$', '0755-12345678 0755-12345678').group())
+print(re.search(r'^(\d{3,4})-(\d{6,8}) \1-\2$',
+                '0755-12345678 0755-12345678').group())
 # r的效果
-print(re.search('^(\\d{3,4})-(\\d{6,8}) \\1-\\2$', '010-12345678 010-12345678').group())
+print(re.search('^(\\d{3,4})-(\\d{6,8}) \\1-\\2$',
+                '010-12345678 010-12345678').group())
 
 """有名分组(命名分组):
 原因:(())里面出现(),乱了,无序了,所以这时候使用有名分组,匿名分组这个时候就不好
@@ -158,15 +164,17 @@ print(re.search('^(\\d{3,4})-(\\d{6,8}) \\1-\\2$', '010-12345678 010-12345678').
  
  获取分组:结果对象.group('分组名字'),也可以使用序号
  """
-print(re.search(r'^(?P<quhao>\d{3,4})-(\d{6,8}) \1-\2$', '0755-12345678 0755-12345678').group('quhao'))
-print(re.search(r'^(?P<quhao>\d{3,4})-(\d{6,8}) \1-\2$', '0755-12345678 0755-12345678').group(1))
+print(re.search(r'^(?P<quhao>\d{3,4})-(\d{6,8}) \1-\2$',
+                '0755-12345678 0755-12345678').group('quhao'))
+print(re.search(r'^(?P<quhao>\d{3,4})-(\d{6,8}) \1-\2$',
+                '0755-12345678 0755-12345678').group(1))
 """
 引用有名分组:(?P=分组名字)
 """
-print(re.search(r'^(?P<quhao>\d{3,4})-(?P<zuoji>\d{6,8}) (?P=quhao)-(?P=zuoji)$', '0755-12345678 0755-12345678').group(2))
+print(re.search(r'^(?P<quhao>\d{3,4})-(?P<zuoji>\d{6,8}) (?P=quhao)-(?P=zuoji)$',
+                '0755-12345678 0755-12345678').group(2))
 
 """re模块其他高级函数:"""
-
 
 
 """
@@ -184,10 +192,12 @@ sub(参数1,参数2,参数3,count = 参数4):将匹配的结果进行替换.
 		
 split():按指定规则切割数据
 """
+
+
 def func(obj):
-	data = re.match().group()
-	print(data)
-	return str(int(data) + 1)
+    data = re.match().group()
+    print(data)
+    return str(int(data) + 1)
 
 
 # re.sub(r'\s|<\?w+>|&nbsp','','')
@@ -206,7 +216,8 @@ re.findall(r'https://.+?\.jpg', '')  # 找到所有,输出到一个列表
 
 """
 print(re.match(r'^(\d+)(\d{7})$', '12345678').group(1, 2))  # -->分成了2组
-print(re.match(r'^(\d{3,4}?)(\d{5})$', '12345678').group(1, 2))  # ('123', '45678')
+# ('123', '45678')
+print(re.match(r'^(\d{3,4}?)(\d{5})$', '12345678').group(1, 2))
 #
 print(len('\\1'))  # 2
 print(len(r'\1'))  # 2 说明r的效果了.

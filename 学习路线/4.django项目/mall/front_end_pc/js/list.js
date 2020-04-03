@@ -62,7 +62,7 @@ var vm = new Vue({
             return nums;
         }
     },
-    //界面以加载完就执行
+    //界面一加载完就执行
     mounted: function(){
         this.cat = this.get_query_string('cat');
 

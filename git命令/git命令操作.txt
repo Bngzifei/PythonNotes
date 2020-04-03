@@ -1,5 +1,10 @@
 git 删除远端分支:
 
+忽略改动的文件:
+git checkout -- 指定的文件名
+
+git checkout * 忽略当前修改的所有文件
+
 1.先查看远端分支:git branch -a
 
 2.删除指定的远端分支: git push origin --delete 1.0.0/feture/lb-fix-test
@@ -394,3 +399,20 @@ CentOS踢出已登录用户的方法:
   先按下w查看用户终端号
   
   pkill -kill -t pts/1 (pts/1为w指令看到的用户终端号)
+
+
+python依赖包安装路径:
+当存在包导包导不进去的时候,仔细检查下面两个路径下包是否都存在
+
+/usr/lib/python2.7/site-packages
+
+/usr/lib64/python2.7/site-packages
+
+
+
+Python3中 对 字典的keys()和values() 视图对象转换成列表的操作:列表推导式实现。
+
+eg:
+
+version_list = [version for version in version_no_arise_count_map.keys()]
+version_count_list = [version_count for version_count in version_no_arise_count_map.values()]

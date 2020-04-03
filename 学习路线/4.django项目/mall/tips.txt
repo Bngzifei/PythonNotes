@@ -121,7 +121,7 @@ java写的
 
 需要把老师的的config配置拷贝到里面
 
-就是一个服务器,类似与fastdfs
+就是一个服务器,类似于fastdfs
 
 
 hastack:对接elasticsearch的

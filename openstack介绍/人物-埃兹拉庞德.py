@@ -240,8 +240,16 @@ TCP的拥塞控制方法
 优秀的项目地址:
 https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts?utm_source=gold_browser_extension
 
+只有一个文件,可以连续传送.
 
 
+ [Composer\Downloader\TransportException]
+ The "https://repo.packagist.org/p/php-ipv6.json" file could not be download
+ ed: SSL operation failed with code 1. OpenSSL Error messages:
+ error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol ver
+ sion
+ Failed to enable crypto
+ failed to open stream: operation failed
 
 
 
