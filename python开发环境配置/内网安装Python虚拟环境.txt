@@ -2,14 +2,14 @@
 执行命令:pip list | grep virtualenv
 
 如果没有安装,则执行:
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org virtualenv
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 virtualenv
 
 
 2.安装virtualenvwrapper:
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org virtualenvwrapper
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 virtualenvwrapper
 
 3.升级pip:
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org --upgrade pip
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 --upgrade pip
 
 4.创建虚拟环境:
 	virtualenv 虚拟环境名称  例如: virtualenv bng
@@ -25,7 +25,7 @@ deactivate
 
 7.安装指定版本的pytest==3.3.0
 注意这一步操作之前需要先进入虚拟环境:source BNG/bin/activate
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org pytest==3.3.0
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 pytest==3.3.0
 
 8.使用的时候记得加命令参数:python -m
 例如这种形式:
