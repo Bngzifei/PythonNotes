@@ -416,3 +416,10 @@ eg:
 
 version_list = [version for version in version_no_arise_count_map.keys()]
 version_count_list = [version_count for version_count in version_no_arise_count_map.values()]
+
+优秀的github资料集合
+https://github.com/jumper2014/PyCodeComplete
+
+关于git换行符的说明设置:
+git config --global core.autocrlf true   #true的位置放你想使autocrlf成为的结果，true，false或者input
+https://blog.csdn.net/h330531987/article/details/90761143
