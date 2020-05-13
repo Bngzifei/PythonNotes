@@ -181,7 +181,6 @@ git push
 
 
 
-
 9. .gz格式:
 解压1：gunzip FileName.gz
 解压2：gzip -d FileName.gz
@@ -423,3 +422,20 @@ https://github.com/jumper2014/PyCodeComplete
 关于git换行符的说明设置:
 git config --global core.autocrlf true   #true的位置放你想使autocrlf成为的结果，true，false或者input
 https://blog.csdn.net/h330531987/article/details/90761143
+
+
+新建立了一个目录,存了文件,然后只提交这个目录下的所有文件:
+
+ git add dep-pkg/*
+
+ git commit -m[ADD]增加依赖包
+
+ git push origin 远程的目标分支
+
+
+忽略当前所有修改的文件：
+git checkout -- *
+
+重置当前所有的文件:
+(就是由添加到缓存区的状态回退到没有添加到缓存区的状态,由绿色变红色)
+git reset HEAD *

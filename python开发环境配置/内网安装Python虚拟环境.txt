@@ -13,7 +13,8 @@ pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 --upg
 
 4.创建虚拟环境:
 	virtualenv 虚拟环境名称  例如: virtualenv bng
-
+	
+创建基于Python3的虚拟环境: virtualenv bng -p python3
 
 注意:--system-site-packages 参数就是以系统中已安装的包为基础全部安装到新建的虚拟环境中.
 
