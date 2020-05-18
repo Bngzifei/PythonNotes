@@ -439,3 +439,21 @@ git checkout -- *
 重置当前所有的文件:
 (就是由添加到缓存区的状态回退到没有添加到缓存区的状态,由绿色变红色)
 git reset HEAD *
+
+git commit之后撤销:
+https://www.cnblogs.com/lfxiao/p/9378763.html
+
+写完代码后，我们一般这样
+
+git add . //添加所有文件
+
+git commit -m "本功能全部完成"
+
+执行完commit后，想撤回commit，怎么办？
+
+这样凉拌：
+git reset --soft HEAD^
+
+这样就成功的撤销了你的commit
+
+注意，仅仅是撤回commit操作，您写的代码仍然保留。
