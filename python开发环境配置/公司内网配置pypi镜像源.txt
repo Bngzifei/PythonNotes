@@ -9,7 +9,16 @@
    pip.ini 是在 C:\Users\当前登录的用户名\AppData\Roaming\pip
 
 5、pip.conf 和 pip.ini文件的内容:
-	
+
+如果有外网,直接执行:
+设为默认
+升级 pip 到最新的版本 (>=10.0.0) 后进行配置：
+
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+##########################################################
 
 [global]
 # 从清华大学镜像源 https://pypi.tuna.tsinghua.edu.cn 代理， 缓存1天
@@ -21,6 +30,7 @@ extra-index-url = 私有的域名的url
 [install]
 trusted-host = 私有的pypi镜像源的域名
 
+########################################################
 
 [global]
 # 从清华大学镜像源 https://pypi.tuna.tsinghua.edu.cn 代理， 缓存1天
