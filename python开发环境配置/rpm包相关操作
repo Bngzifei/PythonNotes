@@ -38,3 +38,14 @@ nmcli con up eth0
 
 vim快捷键:
 https://www.cnblogs.com/markleaf/p/7808817.html
+
+
+# 注意:在ubuntu系统中,创建路径之后,没有可执行可写等权限,首先授权 chmod 777 路径
+然后使用filezilla工具才能进行文件传输.
+
+MarkupSafe==1.0
+
+注意:在ubuntu系统下面,如果使用非root用户执行vim写入操作的时候出现:
+E45: 已设定选项 'readonly' (请加 ! 强制执行)
+先执行chmod 777 文件路径
+再去执行vim 写入操作即可.
