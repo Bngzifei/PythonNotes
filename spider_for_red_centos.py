@@ -203,3 +203,61 @@ https://www.cnblogs.com/benmumu/p/8316652.html
 
 pyecharts:
 http://pyecharts.herokuapp.com/
+
+pycharm的远程调试配置:
+https://blog.csdn.net/zhaihaifei/article/details/53691873
+
+PyDev 是一个 Python 调试器 原本用 Eclipse 之类的东西写 Python 就会用这货或者 pdb 或者 ipdb 来调试
+
+这名字可以
+周微凡
+
+echarts最全解释:
+https://blog.csdn.net/qq_36330228/article/details/79945928
+
+echarts双y轴显示数据:
+https://blog.csdn.net/shu580231/article/details/77837279
+
+django模板继承:https://blog.csdn.net/weixin_43860025/article/details/91450142
+
+数据结构与算法:https://www.cnblogs.com/zknublx/category/883119.html
+
+GraphQL:https://www.zhihu.com/question/264629587
+
+django 模型表数据库设计:
+https://www.cnblogs.com/chushujin/p/12533851.html
+
+django ORM:
+当queryset非常巨大时，cache会成为问题。此时可以queryset.iterator()
+https://blog.csdn.net/dyunspace_csdn/article/details/70063296
+
+odoo技术手册:
+https://www.sunpop.cn/documentation/12.0/reference/views.html
+
+关于django新旧版本路由的介绍:
+https://blog.csdn.net/bbwangj/article/details/79935500
+
+django admin中搜索框 搜外键相关字段:
+https://www.cnblogs.com/Brin-guo/p/8963706.html
+
+django ajax请求:
+https://www.cnblogs.com/wanlei/p/10297083.html
+
+django下载文件:
+https://blog.csdn.net/weixin_30448603/article/details/95460528
+
+jinja语法:
+https://jinja.palletsprojects.com/en/2.11.x/
+
+docxtpl:
+https://docxtpl.readthedocs.io/en/stable/
+
+python处理docx表格文件:
+https://zhuanlan.zhihu.com/p/38413601
+
+个人博客网站:
+http://www.chenxm.cc/article/147.html
+
+django中的import_export导入/导出库:
+https://www.cnblogs.com/pcent/p/10809136.html
+https://django-import-export.readthedocs.io/en/latest/getting_started.html#creating-import-export-resource
