@@ -261,3 +261,76 @@ http://www.chenxm.cc/article/147.html
 django中的import_export导入/导出库:
 https://www.cnblogs.com/pcent/p/10809136.html
 https://django-import-export.readthedocs.io/en/latest/getting_started.html#creating-import-export-resource
+https://django-import-export.readthedocs.io/en/latest/getting_started.html
+
+https://segmentfault.com/a/1190000004401099
+dajngo 数据校验模型扩展包:
+https://github.com/romain-li/django-validator
+
+python iterator介绍:(专门为了生成器迭代器设计的内置包)
+https://www.jb51.net/article/178330.htm
+https://docs.python.org/zh-cn/3.7/library/itertools.html
+
+python global关键字解释:
+https://www.jb51.net/article/169395.htm
+
+python tablib模块:
+https://pypi.org/project/tablib/
+https://cloud.tencent.com/developer/news/439849
+
+django中import-export的改写:
+https://www.jianshu.com/p/f82a465a41d8
+如何将文件格式限制为仅限CSV,XLS和XLSX？
+http://www.voidcn.com/article/p-mtaweymx-bwh.html
+
+python 有序字典:
+https://www.cnblogs.com/zhenwei66/p/6596248.html
+# 有序字典取值:setdefault
+task_uuid = row.setdefault("测试任务UUID")
+server_uuid = row.setdefault("服务器UUID")
+
+xadmin自定义菜单栏显示顺序:
+https://www.cnblogs.com/fiona-zhong/p/9647721.html
+https://blog.csdn.net/weixin_41622043/article/details/96330570
+# 注意:class GlobalSetting 去继承 CommAdminView 父类
+
+xadmin app设置中文显示:
+https://www.dazhuanlan.com/2019/12/07/5deb002378fd6/
+
+django xadmin 隐藏菜单栏右侧的数字图标标签，或自定义标签:
+https://blog.csdn.net/ch_improve/article/details/103023101
+
+django xadmin隐藏顶部“增加”按钮:
+https://blog.csdn.net/ch_improve/article/details/103023006
+
+屏蔽Django admin界面添加按钮的操作:
+https://www.zhangshengrong.com/p/Z9a23j9zNV/
+
+隐藏指定app中的model菜单栏不显示:
+https://www.cnblogs.com/roystime/p/6866964.html?utm_source=itdadao&utm_medium=referral
+在adminx.py中的Admin类增加属性hidden_menu = True即可
+
+django中日期时间的问题:
+https://blog.51cto.com/xujpxm/2090382
+
+Django ORM 模糊查询和查询操作:
+https://www.cnblogs.com/ls1997/p/10955402.html
+
+Python 获得最近一个月的每天的日期:
+https://www.cnblogs.com/xuchunlin/p/10722623.html
+
+程序中的递归:
+https://www.cnblogs.com/schut/p/10625111.html
+
+test_tasks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0]
+test_tasks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 3, 3, 3]
+上面的列表如何变成下面的列表?
+如下简单的方法:
+
+def sum_tasks(task_num):
+    tasks = list()
+    tmp_num = 0
+    for item in task_num:
+        tmp_num += item
+        tasks.append(tmp_num)
+    return tasks
