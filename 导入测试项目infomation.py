@@ -82,7 +82,7 @@ https://blog.csdn.net/D_R_L_T/article/details/82562902
 
 # 搜集下这两个库的使用:
 from oslo_config import cfg
-from oslo_log import log as logging
+from oslo_log import log as loggi
 import uuid
 from webob import Response
 from enum import Enum
@@ -334,3 +334,82 @@ def sum_tasks(task_num):
         tmp_num += item
         tasks.append(tmp_num)
     return tasks
+
+下面这个的使用:
+class Meta:
+
+django查询集API:
+https://www.cnblogs.com/xuchunlin/p/6676301.html
+
+博客园:
+https://www.cnblogs.com/renoyuan/p/11724616.html
+
+FastAPI框架:
+https://www.jianshu.com/p/7849c8be415b
+
+django + uwsgi + nginx 部署:
+https://www.jianshu.com/p/b91447672b35
+
+https://prismjs.com/download.html
+
+uwsgi测试报错:
+uwsgi: unrecognized option '--http:8000'
+getopt_long() error
+解决办法:去掉 --http:8000 中间的 : 号即可
+https://segmentfault.com/q/1010000007395155
+uwsgi --http 8000 --wsgi-file tester.py
+
+xshell打开多个窗口，没有标题显示的解决方法:
+https://blog.csdn.net/huangbaokang/article/details/84939430
+按ctrl +shift +t快捷键解决。
+
+python 正则表达式总结:
+https://www.cnblogs.com/misswangxing/p/10736310.html
+
+python中用json存储列表字典等文件操作:
+https://www.cnblogs.com/feng-hao/p/10822631.html
+JSON字符串用json.dumps, json.loads JSON文件名用json.dump, json.load
+https://www.jb51.net/article/110899.htm
+
+python – 如何逐步写入json文件:
+https://www.jb51.cc/python/186612.html
+import json
+
+def write_json(jlist):
+    # 将bx列表写入json文件
+    with open('data/bx_list.json', 'w') as f_obj:  
+        json.dump(jlist, f_obj)
+
+
+def read_json():
+    # 读取存储于json文件中的列表
+    with open('data/bx_list.json', 'r') as f_obj:
+        jlist = json.load(f_obj)
+    return jlist
+
+
+
+爬虫第一步:模拟登录
+https://zhuanlan.zhihu.com/p/59733826
+
+个人邮箱手机号注册网站:
+https://mp.weixin.qq.com/s?__biz=MzA5NDk4NDcwMw==&mid=2651386828&idx=1&sn=b33210dde8e0eea6d06932c0ab70b299&chksm=8bba135cbccd9a4acdd08a4af2536e6dc311ea2bd1845f8c8df9a6fd943aee7f4b7e7dabce4b&token=258555898&lang=zh_CN#rd
+
+https://mp.weixin.qq.com/s?__biz=MzA5NDk4NDcwMw==&mid=2651386588&idx=1&sn=307829fbd6db0aaace975311284a9ecf&chksm=8bba124cbccd9b5a728338eff2343cf72ad6c6f88708c48750e8bdd4acfc07f3007463eb3c34&scene=21#wechat_redirect
+
+
+模拟登录github:
+https://github.com/Kr1s77/awesome-python-login-model
+
+python精美小例子:
+https://github.com/jackzhenguo/python-small-examples?utm_source=gold_browser_extension
+
+Cpython:
+https://github.com/cython/cython?utm_source=gold_browser_extension
+
+
+python模拟登录:
+https://blog.csdn.net/weixin_34357928/article/details/91426164?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+
+
+分析:先手动登录,网页端拿到cookie之后,再get请求 添加 headers 参数,携带cookie请求 package-changelog 页面获取数据.
