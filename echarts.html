@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+<body>
+ <div id="contain" style="width:1100px; height: 460px; margin:0 auto;">
+    </div>
+<script type="text/javascript">
+        var myChart = echarts.init(document.getElementById("contain"));
+
+        option = {
+            title: {
+                // 标题
+                text: '100users date:  2020-05-18',
+                x: 'center',
+                y: 'top',
+                textAlign: 'center',
+                show: false
+            },
+            tooltip: {
+                // 折线图
+                trigger: 'axis'
+            },
+            legend: {
+                // 图例，就是折线图上方的符号
+                data: ["TPM变化", "测试时间"]
+            },
+            // 工具箱，在折线图右上方的工具条，进行切换
+            toolbox: {
+                show: true,
+                orient: "vertical",
+                feature: {
+                    mark: {show: true},
+                    dataView: {show: true, readOnly: false},
+                    magicType: {show: true, type: ['line', 'bar']},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            // 是否启动拖拽重计算属性，默认false
+            calculable: true,
+            // x坐标轴
+            xAxis: [
+                {
+                    axisLine: { // x坐标轴颜色
+                        lineStyle: {color: '#333'},
+                        symbol: ["none", "arrow"]
+                    },
+                    axisLabel: {
+                        rotate: 45,      // x轴的数据会旋转45度
+                        interval: 80     // x轴坐标值间隔80
+                    },
+                    type: 'category',
+                    boundaryGap: false,             // x轴从0开始
+                    data: {{ xaxis_data|safe }}     // x轴数据
+                }
+            ],
+            // y轴坐标
+            yAxis: [
+                {
+                    type: 'value',
+                    axisLabel: {
+                        {#formatter: '{value} 秒'    // y轴的值都加上秒的单位#}
+                    },
+                    axisLine: {
+                        lineStyle: {color: '#333'},
+                        symbol: ["none", "arrow"]    // 设置箭头
+                    }
+                }
+            ],
+            // 设置图标数据,就是每一个坐标值的样式
+            series: [
+                {
+                    type: 'line',                   // 折线图
+                    name: 'tpm值',
+                    symbolSize: 4,
+                    showSymbol: true,
+                    smooth: 0.3,                    // 线有弧度
+                    data: {{ yaxis_data|safe }},    // y轴数据
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'top'
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            // 设置颜色
+                            {#color: '#4ad2ff'#}
+                        }
+                    }
+                }
+            ],
+            dataZoom: [
+                {   // 这个dataZoom组件，默认控制x轴。
+                    type: 'slider',     // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+                    start: 20,          // 左边在 10% 的位置。
+                    end: 100            // 右边在 60% 的位置。
+                },
+                {   // 这个dataZoom组件，默认控制x轴。
+                    type: 'inside',     // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+                    start: 20,          // 左边在 10% 的位置。
+                    end: 100            // 右边在 60% 的位置。
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+</body>
+</html>
