@@ -1,5 +1,6 @@
 # coding:utf-8
 import requests
+from lxml import etree
 
 RHEL7_URL = "https://access.redhat.com/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.39.1.el7/src/fd431d51/package-changelog"
 USER_AGENT = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0"
@@ -21,15 +22,8 @@ headers = {
 
 response = session_obj.get(RHEL7_URL, headers=headers)
 
-if response.status_code == 200:
-    with open("red1.txt", "w", encoding="utf-8", errors="ignore") as fp:
-        fp.write(response.text)
-
-https://access.redhat.com/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.39.1.el7/src/fd431d51/package-changelog
-
-
-POST /auth/realms/redhat-external/login-actions/authenticate?code=VO_QiiQWEAPQ7aB4RvwFRkQmwX7o4vIF7krbLTWd4r4&execution=42ab36f8-26fd-4425-9aba-7792a9f08f59&client_id=customer-portal&tab_id=2Jnm5Y7LAbM HTTP/1.1
-
-POST /auth/realms/redhat-external/login-actions/authenticate?code=dmCnjMKC_yVWR-b-VLxodiGaf90bsDf5yYwKlYjnZd8&execution=42ab36f8-26fd-4425-9aba-7792a9f08f59&client_id=customer-portal&tab_id=UJ1qj3dIbwY HTTP/1.1
-
-POST /auth/realms/redhat-external/protocol/openid-connect/token HTTP/1.1
+# if response.status_code == 200:
+#     with open("red1.txt", "w", encoding="utf-8", errors="ignore") as fp:
+#         fp.write(response.text)
+wb_data = response.text
+html = etree.HTML(wb_data)

@@ -413,3 +413,6 @@ https://blog.csdn.net/weixin_34357928/article/details/91426164?utm_medium=distri
 
 
 分析:先手动登录,网页端拿到cookie之后,再get请求 添加 headers 参数,携带cookie请求 package-changelog 页面获取数据.
+
+Fiddler抓取HTTPS配置:
+https://www.cnblogs.com/liulinghua90/p/9109282.html

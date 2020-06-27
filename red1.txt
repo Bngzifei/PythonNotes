@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+  var siteMapState="downloads";
+</script>
+<link rel="stylesheet" media="screen, print" href="/webassets/avalon/s/bootstrap3.min.css" />
+
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4b57582292","applicationID":"204906100","transactionName":"dg1cEhFaDg5XRBZCAlYJUwEGRk0SU1VSUwRQPVEOAlsFB15ZXm0AQRo=","queueTime":0,"applicationTime":2527,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"4b57582292",applicationID:"204906100"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+
+<!-- metaInclude -->
+<meta name="avalon-host-info" content="kcs05.web.prod.ext.phx2.redhat.com" />
+<meta name="avalon-version" content="ac0c7a9" />
+<meta name="cp-chrome-build-date" content="2020-06-24T19:26:40.730Z" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#000000">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#000000">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+<link rel="manifest" href="https://access.redhat.com/webassets/avalon/j/manifest.json">
+<!-- Open Search - Tap to search -->
+<link rel="search" type="application/opensearchdescription+xml" title="Red Hat Customer Portal" href="https://access.redhat.com/webassets/avalon/j/opensearch.xml" />
+<!-- title -->
+<title>Red Hat 客户门户网站</title>
+<!-- /title -->
+<script type="text/javascript">
+    window.portal = {
+        analytics : {},
+        host      : "https://access.redhat.com",
+        idp_url   : "https://sso.redhat.com",
+        lang      : "zh_CN",  
+        version   : "ac0c7a9",
+        builddate : "2020-06-24T19:26:40.730Z",
+        fetchdate : "2020-06-25T03:48:12-0400",
+        nrid      : "14615289",
+        nrlk      : "2a497fa56f"
+    };
+</script>
+<script type="text/javascript">
+    if (!/\/logout.*/.test(location.pathname) && portal.host === location.origin && document.cookie.indexOf('rh_sso_session') >= 0 && !(document.cookie.indexOf('rh_jwt') >= 0)) window.location = '/login?redirectTo=' + encodeURIComponent(window.location.href);
+</script>
+<!-- cssInclude -->
+
+<link rel="shortcut icon" href="https://access.redhat.com/webassets/avalon/g/favicon.ico" />
+
+<link media="all" rel="stylesheet" type="text/css" href="https://access.redhat.com/chrome_themes/nimbus/css/bootstrap.css?v=ac0c7a9" />
+<link media="all" rel="stylesheet" type="text/css" href="https://access.redhat.com/chrome_themes/nimbus/css/main.css?v=ac0c7a9" />
+<link media="all" rel="stylesheet" type="text/css" href="https://access.redhat.com/chrome_themes/nimbus/css/components.css?v=ac0c7a9" />
+<link media="all" rel="stylesheet" type="text/css" href="https://access.redhat.com/chrome_themes/nimbus/css/pages.css?v=ac0c7a9" />
+
+<link href="https://access.redhat.com/webassets/avalon/s/chosen.css?v=ac0c7a9" rel="stylesheet" type="text/css" />
+
+<!--[if lte IE 9]>
+<link media="all" rel="stylesheet" type="text/css" href="https://access.redhat.com/chrome_themes/nimbus/css/ie.css" />
+<![endif]-->
+
+<noscript>
+    <style type="text/css" media="screen"> .primary-nav { display: block; } </style>
+</noscript>
+
+<!-- /cssInclude -->
+<script type="text/javascript" src="https://access.redhat.com/webassets/avalon/j/lib/require.js?v=ac0c7a9" data-main="/webassets/avalon/j/"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<script src="https://access.redhat.com/chrome_themes/nimbus/js/ie8.js"></script>
+<![endif]-->
+
+    <script src="/downloads/content/assets/application-d999548d3083e2b0c6cac22709a70553e359075ecb2819ac72834ceb3d9ce1b7.js"></script>
+    <link rel="stylesheet" media="screen, print" href="/chrome_themes/nimbus/css/unified-downloads.css" />
+<link rel="stylesheet" media="screen, print" href="/downloads/content/assets/rhsm-web-9075b6d2d08dfd4c04b835e9c2ed5ff2a09da7efa93f2e7083136cef95f38c49.css" />
+<link rel="stylesheet" media="screen, print" href="/downloads/content/assets/downloads-6c7ea29c7169e6f7b701c603902c72a15e49a340a437adf89933d838b12b392e.css" />
+<script src="/downloads/content/assets/rhsm-web-250dd29b783a5a6173ab6b9980f74fdb39f91ece4ed3c564994e00a9f12f7bd7.js"></script>
+<script src="/downloads/content/assets/table_csv-6416a588331e1eaf283c4f22b2b3d1eeebdb4a4670a57776f9910ab633fdbbde.js"></script>
+<script src="/downloads/content/assets/datatable_wrapper-08003ffa00e4fd15f2ad6e1957815c76a1e3ad38f6b215ec82b033a6c954f8ed.js"></script>
+<script>
+  var paf_attrs = {"ResourceTitle":"kernel-3.10.0-693.39.1.el7.src.rpm","Channel":"downloads","Platform":"Unified Download","Products":["Red Hat Enterprise Linux for x86_64 - Extended Update Support"],"Architecture":"src"};
+  chrometwo_require(["analytics/attributes"], function(attributes) {
+      for (var prop in paf_attrs) {
+          attributes.set(prop, paf_attrs[prop]);
+      }
+  });
+</script>
+<link rel="stylesheet" media="all" href="/chrome_themes/nimbus/css/font-awesome.css" />
+
+    
+    <link rel="stylesheet" media="all" href="/downloads/content/assets/application-d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="7RDeUyobPCIj4T3zN/pAvhmsIPItxLOldQrk8AKbU/o8B2sW73O5+33rYdnVcv+avhw8h3pdrhyNt5j97hFmDw==" />
+  </head>
+  <body>
+    <noscript><div id="noJavaScript" class="alertError">Note: Our personalized web services require that your browser be enabled for JavaScript and cookies</div></noscript>
+    <div id="page-wrap" class="page-wrap">
+    <div class="top-page-wrap">
+
+        <!--googleoff: all-->
+        <header class="masthead" id="masthead">
+
+            <!-- Accessibility Nav & Header -->
+<div class="accessibility-nav sr-only">
+    <a href="https://access.redhat.com/">
+        <h1>Red Hat 客户门户网站</h1>
+    </a>
+    <p><a href="#cp-main">Skip to main content</a></p>
+    <nav aria-labelledby="accessibility-nav-heading">
+        <h2 id="accessibility-nav-heading">Main Navigation</h2>
+        <ul>
+    <li>
+        <a href="#" class="has-subnav"><span>产品 &amp;  服务</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/products">查看所有产品</a></li>
+            <li>
+                <a href="#" class="has-subnav"><span>基础设施及管理</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-enterprise-linux/">Red Hat Enterprise Linux</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-virtualization/">Red Hat Virtualization</a></li>
+                    <li><a href="https://access.redhat.com/products/identity-management/">Red Hat Identity Management</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-directory-server/">Red Hat Directory Server</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-certificate-system/">Red Hat 认证系统</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-satellite/">Red Hat Satellite</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-subscription-management/">Red Hat Subscription Management</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-update-infrastructure/">Red Hat 更新基础设施</a></li>
+                    <li><a href="https://access.redhat.com/insights/info/?intcmp=mm|p|im|rhaijan2016&">Red Hat Insights</a></li>
+                    <li><a href="https://access.redhat.com/products/ansible-tower-red-hat/">Red Hat Ansible Tower</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-ansible-engine/">Red Hat Ansible Engine</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>云计算</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-cloudforms/">Red Hat CloudForms</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-openstack-platform/">Red Hat OpenStack Platform</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-cloud-suite/">Red Hat Cloud Suite</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-openshift-container-platform/">Red Hat OpenShift Container Platform</a></li>
+                    <li><a href="https://access.redhat.com/products/openshift-online-red-hat/">Red Hat OpenShift Online</a></li>
+                    <li><a href="https://access.redhat.com/products/openshift-dedicated-red-hat/">Red Hat OpenShift Dedicated</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-advanced-cluster-management-for-kubernetes/">Red Hat Advanced Cluster Management for Kubernetes</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-quay/">Red Hat Quay</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-codeready-workspaces/">Red Hat CodeReady Workspaces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>存储</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-storage/">Red Hat Gluster Storage</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-hyperconverged-infrastructure/">Red Hat Hyperconverged Infrastructure</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-ceph-storage/">Red Hat Ceph Storage</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-openshift-container-storage">Red Hat Openshift Container Storage</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>Runtimes</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true">
+                      <a href="#" class="back">Back</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-runtimes/">Red Hat Runtimes</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-jboss-enterprise-application-platform/">Red Hat JBoss Enterprise Application Platform</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-data-grid/">Red Hat 数据网络</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-jboss-web-server/">Red Hat JBoss 网页服务器</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-single-sign-on/">Red Hat Single Sign On</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/spring-boot/">Red Hat support for Spring Boot</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/nodejs/">Red Hat build of Node.js</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/thorntail/">Red Hat build of Thorntail</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/eclipse-vertx/">Red Hat build of Eclipse Vert.x</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/openjdk/">Red Hat build of OpenJDK</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/open-liberty/">Open Liberty</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/quarkus/">Red Hat build of Quarkus</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-codeready-studio/">Red Hat CodeReady Studio</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>Integration and Automation</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-integration/">Red Hat Integration</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-fuse/">Red Hat Fuse</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-amq/">Red Hat AMQ</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-3scale/">Red Hat 3scale API Management</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-jboss-data-virtualization/">Red Hat JBoss 数据虚拟化</a>
+                    </li>
+                    <li>
+                      <a href="https://access.redhat.com/products/red-hat-process-automation/">Red Hat Process Automation</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-process-automation-manager/">Red Hat Process Automation Manager</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-decision-manager/">Red Hat JBoss BRMS</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="heading"><a class="cta-link cta-link-darkbg" href="https://access.redhat.com/support/">支持</a></li>
+            <li><a href="https://access.redhat.com/support/offerings/production/">产品支持</a></li>
+            <li><a href="https://access.redhat.com/support/offerings/developer/">开发支持</a></li>
+            <li><a href="https://access.redhat.com/product-life-cycles/">Product Life Cycles</a></li>
+
+            <li class="heading"><a class="cta-link cta-link-darkbg" href="https://access.redhat.com/documentation/">文档</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux">Red Hat Enterprise Linux</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform">Red Hat JBoss Enterprise Application Platform</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/red_hat_openstack_platform">Red Hat OpenStack Platform</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/openshift_container_platform">Red Hat OpenShift Container Platform</a></li>
+
+            <li class="heading">服务</li>
+            <li><a href="https://www.redhat.com/en/services/consulting">咨询</a></li>
+            <li><a href="https://access.redhat.com/support/offerings/tam/">技术帐户管理</a></li>
+            <li><a href="https://www.redhat.com/en/services/training-and-certification">培训及认证</a></li>
+
+            
+            <li class="heading"><a class="cta-link cta-link-darkbg" href="https://catalog.redhat.com/">生态系统目录</a></li>
+            <li><a href="https://access.redhat.com/ecosystem/partner-resources">合作伙伴资源</a></li>
+            <li><a href="https://access.redhat.com/public-cloud">Red Hat in the Public Cloud</a></li>
+          </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>工具</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/insights/info/?intcmp=mm|t|c1|rhaidec2015&">Red Hat Insights</a></li>
+            <li class="heading">Tools</li>
+            <li><a href="https://access.redhat.com/solution-engine">Solution Engine</a></li>
+            <li><a href="https://access.redhat.com/downloads/content/package-browser">Packages</a></li>
+            <li><a href="https://access.redhat.com/errata/">Errata</a></li>
+            <li class="heading">Customer Portal Labs</li>
+            <li><a href="https://access.redhat.com/labs/">查看所有 Labs</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=config">配置</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=deploy">部署</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=security">安全</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=troubleshoot">故障排除</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>安全</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/security/">Product Security Center</a></li>
+            <li class="heading">安全更新</li>
+            <li><a href="https://access.redhat.com/security/security-updates/#/security-advisories">Security Advisories</a></li>
+            <li><a href="https://access.redhat.com/security/security-updates/#/cve">Red Hat CVE 数据库</a></li>
+            <li><a href="https://access.redhat.com/security/security-updates/#/security-labs">Security Labs</a></li>
+            <li class="heading">资源</li>
+            <li><a href="https://access.redhat.com/security/overview/">Overview</a></li>
+            <li><a href="https://access.redhat.com/blogs/product-security">安全博客</a></li>
+            <li><a href="https://www.redhat.com/security/data/metrics/">安全衡量</a></li>
+            <li><a href="https://access.redhat.com/security/updates/classification/">严重级别</a></li>
+            <li><a href="https://access.redhat.com/security/updates/backporting/">反向移植政策 (Backporting Policy)</a></li>
+            <li><a href="https://access.redhat.com/security/team/key/">产品签名（GPG）密钥</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>社区</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li class="heading">Customer Portal Community</li>
+            <li><a href="https://access.redhat.com/discussions?keyword=&name=&product=All&category=All&tags=All">讨论</a></li>
+            <li><a href="https://access.redhat.com/blogs/">博客</a></li>
+            <li><a href="https://access.redhat.com/groups/">专用组</a></li>
+            <li><a href="https://access.redhat.com/community/">Community Activity</a></li>
+            <li class="heading">客户事件</li>
+            <li><a href="https://access.redhat.com/convergence/">Red Hat Convergence</a></li>
+            <li><a href="http://www.redhat.com/summit/">Red Hat 峰会</a></li>
+            <li class="heading">案例</li>
+            <li><a href="https://access.redhat.com/subscription-value/">Red Hat Subscription Value</a></li>
+            <li><a href="https://access.redhat.com/you-asked-we-acted/">您问问题，我们来解决。</a></li>
+            <li><a href="http://www.redhat.com/en/open-source">开源社区</a></li>
+        </ul>
+    </li>
+    <li><a href="https://access.redhat.com/management/">订阅</a></li>
+    <li><a href="https://access.redhat.com/downloads/">下载</a></li>
+    <li><a href="https://catalog.redhat.com/software/containers/explore/">容器</a></li>
+    <li><a href="https://access.redhat.com/support/cases/">支持问题单</a></li>
+    <li>
+        <a href="#" class="has-subnav"><span>帐户</span></a>
+        <ul class="utility mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li class="mobile-accountLinksLoggedOut unauthenticated"><a href="https://access.redhat.com/login" id="accessibility-accountLogin">登录</a></li>
+            <li class="mobile-accountLinksLoggedOut unauthenticated"><a href="https://www.redhat.com/wapps/ugc/register.html">注册</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated">
+                <div class="account-info" id="accessibility-accountUser">
+                    <div class="account-name"><strong id="accessibility-userFullName"></strong></div>
+                    <div class="account-org"><span id="accessibility-userOrg"></span></div>
+                    <div class="account-number mobile-accountNumber"><span class="property">Red Hat 账户号码:</span> <span class="value"></span></div>
+                </div>
+            </li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/personalInfo.html">账户详情</a></li>
+            <!-- <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/prefs.html">简报及联络属性</a></li> -->
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/usermgt/userList.html" class="user-management-link">用户管理</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/account.html">账户维护</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://access.redhat.com/user">我的个人资料</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://access.redhat.com/user" id="accessibility-userNotificationsLink">通知</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://access.redhat.com/help/">帮助</a></li>
+            <li class="logout mobile-accountLinksLoggedIn authenticated"><a href="https://sso.redhat.com/auth/realms/redhat-external/logout?redirectUrl=https%3A%2F%2Faccess.redhat.com%2Flogout">退出</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>语言</span></a>
+        <ul class="utility mm-hide" id="accessibility-localesMenu">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=en" id="accessibility-en">English</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=ko" id="accessibility-ko">한국어</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=ja" id="accessibility-ja">日本語</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=zh_CN" id="accessibility-zh_CN">中文 (中国)</a></li>
+		</ul>
+    </li>
+</ul>
+    </nav>
+</div>
+
+<!-- Mobile Header -->
+<nav class="mobile-nav-bar hidden-sm hidden-md hidden-lg" aria-hidden="true">
+    <button id="menu-btn" class="menu menu-white" type="button" aria-label="Toggle Navigation">
+        <span class="lines"></span>
+    </button>
+    <a class="logo" href="https://access.redhat.com/">
+        <span class="logo-crop">
+          <!-- logo -->
+          <span class="sr-only">Red Hat Customer Portal</span>
+          <svg aria-hidden="true" class="rh-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 200">
+            <defs>
+            <style>
+              .rh-logo-type {
+                fill:#fff;
+              }
+              .rh-logo-hat {
+                fill:#e00;
+              }
+            </style>
+            </defs>
+            <g id="Two_lines" data-name="Two lines"><g id="Two_line_logo" data-name="Two line logo"><path class="rh-logo-type" d="M318.62,9.25h25.44c11.13,0,18.64,6.72,18.64,16.56,0,7.36-4.47,13-11.51,15.36l12.48,24.08h-9.29l-11.6-23H327v23h-8.4Zm8.4,7.36V35.33h16.33c6.55,0,10.87-3.76,10.87-9.36s-4.32-9.36-10.87-9.36Z"/><path class="rh-logo-type" d="M387.5,66a21,21,0,0,1-21.36-21.12c0-11.76,9-21,20.4-21,11.2,0,19.68,9.28,19.68,21.28v2.32H374.06a13.74,13.74,0,0,0,13.76,11.68,15.84,15.84,0,0,0,10.32-3.6l5.13,5A24.33,24.33,0,0,1,387.5,66ZM374.14,41.49H398.3c-1.19-6.24-6-10.88-11.92-10.88C380.22,30.61,375.34,35,374.14,41.49Z"/><path class="rh-logo-type" d="M445.18,61.41a19.23,19.23,0,0,1-12.48,4.48c-11.52,0-20.56-9.2-20.56-21a20.72,20.72,0,0,1,33-17V9.25l8-1.76V65.25h-7.92Zm-11.36-2.48a14.67,14.67,0,0,0,11.28-4.88V35.57a14.89,14.89,0,0,0-11.28-4.8,13.63,13.63,0,0,0-13.84,14A13.77,13.77,0,0,0,433.82,58.93Z"/><path class="rh-logo-type" d="M480.22,9.25h8.4v24h29.76v-24h8.4v56h-8.4V40.85H488.62v24.4h-8.4Z"/><path class="rh-logo-type" d="M534.38,53.57c0-7.68,6.24-12.4,16.48-12.4A28.75,28.75,0,0,1,562,43.41V39.09c0-5.76-3.44-8.64-9.92-8.64-3.76,0-7.6,1-12.64,3.44l-3-6c6.08-2.88,11.36-4.16,16.72-4.16,10.56,0,16.64,5.2,16.64,14.56v27H562V61.73A19.32,19.32,0,0,1,549.34,66C540.46,66,534.38,60.93,534.38,53.57Zm16.8,6.48A15.66,15.66,0,0,0,562,56.21v-7a21.15,21.15,0,0,0-10.48-2.48c-5.84,0-9.44,2.64-9.44,6.72C542.06,57.33,545.74,60.05,551.18,60.05Z"/><path class="rh-logo-type" d="M582.7,31.25h-8.64V24.53h8.64V14.13l7.92-1.92V24.53h12v6.72h-12V53.33c0,4.16,1.68,5.68,6,5.68a15.72,15.72,0,0,0,5.84-1v6.72a26.5,26.5,0,0,1-7.6,1.2c-7.92,0-12.16-3.76-12.16-10.8Z"/><path class="rh-logo-type" d="M361,132.21l7.59,7.52a30.76,30.76,0,0,1-23,10.32c-16.88,0-29.84-12.56-29.84-28.8s13-28.88,29.84-28.88c9,0,18.09,4.08,23.28,10.48l-7.83,7.76a19.52,19.52,0,0,0-15.45-7.6c-10.16,0-17.92,7.84-17.92,18.24A17.8,17.8,0,0,0,346,139.33,19.24,19.24,0,0,0,361,132.21Z"/><path class="rh-logo-type" d="M383.74,131.81c0,5.36,3.44,8.8,8.64,8.8a10.05,10.05,0,0,0,8.65-4.16V107.57h11v41.68H401v-3.36a17.79,17.79,0,0,1-11.77,4.16c-9.68,0-16.48-6.88-16.48-16.64V107.57h11Z"/><path class="rh-logo-type" d="M422.46,137c4.88,3.2,9.12,4.72,13.52,4.72,4.88,0,8.08-1.76,8.08-4.4,0-2.16-1.6-3.36-5.2-3.92l-8-1.2c-8.24-1.28-12.64-5.36-12.64-12.08,0-8.08,6.72-13.2,17.36-13.2a30.75,30.75,0,0,1,17.12,5.2l-5.28,7c-4.56-2.72-8.64-4-12.88-4-4,0-6.56,1.6-6.56,4.08,0,2.24,1.6,3.36,5.68,3.92l8,1.2c8.16,1.2,12.72,5.44,12.72,11.92,0,7.84-7.76,13.76-18.24,13.76-7.6,0-14.4-2-19.12-5.76Z"/><path class="rh-logo-type" d="M464.7,116.77h-8.56v-9.2h8.56V96.93l11-2.48v13.12H487.5v9.2H475.66v18.48c0,3.92,1.52,5.36,5.76,5.36a16.86,16.86,0,0,0,5.84-1v9a34,34,0,0,1-8.48,1.28c-9.28,0-14.08-4.24-14.08-12.4Z"/><path class="rh-logo-type" d="M512.86,106.77c12.48,0,22.24,9.52,22.24,21.68s-9.76,21.6-22.24,21.6-22.24-9.44-22.24-21.6S500.38,106.77,512.86,106.77Zm11.52,21.68c0-6.88-5-12.16-11.52-12.16s-11.52,5.28-11.52,12.16c0,6.72,5,12.08,11.52,12.08S524.38,135.17,524.38,128.45Z"/><path class="rh-logo-type" d="M541.82,107.57h11v3.12a16.21,16.21,0,0,1,10.88-3.92A15,15,0,0,1,576.22,113,17.16,17.16,0,0,1,590,106.77c9.36,0,15.91,6.8,15.91,16.56v25.92h-11V124.93c0-5.28-3-8.72-7.83-8.72a9.37,9.37,0,0,0-8,4.16,18.89,18.89,0,0,1,.23,3v25.92h-11V124.93c0-5.28-3-8.72-7.84-8.72a9.3,9.3,0,0,0-7.76,3.76v29.28h-11Z"/><path class="rh-logo-type" d="M634.78,150.05c-12.64,0-22.4-9.44-22.4-21.6a21.28,21.28,0,0,1,21.44-21.6c11.84,0,20.64,9.6,20.64,22.4v2.88h-31a12,12,0,0,0,11.84,8.72,13.12,13.12,0,0,0,9.2-3.36l7.2,6.56A25,25,0,0,1,634.78,150.05Zm-11.44-25.76h20.4c-1.36-5-5.36-8.4-10.16-8.4C628.54,115.89,624.7,119.17,623.34,124.29Z"/><path class="rh-logo-type" d="M661.18,107.57h11v4.56a13.26,13.26,0,0,1,11.12-5.52,9.44,9.44,0,0,1,4.56,1v9.6a14,14,0,0,0-5.6-1.12,11,11,0,0,0-10.08,6.24v27h-11Z"/><path class="rh-logo-type" d="M710.54,93.25h28.08c11,0,18.8,7.28,18.8,17.6,0,10-7.92,17.28-18.8,17.28H722.14v21.12h-11.6Zm11.6,10v15.28h15.2c5,0,8.32-3,8.32-7.6s-3.28-7.68-8.32-7.68Z"/><path class="rh-logo-type" d="M782.14,106.77c12.48,0,22.24,9.52,22.24,21.68s-9.76,21.6-22.24,21.6-22.24-9.44-22.24-21.6S769.66,106.77,782.14,106.77Zm11.52,21.68c0-6.88-5-12.16-11.52-12.16s-11.52,5.28-11.52,12.16c0,6.72,5,12.08,11.52,12.08S793.66,135.17,793.66,128.45Z"/><path class="rh-logo-type" d="M811.1,107.57h11v4.56a13.26,13.26,0,0,1,11.12-5.52,9.44,9.44,0,0,1,4.56,1v9.6a14,14,0,0,0-5.6-1.12,11,11,0,0,0-10.08,6.24v27h-11Z"/><path class="rh-logo-type" d="M850,116.77h-8.56v-9.2H850V96.93l11-2.48v13.12h11.84v9.2H860.94v18.48c0,3.92,1.52,5.36,5.76,5.36a16.86,16.86,0,0,0,5.84-1v9a34,34,0,0,1-8.48,1.28c-9.28,0-14.08-4.24-14.08-12.4Z"/><path class="rh-logo-type" d="M876.22,137.17c0-7.92,6.4-12.64,17.12-12.64a33.71,33.71,0,0,1,10.16,1.6v-3c0-4.8-3-7.28-8.8-7.28-3.52,0-7.44,1.12-12.72,3.44l-4-8.08a43.46,43.46,0,0,1,18.56-4.48c11.28,0,17.76,5.6,17.76,15.44v27H903.5v-2.88a19.81,19.81,0,0,1-12.08,3.6C882.46,150,876.22,144.77,876.22,137.17Zm18.08,5a15.78,15.78,0,0,0,9.2-2.64v-6.24a24.22,24.22,0,0,0-8.8-1.52c-5,0-8,2-8,5.2S889.66,142.13,894.3,142.13Z"/><path class="rh-logo-type" d="M933.58,149.25h-11v-56l11-2.4Z"/><g id="Hat_icon" data-name="Hat icon"><path id="Red_hat" data-name="Red hat" class="rh-logo-hat" d="M129,92.24c12.5,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42L151.82,39c-1.72-7.12-3.23-10.35-15.74-16.6-9.7-5-30.82-13.15-37.07-13.15-5.83,0-7.55,7.54-14.45,7.54-6.68,0-11.64-5.6-17.89-5.6-6,0-9.92,4.1-12.93,12.5,0,0-8.41,23.72-9.49,27.16A6.43,6.43,0,0,0,44,52.79C44,62,80.32,92.24,129,92.24Zm32.55-11.42c1.72,8.19,1.72,9.05,1.72,10.13,0,14-15.73,21.77-36.43,21.77-46.77,0-87.73-27.37-87.73-45.48a18.32,18.32,0,0,1,1.51-7.33C23.77,60.77,2,63.79,2,83c0,31.48,74.59,70.28,133.65,70.28,45.27,0,56.7-20.48,56.7-36.65C192.35,103.88,181.35,89.44,161.52,80.82Z"/><path class="rh-logo-band" id="Black_band" data-name="Black band" d="M161.52,80.82c1.72,8.19,1.72,9.05,1.72,10.13,0,14-15.73,21.77-36.43,21.77-46.77,0-87.73-27.37-87.73-45.48a18.32,18.32,0,0,1,1.51-7.33l3.66-9.06A6.43,6.43,0,0,0,44,52.79C44,62,80.32,92.24,129,92.24c12.5,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42Z"/></g><path id="Dividing_line" data-name="Dividing line" class="rh-logo-type" d="M255.47,160.75a2.25,2.25,0,0,1-2.25-2.25V4.25a2.25,2.25,0,0,1,4.5,0V158.5A2.25,2.25,0,0,1,255.47,160.75Z"/></g></g>
+          </svg>
+        </span>
+            </a>
+    <button class="btn btn-search btn-utility" data-target="#site-search">
+        <span class="web-icon-search"></span>
+        <span class="link-text">搜索</span>
+    </button>
+</nav>
+
+<!-- Mobile Menu Drawer -->
+<div class="nav-drawer mobile-nav-drawer hidden-sm hidden-md hidden-lg" aria-hidden="true">
+    <nav class="nav-container">
+        <ul>
+    <li>
+        <a href="#" class="has-subnav"><span>产品 &amp;  服务</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/products">查看所有产品</a></li>
+            <li>
+                <a href="#" class="has-subnav"><span>基础设施及管理</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-enterprise-linux/">Red Hat Enterprise Linux</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-virtualization/">Red Hat Virtualization</a></li>
+                    <li><a href="https://access.redhat.com/products/identity-management/">Red Hat Identity Management</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-directory-server/">Red Hat Directory Server</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-certificate-system/">Red Hat 认证系统</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-satellite/">Red Hat Satellite</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-subscription-management/">Red Hat Subscription Management</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-update-infrastructure/">Red Hat 更新基础设施</a></li>
+                    <li><a href="https://access.redhat.com/insights/info/?intcmp=mm|p|im|rhaijan2016&">Red Hat Insights</a></li>
+                    <li><a href="https://access.redhat.com/products/ansible-tower-red-hat/">Red Hat Ansible Tower</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-ansible-engine/">Red Hat Ansible Engine</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>云计算</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-cloudforms/">Red Hat CloudForms</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-openstack-platform/">Red Hat OpenStack Platform</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-cloud-suite/">Red Hat Cloud Suite</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-openshift-container-platform/">Red Hat OpenShift Container Platform</a></li>
+                    <li><a href="https://access.redhat.com/products/openshift-online-red-hat/">Red Hat OpenShift Online</a></li>
+                    <li><a href="https://access.redhat.com/products/openshift-dedicated-red-hat/">Red Hat OpenShift Dedicated</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-advanced-cluster-management-for-kubernetes/">Red Hat Advanced Cluster Management for Kubernetes</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-quay/">Red Hat Quay</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-codeready-workspaces/">Red Hat CodeReady Workspaces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>存储</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-storage/">Red Hat Gluster Storage</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-hyperconverged-infrastructure/">Red Hat Hyperconverged Infrastructure</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-ceph-storage/">Red Hat Ceph Storage</a></li>
+                    <li><a href="https://access.redhat.com/products/red-hat-openshift-container-storage">Red Hat Openshift Container Storage</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>Runtimes</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true">
+                      <a href="#" class="back">Back</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-runtimes/">Red Hat Runtimes</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-jboss-enterprise-application-platform/">Red Hat JBoss Enterprise Application Platform</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-data-grid/">Red Hat 数据网络</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-jboss-web-server/">Red Hat JBoss 网页服务器</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-single-sign-on/">Red Hat Single Sign On</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/spring-boot/">Red Hat support for Spring Boot</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/nodejs/">Red Hat build of Node.js</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/thorntail/">Red Hat build of Thorntail</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/eclipse-vertx/">Red Hat build of Eclipse Vert.x</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/openjdk/">Red Hat build of OpenJDK</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/open-liberty/">Open Liberty</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/quarkus/">Red Hat build of Quarkus</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-codeready-studio/">Red Hat CodeReady Studio</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-subnav"><span>Integration and Automation</span></a>
+                <ul class="mm-hide">
+                    <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-integration/">Red Hat Integration</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-fuse/">Red Hat Fuse</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-amq/">Red Hat AMQ</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-3scale/">Red Hat 3scale API Management</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-jboss-data-virtualization/">Red Hat JBoss 数据虚拟化</a>
+                    </li>
+                    <li>
+                      <a href="https://access.redhat.com/products/red-hat-process-automation/">Red Hat Process Automation</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-process-automation-manager/">Red Hat Process Automation Manager</a>
+                    </li>
+                    <li>
+                        <a href="https://access.redhat.com/products/red-hat-decision-manager/">Red Hat JBoss BRMS</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="heading"><a class="cta-link cta-link-darkbg" href="https://access.redhat.com/support/">支持</a></li>
+            <li><a href="https://access.redhat.com/support/offerings/production/">产品支持</a></li>
+            <li><a href="https://access.redhat.com/support/offerings/developer/">开发支持</a></li>
+            <li><a href="https://access.redhat.com/product-life-cycles/">Product Life Cycles</a></li>
+
+            <li class="heading"><a class="cta-link cta-link-darkbg" href="https://access.redhat.com/documentation/">文档</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux">Red Hat Enterprise Linux</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform">Red Hat JBoss Enterprise Application Platform</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/red_hat_openstack_platform">Red Hat OpenStack Platform</a></li>
+            <li><a href="https://access.redhat.com/documentation/en-us/openshift_container_platform">Red Hat OpenShift Container Platform</a></li>
+
+            <li class="heading">服务</li>
+            <li><a href="https://www.redhat.com/en/services/consulting">咨询</a></li>
+            <li><a href="https://access.redhat.com/support/offerings/tam/">技术帐户管理</a></li>
+            <li><a href="https://www.redhat.com/en/services/training-and-certification">培训及认证</a></li>
+
+            
+            <li class="heading"><a class="cta-link cta-link-darkbg" href="https://catalog.redhat.com/">生态系统目录</a></li>
+            <li><a href="https://access.redhat.com/ecosystem/partner-resources">合作伙伴资源</a></li>
+            <li><a href="https://access.redhat.com/public-cloud">Red Hat in the Public Cloud</a></li>
+          </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>工具</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/insights/info/?intcmp=mm|t|c1|rhaidec2015&">Red Hat Insights</a></li>
+            <li class="heading">Tools</li>
+            <li><a href="https://access.redhat.com/solution-engine">Solution Engine</a></li>
+            <li><a href="https://access.redhat.com/downloads/content/package-browser">Packages</a></li>
+            <li><a href="https://access.redhat.com/errata/">Errata</a></li>
+            <li class="heading">Customer Portal Labs</li>
+            <li><a href="https://access.redhat.com/labs/">查看所有 Labs</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=config">配置</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=deploy">部署</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=security">安全</a></li>
+            <li><a href="https://access.redhat.com/labs/#?type=troubleshoot">故障排除</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>安全</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/security/">Product Security Center</a></li>
+            <li class="heading">安全更新</li>
+            <li><a href="https://access.redhat.com/security/security-updates/#/security-advisories">Security Advisories</a></li>
+            <li><a href="https://access.redhat.com/security/security-updates/#/cve">Red Hat CVE 数据库</a></li>
+            <li><a href="https://access.redhat.com/security/security-updates/#/security-labs">Security Labs</a></li>
+            <li class="heading">资源</li>
+            <li><a href="https://access.redhat.com/security/overview/">Overview</a></li>
+            <li><a href="https://access.redhat.com/blogs/product-security">安全博客</a></li>
+            <li><a href="https://www.redhat.com/security/data/metrics/">安全衡量</a></li>
+            <li><a href="https://access.redhat.com/security/updates/classification/">严重级别</a></li>
+            <li><a href="https://access.redhat.com/security/updates/backporting/">反向移植政策 (Backporting Policy)</a></li>
+            <li><a href="https://access.redhat.com/security/team/key/">产品签名（GPG）密钥</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>社区</span></a>
+        <ul class="mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li class="heading">Customer Portal Community</li>
+            <li><a href="https://access.redhat.com/discussions?keyword=&name=&product=All&category=All&tags=All">讨论</a></li>
+            <li><a href="https://access.redhat.com/blogs/">博客</a></li>
+            <li><a href="https://access.redhat.com/groups/">专用组</a></li>
+            <li><a href="https://access.redhat.com/community/">Community Activity</a></li>
+            <li class="heading">客户事件</li>
+            <li><a href="https://access.redhat.com/convergence/">Red Hat Convergence</a></li>
+            <li><a href="http://www.redhat.com/summit/">Red Hat 峰会</a></li>
+            <li class="heading">案例</li>
+            <li><a href="https://access.redhat.com/subscription-value/">Red Hat Subscription Value</a></li>
+            <li><a href="https://access.redhat.com/you-asked-we-acted/">您问问题，我们来解决。</a></li>
+            <li><a href="http://www.redhat.com/en/open-source">开源社区</a></li>
+        </ul>
+    </li>
+    <li><a href="https://access.redhat.com/management/">订阅</a></li>
+    <li><a href="https://access.redhat.com/downloads/">下载</a></li>
+    <li><a href="https://catalog.redhat.com/software/containers/explore/">容器</a></li>
+    <li><a href="https://access.redhat.com/support/cases/">支持问题单</a></li>
+    <li>
+        <a href="#" class="has-subnav"><span>帐户</span></a>
+        <ul class="utility mm-hide">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li class="mobile-accountLinksLoggedOut unauthenticated"><a href="https://access.redhat.com/login" id="mobile-accountLogin">登录</a></li>
+            <li class="mobile-accountLinksLoggedOut unauthenticated"><a href="https://www.redhat.com/wapps/ugc/register.html">注册</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated">
+                <div class="account-info" id="mobile-accountUser">
+                    <div class="account-name"><strong id="mobile-userFullName"></strong></div>
+                    <div class="account-org"><span id="mobile-userOrg"></span></div>
+                    <div class="account-number mobile-accountNumber"><span class="property">Red Hat 账户号码:</span> <span class="value"></span></div>
+                </div>
+            </li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/personalInfo.html">账户详情</a></li>
+            <!-- <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/prefs.html">简报及联络属性</a></li> -->
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/usermgt/userList.html" class="user-management-link">用户管理</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://www.redhat.com/wapps/ugc/protected/account.html">账户维护</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://access.redhat.com/user">我的个人资料</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://access.redhat.com/user" id="mobile-userNotificationsLink">通知</a></li>
+            <li class="mobile-accountLinksLoggedIn authenticated"><a href="https://access.redhat.com/help/">帮助</a></li>
+            <li class="logout mobile-accountLinksLoggedIn authenticated"><a href="https://sso.redhat.com/auth/realms/redhat-external/logout?redirectUrl=https%3A%2F%2Faccess.redhat.com%2Flogout">退出</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="has-subnav"><span>语言</span></a>
+        <ul class="utility mm-hide" id="mobile-localesMenu">
+            <li aria-hidden="true"><a href="#" class="back">Back</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=en" id="mobile-en">English</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=ko" id="mobile-ko">한국어</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=ja" id="mobile-ja">日本語</a></li>
+            <li><a href="https://access.redhat.com/changeLanguage?language=zh_CN" id="mobile-zh_CN">中文 (中国)</a></li>
+		</ul>
+    </li>
+</ul>
+    </nav>
+</div>
+
+<!-- White Utility Menu for large screens -->
+<div class="utility-wrap" aria-hidden="true">
+    <div class="utility-container">
+        <div class="utility-bar hidden-xs">
+            <div role="navigation" class="top-nav">
+                <ul>
+                    <li id="nav-subscription" data-portal-tour-1="1"><a class="top-nav-subscriptions" href="https://access.redhat.com/management/">订阅</a></li>
+                    <li id="nav-downloads" data-portal-tour-1="2"><a class="top-nav-downloads" href="https://access.redhat.com/downloads/">下载</a></li>
+                    <li id="nav-containers"><a class="top-nav-containers" href="https://catalog.redhat.com/software/containers/explore/">容器</a></li>
+                    <li id="nav-support" data-portal-tour-1="3"><a class="top-nav-support-cases" href="https://access.redhat.com/support/cases/">支持问题单</a></li>
+                </ul>
+            </div>
+
+            <div role="navigation" class="utility-nav">
+                <ul>
+                    <li id="searchABTestHide">
+                        <a class="btn-search" data-target="#site-search" title="搜索" data-toggle="tooltip" data-placement="bottom">
+                            <span class="web-icon-search" aria-label="search"></span>
+                            <span class="link-text">搜索</span>
+                        </a>
+                    </li>
+                    <!-- AB Test -->
+                    <li id="searchABTestShow">
+                        <form id="topSearchFormABTest" name="topSearchFormABTest">
+                            <label for="topSearchInputABTest" class="sr-only">Search</label>
+                            <input id="topSearchInputABTest" name="keyword" placeholder="Search" value="" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control">
+                            <button type="submit" class="btn btn-app btn-sm btn-link"><span class="web-icon-search" aria-label="search"></span></button>
+                        </form>
+                    </li>
+                    <!-- End of AB Test -->
+                    <li>
+                        <a class="btn-profile" data-target="#account-info" data-portal-tour-1="4a" title="帐户" data-toggle="tooltip" data-placement="bottom">
+                            <span class="web-icon-user" aria-label="log in"></span>
+                            <span class="link-text">登录</span>
+                            <span class="account-user" id="accountUserName"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-language" data-target="#language" data-portal-tour-1="6" title="语言" data-toggle="tooltip" data-placement="bottom">
+                            <span class="web-icon-globe" aria-label="language"></span>
+                            <span class="link-text">语言</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Utility Tray -->
+        <div class="utility-tray-container">
+            <div class="utility-tray">
+                <div id="site-search" class="utility-link site-search">
+                    <div class="content">
+                        <form class="ng-pristine ng-valid topSearchForm" id="topSearchForm" name="topSearchForm" action="/search/browse/search/" method="get" enctype="application/x-www-form-urlencoded">
+                            <div class="input-group push-bottom">
+
+                                <input class="form-control searchField" id="topSearchInput" name="keyword" value="" placeholder="输入搜索条目" type="text">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary">搜索</button>
+                                </span>
+                            </div>
+                            <div>Troubleshooting an issue? Try <a href="/solution-engine">Solution Engine</a>&mdash;our new support tool.</div>
+                        </form>
+                    </div>
+                </div>
+                <div id="account-info" class="utility-link account-info">
+                    <div class="content">
+
+                        <!-- Account Unauthenticated -->
+                        <div id="accountLinksLoggedOut" class="unauthenticated">
+                            <h2 class="utility-header">登录您的 Red Hat 帐户</h2>
+                            <div class="row col-border-row">
+                                <div class="col-sm-6 col-border">
+                                    <p><a href="https://access.redhat.com/login" id="accountLogin" class="btn btn-primary">登录</a></p>
+                                    <p>可从您的 Red Hat 账户，根据您的状态访问您的侧写、属性和服务。</p>
+                                </div>
+                                <div class="col-sm-6 col-border col-border-left">
+                                    <p><a href="https://www.redhat.com/wapps/ugc/register.html" class="btn btn-primary">注册</a></p>
+                                    <p>如果您刚刚开始使用 Red Hat 产品，现在就注册以便使用产品评估并购买功能。</p>
+
+                                    <strong>要访问帐户？</strong><p>如果您已有 Red Hat 帐户，您的机构管理员可赋予您这个权限。</p>
+
+                                    <p><a href="https://access.redhat.com/support/contact/customerService/">如有任何疑问，请联络客户服务。</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Account Authenticated -->
+                        <div id="accountLinksLoggedIn" class="authenticated">
+                            <h2 class="utility-header"><span id="userFirstName"></span></h2>
+                            <div class="row col-border-row">
+                                <div class="col-sm-6 col-border col-border-right">
+                                    <div class="account-info" id="accountUser">
+                                        <div class="avatar"><!-- placeholder--></div>
+                                        <div class="account-name"><strong id="userFullName"></strong></div>
+                                        <div class="account-org"><span id="userOrg"></span></div>
+                                        <div class="account-number accountNumber"><span class="property">Red Hat 账户号码:</span> <span class="value"></span></div>
+                                    </div>
+
+                                    <div class="row account-settings">
+                                        <div class="col-md-6" data-portal-tour-1="4">
+                                            <h3>Red Hat 账户</h3>
+                                            <ul class="reset">
+                                                <li><a href="https://www.redhat.com/wapps/ugc/protected/personalInfo.html">账户详情</a></li>
+                                                <!-- <li><a href="https://www.redhat.com/wapps/ugc/protected/prefs.html">简报及联络属性</a></li> -->
+                                                <li><a href="https://www.redhat.com/wapps/ugc/protected/usermgt/userList.html" class="user-management-link">用户管理</a></li>
+                                                <li><a href="https://www.redhat.com/wapps/ugc/protected/account.html">账户维护</a></li>
+                                                <li><a href="https://access.redhat.com/account-team">Account Team</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6" data-portal-tour-1="5">
+                                            <h3>站内搜索</h3>
+                                            <ul class="reset">
+                                                <li><a href="https://access.redhat.com/user">我的个人资料</a></li>
+                                                <li><a href="https://access.redhat.com/user" id="userNotificationsLink">通知</a></li>
+                                                <li><a href="https://access.redhat.com/help/">帮助</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6 col-border">
+                                    <p>处于安全考虑，如果您使用公共计算机并完成使用 Red Hat 服务，请确定退出账户。</p>
+                                    <p><a href="https://sso.redhat.com/auth/realms/redhat-external/logout?redirectUrl=https%3A%2F%2Faccess.redhat.com%2Flogout" id="accountLogout" class="btn btn-primary">退出</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="language" class="utility-link language">
+                    <div class="content">
+                        <h2 class="utility-header">选择语言</h2>
+                        <div class="row" id="localesMenu">
+                            <div class="col-sm-2">
+                                <ul class="reset">
+                                    <li><a href="https://access.redhat.com/changeLanguage?language=en" data-lang="en" id="en">English</a></li>
+                                    <li><a href="https://access.redhat.com/changeLanguage?language=ko" data-lang="ko" id="ko">한국어</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <ul class="reset">
+                                    <li><a href="https://access.redhat.com/changeLanguage?language=ja"    data-lang="ja"    id="ja">日本語</a></li>
+                                    <li><a href="https://access.redhat.com/changeLanguage?language=zh_CN" data-lang="zh_CN" id="zh_CN">中文 (中国)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="scroll-anchor"></div>
+
+<!-- Main Menu for large screens -->
+<div class="header-nav visible-sm visible-md visible-lg" aria-hidden="true">
+    <div id="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <a href="https://access.redhat.com/" class="logo">
+                      <span class="sr-only">Red Hat Customer Portal</span>
+                      <span class="logo-crop">
+                        <svg aria-hidden="true" class="rh-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 200">
+                          <defs>
+                          <style>
+                            .rh-logo-type {
+                              fill:#fff;
+                            }
+                            .rh-logo-hat {
+                              fill:#e00;
+                            }
+                          </style>
+                          </defs>
+                          <title>Red Hat Customer Portal</title><g id="Two_lines" data-name="Two lines"><g id="Two_line_logo" data-name="Two line logo"><path class="rh-logo-type" d="M318.62,9.25h25.44c11.13,0,18.64,6.72,18.64,16.56,0,7.36-4.47,13-11.51,15.36l12.48,24.08h-9.29l-11.6-23H327v23h-8.4Zm8.4,7.36V35.33h16.33c6.55,0,10.87-3.76,10.87-9.36s-4.32-9.36-10.87-9.36Z"/><path class="rh-logo-type" d="M387.5,66a21,21,0,0,1-21.36-21.12c0-11.76,9-21,20.4-21,11.2,0,19.68,9.28,19.68,21.28v2.32H374.06a13.74,13.74,0,0,0,13.76,11.68,15.84,15.84,0,0,0,10.32-3.6l5.13,5A24.33,24.33,0,0,1,387.5,66ZM374.14,41.49H398.3c-1.19-6.24-6-10.88-11.92-10.88C380.22,30.61,375.34,35,374.14,41.49Z"/><path class="rh-logo-type" d="M445.18,61.41a19.23,19.23,0,0,1-12.48,4.48c-11.52,0-20.56-9.2-20.56-21a20.72,20.72,0,0,1,33-17V9.25l8-1.76V65.25h-7.92Zm-11.36-2.48a14.67,14.67,0,0,0,11.28-4.88V35.57a14.89,14.89,0,0,0-11.28-4.8,13.63,13.63,0,0,0-13.84,14A13.77,13.77,0,0,0,433.82,58.93Z"/><path class="rh-logo-type" d="M480.22,9.25h8.4v24h29.76v-24h8.4v56h-8.4V40.85H488.62v24.4h-8.4Z"/><path class="rh-logo-type" d="M534.38,53.57c0-7.68,6.24-12.4,16.48-12.4A28.75,28.75,0,0,1,562,43.41V39.09c0-5.76-3.44-8.64-9.92-8.64-3.76,0-7.6,1-12.64,3.44l-3-6c6.08-2.88,11.36-4.16,16.72-4.16,10.56,0,16.64,5.2,16.64,14.56v27H562V61.73A19.32,19.32,0,0,1,549.34,66C540.46,66,534.38,60.93,534.38,53.57Zm16.8,6.48A15.66,15.66,0,0,0,562,56.21v-7a21.15,21.15,0,0,0-10.48-2.48c-5.84,0-9.44,2.64-9.44,6.72C542.06,57.33,545.74,60.05,551.18,60.05Z"/><path class="rh-logo-type" d="M582.7,31.25h-8.64V24.53h8.64V14.13l7.92-1.92V24.53h12v6.72h-12V53.33c0,4.16,1.68,5.68,6,5.68a15.72,15.72,0,0,0,5.84-1v6.72a26.5,26.5,0,0,1-7.6,1.2c-7.92,0-12.16-3.76-12.16-10.8Z"/><path class="rh-logo-type" d="M361,132.21l7.59,7.52a30.76,30.76,0,0,1-23,10.32c-16.88,0-29.84-12.56-29.84-28.8s13-28.88,29.84-28.88c9,0,18.09,4.08,23.28,10.48l-7.83,7.76a19.52,19.52,0,0,0-15.45-7.6c-10.16,0-17.92,7.84-17.92,18.24A17.8,17.8,0,0,0,346,139.33,19.24,19.24,0,0,0,361,132.21Z"/><path class="rh-logo-type" d="M383.74,131.81c0,5.36,3.44,8.8,8.64,8.8a10.05,10.05,0,0,0,8.65-4.16V107.57h11v41.68H401v-3.36a17.79,17.79,0,0,1-11.77,4.16c-9.68,0-16.48-6.88-16.48-16.64V107.57h11Z"/><path class="rh-logo-type" d="M422.46,137c4.88,3.2,9.12,4.72,13.52,4.72,4.88,0,8.08-1.76,8.08-4.4,0-2.16-1.6-3.36-5.2-3.92l-8-1.2c-8.24-1.28-12.64-5.36-12.64-12.08,0-8.08,6.72-13.2,17.36-13.2a30.75,30.75,0,0,1,17.12,5.2l-5.28,7c-4.56-2.72-8.64-4-12.88-4-4,0-6.56,1.6-6.56,4.08,0,2.24,1.6,3.36,5.68,3.92l8,1.2c8.16,1.2,12.72,5.44,12.72,11.92,0,7.84-7.76,13.76-18.24,13.76-7.6,0-14.4-2-19.12-5.76Z"/><path class="rh-logo-type" d="M464.7,116.77h-8.56v-9.2h8.56V96.93l11-2.48v13.12H487.5v9.2H475.66v18.48c0,3.92,1.52,5.36,5.76,5.36a16.86,16.86,0,0,0,5.84-1v9a34,34,0,0,1-8.48,1.28c-9.28,0-14.08-4.24-14.08-12.4Z"/><path class="rh-logo-type" d="M512.86,106.77c12.48,0,22.24,9.52,22.24,21.68s-9.76,21.6-22.24,21.6-22.24-9.44-22.24-21.6S500.38,106.77,512.86,106.77Zm11.52,21.68c0-6.88-5-12.16-11.52-12.16s-11.52,5.28-11.52,12.16c0,6.72,5,12.08,11.52,12.08S524.38,135.17,524.38,128.45Z"/><path class="rh-logo-type" d="M541.82,107.57h11v3.12a16.21,16.21,0,0,1,10.88-3.92A15,15,0,0,1,576.22,113,17.16,17.16,0,0,1,590,106.77c9.36,0,15.91,6.8,15.91,16.56v25.92h-11V124.93c0-5.28-3-8.72-7.83-8.72a9.37,9.37,0,0,0-8,4.16,18.89,18.89,0,0,1,.23,3v25.92h-11V124.93c0-5.28-3-8.72-7.84-8.72a9.3,9.3,0,0,0-7.76,3.76v29.28h-11Z"/><path class="rh-logo-type" d="M634.78,150.05c-12.64,0-22.4-9.44-22.4-21.6a21.28,21.28,0,0,1,21.44-21.6c11.84,0,20.64,9.6,20.64,22.4v2.88h-31a12,12,0,0,0,11.84,8.72,13.12,13.12,0,0,0,9.2-3.36l7.2,6.56A25,25,0,0,1,634.78,150.05Zm-11.44-25.76h20.4c-1.36-5-5.36-8.4-10.16-8.4C628.54,115.89,624.7,119.17,623.34,124.29Z"/><path class="rh-logo-type" d="M661.18,107.57h11v4.56a13.26,13.26,0,0,1,11.12-5.52,9.44,9.44,0,0,1,4.56,1v9.6a14,14,0,0,0-5.6-1.12,11,11,0,0,0-10.08,6.24v27h-11Z"/><path class="rh-logo-type" d="M710.54,93.25h28.08c11,0,18.8,7.28,18.8,17.6,0,10-7.92,17.28-18.8,17.28H722.14v21.12h-11.6Zm11.6,10v15.28h15.2c5,0,8.32-3,8.32-7.6s-3.28-7.68-8.32-7.68Z"/><path class="rh-logo-type" d="M782.14,106.77c12.48,0,22.24,9.52,22.24,21.68s-9.76,21.6-22.24,21.6-22.24-9.44-22.24-21.6S769.66,106.77,782.14,106.77Zm11.52,21.68c0-6.88-5-12.16-11.52-12.16s-11.52,5.28-11.52,12.16c0,6.72,5,12.08,11.52,12.08S793.66,135.17,793.66,128.45Z"/><path class="rh-logo-type" d="M811.1,107.57h11v4.56a13.26,13.26,0,0,1,11.12-5.52,9.44,9.44,0,0,1,4.56,1v9.6a14,14,0,0,0-5.6-1.12,11,11,0,0,0-10.08,6.24v27h-11Z"/><path class="rh-logo-type" d="M850,116.77h-8.56v-9.2H850V96.93l11-2.48v13.12h11.84v9.2H860.94v18.48c0,3.92,1.52,5.36,5.76,5.36a16.86,16.86,0,0,0,5.84-1v9a34,34,0,0,1-8.48,1.28c-9.28,0-14.08-4.24-14.08-12.4Z"/><path class="rh-logo-type" d="M876.22,137.17c0-7.92,6.4-12.64,17.12-12.64a33.71,33.71,0,0,1,10.16,1.6v-3c0-4.8-3-7.28-8.8-7.28-3.52,0-7.44,1.12-12.72,3.44l-4-8.08a43.46,43.46,0,0,1,18.56-4.48c11.28,0,17.76,5.6,17.76,15.44v27H903.5v-2.88a19.81,19.81,0,0,1-12.08,3.6C882.46,150,876.22,144.77,876.22,137.17Zm18.08,5a15.78,15.78,0,0,0,9.2-2.64v-6.24a24.22,24.22,0,0,0-8.8-1.52c-5,0-8,2-8,5.2S889.66,142.13,894.3,142.13Z"/><path class="rh-logo-type" d="M933.58,149.25h-11v-56l11-2.4Z"/><g id="Hat_icon" data-name="Hat icon"><path id="Red_hat" data-name="Red hat" class="rh-logo-hat" d="M129,92.24c12.5,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42L151.82,39c-1.72-7.12-3.23-10.35-15.74-16.6-9.7-5-30.82-13.15-37.07-13.15-5.83,0-7.55,7.54-14.45,7.54-6.68,0-11.64-5.6-17.89-5.6-6,0-9.92,4.1-12.93,12.5,0,0-8.41,23.72-9.49,27.16A6.43,6.43,0,0,0,44,52.79C44,62,80.32,92.24,129,92.24Zm32.55-11.42c1.72,8.19,1.72,9.05,1.72,10.13,0,14-15.73,21.77-36.43,21.77-46.77,0-87.73-27.37-87.73-45.48a18.32,18.32,0,0,1,1.51-7.33C23.77,60.77,2,63.79,2,83c0,31.48,74.59,70.28,133.65,70.28,45.27,0,56.7-20.48,56.7-36.65C192.35,103.88,181.35,89.44,161.52,80.82Z"/><path class="rh-logo-band" id="Black_band" data-name="Black band" d="M161.52,80.82c1.72,8.19,1.72,9.05,1.72,10.13,0,14-15.73,21.77-36.43,21.77-46.77,0-87.73-27.37-87.73-45.48a18.32,18.32,0,0,1,1.51-7.33l3.66-9.06A6.43,6.43,0,0,0,44,52.79C44,62,80.32,92.24,129,92.24c12.5,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42Z"/></g><path id="Dividing_line" data-name="Dividing line" class="rh-logo-type" d="M255.47,160.75a2.25,2.25,0,0,1-2.25-2.25V4.25a2.25,2.25,0,0,1,4.5,0V158.5A2.25,2.25,0,0,1,255.47,160.75Z"/></g></g>
+                        </svg>
+                      </span>
+                                            </a>
+
+                    <nav class="primary-nav hidden-sm">
+                        <ul>
+                            <li id="nav-products"><a class="products" data-link="mega" data-target="products-menu" href="https://access.redhat.com/products/" id="products-menu">产品 &amp;  服务</a></li>
+                            <li id="nav-tools"><a class="tools" data-link="mega" data-target="tools-menu" href="https://access.redhat.com/labs/" id="tools-menu">工具</a></li>
+                            <li id="nav-security"><a class="security" data-link="mega" data-target="security-menu" href="https://access.redhat.com/security/" id="security-menu">安全</a></li>
+                            <li id="nav-community"><a class="community" data-link="mega" data-target="community-menu" href="https://access.redhat.com/community/" id="community-menu">社区</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Mega Menu for large screens -->
+<div class="mega-wrap visible-sm visible-md visible-lg" aria-hidden="true">
+    <nav class="mega">
+        <div class="container">
+            <div class="mega-menu-wrap">
+
+                <!-- Products Menu -->
+                <div aria-labelledby="products-menu" class="products-menu mega-menu" data-eh="mega-menu" role="navigation">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8">
+                            <div class="root clearfix" data-portal-tour-1="7">
+                                <ul class="subnav subnav-root">
+                                    <li data-target="infrastructure-menu" class="active">
+                                        <h3>基础设施及管理</h3>
+                                    </li>
+                                    <li data-target="cloud-menu">
+                                        <h3>云计算</h3>
+                                    </li>
+                                    <li data-target="storage-menu">
+                                        <h3>存储</h3>
+                                    </li>
+                                    <li data-target="jboss-dev-menu">
+                                        <h3>Runtimes</h3>
+                                    </li>
+                                    <li data-target="jboss-int-menu">
+                                        <h3>Integration and Automation</h3>
+                                    </li>
+                                </ul>
+                                <div class="subnav subnav-child" data-eh="subnav-child" data-menu-local="infrastructure-menu" style="display: block;">
+                                    <ul>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-enterprise-linux/">Red Hat Enterprise Linux</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-virtualization/">Red Hat Virtualization</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/identity-management/">Red Hat Identity Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-directory-server/">Red Hat Directory Server</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-certificate-system/">Red Hat 认证系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-satellite/">Red Hat Satellite</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-subscription-management/">Red Hat Subscription Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-update-infrastructure/">Red Hat 更新基础设施</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-insights/">Red Hat Insights</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/ansible-tower-red-hat/">Red Hat Ansible Tower</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-ansible-engine/">Red Hat Ansible Engine</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="subnav subnav-child" data-eh="subnav-child" data-menu-local="cloud-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-cloudforms/">Red Hat CloudForms</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-openstack-platform/">Red Hat OpenStack Platform</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-cloud-suite/">Red Hat Cloud Suite</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-openshift-container-platform/">Red Hat OpenShift Container Platform</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/openshift-online-red-hat/">Red Hat OpenShift Online</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/openshift-dedicated-red-hat/">Red Hat OpenShift Dedicated</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-advanced-cluster-management-for-kubernetes/">Red Hat Advanced Cluster Management for Kubernetes</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-quay/">Red Hat Quay</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-codeready-workspaces/">Red Hat CodeReady Workspaces</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="subnav subnav-child" data-eh="subnav-child" data-menu-local="storage-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-storage/">Red Hat Gluster Storage</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-hyperconverged-infrastructure/">Red Hat Hyperconverged Infrastructure</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-ceph-storage/">Red Hat Ceph Storage</a>
+                                        </li>
+                                        <li>
+                                          <a href="https://access.redhat.com/products/red-hat-openshift-container-storage">Red Hat Openshift Container Storage</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="subnav subnav-child" data-eh="subnav-child" data-menu-local="jboss-dev-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-runtimes/">Red Hat Runtimes</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-jboss-enterprise-application-platform/">Red Hat JBoss Enterprise Application Platform</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-data-grid/">Red Hat 数据网络</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-jboss-web-server/">Red Hat JBoss 网页服务器</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-single-sign-on/">Red Hat Single Sign On</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/spring-boot/">Red Hat support for Spring Boot</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/nodejs/">Red Hat build of Node.js</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/thorntail/">Red Hat build of Thorntail</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/eclipse-vertx/">Red Hat build of Eclipse Vert.x</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/openjdk/">Red Hat build of OpenJDK</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/open-liberty/">Open Liberty</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/quarkus/">Red Hat build of Quarkus</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-codeready-studio/">Red Hat CodeReady Studio</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="subnav subnav-child" data-eh="subnav-child" data-menu-local="jboss-int-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-jboss-data-virtualization/">Red Hat JBoss 数据虚拟化</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-fuse/">Red Hat Fuse</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-amq/">Red Hat AMQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-process-automation-manager/">Red Hat Process Automation Manager</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-decision-manager/">Red Hat JBoss BRMS</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://access.redhat.com/products/red-hat-3scale/">Red Hat 3scale API Management</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                <div class="subnav subnav-child" data-eh="subnav-child" data-menu-local="jboss-int-menu">
+                                    <ul class="border-bottom" id="portal-menu-border-bottom">
+                                      <li>
+                                          <a href="https://access.redhat.com/products/red-hat-integration/">Red Hat Integration</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://access.redhat.com/products/red-hat-fuse/">Red Hat Fuse</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://access.redhat.com/products/red-hat-amq/">Red Hat AMQ</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://access.redhat.com/products/red-hat-3scale/">Red Hat 3scale API Management</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://access.redhat.com/products/red-hat-jboss-data-virtualization/">Red Hat JBoss 数据虚拟化</a>
+                                      </li>
+                                    </ul>
+                                    <ul>
+                                      <li>
+                                        <a href="https://access.redhat.com/products/red-hat-process-automation/">Red Hat Process Automation</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://access.redhat.com/products/red-hat-process-automation-manager/">Red Hat Process Automation Manager</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://access.redhat.com/products/red-hat-decision-manager/">Red Hat JBoss BRMS</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://access.redhat.com/products" class="btn btn-primary">查看所有产品</a>
+                        </div>
+
+                        <div class="col-md-6 col-sm-4 pull-right" data-portal-tour-1="8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/support" class="cta-link cta-link-darkbg">支持</a></li>
+                                        <li><a href="https://access.redhat.com/support/offerings/production/">产品支持</a></li>
+                                        <li><a href="https://access.redhat.com/support/offerings/developer/">开发支持</a></li>
+                                        <li><a href="https://access.redhat.com/product-life-cycles/">Product Life Cycles</a></li>
+                                    </ul>
+                                    <h4 class="nav-title">服务</h4>
+                                    <ul>
+                                        <li><a href="https://www.redhat.com/en/services/consulting">咨询</a></li>
+                                        <li><a href="https://access.redhat.com/support/offerings/tam/">技术帐户管理</a></li>
+                                        <li><a href="https://www.redhat.com/en/services/training-and-certification">培训及认证</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/documentation" class="cta-link cta-link-darkbg">文档</a></li>
+                                        <li><a href="https://access.redhat.com/documentation/zh_CN/red_hat_enterprise_linux">Red Hat Enterprise Linux</a></li>
+                                        <li><a href="https://access.redhat.com/documentation/zh_CN/red_hat_jboss_enterprise_application_platform">Red Hat JBoss Enterprise Application Platform</a></li>
+                                        <li><a href="https://access.redhat.com/documentation/zh_CN/red_hat_openstack_platform">Red Hat OpenStack Platform</a></li>
+                                        <li><a href="https://access.redhat.com/documentation/zh_CN/openshift_container_platform">Red Hat OpenShift Container Platform</a></li>
+                                    </ul>
+                                    <ul>
+                                        
+                                        <li><a href="https://catalog.redhat.com/" class="cta-link cta-link-darkbg">生态系统目录</a></li>
+                                        <li><a href="https://access.redhat.com/public-cloud">Red Hat in the Public Cloud</a></li>
+                                        <li><a href="https://access.redhat.com/ecosystem/partner-resources">合作伙伴资源</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Menu -->
+                <div aria-labelledby="tools-menu" class="tools-menu mega-menu" data-eh="mega-menu" role="navigation">
+                    <div class="row" data-portal-tour-1="9">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h3 class="nav-title">Tools</h3>
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/solution-engine">Solution Engine</a></li>
+                                        <li><a href="https://access.redhat.com/downloads/content/package-browser">Packages</a></li>
+                                        <li><a href="https://access.redhat.com/errata/">Errata</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="list-flat">
+                                        <li><a href="https://access.redhat.com/labs/" class="cta-link cta-link-darkbg">Customer Portal Labs</a></li>
+                                        <li><a href="https://access.redhat.com/labs/#?type=config">配置</a></li>
+                                        <li><a href="https://access.redhat.com/labs/#?type=deploy">部署</a></li>
+                                        <li><a href="https://access.redhat.com/labs/#?type=security">安全</a></li>
+                                        <li><a href="https://access.redhat.com/labs/#?type=troubleshoot">故障排除</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card card-dark-grey">
+                                        <h4 class="card-heading">Red Hat Insights</h4>
+                                        <p class="text-white">提高数据中心操作的可视性，以便在技术问题影响到您的业务前探测并解决它们。</p>
+                                        <ul class="list-flat rh-l-grid rh-m-gutters rh-m-all-6-col-on-md">
+                                          <li><a href="https://www.redhat.com/en/technologies/management/insights" class="cta-link cta-link-md cta-link-darkbg">Learn more</a></li>
+                                          <li><a href="https://cloud.redhat.com/insights" class="cta-link cta-link-md cta-link-darkbg">Go to Insights</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Security Menu -->
+                <div aria-labelledby="security-menu" class="security-menu mega-menu" data-eh="mega-menu" role="navigation">
+                    <div class="row">
+                        <div class="col-sm-12 basic" data-portal-tour-1="10">
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h2 class="nav-title">Red Hat Product Security Center</h2>
+                                    <p class="text-white">Engage with our Red Hat Product Security team, access security updates, and ensure your environments are not exposed to any known security vulnerabilities.</p>
+                                    <p><a href="https://access.redhat.com/security/" class="btn btn-primary">Product Security Center</a></p>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <h2 class="nav-title">安全更新</h2>
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/security/security-updates/#/security-advisories">Security Advisories</a></li>
+                                        <li><a href="https://access.redhat.com/security/security-updates/#/cve">Red Hat CVE 数据库</a></li>
+                                        <li><a href="https://access.redhat.com/security/security-updates/#/security-labs">Security Labs</a></li>
+                                    </ul>
+                                    <p class="text-white">Keep your systems secure with Red Hat&#039;s specialized responses for high-priority security vulnerabilities.</p>
+                                    <ul>
+                                        <li class="more-link"><a href="https://access.redhat.com/security/vulnerability">View Responses</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <h2 class="nav-title">资源</h2>
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/security/overview/">Overview</a></li>
+                                        <li><a href="https://www.redhat.com/en/blog/channel/security">安全博客</a></li>
+                                        <li><a href="https://www.redhat.com/security/data/metrics/">安全衡量</a></li>
+                                        <li><a href="https://access.redhat.com/security/updates/classification/">严重级别</a></li>
+                                        <li><a href="https://access.redhat.com/security/updates/backporting/">反向移植政策 (Backporting Policy)</a></li>
+                                        <li><a href="https://access.redhat.com/security/team/key/">产品签名（GPG）密钥</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Menu -->
+                <div aria-labelledby="community-menu" class="community-menu mega-menu" data-eh="mega-menu" role="navigation">
+                    <div class="row">
+                        <div class="col-sm-12 basic" data-portal-tour-1="11">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h2 class="nav-title">Customer Portal Community</h2>
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/discussions?keyword=&name=&product=All&category=All&tags=All">讨论</a></li>
+                                        <li><a href="https://access.redhat.com/blogs/">博客</a></li>
+                                        <li><a href="https://access.redhat.com/groups/">专用组</a></li>
+                                        <p class="push-top"><a href="https://access.redhat.com/community/" class="btn btn-primary">Community Activity</a></p>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h2 class="nav-title">客户事件</h2>
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/convergence/">Red Hat Convergence</a></li>
+                                        <li><a href="http://www.redhat.com/summit/">Red Hat 峰会</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h2 class="nav-title">案例</h2>
+                                    <ul>
+                                        <li><a href="https://access.redhat.com/subscription-value/">Red Hat Subscription Value</a></li>
+                                        <li><a href="https://access.redhat.com/you-asked-we-acted/">您问问题，我们来解决。</a></li>
+                                        <li><a href="http://www.redhat.com/en/open-source">开源社区</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<a href="https://access.redhat.com/community/" class="btn btn-primary">探索社区</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+            <!--[if IE 8]>
+            <div class="portal-messages">
+                <div class="alert alert-warning alert-portal alert-w-icon">
+                    <span class="icon-warning alert-icon" aria-hidden="true"></span>
+                    You are using an unsupported web browser. Update to a supported browser for the best experience. <a href="/announcements/2120951">Read the announcement</a>.
+                </div>
+            </div>
+            <![endif]-->
+            <!--[if IE 9]>
+            <div class="portal-messages">
+                <div class="alert alert-warning alert-portal alert-w-icon">
+                    <span class="icon-warning alert-icon" aria-hidden="true"></span>
+                    As of March 1, 2016, the Red Hat Customer Portal will no longer support Internet Explorer 9. See our new <a href="/help/browsers">browser support policy</a> for more information.
+                </div>
+            </div>
+            <![endif]-->
+            <div id="site-section"></div>
+        </header>
+        <!--googleon: all-->
+
+        <main id="cp-main" class="portal-content-area">
+            <div id="cp-content" class="main-content">
+
+    <div class='container'>
+<div class='band band-first'>
+<script type="text/javascript" charset="utf-8">
+    var analyticsPageName="downloads|Package-Changelog";
+    document.title = "kernel-3.10.0-693.39.1.el7.src.rpm - Red Hat 客户门户网站";
+</script>
+
+<div id="download-page" class="download-page">
+
+  
+<script type="text/javascript" charset="utf-8">
+  chrometwo_require(['jquery', 'chosen'], function ($) {
+    $(document).ready(function() {
+      $('#evr, #arch').chosen({disable_search_threshold: 10});
+    });
+  });
+</script>
+
+  <div id="breadcrumbs">
+        <a href="/downloads">下载</a>
+        <span>Red Hat Enterprise Linux</span>
+        <a href="/downloads/content/70/ver=/rhel---7.4/x86_64/packages">软件包</a>
+      kernel
+</div>
+
+
+  <h1>kernel</h1>
+
+  <div id="browse-options" class="browse-options browse-options-b2 browse-options-plain push-bottom clearfix">
+    <div class="option pull-left">
+      <label for="arch">架构:</label>
+        src
+    </div>
+
+    <div class="option pull-left">
+      <label for="evr">版本:</label>
+      <select id="evr" class="select-chosen linked">
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.26.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.26.1.el7 [最新的]</option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.21.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.21.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.18.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.18.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.12.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.12.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.9.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.9.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.7.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.7.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.4.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.4.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.4.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.4.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.4.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.4.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.1.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.1.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.1.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.1.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.el7/src/fd431d51/package-changelog"
+         >3.10.0-1062.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.54.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.54.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.48.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.48.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.46.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.46.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.43.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.43.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.41.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.41.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.38.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.38.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.38.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.38.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.38.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.38.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.35.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.35.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.35.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.35.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.27.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.27.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.27.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.27.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.21.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.21.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.21.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.21.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.12.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.12.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.12.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.12.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.10.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.10.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.5.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.5.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.1.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.1.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.el7/src/fd431d51/package-changelog"
+         >3.10.0-957.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.51.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.51.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.48.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.48.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.46.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.46.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.44.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.44.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.43.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.43.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.43.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.43.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.43.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.43.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.41.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.41.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.41.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.41.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.37.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.37.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.34.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.34.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.34.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.34.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.32.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.32.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.32.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.32.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.29.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.29.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.27.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.27.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.25.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.25.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.20.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.20.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.14.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.14.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.11.6.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.11.6.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.9.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.9.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.6.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.6.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.3.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.3.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.3.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.3.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.2.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.2.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-862.el7/src/fd431d51/package-changelog"
+         >3.10.0-862.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.58.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.58.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.55.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.55.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.50.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.50.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.47.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.47.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.46.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.46.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.44.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.44.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.43.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.43.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.39.1.el7/src/fd431d51/package-changelog"
+        selected="selected" >3.10.0-693.39.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.37.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.37.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.35.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.35.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.33.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.33.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.25.7.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.25.7.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.25.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.25.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.25.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.25.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.21.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.21.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.17.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.17.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.11.6.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.11.6.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.11.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.11.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.5.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.5.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.2.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.2.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.2.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.2.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.1.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.1.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.el7/src/fd431d51/package-changelog"
+         >3.10.0-693.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.61.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.61.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.58.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.58.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.55.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.55.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.53.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.53.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.51.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.51.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.48.5.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.48.5.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.48.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.48.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.48.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.48.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.44.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.44.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.41.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.41.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.36.5.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.36.5.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.36.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.36.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.35.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.35.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.32.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.32.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.32.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.32.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.28.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.28.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.28.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.28.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.26.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.26.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.26.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.26.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.21.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.21.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.21.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.21.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.16.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.16.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.10.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.10.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.6.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.6.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.6.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.6.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.2.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.2.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-514.el7/src/fd431d51/package-changelog"
+         >3.10.0-514.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.62.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.62.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.61.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.61.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.59.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.59.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.59.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.59.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.59.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.59.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.58.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.58.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.55.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.55.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.55.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.55.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.55.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.55.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.53.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.53.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.49.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.49.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.46.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.46.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.44.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.44.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.41.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.41.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.41.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.41.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.36.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.36.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.36.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.36.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.36.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.36.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.28.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.28.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.28.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.28.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.22.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.22.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.18.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.18.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.13.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.13.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.10.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.10.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.4.5.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.4.5.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.4.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.4.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.3.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.3.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-327.el7/src/fd431d51/package-changelog"
+         >3.10.0-327.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.49.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.49.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.48.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.48.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.46.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.46.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.44.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.44.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.42.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.42.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.42.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.42.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.40.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.40.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.38.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.38.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.34.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.34.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.30.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.30.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.28.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.28.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.26.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.26.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.24.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.24.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.20.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.20.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.14.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.14.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.11.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.11.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.7.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.7.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.4.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.4.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.1.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.1.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-229.el7/src/fd431d51/package-changelog"
+         >3.10.0-229.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.20.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.20.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.13.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.13.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.13.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.13.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.9.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.9.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.9.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.9.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.8.1.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.8.1.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.6.3.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.6.3.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.4.4.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.4.4.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.4.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.4.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.1.2.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.1.2.el7 </option>
+        <option
+          value="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-123.el7/src/fd431d51/package-changelog"
+         >3.10.0-123.el7 </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="alert alert-info" role="alert">
+    <span aria-hidden="true" class="icon-info-circle"></span>
+    这个软件包的 <a href="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-1062.26.1.el7/src/fd431d51/package-changelog">更近的版本</a> 可用
+  </div>
+
+  <div>
+    <ul class="nav nav-faux-tabs">
+      <li>
+        <a href="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.39.1.el7/src/fd431d51/package">详情</a>
+      </li>
+      <li class="active">
+        <a href="/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.39.1.el7/src/fd431d51/package-changelog">更改日志</a>
+      </li>
+    </ul>
+
+    <div id="package_changelog_ctx-tab" class="tab-content">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+
+
+    <div class="changelog">
+        <dl>
+          <dt>2018-09-06 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.39.1.el7]</dt>
+          <dd><p>- [net] tcp: add tcp_ooo_try_coalesce() helper (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: call tcp_drop() from tcp_data_queue_ofo() (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: detect malicious patterns in tcp_collapse_ofo_queue() (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: avoid collapses in tcp_prune_queue() if possible (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: free batches of packets in tcp_prune_ofo_queue() (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] add rb_to_skb() and other rb tree helpers (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: fix a stale ooo_last_skb after a replace (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: use an RB tree for ooo receive queue (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: refine tcp_prune_ofo_queue() to not drop all packets (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp tcp_memcontrol: sanitize tcp memory accounting callbacks (Stefano Brivio) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] tcp: increment sk_drops for dropped rx packets (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [net] add rbnode to struct sk_buff (Paolo Abeni) [1611366 1611369] {CVE-2018-5390}
+<br />- [x86] microcode: Allow late microcode loading with SMT disabled (Josh Poimboeuf) [1619621 1614515]</p></dd>
+          <dt>2018-08-24 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.38.1.el7]</dt>
+          <dd><p>- [powerpc] stf-barrier: update (rfi_)enabled_flush_types as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: update debugfs as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: update handle_ssbd() as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: update stf_barrier_enable() as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: add cpu_show_spec_store_bypass() as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: add comment as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: move code from setup_64.c to security.c as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: move code from setup.h to security_features.h as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: update fallback routine as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] stf-barrier: update entry barrier slot as in upstream (Gustavo Duarte) [1612352 1585297]
+<br />- [powerpc] powerpc/64s, powernv, pseries: merge back setup_stf_barrier() enable option (Gustavo Duarte) [1612352 1585297]
+<br />- [x86] microcode/amd: Do not load when running on a hypervisor (Vitaly Kuznetsov) [1618389 1607899]
+<br />- [lib] rhashtable: Fix rhlist duplicates insertion (Xin Long) [1601008 1559106]
+<br />- [mm] initialize pages on demand during boot (Masayoshi Mizuma) [1588365 1496330]
+<br />- [mm] split deferred_init_range into initializing and freeing parts (Masayoshi Mizuma) [1588365 1496330]
+<br />- [kernel] cpu/hotplug: Fix 'online' sysfs entry with 'nosmt' (Josh Poimboeuf) [1593381 1593384] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Enable 'nosmt' as late as possible (Josh Poimboeuf) [1593381 1593384] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: detect SMT disabled by BIOS (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [documentation] l1tf: Fix typos (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: Remove extra newline in 'vmentry_l1d_flush' sysfs file (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] KVM/VMX: Initialize the vmx_l1d_flush_pages' content (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] speculation/l1tf: Unbreak !__HAVE_ARCH_PFN_MODIFY_ALLOWED architectures (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [documentation] Add section about CPU vulnerabilities (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] bugs, kvm: introduce boot-time control of L1TF mitigations (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Set CPU_SMT_NOT_SUPPORTED early (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Expose SMT control init function (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: Allow runtime control of L1D flush (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: Serialize L1D flush parameter setter (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: Add static key for flush always (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: Move l1tf setup function (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Handle EPT disabled state proper (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: Drop L1TF MSR list approach (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] litf: Introduce vmx status variable (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] bugs: Make cpu_show_common() static (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] bugs: Concentrate bug reporting into a separate function (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Online siblings when SMT control is turned on (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] KVM/VMX: Use MSR save list for IA32_FLUSH_CMD if required (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] KVM/VMX: Extend add_atomic_switch_msr() to allow VMENTER only MSRs (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] KVM/VMX: Separate the VMX AUTOLOAD guest/host number accounting (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] KVM/VMX: Add find_msr() helper function (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] KVM/VMX: Split the VMX MSR LOAD structures to have an host/guest numbers (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: x86: mitigation for L1 cache terminal fault vulnerabilities, part 3 (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: Warn user if KVM is loaded SMT and L1TF CPU bug being present (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Boot HT siblings at least once, part 2 (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] speculation/l1tf: fix typo in l1tf mitigation string (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: protect _PAGE_FILE PTEs against speculation (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: x86: mitigation for L1 cache terminal fault vulnerabilities, part 2 (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Boot HT siblings at least once (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- Revert "[x86] apic: Ignore secondary threads if nosmt=force" (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] speculation/l1tf: Fix up pte-&gt;pfn conversion for PAE (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] speculation/l1tf: Protect PAE swap entries against L1TF (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu/AMD: Move TOPOEXT reenablement before reading smp_num_siblings (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] speculation/l1tf: Extend 64bit swap file size limit (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu/AMD: Remove the pointless detect_ht() call (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] bugs: Move the l1tf function and define pr_fmt properly (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Provide knobs to control SMT, part 2 (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] topology: Provide topology_smt_supported() (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] apic: Ignore secondary threads if nosmt=force (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu/AMD: Evaluate smp_num_siblings early (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu/AMD: Do not check CPUID max ext level before parsing SMP info (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu/intel: Evaluate smp_num_siblings early (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu/topology: Provide detect_extended_topology_early() (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu/common: Provide detect_ht_early() (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu: Remove the pointless CPU printout (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Provide knobs to control SMT (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [kernel] cpu/hotplug: Split do_cpu_down() (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] smp: Provide topology_is_primary_thread() (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] cpu: Modify detect_extended_topology() to return result (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: fix build for CONFIG_NUMA_BALANCING=n (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: sync with latest L1TF patches (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: protect _PAGE_NUMA PTEs and PMDs against speculation (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [mm] l1tf: Disallow non privileged high MMIO PROT_NONE mappings (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Report if too much memory for L1TF workaround (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Limit swap file size to MAX_PA/2 (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Add sysfs reporting for l1tf (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Make sure the first page is always reserved (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Protect PROT_NONE PTEs against speculation (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Protect swap entries against L1TF (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] l1tf: Increase 32bit PAE __PHYSICAL_PAGE_MASK (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] mm: Fix swap entry comment and macro (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] spec_ctrl: sync with upstream cpu_set_bug_bits() (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] add support for L1D flush MSR (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] kvm: x86: mitigation for L1 cache terminal fault vulnerabilities (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] intel-family.h: Add GEMINI_LAKE SOC (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] mm: Simplify p[g4um]d_page() macros (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] mm: Fix regression with huge pages on PAE (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] asm: Move PUD_PAGE macros to page_types.h (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] asm: Fix pud/pmd interfaces to handle large PAT bit (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}
+<br />- [x86] asm: Add pud/pmd mask interfaces to handle large PAT bit (Denys Vlasenko) [1593381 1593383] {CVE-2018-3620}</p></dd>
+          <dt>2018-07-11 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.37.1.el7]</dt>
+          <dd><p>- [x86] spec_ctrl: Always clear SPEC_CTRL MSRs when disabling IBRS (Waiman Long) [1586147 1574730]
+<br />- [x86] spec_ctrl: Fix VM guest SSBD problems (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Eliminate TIF_SSBD checks in IBRS on/off functions (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Disable SSBD update from scheduler if not user settable (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Make ssbd_enabled writtable (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Remove thread_info check in __wrmsr_on_cpu() (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Write per-thread SSBD state to spec_ctrl_pcp (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Add a read-only ssbd_enabled debugfs file (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bugs: Switch the selection of mitigation from CPU vendor to CPU features (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bugs: Add AMD's SPEC_CTRL MSR usage (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bugs: Add AMD's variant of SSB_NO (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bugs/intel: Set proper CPU features and setup RDS (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] KVM/VMX: Emulate MSR_IA32_ARCH_CAPABILITIES (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] KVM: SVM: Implement VIRT_SPEC_CTRL support for SSBD (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] speculation, KVM: Implement support for VIRT_SPEC_CTRL/LS_CFG (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bugs: Rework spec_ctrl base and mask logic (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Rework SPEC_CTRL update after late microcode loading (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Make sync_all_cpus_ibrs() write spec_ctrl_pcp value (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bugs: Unify x86_spec_ctrl_{set_guest, restore_host} (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] speculation: Rework speculative_store_bypass_update() (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] speculation: Add virtualized speculative store bypass disable support (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bugs, KVM: Extend speculation control for VIRT_SPEC_CTRL (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] KVM: Rename KVM SPEC_CTRL MSR functions to match upstream (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] speculation: Handle HT correctly on AMD (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Add FEATURE_ZEN (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Disentangle SSBD enumeration (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Disentangle MSR_SPEC_CTRL enumeration from IBRS (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] speculation: Use synthetic bits for IBRS/IBPB/STIBP (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [documentation] spec_ctrl: Do some minor cleanups (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] speculation: Make "seccomp" the default mode for Speculative Store Bypass (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [kernel] seccomp: Move speculation migitation control to arch code (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [kernel] seccomp: Use PR_SPEC_FORCE_DISABLE (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [kernel] prctl: Add force disable speculation (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spectre_v2: No mitigation if CPU not affected and no command override (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] pti: Do not enable PTI on CPUs which are not vulnerable to Meltdown (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] bug: Add X86_BUG_CPU_MELTDOWN and X86_BUG_SPECTRE_V[12] (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] pti: Rename CONFIG_KAISER to CONFIG_PAGE_TABLE_ISOLATION (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Sync up naming of SPEC_CTRL MSR bits with upstream (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Sync up SSBD changes with upstream (Waiman Long) [1584331 1584569] {CVE-2018-3639}
+<br />- [mm] compaction: release zone irqlock in isolate_freepages_block (Andrea Arcangeli) [1596282 1582793]
+<br />- [mm] compaction: change the timing to check to drop the spinlock (Andrea Arcangeli) [1596282 1582793]</p></dd>
+          <dt>2018-06-29 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.36.1.el7]</dt>
+          <dd><p>- [misc] vmware balloon: Treat init like reset (Cathy Avery) [1595600 1540110]</p></dd>
+          <dt>2018-06-07 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.35.1.el7]</dt>
+          <dd><p>- [net] sock_diag: request _diag module only when the family or proto has been registered (Xin Long) [1578271 1544898]
+<br />- [x86] microcode: Load microcode on all cpus (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode: Fix CPU synchronization routine (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode: Attempt late loading only when new microcode is present (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode: Synchronize late microcode loading (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode: Request microcode on the BSP (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode: Do not upload microcode if CPUs are offline (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode/intel: Writeback and invalidate caches before updating microcode (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode/intel: Check microcode revision before updating sibling threads (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode: Get rid of struct apply_microcode_ctx (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] cpu: Add a microcode loader callback (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode: Propagate return value from updating functions (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode/amd: Change load_microcode_amd()'s param to bool to fix preemptibility bug (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode/intel: Add a helper which gives the microcode revision (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] cpu: Add native CPUID variants returning a single datum (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode/amd: Move private inlines to .c and mark local functions static (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode/intel: Simplify generic_load_microcode() (Prarit Bhargava) [1578046 1568249]
+<br />- [x86] microcode/intel: Do not issue microcode updates messages on each CPU (Prarit Bhargava) [1578046 1568249]
+<br />- [s390] correct nospec auto detection init order (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] add sysfs attributes for spectre (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] report spectre mitigation via syslog (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] add automatic detection of the spectre defense (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] move nobp parameter functions to nospec-branch.c (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] do not bypass BPENTER for interrupt system calls (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] Replace IS_ENABLED(EXPOLINE_*) with IS_ENABLED(CONFIG_EXPOLINE_*) (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] introduce execute-trampolines for branches (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] run user space and KVM guests with modified branch prediction (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] add optimized array_index_mask_nospec (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] entry.s: fix spurious zeroing of r0 (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] scrub registers on kernel entry and KVM exit (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] align and prepare spectre mitigation for upstream commits (Hendrik Brueckner) [1577765 1558325]
+<br />- [s390] alternative: use a copy of the facility bit mask (Hendrik Brueckner) [1577765 1558325]
+<br />- [scsi] sd: Do not override max_sectors_kb sysfs setting (Ewan Milne) [1573263 1507941]
+<br />- [powerpc] pseries: Restore default security feature flags on setup (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] Move default security feature flags (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] pseries: Fix clearing of security feature flags (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] 64s: Wire up cpu_show_spectre_v2() (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] 64s: Wire up cpu_show_spectre_v1() (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] pseries: Use the security flags in pseries_setup_rfi_flush() (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] powernv: Use the security flags in pnv_setup_rfi_flush() (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] 64s: Enhance the information in cpu_show_meltdown() (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] 64s: Move cpu_show_meltdown() (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] powernv: Set or clear security feature flags (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] pseries: Set or clear security feature flags (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] Add security feature flags for Spectre/Meltdown (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] pseries: Add new H_GET_CPU_CHARACTERISTICS flags (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] lib: seq: Add seq_buf_printf() (Mauricio Oliveira) [1570516 1561787]
+<br />- [powerpc] rfi-flush: Call setup_rfi_flush() after LPM migration (Mauricio Oliveira) [1570508 1561785]
+<br />- [powerpc] rfi-flush: Differentiate enabled and patched flush types (Mauricio Oliveira) [1570508 1561785]
+<br />- [powerpc] rfi-flush: Always enable fallback flush on pseries (Mauricio Oliveira) [1570508 1561785]
+<br />- [powerpc] rfi-flush: Make it possible to call setup_rfi_flush() again (Mauricio Oliveira) [1570508 1561785]
+<br />- [powerpc] rfi-flush: Move the logic to avoid a redo into the debugfs code (Mauricio Oliveira) [1570508 1561785]</p></dd>
+          <dt>2018-05-31 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.34.1.el7]</dt>
+          <dd><p>- [x86] kvm: Fix loss of pending INIT due to race (Radim Krcmar) [1580466 1569473]</p></dd>
+          <dt>2018-05-24 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.33.1.el7]</dt>
+          <dd><p>- [powerpc] 64s: Move the data access exception out-of-line (Mauricio Oliveira) [1581049 1581036] {CVE-2018-3639}
+<br />- [powerpc] 64s: Add support for a store forwarding barrier at kernel entry/exit (Mauricio Oliveira) [1581049 1581036] {CVE-2018-3639}
+<br />- [powerpc] 64s: powernv, pseries: split setup_stf_barrier() enable option (Mauricio Oliveira) [1581049 1581036] {CVE-2018-3639}
+<br />- [x86] x86/kvm: fix CPUID_7_EDX (word 18) mask (Jan Stancek) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Fix late microcode problem with AMD (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Clean up entry code &amp; remove unused APIs (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Mask off SPEC_CTRL MSR bits that are managed by kernel (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: add support for SSBD to RHEL IBRS entry/exit macros (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [fs] proc: Use CamelCase for SSBD (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] bugs: Rename _RDS to _SSBD (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [kernel] seccomp: Enable speculation flaw mitigations (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [fs] proc: Provide details on speculation flaw mitigations (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] nospec: Allow getting/setting on non-current task (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] speculation: Add prctl for Speculative Store Bypass mitigation (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] process: Allow runtime control of Speculative Store Bypass (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [uapi] prctl: Add speculation control prctls (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] KVM/VMX: Expose SPEC_CTRL Bit(2) to the guest (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] bugs/AMD: Add support to disable RDS on Fam[15, 16, 17]h if requested (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Sync up RDS setting with IBRS code (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] bugs: Provide boot parameters for the spec_store_bypass_disable mitigation (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] bugs: Expose /sys/../spec_store_bypass (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] bugs: Read SPEC_CTRL MSR during boot and re-use (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] spec_ctrl: Use separate PCP variables for IBRS entry and exit (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Make CPU bugs sticky (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpu: Rename Merrifield2 to Moorefield (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpuid: Fix up "virtual" IBRS/IBPB/STIBP feature bits on Intel (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Clean up Spectre v2 related CPUID flags (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Add Intel feature bits for Speculation (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Add AMD feature bits for Speculation Control (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpufeatures: Add CPUID_7_EDX CPUID leaf (Waiman Long) [1566903 1566905] {CVE-2018-3639}
+<br />- [x86] cpu: Fill in feature word 13, CPUID_8000_0008_EBX (Waiman Long) [1566903 1566905] {CVE-2018-3639}</p></dd>
+          <dt>2018-05-10 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.32.1.el7]</dt>
+          <dd><p>- [powerpc] msi: Fix race condition in tearing down MSI interrupts (David Milburn) [1570510 1549680]</p></dd>
+          <dt>2018-05-08 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.31.1.el7]</dt>
+          <dd><p>- [x86] kpti/kexec: fix wrong page address in clear_page (Dave Young) [1573170 1571162]
+<br />- [x86] spec_ctrl: disable IBRS in idle, part 2 (Josh Poimboeuf) [1570531 1558668]
+<br />- [x86] kvm: fix icebp instruction handling (Paolo Bonzini) [1566844 1566837] {CVE-2018-1087}
+<br />- [x86] entry/64: Don't use IST entry for #BP stack (Paolo Bonzini) [1569385 1567074] {CVE-2018-8897}
+<br />- [kernel] perf/hwbp: Simplify the perf-hwbp code, fix documentation (Eugene Syromiatnikov) [1569936 1569874] {CVE-2018-1000199}</p></dd>
+          <dt>2018-04-20 Denys Vlasenko &lt;dvlasenk@redhat.com&gt; [3.10.0-693.30.1.el7]</dt>
+          <dd><p>- [netdrv] i40e: re-enable PTP L4 capabilities for XL710 if FW &gt;6.0 (Denys Vlasenko) [1567058 1454892]
+<br />- [fs] xfs: trim writepage mapping to within eof (Brian Foster) [1560421 1472081]
+<br />- [fs] xfs: add xfs_trim_extent (Brian Foster) [1560421 1472081]
+<br />- [fs] vfs: Remove incorrect debugging WARN in prepend_path (Frank Sorenson) [1568321 1481732]
+<br />- [fs] xfs: fix transaction allocation deadlock in IO path (Eric Sandeen) [1568319 1551111]
+<br />- [x86] kexec/64: Clear control page after PGD init (Waiman Long) [1567894 1540061]
+<br />- [x86] pti: Fix conflict between UEFI PGD and PTI (Waiman Long) [1567894 1540061]
+<br />- [x86] efi: Setup separate EFI page tables in kexec paths (Waiman Long) [1567894 1540061]
+<br />- [x86] efi: Build our own page table structures (Waiman Long) [1567894 1540061]
+<br />- [netdrv] vmxnet3: use correct flag to indicate LRO feature (Neil Horman) [1567769 1558685]
+<br />- [netdrv] vmxnet3: avoid xmit reset due to a race in vmxnet3 (Neil Horman) [1567769 1558685]</p></dd>
+        </dl>
+    </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+<div class='band band-alt band-last'>
+<div class='container'>
+<ul class='list-flat pull-bottom-narrow'>
+<li>
+Have feedback? <a id="ux_feedback" data-toggle="modal" data-target="#feedback_modal" aria-disabled="false">Tell us what you think</a>
+</li>
+<li>
+If you need assistance, contact <a href='https://access.redhat.com/support/customer-service'>Customer Service</a>
+</li>
+</ul>
+<div aria-labelledby='feedback_modal_label' class='modal fade' id='feedback_modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header'>
+<button aria-label='关闭' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true' class='icon-remove'></span>
+</button>
+<p class='subheading' id='feedback_modal_label'>Thank you for using Red Hat Customer Portal Downloads</p>
+<p>If you need support, please <a href='https://access.redhat.com/support/'>contact Red Hat Customer Service</a>.</p>
+<form action='/management/feedback' id='ux_feedback_form' method='post'>
+<fieldset class='form-group radios'>
+<legend>How satisfied are you with the new page design?</legend>
+<label class='radio-inline'>
+<input type="radio" name="feedbackSatisfactionLevel" id="feedbackSatisfactionLevel_1" value="1" />
+Very Unsatisfied
+</label>
+<label class='radio-inline'>
+<input type="radio" name="feedbackSatisfactionLevel" id="feedbackSatisfactionLevel_2" value="2" />
+Unsatisfied
+</label>
+<label class='radio-inline'>
+<input type="radio" name="feedbackSatisfactionLevel" id="feedbackSatisfactionLevel_3" value="3" />
+Neutral
+</label>
+<label class='radio-inline'>
+<input type="radio" name="feedbackSatisfactionLevel" id="feedbackSatisfactionLevel_4" value="4" />
+Satisfied
+</label>
+<label class='radio-inline'>
+<input type="radio" name="feedbackSatisfactionLevel" id="feedbackSatisfactionLevel_5" value="5" />
+Very Satisfied
+</label>
+</fieldset>
+<div class='form-group'>
+<label for='ux_feedback_textarea'>Please let us know how to improve your experience.</label>
+<textarea class='form-control' id='ux_feedback_textarea' name='feedbackText' rows='3'></textarea>
+</div>
+<input class='hidden' name='source' value='/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-693.39.1.el7/src/fd431d51/package-changelog'>
+<button class='btn' id='ux_feedback_submit'>Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+  chrometwo_require(['jquery'], function(jQuery) {
+    jQuery(document).ready(function() {
+      jQuery('#feedback_modal').appendTo('body');
+  
+      jQuery('#ux_feedback_form').submit(function(e) {
+        e.preventDefault();
+        var b = jQuery('button#ux_feedback_submit');
+        b.text("Thank you!")
+        b.attr('disabled',true);
+  
+        jQuery.ajax({
+          url: '/downloads/content/feedback',
+          data: jQuery(this).serialize(),
+          complete: function() {
+            jQuery('#feedback_modal').modal('hide');
+          }
+        });
+      });
+  
+      var prepareForm = function() {
+        for (var i = 0, len = document.forms.length; i < len; i++) {
+          if (document.forms[i].id === "ux_feedback_form") {
+            document.forms[i].reset();
+          }
+         }
+        var b = jQuery('button#ux_feedback_submit');
+        b.text("Submit");
+        b.attr('disabled',false);
+      }
+  
+      jQuery('button#ux_feedback').click(function() {
+        prepareForm();
+      });
+    });
+  });
+</script>
+
+</div>
+</div>
+
+    
+
+            </div>
+        </main>
+    </div>
+    <!--googleoff: all-->
+    <div id="to-top"><a class="btn_slideto" href="#masthead" aria-label="Back to Top"><span class="web-icon-upload"></span></a></div>
+    <footer class="footer-main">
+        <div class="footer-top">
+            <div class="container">
+
+              <div class="brand">
+                <a href="https://redhat.com">
+                  <svg class="rh-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 613 145">
+                    <defs>
+                      <style>
+                        .rh-logo-hat {
+                          fill: #e00;
+                        }
+                        .rh-logo-type {
+                          fill: #fff;
+                        }
+                      </style>
+                    </defs>
+                    <title>Red Hat</title>
+                    <path
+                      class="rh-logo-hat"
+                      d="M127.47,83.49c12.51,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42l-7.45-32.36c-1.72-7.12-3.23-10.35-15.73-16.6C124.89,8.69,103.76.5,97.51.5,91.69.5,90,8,83.06,8c-6.68,0-11.64-5.6-17.89-5.6-6,0-9.91,4.09-12.93,12.5,0,0-8.41,23.72-9.49,27.16A6.43,6.43,0,0,0,42.53,44c0,9.22,36.3,39.45,84.94,39.45M160,72.07c1.73,8.19,1.73,9.05,1.73,10.13,0,14-15.74,21.77-36.43,21.77C78.54,104,37.58,76.6,37.58,58.49a18.45,18.45,0,0,1,1.51-7.33C22.27,52,.5,55,.5,74.22c0,31.48,74.59,70.28,133.65,70.28,45.28,0,56.7-20.48,56.7-36.65,0-12.72-11-27.16-30.83-35.78"/>
+                      <path class="rh-logo-band"
+                      d="M160,72.07c1.73,8.19,1.73,9.05,1.73,10.13,0,14-15.74,21.77-36.43,21.77C78.54,104,37.58,76.6,37.58,58.49a18.45,18.45,0,0,1,1.51-7.33l3.66-9.06A6.43,6.43,0,0,0,42.53,44c0,9.22,36.3,39.45,84.94,39.45,12.51,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42Z"/>
+                      <path
+                      class="rh-logo-type"
+                      d="M579.74,92.8c0,11.89,7.15,17.67,20.19,17.67a52.11,52.11,0,0,0,11.89-1.68V95a24.84,24.84,0,0,1-7.68,1.16c-5.37,0-7.36-1.68-7.36-6.73V68.3h15.56V54.1H596.78v-18l-17,3.68V54.1H568.49V68.3h11.25Zm-53,.32c0-3.68,3.69-5.47,9.26-5.47a43.12,43.12,0,0,1,10.1,1.26v7.15a21.51,21.51,0,0,1-10.63,2.63c-5.46,0-8.73-2.1-8.73-5.57m5.2,17.56c6,0,10.84-1.26,15.36-4.31v3.37h16.82V74.08c0-13.56-9.14-21-24.39-21-8.52,0-16.94,2-26,6.1l6.1,12.52c6.52-2.74,12-4.42,16.83-4.42,7,0,10.62,2.73,10.62,8.31v2.73a49.53,49.53,0,0,0-12.62-1.58c-14.31,0-22.93,6-22.93,16.73,0,9.78,7.78,17.24,20.19,17.24m-92.44-.94h18.09V80.92h30.29v28.82H506V36.12H487.93V64.41H457.64V36.12H439.55ZM370.62,81.87c0-8,6.31-14.1,14.62-14.1A17.22,17.22,0,0,1,397,72.09V91.54A16.36,16.36,0,0,1,385.24,96c-8.2,0-14.62-6.1-14.62-14.09m26.61,27.87h16.83V32.44l-17,3.68V57.05a28.3,28.3,0,0,0-14.2-3.68c-16.19,0-28.92,12.51-28.92,28.5a28.25,28.25,0,0,0,28.4,28.6,25.12,25.12,0,0,0,14.93-4.83ZM320,67c5.36,0,9.88,3.47,11.67,8.83H308.47C310.15,70.3,314.36,67,320,67M291.33,82c0,16.2,13.25,28.82,30.28,28.82,9.36,0,16.2-2.53,23.25-8.42l-11.26-10c-2.63,2.74-6.52,4.21-11.14,4.21a14.39,14.39,0,0,1-13.68-8.83h39.65V83.55c0-17.67-11.88-30.39-28.08-30.39a28.57,28.57,0,0,0-29,28.81M262,51.58c6,0,9.36,3.78,9.36,8.31S268,68.2,262,68.2H244.11V51.58Zm-36,58.16h18.09V82.92h13.77l13.89,26.82H292l-16.2-29.45a22.27,22.27,0,0,0,13.88-20.72c0-13.25-10.41-23.45-26-23.45H226Z"/>
+                  </svg>
+                </a>
+              </div>
+
+            <div role="navigation">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a class="download-software" href="https://access.redhat.com/downloads/">下载</a></li>
+                    <li><a class="manage-subscriptions" href="https://access.redhat.com/management/subscriptions/#active">订阅</a></li>
+                    <li><a class="support-cases" href="https://access.redhat.com/support">支持问题单</a></li>
+                    <li><a class="customer-service" href="https://access.redhat.com/support/customer-service">客户服务</a></li>
+                    <li><a class="quick-docs" href="https://access.redhat.com/documentation">产品文档</a></li>
+                </ul>
+            </div>
+
+            <div role="navigation">
+                <h3>帮助</h3>
+                <ul>
+                    <li><a class="contact-us" href="https://access.redhat.com/support/contact/">联系我们</a></li>
+                    <li><a class="cp-faqs" href="https://access.redhat.com/articles/33844">客户服务常见问题</a></li>
+                    <li><a class="login-problems" href="https://access.redhat.com/help/login_assistance">登录帮助</a></li>
+                </ul>
+            </div>
+
+            <div role="navigation">
+                <h3>网站信息</h3>
+                <ul>
+                  <li><a class="trust-red-hat" href="https://www.redhat.com/en/trust">Trust Red Hat</a></li>
+                  <li><a class="browser-support-policy" href="https://access.redhat.com/help/browsers/">浏览器支持政策</a></li>
+                  <li><a class="accessibility" href="https://access.redhat.com/help/accessibility/">可访问性</a></li>
+                  <li><a class="recognition" href="https://access.redhat.com/recognition/">获奖 &amp; 好评</a></li>
+                  <li><a class="colophon" href="https://access.redhat.com/help/colophon/">Colophon</a></li>
+                </ul>
+            </div>
+
+            <div role="navigation">
+                <h3>相关网页</h3>
+                <ul>
+                    <li><a href="https://www.redhat.com/" class="red-hat-com">redhat.com</a></li>
+                    <li><a href="https://www.openshift.com" class="openshift-com">openshift.com</a></li>
+                    <li><a href="http://developers.redhat.com/" class="red-hat-developers">developers.redhat.com</a></li>
+                    <li><a href="https://connect.redhat.com/" class="partner-connect">connect.redhat.com</a></li>
+                </ul>
+            </div>
+
+            <div role="navigation">
+                <h3>关于</h3>
+                <ul>
+                    <li><a href="https://access.redhat.com/subscription-value" class="subscription-value">Red Hat 订阅价值</a></li>
+                    <li><a href="https://www.redhat.com/about/" class="about-red-hat">关于 Red Hat</a></li>
+                    <li><a href="http://jobs.redhat.com" class="about-jobs">Red Hat Jobs</a></li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="anchor">
+            <div class="container">
+                <div class="status-legal">
+                    <a hidden href="https://status.redhat.com" class="status-page-widget">
+                          <span class="status-description"></span>
+                          <span class="status-dot shape-circle"></span>
+                    </a>
+                    <div class="legal-copyright">
+                        <div class="copyright">版权所有© 2020 Red Hat, Inc. 京ICP备09066747号</div>
+
+                        <div role="navigation" class="legal">
+                            <ul>
+                                <li><a href="http://www.redhat.com/en/about/privacy-policy" class="privacy-policy">隐私策略</a></li>
+                                <li><a href="https://access.redhat.com/help/terms/" class="terms-of-use">客户门户网站使用条款</a></li>
+                                <li><a href="http://www.redhat.com/en/about/all-policies-guidelines" class="all-policies">所有政策及指南</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="http://www.redhat.com/summit/" class="summit">
+                      <img src="https://access.redhat.com/chrome_themes/nimbus/img/rh-summit-red-a.svg" alt="Red Hat Summit" />
+                    </a>
+
+                    <div class="social-media">
+                        <a href="https://twitter.com/RedHatSupport" class="sm-icon twitter"><span class="nicon-twitter"></span><span class="offscreen">Twitter</span></a>
+                        <a href="https://www.facebook.com/RedHatSupport" class="sm-icon facebook"><span class="nicon-facebook"></span><span class="offscreen">Facebook</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--googleon: all-->
+</div>
+
+  </body>
+</html>
