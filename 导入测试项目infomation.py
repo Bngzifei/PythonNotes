@@ -416,3 +416,362 @@ https://blog.csdn.net/weixin_34357928/article/details/91426164?utm_medium=distri
 
 Fiddler抓取HTTPS配置:
 https://www.cnblogs.com/liulinghua90/p/9109282.html
+
+Fiddler官方文档翻译:
+https://www.kancloud.cn/gaogui/l2/420405
+
+[Android 原创] fiddler抓包工具详细配置方法
+https://www.52pojie.cn/thread-1171662-1-1.html
+
+吾爱破解工具包:
+https://down.52pojie.cn/Tools/
+
+Fiddler资料链接:
+https://www.cnblogs.com/yyhh/p/5140852.html
+
+OpenResty:
+https://zhuanlan.zhihu.com/p/94623469
+
+fiddler如何设置才能抓FireFox的包？
+https://blog.csdn.net/zhoutaohenan/article/details/8477993
+https://blog.csdn.net/qq_35182128/article/details/97612206?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+http状态码:
+https://www.php.cn/web/web-http422.html
+
+一个代码库的好网站:
+https://www.ctolib.com/
+
+Python爬虫汇总:
+https://zhuanlan.zhihu.com/p/112526698
+
+js2py库:
+https://www.yiyult.com/201906037223.html
+
+selenium + phantomJS资料:
+https://www.cnblogs.com/miqi1992/p/8093958.html
+
+人人网模拟登录:
+https://www.cnblogs.com/LexMoon/p/pyspider04.html
+
+注意:在git提交项目出现这个问题的时候:
+warning: unable to access '.gitignore': Permission denied
+需要把.gitignore 文件放在跟项目同级的目录内,  警告中的.gitignore是一个目录,删除掉即可
+
+pycharm如果不显示annotate(版本控制的提示信息):
+https://www.iteye.com/blog/shareisattitude-2389427
+菜单栏-->VCS-->enable version control Intrgration
+
+如何在局域网内开一家电影院:
+https://www.cnblogs.com/LexMoon/p/mov.html
+
+file:///D:/BaiduNetdiskDownload/PythonSpider%E8%AF%BE%E4%BB%B6(%E6%96%B0%E7%89%88%E8%AF%BE%E4%BB%B6alpha)/%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6%E5%BC%80%E5%8F%91/2.%E6%A1%86%E6%9E%B6%E9%9B%8F%E5%BD%A2%E5%AE%9E%E7%8E%B0/2.%E6%A1%86%E6%9E%B6%E9%9B%8F%E5%BD%A2--%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97.html
+
+urls:
+//div[@class="option pull-left"][2]/select[@id="evr"]/option/@value
+文本内容:
+//div[@class="option pull-left"][2]/select[@id="evr"]/option/text()
+
+https://access.redhat.com
+
+chrome无头浏览器使用:
+https://www.cnblogs.com/kaibindirver/p/11432850.html
+
+chrome启动选项参数:
+https://www.jianshu.com/p/04848a35fe0a
+https://peter.sh/experiments/chromium-command-line-switches/
+
+在线加密解密:
+https://tool.oschina.net/encrypt?type=3
+
+在线编码转换:
+https://tool.oschina.net/encode?type=4
+
+利用xpath获取text或者href内容:
+https://blog.csdn.net/onesmile5137/article/details/90696785
+
+第九节：JWT简介和以JS+WebApi为例基于JWT的安全校验
+https://www.cnblogs.com/yaopengfei/p/10451189.html
+
+处理txt文本数据:
+https://github.com/JGPY/Python_The-wisdom-of-life/tree/master/autoTXT
+
+未保存的:
+3.10.0-957.38.2.el7
+3.10.0-862.34.1.el7
+3.10.0-514.55.4.el7
+3.10.0-514.53.1.el7
+3.10.0-327.28.2.el7
+
+
+
+https://access.redhat.com/downloads/content/rhel---7.4/x86_64/4118/kernel/3.10.0-957.41.1.el7/src/fd431d51/package-changelog
+
+
+
+
+3.10.0-1062.26.1.el7 [最新的]
+3.10.0-1062.21.1.el7 
+3.10.0-1062.18.1.el7 
+3.10.0-1062.12.1.el7 
+3.10.0-1062.9.1.el7 
+3.10.0-1062.7.1.el7 
+3.10.0-1062.4.3.el7 
+3.10.0-1062.4.2.el7 
+3.10.0-1062.4.1.el7 
+3.10.0-1062.1.2.el7 
+3.10.0-1062.1.1.el7 
+3.10.0-1062.el7 
+3.10.0-957.54.1.el7 
+3.10.0-957.48.1.el7 
+3.10.0-957.46.1.el7 
+3.10.0-957.43.1.el7 
+3.10.0-957.41.1.el7 
+3.10.0-957.38.3.el7 
+3.10.0-957.38.2.el7 
+3.10.0-957.38.1.el7 
+3.10.0-957.35.2.el7 
+3.10.0-957.35.1.el7 
+3.10.0-957.27.4.el7 
+3.10.0-957.27.2.el7 
+3.10.0-957.21.3.el7 
+3.10.0-957.21.2.el7 
+3.10.0-957.12.2.el7 
+3.10.0-957.12.1.el7 
+3.10.0-957.10.1.el7 
+3.10.0-957.5.1.el7 
+3.10.0-957.1.3.el7 
+3.10.0-957.el7 
+3.10.0-862.51.1.el7
+
+3.10.0-862.48.1.el7 
+3.10.0-862.46.1.el7 
+3.10.0-862.44.2.el7 
+3.10.0-862.43.3.el7 
+3.10.0-862.43.2.el7 
+3.10.0-862.43.1.el7 
+3.10.0-862.41.2.el7 
+3.10.0-862.41.1.el7 
+3.10.0-862.37.1.el7 
+3.10.0-862.34.2.el7 
+3.10.0-862.34.1.el7 
+3.10.0-862.32.2.el7 
+3.10.0-862.32.1.el7 
+3.10.0-862.29.1.el7 
+3.10.0-862.27.1.el7 
+3.10.0-862.25.3.el7 
+3.10.0-862.20.2.el7 
+3.10.0-862.14.4.el7 
+3.10.0-862.11.6.el7 
+3.10.0-862.9.1.el7 
+3.10.0-862.6.3.el7 
+3.10.0-862.3.3.el7 
+3.10.0-862.3.2.el7 
+3.10.0-862.2.3.el7 
+3.10.0-862.el7 
+3.10.0-693.58.1.el7 
+3.10.0-693.55.1.el7 
+3.10.0-693.50.3.el7 
+3.10.0-693.47.2.el7 
+3.10.0-693.46.1.el7 
+3.10.0-693.44.1.el7 
+3.10.0-693.43.1.el7 
+3.10.0-693.39.1.el7 
+3.10.0-693.37.4.el7 
+3.10.0-693.35.1.el7 
+3.10.0-693.33.1.el7 
+3.10.0-693.25.7.el7 
+3.10.0-693.25.4.el7 
+3.10.0-693.25.2.el7 
+3.10.0-693.21.1.el7 
+3.10.0-693.17.1.el7 
+3.10.0-693.11.6.el7 
+3.10.0-693.11.1.el7 
+3.10.0-693.5.2.el7 
+3.10.0-693.2.2.el7 
+3.10.0-693.2.1.el7 
+3.10.0-693.1.1.el7 
+3.10.0-693.el7 
+3.10.0-514.61.1.el7 
+3.10.0-514.58.1.el7 
+3.10.0-514.55.4.el7 
+3.10.0-514.53.1.el7 
+3.10.0-514.51.1.el7 
+3.10.0-514.48.5.el7 
+3.10.0-514.48.3.el7 
+3.10.0-514.48.1.el7 
+3.10.0-514.44.1.el7 
+3.10.0-514.41.1.el7 
+3.10.0-514.36.5.el7 
+3.10.0-514.36.1.el7 
+3.10.0-514.35.1.el7 
+3.10.0-514.32.3.el7 
+3.10.0-514.32.2.el7 
+3.10.0-514.28.2.el7 
+3.10.0-514.28.1.el7 
+3.10.0-514.26.2.el7 
+3.10.0-514.26.1.el7 
+3.10.0-514.21.2.el7 
+3.10.0-514.21.1.el7 
+3.10.0-514.16.1.el7 
+3.10.0-514.10.2.el7 
+3.10.0-514.6.2.el7 
+3.10.0-514.6.1.el7 
+3.10.0-514.2.2.el7 
+3.10.0-514.el7 
+3.10.0-327.62.1.el7 
+3.10.0-327.61.3.el7 
+3.10.0-327.59.3.el7 
+3.10.0-327.59.2.el7 
+3.10.0-327.59.1.el7 
+3.10.0-327.58.1.el7 
+3.10.0-327.55.3.el7 
+3.10.0-327.55.2.el7 
+3.10.0-327.55.1.el7 
+3.10.0-327.53.1.el7 
+3.10.0-327.49.2.el7 
+3.10.0-327.46.1.el7 
+3.10.0-327.44.2.el7 
+3.10.0-327.41.4.el7 
+3.10.0-327.41.3.el7 
+3.10.0-327.36.3.el7 
+3.10.0-327.36.2.el7 
+3.10.0-327.36.1.el7 
+3.10.0-327.28.3.el7 
+3.10.0-327.28.2.el7 
+3.10.0-327.22.2.el7 
+3.10.0-327.18.2.el7 
+3.10.0-327.13.1.el7 
+3.10.0-327.10.1.el7 
+3.10.0-327.4.5.el7 
+3.10.0-327.4.4.el7 
+3.10.0-327.3.1.el7 
+3.10.0-327.el7 
+3.10.0-229.49.1.el7 
+3.10.0-229.48.1.el7 
+3.10.0-229.46.1.el7 
+3.10.0-229.44.1.el7 
+3.10.0-229.42.2.el7 
+3.10.0-229.42.1.el7 
+3.10.0-229.40.1.el7 
+3.10.0-229.38.1.el7 
+3.10.0-229.34.1.el7 
+3.10.0-229.30.1.el7 
+3.10.0-229.28.1.el7 
+3.10.0-229.26.2.el7 
+3.10.0-229.24.2.el7 
+3.10.0-229.20.1.el7 
+3.10.0-229.14.1.el7 
+3.10.0-229.11.1.el7 
+3.10.0-229.7.2.el7 
+3.10.0-229.4.2.el7 
+3.10.0-229.1.2.el7 
+3.10.0-229.el7 
+3.10.0-123.20.1.el7 
+3.10.0-123.13.2.el7 
+3.10.0-123.13.1.el7 
+3.10.0-123.9.3.el7 
+3.10.0-123.9.2.el7 
+3.10.0-123.8.1.el7 
+3.10.0-123.6.3.el7 
+3.10.0-123.4.4.el7 
+3.10.0-123.4.2.el7 
+3.10.0-123.1.2.el7 
+3.10.0-123.el7
+
+优质的博客:
+https://www.nmirage.com/sort/secure
+https://www.oschina.net/blog/3217082
+企业网管:
+https://www.cnblogs.com/medik/p/10989759.html
+
+centos7安装svn客户端和使用:
+https://blog.csdn.net/weixin_30408309/article/details/95457257
+步骤:
+rpm -qa subversion # 检查是否已经安装svn
+yum remove -y subversion  # 移除svn
+yum install -y subversion  # 安装svn
+svnserve --version  # 查看版本信息
+svn checkout http://xxx.xx.xx/xx  # 下载svn远端服务器上指定项目的代码 地址是http的形式
+svn checkout svn://500.900.23.140/PATH/custom/HCIPLATFORM  # 下载svn远端服务器上指定项目的代码  地址是svn的形式
+
+bdb.py
+
+
+python dir()与__dict__的区别:
+https://www.cnblogs.com/zjchao/p/7894477.html
+https://www.cnblogs.com/xxpythonxx/p/11831384.html
+
+
+python 执行终端命令的库:
+https://blog.csdn.net/hpwzjz/article/details/82992176
+subprocess
+
+python用字典实现switch-case功能:
+https://www.cnblogs.com/Ralph-Wang/p/3395322.html
+
+如何检查字符串在Python中是大小写还是混合大小写？
+https://cloud.tencent.com/developer/ask/64073
+字符串中有许多“方法”。islower()并且isupper()应该满足您的需求:
+例如:
+sp_name = "custom-aSec-bandwidth"
+执行  sp_name.islower()
+返回  False
+执行:
+sp_name.isupper()
+返回  False
+
+说明既不是小写也不是大写,是大小写混用:
+因为: sp_name = "custom-asec-bandwidth"
+执行  sp_name.islower()
+返回  True
+说明  islower/isupper 只是针对26个字母进行判别,非字母符号不影响.
+
+
+# 删除test这个目录及其里面的子目录和文件
+import shutil
+shutil.rmtree(path=top)
+就是相当于 rm xxx -rf 的命令
+
+git add 操作时候警告: warning:The file will have its original line endings in your working directory
+https://www.cnblogs.com/shijieli/p/10535051.html
+
+解决办法:
+执行下面的命令: 
+# git config --global core.autocrlf false
+
+python操作svn的扩展包:
+https://pypi.org/project/svn/
+看下如何获取author等信息
+
+python实现定时任务:
+https://blog.csdn.net/chen801090/article/details/93335733
+
+python使用logging实现简易的日志系统:
+https://www.cnblogs.com/goodhacker/p/3355660.html
+
+python爬取qq音乐:
+https://www.cnblogs.com/taotaoblogs/p/6872508.html
+
+djang多对多时添加数据:
+出现报错:TypeError: Direct assignment to the forward side of a many-to-many set is prohibited.
+https://blog.csdn.net/ckk727/article/details/104031911
+解决办法:多对多字段 先 add() ,
+不能 还就是不能 Tice(**pkg_attrs) 这么写,否则下面的
+多对多 version字段无法设置
+tice_obj = Tice.objects.create(**pkg_attrs)
+tice_obj.version.add(version_obj)
+
+django使用celery实现定时任务:
+https://www.cnblogs.com/huang-yc/p/10110754.html
+https://www.cnblogs.com/crb912/p/8976937.html
+
+在做一个django项目的时候，我遇到了一个定时任务的需求，我这里是需要定时扫描数据库并发送邮件，在查阅相关资料后，总结出如下几个方法
+
+1.使用while创建一个死循环，判断时间，从而执行一些函数
+2.使用APScheduler库实现定时任务 （详情可以见http://blog.csdn.net/hui3909/article/details/46652623）
+3.django-crontab实现定时任务
+4.django-celery实现定时任务
+
+使用APScheduler库实现定时任务:
+https://blog.csdn.net/hui3909/article/details/46652623
