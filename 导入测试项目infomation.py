@@ -775,3 +775,10 @@ https://www.cnblogs.com/crb912/p/8976937.html
 
 使用APScheduler库实现定时任务:
 https://blog.csdn.net/hui3909/article/details/46652623
+
+Github上 10 个开源免费且优秀的后台控制面板:
+https://blog.csdn.net/qq_29055201/article/details/84781865?utm_medium=distribute.down_relevant_right.none-task-blog-BlogCommendFromBaidu-7.nonecase&depth_1-utm_source=distribute.down_relevant_right.none-task-blog-BlogCommendFromBaidu-7.nonecase
+
+后台UI集合:
+https://github.com/chenxingxing6/AdminUi
+
