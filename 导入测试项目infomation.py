@@ -829,3 +829,41 @@ https://blog.csdn.net/qq_29055201/article/details/84781865?utm_medium=distribute
 后台UI集合:
 https://github.com/chenxingxing6/AdminUi
 
+源码编译安装redis:
+https://blog.csdn.net/huangyuhuangyu/article/details/80263525
+
+vim 编辑文件时遇到:   E325: 注意
+					 发现交换文件 ".nginx.conf.swp"
+https://blog.csdn.net/oxinliang12/article/details/73613879/
+
+
+Django+Celery+redis kombu.exceptions.EncodeError:Object of type is not JSON serializable报错:
+注意是celery版本的问题:
+https://www.cnblogs.com/hszstudypy/p/12153416.html
+
+celery优质博客:
+https://www.itread01.com/content/1538621943.html
+
+记个问题:
+消息队列,多线程,多进程,协程等异步任务中如何实现pdb的断点调试???
+https://blog.csdn.net/DeathlessDogface/article/details/84074461
+
+Python协程爬虫实现断点续爬与分布式爬虫原理举例:
+https://www.52pojie.cn/thread-1210439-1-1.html
+
+django中csrf中间件的说明:
+https://www.cnblogs.com/h2zZhou/p/9776270.html
+
+Django常用的QuerySet操作:
+https://www.cnblogs.com/zihao1037/p/11050397.html
+
+python3异步编程详解:
+https://blog.csdn.net/lu8000/article/details/45025987?utm_medium=distribute.pc_relevant_right.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_right.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+
+https://pyrasite.readthedocs.io/en/latest/Payloads.html
+python内存泄露诊断过程:
+https://www.51dev.com/python/17998
+
+Python 进程内存增长解决方案:
+https://zhuanlan.zhihu.com/p/28031057
