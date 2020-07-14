@@ -867,3 +867,69 @@ https://www.51dev.com/python/17998
 
 Python 进程内存增长解决方案:
 https://zhuanlan.zhihu.com/p/28031057
+
+pudb调试多进程Python代码:
+https://zhuanlan.zhihu.com/p/107044373
+
+FastAPI框架:
+https://zhuanlan.zhihu.com/p/136887785
+
+Python如何高效的调试:
+https://www.zhihu.com/question/21572891
+
+2020年最新的golang教程直接看：
+https://www.bilibili.com/video/BV1Vi4y1t71d?p=1
+
+rust程序设计语言:
+https://kaisery.gitbooks.io/rust-book-chinese/content/
+
+git开发中文手册:
+https://www.php.cn/manual/view/34956.html
+
+优雅的git message:
+https://juejin.im/post/5f0818c15188252e906f8bac?utm_source=gold_browser_extension
+
+检出:就是找到,找出的意思
+
+爬虫管理平台:crawlab:
+https://juejin.im/post/5efac4ab6fb9a07e5d76b86a
+
+MySQL面试集锦:
+https://juejin.im/post/5f09c24be51d4534a81aa11d?utm_source=gold_browser_extension
+
+微信排版工具:
+https://mdnice.com/?from=juejin
+
+掘金大厂面试集锦:
+https://juejin.im/post/5e7d4e8b6fb9a03c6422f112?utm_source=gold_browser_extension
+https://github.com/sanyuan0704/my_blog
+
+Cpythonyuanm源码:
+https://github.com/python/cpython/blob/master/Modules/socketmodule.c
+
+设计模式:
+https://www.cnblogs.com/taosiyu/p/11293949.html
+
+C语言教学视频:
+http://c.biancheng.net/video/c/
+
+内网时间同步:
+执行:
+yum install -y ntpdate
+然后执行:
+注意: ntp.sjtu.edu.cn 这个是你内网的时间服务器域名
+ntpdate ntp.sjtu.edu.cn
+
+一张图总结操作系统核心知识:
+https://juejin.im/post/5f0d04ae5188252e7a1c717a?utm_source=gold_browser_extension#heading-10
+
+ELK日志搜集介绍:
+https://blog.csdn.net/qiushisoftware/article/details/100298046
+
+快速搭建ELK教程:
+https://www.cnblogs.com/yuhuLin/p/7018858.html
+
+https://segmentfault.com/a/1190000003689999
+https://www.cnblogs.com/along21/p/8613115.html
+
+
