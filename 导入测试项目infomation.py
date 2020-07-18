@@ -932,4 +932,30 @@ https://www.cnblogs.com/yuhuLin/p/7018858.html
 https://segmentfault.com/a/1190000003689999
 https://www.cnblogs.com/along21/p/8613115.html
 
+linux中的 diff 命令详解:
+https://www.cnblogs.com/wf-linux/p/9488257.html
 
+通过Python模块filecmp 对文件比较的实现方法:
+https://www.jb51.net/article/142813.htm
+https://www.cnblogs.com/franknihao/p/7649746.html
+
+优秀的博客:
+https://www.cnblogs.com/wangbin2188/tag/python/
+
+Linux专题:
+https://www.linuxprobe.com/python-exit-exit.html
+
+Python递归return退出的问题:
+https://blog.csdn.net/qq878594585/article/details/82193249
+
+Python运算符:
+https://www.runoob.com/python/python-operators.html
+
+数据结构-位图原理及实现
+https://blog.csdn.net/lucky52529/article/details/90172264
+
+python实现文件夹文件遍历及比对:
+https://blog.csdn.net/xiaxuesong666/article/details/78470035?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-4-78470035.nonecase
+
+董伟明博客:
+https://old.dongwm.com/
