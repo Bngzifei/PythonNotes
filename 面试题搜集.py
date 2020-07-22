@@ -138,3 +138,39 @@ https://blog.csdn.net/itcastcpp/article/details/86603408
 
 Golang精编100题-搞定golang面试:
 https://blog.csdn.net/itcastcpp/article/details/80462619?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-9.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-9.nonecase
+
+截图神器:ShareX
+https://github.com/ShareX/ShareX/releases/tag/v13.1.0
+
+Python 文件操作常用函数:
+
+1.> 等效于 rm * -rf 命令递归删除的:
+import shutil
+shutil.rmtree(路径)
+
+2.> 等效于 mkdir -p 命令递归创建目录:
+
+os.makedirs(dst)
+
+3.> 等效于 cp -r src_path dst_path
+import shutil
+shutil.copytree(src, dst)
+
+4. 注意: os.system(系统命令)
+返回值为0 才是正常执行,否则就是执行失败
+
+5. 这种就是程序退出,类似于 手动按下 ctrl + c 键:
+import sys
+sys.exit()
+
+6.切换到指定目录:
+os.chdir(指定路径)
+
+7.获取当前所在路径:
+os.getcwd()
+
+仔细看下这个仓库:
+https://github.com/jumper2014/PyCodeComplete
+
+做成这个打包:
+https://www.jianshu.com/p/692bab7f8e07
