@@ -932,4 +932,58 @@ https://www.cnblogs.com/yuhuLin/p/7018858.html
 https://segmentfault.com/a/1190000003689999
 https://www.cnblogs.com/along21/p/8613115.html
 
+linux中的 diff 命令详解:
+https://www.cnblogs.com/wf-linux/p/9488257.html
 
+通过Python模块filecmp 对文件比较的实现方法:
+https://www.jb51.net/article/142813.htm
+https://www.cnblogs.com/franknihao/p/7649746.html
+
+优秀的博客:
+https://www.cnblogs.com/wangbin2188/tag/python/
+
+Linux专题:
+https://www.linuxprobe.com/python-exit-exit.html
+
+Python递归return退出的问题:
+https://blog.csdn.net/qq878594585/article/details/82193249
+
+Python运算符:
+https://www.runoob.com/python/python-operators.html
+
+数据结构-位图原理及实现
+https://blog.csdn.net/lucky52529/article/details/90172264
+
+python实现文件夹文件遍历及比对:
+https://blog.csdn.net/xiaxuesong666/article/details/78470035?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-4-78470035.nonecase
+
+董伟明博客:
+https://old.dongwm.com/
+
+Python 标准库 shutil用法介绍:
+https://m.jb51.net/article/145522.htm?ivk_sa=1023345p
+
+# 遇到多层循环的场景, 注意: 先从内层小循环开始,然后再逐层向外扩展.
+
+python字符串格式化好图:
+https://www.cnblogs.com/lvcm/p/8859225.html
+
+如何自定义导包?
+# 添加自定义导包路径                      
+CURRENT_DIR = os.path.dirname(os.
+# 就是把当前文件所在路径的上一级路径添加到系统环境变量中,以便c
+sys.path.insert(0, os.path.dirnam
+# 下面这样是不行的,需要再来上一级路径             
+# sys.path.insert(0, CURRENT_DIR)
+
+centos7磁盘(新增磁盘后,原有磁盘也是这么扩容的,没区别)扩容之后进行分区,格式化,挂载的操作:
+https://blog.csdn.net/sinat_34104446/article/details/84637590?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+注意原有磁盘上面扩容后执行 fdisk /dev/vda  命令后,先按n 新建分区,再按p新建主分区,然后就和上面的教程步骤一致了.
+
+
+Centos7原有磁盘扩容:
+https://cloud.tencent.com/developer/article/1634538
+
+查看磁盘空间大小:
+https://www.cnblogs.com/liaojie970/p/9026457.html
