@@ -976,6 +976,7 @@ sys.path.insert(0, os.path.dirnam
 # 下面这样是不行的,需要再来上一级路径             
 # sys.path.insert(0, CURRENT_DIR)
 
+下面的这个是正确操作:
 centos7磁盘(新增磁盘后,原有磁盘也是这么扩容的,没区别)扩容之后进行分区,格式化,挂载的操作:
 https://blog.csdn.net/sinat_34104446/article/details/84637590?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 
@@ -987,3 +988,14 @@ https://cloud.tencent.com/developer/article/1634538
 
 查看磁盘空间大小:
 https://www.cnblogs.com/liaojie970/p/9026457.html
+
+windows安装mongodb:
+# 下面这个教程中的log日志路径设置和自己的有出入,不能照搬.
+https://www.cnblogs.com/TM0831/p/10606624.html
+https://www.jb51.net/article/164138.htm
+
+windows下面启动MongoDB,然后在windows的服务列表中就可以看到MongoDB的服务了:
+net start MongoDB
+
+robo3t连接时报错:network error while attemping to run command 'getnonce' on host 'localhost:27017'
+https://blog.csdn.net/xuxiaoyu122/article/details/104546339

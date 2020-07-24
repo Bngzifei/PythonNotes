@@ -169,7 +169,6 @@ sys.exit()
 
 6.切换到指定目录:
 os.chdir(指定路径)
->>>>>>> 7a8d77ce39296f7ce84aa64afebaf899df721d83
 
 7.获取当前所在路径:
 os.getcwd()
@@ -179,3 +178,50 @@ https://github.com/jumper2014/PyCodeComplete
 
 做成这个打包:
 https://www.jianshu.com/p/692bab7f8e07
+
+知乎专栏-Python实践之路:
+https://zhuanlan.zhihu.com/python2018
+
+知乎专栏-90 条写 Python 程序的建议:
+https://zhuanlan.zhihu.com/p/144228839
+
+这个网站需要挂代理才能访问:
+https://itbook.download/
+
+自定义编写的python脚本实现开机自启动。
+
+增量爬虫，最主要的就是爬取的url的去重,所以需要持久化存储,那就使用mongodb存起来,
+当再次爬取的时候,进行比对去重,实现增量爬取。
+
+解决报错:[944:9704:0723/151739.208:ERROR:browser_switcher_service.cc(238)
+https://blog.cnrainbird.com/index.php/2020/04/21/python_windows_xia_yun_xing_selenium_ti_shi_devtools_listening_on_ws_127_0_0_1/
+
+
+Python中文网教程:
+https://www.cnpython.com/tags/262753
+
+mongodb基础操作:
+https://blog.csdn.net/fengbingchun/article/details/89069165
+
+mongodbmanager可视化连接器:还有一个robo3T
+https://www.mongodbmanager.com/download-mongodb-manager-free
+
+
+mongodb基础操作命令:
+1、查询指定集合的所有记录：
+	db.centos8_table.find() 或者 db.centos8_table.find({})
+	查询关键字指定的记录:
+	db.centos8_table.find({"kw":kw})
+2、删除指定集合的所有记录：
+如果你想删除所有数据，可以使用以下方式（类似常规 SQL 的 truncate 命令）：
+	db.col.remove({})   注意:remove方法需要一个query参数,删除所有给{}即可
+	删除关键字指定的记录:
+	db.col.remove({"kw":kw})
+
+https://www.runoob.com/mongodb/mongodb-remove.html
+
+mongodb常用查询命令:
+https://blog.csdn.net/liqi_q/article/details/79086238
+
+
+
