@@ -4,10 +4,10 @@ https://rahulmanuwas.gitbooks.io/mpos-nomp/content/
 
 https://beam.suprnova.cc/
 
+体验地址:
 https://www.bfcpool.com/account/profit.html
-
-账户54303771@qq.com 密码w123456
-
+账户: 54303771@qq.com
+密码: w123456
 
 数据库没有密码:
 登录账号是mysql
@@ -39,5 +39,16 @@ https://blog.csdn.net/wangjiegege/article/details/77478870
 navicat导入sql文件:
 https://www.cnblogs.com/chenlimei/p/10375676.html
 
+比特币抵押质押解释:
+https://zhuanlan.zhihu.com/p/52392921
+
+Python实现的区块链:
+https://github.com/Carlos-Zen/blockchain-python/blob/master/README_zh.md
 
 
+申请了新的云主机之后,通常会遇到下面的问题:
+ubuntu新项目:
+问题:MySQL只有information_schema,test两个数据库
+https://www.cnblogs.com/xbq8080/p/6654672.html
+
+http://154.221.25.18:8000/pledge
