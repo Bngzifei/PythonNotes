@@ -222,5 +222,11 @@ https://www.runoob.com/mongodb/mongodb-remove.html
 mongodb常用查询命令:
 https://blog.csdn.net/liqi_q/article/details/79086238
 
+github加载慢解决办法:
+https://github.com/521xueweihan/GitHub520?utm_source=gold_browser_extension
 
+脚本之家电子书:
+https://www.jb51.net/do/book.html
 
+git reset三种模式
+https://www.jianshu.com/p/c2ec5f06cf1a

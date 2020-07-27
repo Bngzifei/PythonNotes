@@ -4,10 +4,10 @@ https://rahulmanuwas.gitbooks.io/mpos-nomp/content/
 
 https://beam.suprnova.cc/
 
+体验地址:
 https://www.bfcpool.com/account/profit.html
-
-账户54303771@qq.com 密码w123456
-
+账户: 54303771@qq.com
+密码: w123456
 
 数据库没有密码:
 登录账号是mysql
@@ -39,5 +39,8 @@ https://blog.csdn.net/wangjiegege/article/details/77478870
 navicat导入sql文件:
 https://www.cnblogs.com/chenlimei/p/10375676.html
 
+比特币抵押质押解释:
+https://zhuanlan.zhihu.com/p/52392921
 
-
+python实现的区块链:
+https://github.com/Carlos-Zen/blockchain-python/blob/master/README_zh.md
