@@ -229,4 +229,11 @@ https://github.com/521xueweihan/GitHub520?utm_source=gold_browser_extension
 https://www.jb51.net/do/book.html
 
 git reset三种模式
+<<<<<<< HEAD
 https://www.jianshu.com/p/c2ec5f06cf1a
+=======
+https://www.jianshu.com/p/c2ec5f06cf1a
+
+免费终端连接软件MobaXterm:
+https://mobaxterm.mobatek.net/download-home-edition.html
+>>>>>>> 6c502842a24fc10dc93705bf6acc01d2319e6ea2
