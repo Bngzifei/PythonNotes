@@ -230,3 +230,7 @@ https://www.jb51.net/do/book.html
 
 git reset三种模式
 https://www.jianshu.com/p/c2ec5f06cf1a
+
+免费终端连接软件MobaXterm:
+https://mobaxterm.mobatek.net/download-home-edition.html
+
