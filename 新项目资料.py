@@ -45,13 +45,16 @@ https://zhuanlan.zhihu.com/p/52392921
 python实现的区块链:
 https://github.com/Carlos-Zen/blockchain-python/blob/master/README_zh.md
 
-
 申请了新的云主机之后,通常会遇到下面的问题:
 ubuntu新项目:
 问题:MySQL只有information_schema,test两个数据库
 https://www.cnblogs.com/xbq8080/p/6654672.html
 
 http://154.221.25.18:8000/pledge
+
+后面安装mysql就用这个版本:
+Server version: 5.7.25 MySQL Community Server
+
 
 获取算力:
 https://www.bfcpool.cn/pool/api/getHashrate.html?puid=2483
@@ -223,3 +226,5 @@ https://www.bfcpool.cn/pool/api2/profit_day.html?token=qNTPy9Byw5eampyaZ5qRmmSbZ
     "total": 28
   }
 }
+
+
