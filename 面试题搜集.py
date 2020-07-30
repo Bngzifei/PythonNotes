@@ -234,3 +234,9 @@ https://www.jianshu.com/p/c2ec5f06cf1a
 免费终端连接软件MobaXterm:
 https://mobaxterm.mobatek.net/download-home-edition.html
 
+在民企使用vdi办公的同事使用下面的登录方式：
+IE浏览器或safari浏览器访问下面地址：
+地址一：webagent.sangfor.net.cn/ssl/mqkjyvdc.php
+地址二：webagent.sangfor.net/ssl/mqkjyvdc.php
+账号密码为办公VDI（200.200.8.80）的账号密码（账号默认为工号，忘记密码的同事可以联系its重置）
+收起

@@ -999,3 +999,5 @@ net start MongoDB
 
 robo3t连接时报错:network error while attemping to run command 'getnonce' on host 'localhost:27017'
 https://blog.csdn.net/xuxiaoyu122/article/details/104546339
+
+ubuntu系统下非root用户使用filezilla软件传输文件时,需要先给目的目录进行授权操作.

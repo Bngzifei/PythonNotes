@@ -244,3 +244,14 @@ https://www.bfcpool.cn/pool/api2/profit_day.html?token=qNTPy9Byw5eampyaZ5qRmmSbZ
 
 https://beam.suprnova.cc/index.php?page=statistics&action=pool
 
+sudo apt-get -y update;sudo apt-get dist-upgrade;sudo apt-get install build-essential autoconf libtool libboost-all-dev libcurl4-openssl-dev  libboost-all-dev libdb++-dev libminiupnpc-dev libssl-dev git  libprotobuf-dev protobuf-compiler libqrencode-dev nano -y
+ls
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+cd achcoin/
+ls
+cd src/
+ls
+make -f makefile.unix 
