@@ -234,3 +234,28 @@ https://www.jianshu.com/p/c2ec5f06cf1a
 免费终端连接软件MobaXterm:
 https://mobaxterm.mobatek.net/download-home-edition.html
 
+
+智齿客服开发文档:
+http://www.sobot.com/developer/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3/%E5%B7%A5%E5%8D%95%E7%B3%BB%E7%BB%9F/
+
+app后端设计:
+https://blog.csdn.net/newjueqi/article/details/19003775
+
+iteye网站:
+https://www.iteye.com/magazines/130
+
+前端设计资源网站:
+https://zhuanlan.zhihu.com/p/115949816
+
+https://www.freesion.com/article/4140230558/
+
+俄罗斯搜索引擎:
+yandex浏览器
+
+解决github访问慢的问题:
+https://zhuanlan.zhihu.com/p/93436925
+140.82.113.3	github.com
+199.232.69.194	github.global.ssl.fastly.net
+
+github无法加载图片:
+https://blog.csdn.net/qq_38232598/article/details/91346392
