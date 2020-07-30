@@ -33,7 +33,7 @@ ddp     上下两行的位置交换
 	cat /proc/version
 
 
-2.inux的命令uname -a:
+2.linux的命令uname -a:
 
 	uname -a
 
