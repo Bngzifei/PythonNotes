@@ -243,3 +243,4 @@ https://www.bfcpool.cn/pool/api2/profit_day.html?token=qNTPy9Byw5eampyaZ5qRmmSbZ
 }
 
 https://beam.suprnova.cc/index.php?page=statistics&action=pool
+
