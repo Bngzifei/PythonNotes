@@ -2,12 +2,16 @@ https://github.com/MPOS/php-mpos
 
 https://rahulmanuwas.gitbooks.io/mpos-nomp/content/
 
+开源项目上线后地址:
 https://beam.suprnova.cc/
 
 体验地址:
 https://www.bfcpool.com/account/profit.html
 账户: 54303771@qq.com
 密码: w123456
+抹茶交易所:
+https://www.mxc.co/trade/easy#MX_USDT
+
 
 数据库没有密码:
 登录账号是mysql
@@ -55,3 +59,12 @@ http://154.221.25.18:8000/pledge
 后面安装mysql就用这个版本:
 Server version: 5.7.25 MySQL Community Server
 
+CV:就是简历的意思
+
+Python3 sqlacodegen 根据已有数据库生成 ORM 使用的 model.py
+https://www.cnblogs.com/yuqilin/p/10743386.html
+
+自定义设计orm:
+https://blog.csdn.net/u013181595/article/details/77036446?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-3-77036446.nonecase
+
+https://beam.suprnova.cc/index.php
