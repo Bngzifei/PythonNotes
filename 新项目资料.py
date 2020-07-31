@@ -1,5 +1,11 @@
 https://github.com/MPOS/php-mpos
 
+php-mpos项目搭建:
+https://blog.csdn.net/qq_19998189/article/details/78638434
+
+导入数据库表:
+mysql -uroot -plibin911611 mpos < 000_base_structure.sql
+
 https://rahulmanuwas.gitbooks.io/mpos-nomp/content/
 
 开源项目上线后地址:
@@ -249,9 +255,141 @@ ls
 sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
+##################################
+sudo apt-get -y update;sudo apt-get dist-upgrade;sudo apt-get install build-essential autoconf libtool libboost-all-dev libcurl4-openssl-dev libboost-all-dev libdb++-dev libminiupnpc-dev libssl-dev git  libprotobuf-dev protobuf-compiler libqrencode-dev nano -y
+ls
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+
+视频教程:
+#############################
+sudo apt-get install sendmail libqtgui4 qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libssl-dev libdb++-dev git
+build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev mysql-server python-twisted python-mysqldb python-dev python-setuptools python-memcache
+python-simplejson memcached php5-memcached php5-mysqlnd php5-curl php5-json libapache2-mod-php5
+
+###########################
+sudo apt-get install libdb5.1-dev libdb5.1++-dev php5-memcached php5-mysqlnd php5-curl php5-json libapache2-mod-php5
+
+8.210.102.75，root,  Achpool@2020
+
+授权:
+/MPOS/source_code_achcoin-master/src/leveldb# chmod 777 build_detect_platform
+# 在src路径下面:
+make -f makefile.unix USE_UPNP=-
+strip anoncoind
+cp anoncoind /usr/bin/anoncoind
+
+# 报错处理:
+https://blog.csdn.net/temotemo/article/details/79445694
+https://www.youtube.com/watch?v=xAbMDlJYh7c
+
+配置这个:
+find / -name global.inc.dist.php
+授权:
+sudo chown -R www-data public/templates/compile public/templates/cache logs
+
+/var/www/php-mpos/templates/compile 
+/var/www/php-mpos/templates/cache
+/var/www/php-mpos/logs
+
+chown -R www-data /var/www/php-mpos/templates/compile /var/www/php-mpos/templates/cache /var/www/php-mpos/logs
+
+easy_install -U distribute
+知乎:youtube视频下载:
+https://www.zhihu.com/question/286478175/answer/451472955
 
 cd achcoin/
 ls
 cd src/
 ls
-make -f makefile.unix 
+make -f makefile.unix
+
+交易地址:
+http://167.172.144.49/
+
+
+API Calls
+Return data from coind
+
+getdifficulty
+Returns the current difficulty.
+167.172,144,49/api/getdifficulty
+
+getconnectioncount
+Returns the number of connections the block explorer has to other nodes.
+167.172,144,49/api/getconnectioncount
+
+getblockcount
+Returns the current block index.
+167.172,144,49/api/getblockcount
+
+getblockhash [index]
+Returns the hash of the block at ; index 0 is the genesis block.
+167.172,144,49/api/getblockhash?index=1337
+
+getblock [hash]
+Returns information about the block with the given hash.
+167.172,144,49/api/getblock?hash=1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1
+
+getrawtransaction [txid] [decrypt]
+Returns raw transaction representation for given transaction id. decrypt can be set to 0(false) or 1(true).
+167.172,144,49/api/getrawtransaction?txid=f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e&decrypt=0
+167.172,144,49/api/getrawtransaction?txid=f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e&decrypt=1
+
+getnetworkhashps
+Returns the current network hashrate. (hash/s)
+167.172,144,49/api/getnetworkhashps
+
+Extended API
+Return data from local indexes
+
+getmoneysupply
+Returns current money supply
+167.172,144,49/ext/getmoneysupply
+
+getdistribution
+Returns wealth distribution stats
+167.172,144,49/ext/getdistribution
+
+getaddress (/ext/getaddress/hash)
+Returns information for given address
+167.172,144,49/ext/getaddress/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+gettx (/ext/gettx/hash)
+Returns information for given tx hash
+167.172,144,49/ext/gettx/f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e
+
+getbalance (/ext/getbalance/hash)
+Returns current balance of given address
+167.172,144,49/ext/getbalance/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+getlasttxsajax (/ext/getlasttxsajax/min)
+Returns last transactions greater than [min]
+Note: returned values are in satoshis
+167.172,144,49/ext/getlasttxsajax/100
+
+Linking (GET)
+Linking to the block explorer
+
+transaction (/tx/txid)
+167.172,144,49/tx/f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e
+
+block (/block/hash)
+167.172,144,49/block/1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1
+
+address (/address/hash)
+167.172,144,49/address/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+qrcode (/qr/hash)
+167.172,144,49/qr/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+https://github.com/topics/mpos-api
+
+知乎:怎么将YouTube上的视频免费下载到手机里？
+https://www.zhihu.com/question/286478175
+
+视频教程链接:
+链接：https://pan.baidu.com/s/1V5mQBGta6w0ZBXmZ7cVN2Q 
+提取码：6r15
