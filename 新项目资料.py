@@ -254,4 +254,86 @@ cd achcoin/
 ls
 cd src/
 ls
-make -f makefile.unix 
+make -f makefile.unix
+
+交易地址:
+http://167.172.144.49/
+
+
+API Calls
+Return data from coind
+
+getdifficulty
+Returns the current difficulty.
+167.172,144,49/api/getdifficulty
+
+getconnectioncount
+Returns the number of connections the block explorer has to other nodes.
+167.172,144,49/api/getconnectioncount
+
+getblockcount
+Returns the current block index.
+167.172,144,49/api/getblockcount
+
+getblockhash [index]
+Returns the hash of the block at ; index 0 is the genesis block.
+167.172,144,49/api/getblockhash?index=1337
+
+getblock [hash]
+Returns information about the block with the given hash.
+167.172,144,49/api/getblock?hash=1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1
+
+getrawtransaction [txid] [decrypt]
+Returns raw transaction representation for given transaction id. decrypt can be set to 0(false) or 1(true).
+167.172,144,49/api/getrawtransaction?txid=f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e&decrypt=0
+167.172,144,49/api/getrawtransaction?txid=f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e&decrypt=1
+
+getnetworkhashps
+Returns the current network hashrate. (hash/s)
+167.172,144,49/api/getnetworkhashps
+
+Extended API
+Return data from local indexes
+
+getmoneysupply
+Returns current money supply
+167.172,144,49/ext/getmoneysupply
+
+getdistribution
+Returns wealth distribution stats
+167.172,144,49/ext/getdistribution
+
+getaddress (/ext/getaddress/hash)
+Returns information for given address
+167.172,144,49/ext/getaddress/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+gettx (/ext/gettx/hash)
+Returns information for given tx hash
+167.172,144,49/ext/gettx/f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e
+
+getbalance (/ext/getbalance/hash)
+Returns current balance of given address
+167.172,144,49/ext/getbalance/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+getlasttxsajax (/ext/getlasttxsajax/min)
+Returns last transactions greater than [min]
+Note: returned values are in satoshis
+167.172,144,49/ext/getlasttxsajax/100
+
+Linking (GET)
+Linking to the block explorer
+
+transaction (/tx/txid)
+167.172,144,49/tx/f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e
+
+block (/block/hash)
+167.172,144,49/block/1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1
+
+address (/address/hash)
+167.172,144,49/address/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+qrcode (/qr/hash)
+167.172,144,49/qr/RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb
+
+https://github.com/topics/mpos-api
+
