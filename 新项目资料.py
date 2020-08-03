@@ -337,3 +337,24 @@ qrcode (/qr/hash)
 
 https://github.com/topics/mpos-api
 
+
+
+stratum协议原理:
+https://blog.csdn.net/taifei/article/details/73322595?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param
+
+
+ubuntu关于aptitude和apt-get:
+https://blog.csdn.net/yili_xie/article/details/4803314
+
+ubuntu:
+https://www.cnblogs.com/hyj74-18/p/10218740.html
+lsb_release  -a
+
+手上的事情:
+1、环境搭建
+2、自己本地虚拟机安装，环境搭建。
+3、搞个显示屏，安装好。
+4、整理好自己的项目，打包上传至pypi。
+5、买个虚拟机，好好测测。
+6、youtube视频下载办法。
+
