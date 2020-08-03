@@ -67,3 +67,6 @@ Achpool@2020
 
 修改 global.xxxx.php配置文件后,执行下面的授权操作:
 chown -R www-data /var/www/php-mpos/templates/compile /var/www/php-mpos/templates/cache /var/www/php-mpos/logs
+
+Socket error Event: 32 Error: 10053错误解决办法:
+https://blog.csdn.net/iamoldpan/article/details/77595624
