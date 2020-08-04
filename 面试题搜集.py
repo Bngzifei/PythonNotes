@@ -286,5 +286,13 @@ http://www.coder55.com/article/1233
 go钱包项目:
 https://github.com/mining-pool/not-only-mining-pool
 
+https://www.cnblogs.com/zlslch/p/6860229.html
+
+ubuntu中root账户的密码:911611
+
+数据库导入导出操作:
+https://www.cnblogs.com/withfeel/p/10796633.html
+
 关于Python异常的最好的讲解:
 https://blog.csdn.net/zong596568821xp/article/details/78180229?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-1-78180229.nonecase
+

@@ -1,5 +1,11 @@
 https://github.com/MPOS/php-mpos
 
+php-mpos项目搭建:
+https://blog.csdn.net/qq_19998189/article/details/78638434
+
+导入数据库表:
+mysql -uroot -plibin911611 mpos < 000_base_structure.sql
+
 https://rahulmanuwas.gitbooks.io/mpos-nomp/content/
 
 开源项目上线后地址:
@@ -249,6 +255,50 @@ ls
 sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
+##################################
+sudo apt-get -y update;sudo apt-get dist-upgrade;sudo apt-get install build-essential autoconf libtool libboost-all-dev libcurl4-openssl-dev libboost-all-dev libdb++-dev libminiupnpc-dev libssl-dev git  libprotobuf-dev protobuf-compiler libqrencode-dev nano -y
+ls
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+
+视频教程:
+#############################
+sudo apt-get install sendmail libqtgui4 qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libssl-dev libdb++-dev git
+build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev mysql-server python-twisted python-mysqldb python-dev python-setuptools python-memcache
+python-simplejson memcached php5-memcached php5-mysqlnd php5-curl php5-json libapache2-mod-php5
+
+###########################
+sudo apt-get install libdb5.1-dev libdb5.1++-dev php5-memcached php5-mysqlnd php5-curl php5-json libapache2-mod-php5
+
+8.210.102.75，root,  Achpool@2020
+
+授权:
+/MPOS/source_code_achcoin-master/src/leveldb# chmod 777 build_detect_platform
+# 在src路径下面:
+make -f makefile.unix USE_UPNP=-
+strip anoncoind
+cp anoncoind /usr/bin/anoncoind
+
+# 报错处理:
+https://blog.csdn.net/temotemo/article/details/79445694
+https://www.youtube.com/watch?v=xAbMDlJYh7c
+
+配置这个:
+find / -name global.inc.dist.php
+授权:
+sudo chown -R www-data public/templates/compile public/templates/cache logs
+
+/var/www/php-mpos/templates/compile 
+/var/www/php-mpos/templates/cache
+/var/www/php-mpos/logs
+
+chown -R www-data /var/www/php-mpos/templates/compile /var/www/php-mpos/templates/cache /var/www/php-mpos/logs
+
+easy_install -U distribute
+知乎:youtube视频下载:
+https://www.zhihu.com/question/286478175/answer/451472955
 
 cd achcoin/
 ls
@@ -337,8 +387,6 @@ qrcode (/qr/hash)
 
 https://github.com/topics/mpos-api
 
-
-
 stratum协议原理:
 https://blog.csdn.net/taifei/article/details/73322595?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param
 
@@ -357,4 +405,13 @@ lsb_release  -a
 4、整理好自己的项目，打包上传至pypi。
 5、买个虚拟机，好好测测。
 6、youtube视频下载办法。
+
+
+知乎:怎么将YouTube上的视频免费下载到手机里？
+https://www.zhihu.com/question/286478175
+
+视频教程链接:
+链接：https://pan.baidu.com/s/1V5mQBGta6w0ZBXmZ7cVN2Q 
+提取码：6r15
+
 
