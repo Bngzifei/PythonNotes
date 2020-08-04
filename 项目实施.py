@@ -70,3 +70,5 @@ chown -R www-data /var/www/php-mpos/templates/compile /var/www/php-mpos/template
 
 Socket error Event: 32 Error: 10053错误解决办法:
 https://blog.csdn.net/iamoldpan/article/details/77595624
+
+直接在应用商店中搜索 ssh即可.

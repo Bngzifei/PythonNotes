@@ -296,3 +296,28 @@ https://www.cnblogs.com/withfeel/p/10796633.html
 关于Python异常的最好的讲解:
 https://blog.csdn.net/zong596568821xp/article/details/78180229?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-1-78180229.nonecase
 
+redis服务设置为开机自启动:
+https://www.cnblogs.com/songjilong/p/12580755.html
+
+vim /etc/init.d/redis
+就是创建一个redis的脚本,授权可执行,类似于windows中的.exe文件,开机自动执行.
+
+设置后,重启命令:
+/etc/init.d/redis restart 或者
+service redis restart
+
+mongodb设置开机自启动:
+https://www.cnblogs.com/jifeng/p/7844201.html
+
+celery设置开机自启动:
+https://www.cnblogs.com/Ting-light/p/9948201.html
+注意看报错::::自己进行授权操作.
+
+【敌后武功团纪念文章】20140716 你不能不知道的iOS开发75种秘密武器:
+https://zhuanlan.zhihu.com/p/19802486
+
+SHA256:O4XUlL2xtLJN28j6yv2OjXikSDhhuC1IPBLd0EvA+ns
+
+celery开机自启动配置及如何编写celery部分的app:
+https://www.xz577.com/j/39845.html
+

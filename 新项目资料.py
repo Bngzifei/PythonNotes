@@ -414,4 +414,27 @@ https://www.zhihu.com/question/286478175
 链接：https://pan.baidu.com/s/1V5mQBGta6w0ZBXmZ7cVN2Q 
 提取码：6r15
 
+SSH密码:
+886A89D3CEB5A53717
 
+windows安装ssh服务:
+https://www.mls-software.com/opensshd.html
+
+VDI锁屏密码:12345678
+
+chrome VPN插件介绍:
+https://openaccblog.wordpress.com/
+
+知乎:好用的chrome插件:
+https://www.zhihu.com/question/64829125
+
+免费的VPN插件:
+https://www.makeuseof.com/tag/6-top-free-vpns-chrome-users/
+账号:bngzifei@gmail.com
+密码:HUANGXIba8*
+
+免费的VPN插件:
+https://webse.cn/16214.html
+
+HoxxVPN登录秘钥:
+ik5-pv5h6-gn
