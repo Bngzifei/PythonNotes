@@ -67,6 +67,11 @@ Achpool@2020
 
 修改 global.xxxx.php配置文件后,执行下面的授权操作:
 chown -R www-data /var/www/php-mpos/templates/compile /var/www/php-mpos/templates/cache /var/www/php-mpos/logs
+授权:
+chown -R www-data /var/www/templates/compile /var/www/templates/cache /var/www/logs
+
+
+
 
 Socket error Event: 32 Error: 10053错误解决办法:
 https://blog.csdn.net/iamoldpan/article/details/77595624
@@ -74,3 +79,54 @@ https://blog.csdn.net/iamoldpan/article/details/77595624
 直接在应用商店中搜索 ssh即可.
 
 https://mosh.org/
+
+https://www.v2ray.com/chapter_00/install.html
+https://github.com/v2ray/v2ray-core
+https://github.com/2dust/v2rayN/releases/tag/3.19
+https://github.com/v2fly/v2ray-core/releases/tag/v4.23.4
+
+
+https://garygeng.com/software/gaosuv2rayngmianfeijiedianmeitiangengxinfenxiang/amp/
+
+bngzifu
+huangxiba888*
+huangxiba888*
+bngzifei@gmail.com
+https://xixicats.pw/user#
+
+https://www.iplaysoft.com/scrcpy.html
+
+
+git clone https://github.com/ahmedbodi/stratum-mining.git
+git submodule update
+/MPOS/stratum-mining/externals/litecoin_scrypt# sudo easy_install -U distribute
+/MPOS/stratum-mining# git submodule init
+/MPOS/stratum-mining# git submodule update
+/MPOS/stratum-mining/externals/litecoin_scrypt# python setup.py install
+
+
+ACHCOINd getinfo
+ACHCOINd getaccountaddress ""        务必记得这个""
+vim ~/.ACHCOIN/ACHCOIN.conf
+sudo twistd -ny launcher.tac  会遇到报错,先修改配置文件名,
+mv conf/config_sample.py conf/config.py
+sudo twistd -ny launcher.tac --pidfile=ACHCOINd.pid
+
+安装卸载python包都需要加 python- 这个前缀
+sudo apt-get remove python-pylibmc
+
+vim /etc/apache2/apache2.conf
+vim /etc/crontab
+sudo service apache2 restart
+
+apt-get与pip安装包的解释:
+https://www.dazhuanlan.com/2020/01/06/5e12f9aead32d/
+
+
+40.57.182.200/public
+
+sudo ufw status
+sudo ufw allow 80
+
+sudo netstat -tlpn
+https://blog.csdn.net/qq_19998189/article/details/78638434
