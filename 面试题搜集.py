@@ -321,3 +321,37 @@ SHA256:O4XUlL2xtLJN28j6yv2OjXikSDhhuC1IPBLd0EvA+ns
 celery开机自启动配置及如何编写celery部分的app:
 https://www.xz577.com/j/39845.html
 
+https://pythonheidong.com/blog/article/182147/
+
+区块链革命 PDF 高清版下载:
+https://www.xz577.com/e/25265.html
+
+硬链接与软链接:
+https://blog.csdn.net/qq_28897525/article/details/80657465
+
+git分支合并:
+本地的分支合并的时候,一定是主分支去合并子分支, 比如 是 git checkout master,
+切换到master分支,然后在master分支上面执行 git merge 1.0.0/feature/lb-fix-no-upload-bug,
+就是master把 1.0.0/feature/lb-fix-no-upload-bug 分支合并了.
+
+
+celery守护进程启动模式:
+https://docs.celeryproject.org/en/latest/userguide/daemonizing.html
+https://github.com/celery/celery/blob/master/extra/generic-init.d/celeryd
+
+Django中支持restful风格的框架:
+tastypie和DRF
+http://tastypieapi.org/
+https://django-tastypie.readthedocs.io/en/latest/
+odoogithub地址:
+https://github.com/odoo/odoo
+关于odoo的话题:
+https://www.zhihu.com/topic/19718907/newest
+国内企业:华炎魔方
+https://www.steedos.com/company/about-us/
+苏州欧度:
+http://oudu.me/
+java web学习网站:
+https://how2j.cn/
+sanic框架介绍:
+https://github.com/howie6879/Sanic-For-Pythoneer
