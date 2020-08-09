@@ -168,6 +168,7 @@ FLUSH PRIVILEGES;
 
 http://47.57.182.200/MPOS/public/index.php
 
+https://keccak.team/index.html
 
 遇到的问题:
 linux下安装libcurl过程及开发遇到的问题"curl/curl.h：没有那个文件或目录":
@@ -184,7 +185,6 @@ https://digip.org/jansson/
 
 项目首页:
 http://47.57.182.200/MPOS/public/index.php
-
 
 
 
@@ -205,7 +205,7 @@ dpkg -L | grep ftp
 
 aptitude show
 
-例如：aptitude  show ftp
+例如：aptitude show ftp
 
 阿里镜像地址:
 https://developer.aliyun.com/mirror/
@@ -219,9 +219,13 @@ https://www.cnblogs.com/kinwing/p/11134179.html
 三部分资料链接:
 https://github.com/MPOS/php-mpos/wiki/Quick-Start-Guide
 https://github.com/MPOS/php-mpos/wiki/Config-Setup#database-configuration
+https://github.com/lucasjones/cpuminer-multi
+# 二进制项目地址
+https://github.com/LucasJones/cpuminer-multi/releases
 https://github.com/pooler/cpuminer
 https://www.f2pool.com/tools
 http://47.57.182.200/MPOS/public/index.php
+https://github.com/JetBrains/phpstorm-stubs/
 
 新安装的操作系统:
 centos:root/libin911611
@@ -233,6 +237,8 @@ https://blog.csdn.net/u012308586/article/details/102953882
 
 ubuntu16.04安装python3.8:
 https://www.cnblogs.com/daofaziran/p/12604726.html
+错误:ModuleNotFoundError: No module named '_ctypes'
+https://www.cnblogs.com/wangyuxing/p/10542330.html
 centos7安装python3.8:
 https://www.jianshu.com/p/15f40edefb13
 centos7安装pip:
@@ -243,3 +249,33 @@ https://blog.csdn.net/weixin_44065501/article/details/101478510
 
 虚拟环境的设置:
 https://www.cnblogs.com/freely/p/8022923.html
+pypi源全局配置:
+https://pip.pypa.io/en/stable/user_guide/#configuration
+
+错误处理:
+PHP Fatal error:  Call to undefined function curl_init() in /var/www/MPOS/include/lib/jsonRPCClient.php on line 105
+缺失了 php5-curl包,执行 apt-get install php5-curl  安装即可
+错误:mysql账号密码无权限: 创建账户,进行授权即可.
+mysqli::mysqli(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/MPOS/include/classes/mysqlims.class.php on line 26
+
+
+win10下MinGW的安装与配置:
+https://www.cnblogs.com/LIJIH/p/12533926.html
+
+
+minerd -a scrypt -o http://矿池地址:端口 -u 矿工 -p 矿工密码 -t 线程数
+
+
+minerd -a keccak -o http://47.57.182.200:3335 -u 矿工 -p x -t 1
+
+
+minerd.exe -a keccak -o http://47.57.182.200:3335 -u libin911611 -p x -t 1
+
+自由职业者:
+https://www.freelancer.com/work/mpos-multi-pool/
+
+查看系统进程端口占用:
+netstat -aon|findstr “端口号”，按回车键就可以找到占用8080端口的PID
+
+重启服务:
+/etc/init.d/apache2 restart

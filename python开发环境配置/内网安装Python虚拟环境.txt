@@ -111,6 +111,20 @@ VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/bin/virtualenvwrapper.sh
 
+示例:
+# Python3.8虚拟环境配置
+WORKON_HOME=/BNG_INFO/VirtualEnv      #  虚拟环境所在的路径
+VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
+VIRTUALENVWRAPPER_PYTHON=/usr/local/python3/bin/python3    # 依赖的Python版本的位置  注意这里的 路径要和下面的.sh脚本在同一个目录下面
+source /usr/local/python3/bin/virtualenvwrapper.sh   # 虚拟环境shell脚本的位置,激活虚拟环境  记得使用 find / -name virtualenvwrapper.sh 工具去搜索位置
+#######################################################
+# Python3.8虚拟环境配置
+WORKON_HOME=/BNG_INFO/VirtualEnv
+VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
+VIRTUALENVWRAPPER_PYTHON=/usr/local/python3/bin/python3.8
+source /usr/local/python3/bin/virtualenvwrapper.sh
+
+最后使用下面的命令激活:
 执行: source /etc/profile 使其配置生效
 
 2.mkvirtualenv 你的环境名字: 创建虚拟环境
@@ -151,7 +165,6 @@ VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/bin/virtualenvwrapper.sh
 
 
-
 rpm安装:
 
 rpm -ivh libffi-devel-3.0.13-18.el7.x86_64.rpm
@@ -162,4 +175,14 @@ rpm -ivh libffi-devel-3.0.13-18.el7.x86_64.rpm
 ln -s /usr/local/python3/bin/python3 /usr/bin/python3
 
 
+解决Linux新建虚拟环境virtualenvwrapper报错问题:
+which: no virtualenv in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
+解决办法：
+将python环境下的virtualenv拷贝至/usr/bin/目录下：
+[root@localhost ~]# cd /usr/bin/
+[root@localhost bin]# ls -al | grep virtualenv
+[root@localhost bin]# cd /usr/local/python3/bin/
+# 建立硬链接到/usr/bin/
+[root@localhost bin]# ln virtualenv /usr/bin/virtualenv
+[root@localhost bin]#
 
