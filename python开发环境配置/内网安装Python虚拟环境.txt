@@ -162,4 +162,22 @@ rpm -ivh libffi-devel-3.0.13-18.el7.x86_64.rpm
 ln -s /usr/local/python3/bin/python3 /usr/bin/python3
 
 
+注意: VIRTUALENVWRAPPER_PYTHON 指定python的版本
+virtualenvwrapper.sh 这个文件 使用 find / -name virtualenvwrapper.sh 去搜索所在位置
 
+vim /etc/profile
+# Python3 虚拟环境配置
+WORKON_HOME=/root/RepositoryDisk/VirtualEnv
+VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+
+激活配置:
+source /etc/profile
+
+
+安装:
+pip install -r requirements.txt
+
+导出:
+pip freeze > requirements.txt

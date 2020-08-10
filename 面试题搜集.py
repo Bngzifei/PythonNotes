@@ -355,3 +355,46 @@ java web学习网站:
 https://how2j.cn/
 sanic框架介绍:	
 https://github.com/howie6879/Sanic-For-Pythoneer
+
+优秀的项目:gitter
+https://gitter.im/?utm_source=left-menu-logo
+https://irc.gitter.im/
+https://gitter.im/login
+
+机器学习算法:
+https://github.com/guofei9987/scikit-opt?utm_source=gold_browser_extension
+Python实现的算法:
+git@github.com:TheAlgorithms/Python.git
+
+myBase Desktop 是一款用于分类存储管理任意格式资料的小型个人数据库软件:
+http://www.wjjsoft.com/mybase_cn.html
+破解教程:
+http://www.32r.com/soft/39166.html
+个人知识库搭建教程:
+https://www.cnblogs.com/d2zs/p/12095889.html
+http://www.eryajf.net/1040.html
+
+#########################################
+Sublime Text 3激活注册码 （亲测可用）
+
+----- BEGIN LICENSE -----
+Member J2TeaM
+Single User License
+EA7E-1011316
+D7DA350E 1B8B0760 972F8B60 F3E64036
+B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
+FA0A2ABE 25F65BD8 D51458E5 3923CE80
+87428428 79079A01 AA69F319 A1AF29A4
+A684C2DC 0B1583D4 19CBD290 217618CD
+5653E0A0 BACE3948 BB2EE45E 422D2C87
+DD9AF44B 99C49590 D2DBDEE1 75860FD2
+8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
+------ END LICENSE ------​
+
+########################################
+
+Python 常见文件格式 .py .pyc .pyw .pyo .pyd 之间的主要区别:
+http://forum.digitser.cn/thread-1758-1-1.html
+
+Sublime Text3 添加右键快捷方式:
+https://www.jb51.net/article/130391.htm

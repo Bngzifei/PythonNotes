@@ -132,3 +132,9 @@ sudo ufw allow 80
 sudo netstat -tlpn
 https://blog.csdn.net/qq_19998189/article/details/78638434
 
+地址:40.57.182.200
+用户名:root
+密码:Achpool@2020
+
+
+https://github.com/MPOS/php-mpos/wiki/Pools
