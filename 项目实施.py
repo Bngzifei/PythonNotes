@@ -279,3 +279,21 @@ netstat -aon|findstr “端口号”，按回车键就可以找到占用8080端�
 
 重启服务:
 /etc/init.d/apache2 restart
+
+挖矿软件下载:
+http://www.itfly.pc-fly.com/a/changjianruanjian/article-348371-1.html
+
+搭建自己的矿池:
+https://www.jianshu.com/p/0f0309c95e8b
+
+scp工具:
+https://winscp.net/eng/download.php
+
+python实现:
+https://github.com/zjtone/keccak-python
+
+哈希算法的介绍:
+https://www.cnblogs.com/X-knight/p/9136455.html
+
+应该搜一搜这个话题:
+php-keccak
