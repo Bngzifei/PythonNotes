@@ -1,0 +1,104 @@
+https://access.redhat.com/rs/search?redhat_client=ecosystem-catalog&start=15&rows=15&q=*%3A*&sort=&facet=true&facet.mincount=1&f.c_catalog_vendor.facet.limit=-1&f.c_version.facet.limit=-1&facet.sort=index&fl=id%2Cportal_thumbnail%2CallTitle%2Cc_catalog_vendor%2Cview_uri%2CpublishedAbstract%2Cch_architecture%2Cc_catalog_channel&facet.field=%7B!ex%3Dc_catalog_channel_tag%7Dc_catalog_channel&facet.field=%7B!ex%3Dch_architecture_tag%7Dch_architecture&facet.field=%7B!ex%3Dc_catalog_vendor_tag%7Dc_catalog_vendor&facet.field=%7B!ex%3Dc_version_tag%7Dc_version&facet.field=%7B!ex%3Dgranularity_category_network%7Dgranularity_category_network&facet.field=%7B!ex%3Dgranularity_category_management%7Dgranularity_category_management&facet.field=%7B!ex%3Dgranularity_category_compute%7Dgranularity_category_compute&facet.field=%7B!ex%3Dgranularity_category_storage%7Dgranularity_category_storage&facet.field=%7B!ex%3Dc_format_tag%7Dc_format&fq=c_certification%3A*&fq=documentKind%3A%22CertifiedHardware%22&fq=%7B!tag%3Dc_catalog_channel_tag%7Dc_catalog_channel%3A%22Server%22&fq=!c_catalog_channel%3A%22Cloud%20Instance%20Type%22
+
+https://access.redhat.com/rs/search?redhat_client=ecosystem-catalog&start=0&rows=15&q=*%3A*&sort=&facet=true&facet.mincount=1&f.c_catalog_vendor.facet.limit=-1&f.c_version.facet.limit=-1&facet.sort=index&fl=id%2Cportal_thumbnail%2CallTitle%2Cc_catalog_vendor%2Cview_uri%2CpublishedAbstract%2Cch_architecture%2Cc_catalog_channel&facet.field=%7B!ex%3Dc_catalog_channel_tag%7Dc_catalog_channel&facet.field=%7B!ex%3Dch_architecture_tag%7Dch_architecture&facet.field=%7B!ex%3Dc_catalog_vendor_tag%7Dc_catalog_vendor&facet.field=%7B!ex%3Dc_version_tag%7Dc_version&facet.field=%7B!ex%3Dgranularity_category_network%7Dgranularity_category_network&facet.field=%7B!ex%3Dgranularity_category_management%7Dgranularity_category_management&facet.field=%7B!ex%3Dgranularity_category_compute%7Dgranularity_category_compute&facet.field=%7B!ex%3Dgranularity_category_storage%7Dgranularity_category_storage&facet.field=%7B!ex%3Dc_format_tag%7Dc_format&fq=c_certification%3A*&fq=documentKind%3A%22CertifiedHardware%22&fq=%7B!tag%3Dc_catalog_channel_tag%7Dc_catalog_channel%3A%22Server%22&fq=!c_catalog_channel%3A%22Cloud%20Instance%20Type%22
+
+
+https%3A//access.redhat.com/rs/search%3Fredhat_client%3Decosystem-catalog%26start%3D0%26rows%3D15%26q%3D%2A%3A%2A%26sort%3D%26facet%3Dtrue%26facet.mincount%3D1%26f.c_catalog_vendor.facet.limit%3D-1%26f.c_version.facet.limit%3D-1%26facet.sort%3Dindex%26fl%3Did%2Cportal_thumbnail%2CallTitle%2Cc_catalog_vendor%2Cview_uri%2CpublishedAbstract%2Cch_architecture%2Cc_catalog_channel%26facet.field%3D%7B%21ex%3Dc_catalog_channel_tag%7Dc_catalog_channel%26facet.field%3D%7B%21ex%3Dch_architecture_tag%7Dch_architecture%26facet.field%3D%7B%21ex%3Dc_catalog_vendor_tag%7Dc_catalog_vendor%26facet.field%3D%7B%21ex%3Dc_version_tag%7Dc_version%26facet.field%3D%7B%21ex%3Dgranularity_category_network%7Dgranularity_category_network%26facet.field%3D%7B%21ex%3Dgranularity_category_management%7Dgranularity_category_management%26facet.field%3D%7B%21ex%3Dgranularity_category_compute%7Dgranularity_category_compute%26facet.field%3D%7B%21ex%3Dgranularity_category_storage%7Dgranularity_category_storage%26facet.field%3D%7B%21ex%3Dc_format_tag%7Dc_format%26fq%3Dc_certification%3A%2A%26fq%3DdocumentKind%3A%22CertifiedHardware%22%26fq%3D%7B%21tag%3Dc_catalog_channel_tag%7Dc_catalog_channel%3A%22Server%22%26fq%3D%21c_catalog_channel%3A%22Cloud%20Instance%20Type%22
+
+
+redhat_client=ecosystem-catalog
+start=15
+rows=15
+q=*:*
+sort=
+facet=true
+facet.mincount=1
+f.c_catalog_vendor.facet.limit=-1
+f.c_version.facet.limit=-1
+facet.sort=index
+fl=id,portal_thumbnail,allTitle,c_catalog_vendor,view_uri,publishedAbstract,ch_architecture,c_catalog_channel
+facet.field={!ex=c_catalog_channel_tag}c_catalog_channel
+facet.field={!ex=ch_architecture_tag}ch_architecture
+facet.field={!ex=c_catalog_vendor_tag}c_catalog_vendor
+facet.field={!ex=c_version_tag}c_version
+facet.field={!ex=granularity_category_network}granularity_category_network
+facet.field={!ex=granularity_category_management}granularity_category_management
+facet.field={!ex=granularity_category_compute}granularity_category_compute
+facet.field={!ex=granularity_category_storage}granularity_category_storage
+facet.field={!ex=c_format_tag}c_format
+fq=c_certification:*
+fq=documentKind:"CertifiedHardware"
+fq={!tag=c_catalog_channel_tag}c_catalog_channel:"Server"
+fq=!c_catalog_channel:"Cloud Instance Type"
+
+
+'redhat_client':'ecosystem-catalog',
+'start':0,
+'rows':15,
+'q':'*:*',
+'sort':'',
+'facet':'true',
+'facet.mincount':1,
+'f.c_catalog_vendor.facet.limit':-1,
+'f.c_version.facet.limit':-1,
+'facet.sort':'index',
+'fl':'id,portal_thumbnail,allTitle,c_catalog_vendor,view_uri,publishedAbstract,ch_architecture,c_catalog_channel',
+'facet.field':'{!ex=c_catalog_channel_tag}c_catalog_channel',
+'facet.field':'{!ex=ch_architecture_tag}ch_architecture',
+'facet.field':'{!ex=c_catalog_vendor_tag}c_catalog_vendor',
+'facet.field':'{!ex=c_version_tag}c_version',
+'facet.field':'{!ex=granularity_category_network}granularity_category_network',
+'facet.field':'{!ex=granularity_category_management}granularity_category_management',
+'facet.field':'{!ex=granularity_category_compute}granularity_category_compute',
+'facet.field':'{!ex=granularity_category_storage}granularity_category_storage',
+'facet.field':'{!ex=c_format_tag}c_format',
+'fq':'c_certification:*',
+'fq':'documentKind:"CertifiedHardware"',
+'fq':'{!tag=c_catalog_channel_tag}c_catalog_channel:"Server"',
+'fq':'!c_catalog_channel:"Cloud Instance Type"',
+
+
+Host: access.redhat.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0
+Accept: application/vnd.redhat.solr+json
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://catalog.redhat.com/hardware/servers/search?p=2
+Origin: https://catalog.redhat.com
+Connection: keep-alive
+
+Host: access.redhat.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0
+Accept: application/vnd.redhat.solr+json
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://catalog.redhat.com/hardware/servers/search?p=1
+Origin: https://catalog.redhat.com
+Connection: keep-alive
+
+
+
+
+"Products Version Arch Level Notes Additional Information\nRed Hat Enterprise Linux 7.0 - 7.x x86_64 Certified\nRed Hat Enterprise Linux 6.5 - 6.x i386 Certified\nRed Hat Enterprise Linux 6.5 - 6.x x86_64 Certified\nRed Hat Enterprise Linux 5.10 - 5.x x86_64 Certified\nRed Hat Enterprise Linux 5.10 - 5.x i386 Certified\nRed Hat OpenStack Platform for Compute 13.0 x86_64 Certified\nRed Hat OpenStack Platform 12.0 x86_64 Certified\nRed Hat OpenStack Platform 11.0 x86_64 Certified\nRed Hat OpenStack Platform 10.0 x86_64 Certified\nRed Hat OpenStack Platform 9.0 x86_64 Certified\nRed Hat OpenStack Platform 8.0 x86_64 Certified\nRed Hat OpenStack Platform 7.0 x86_64 Certified\nRed Hat OpenStack Platform for Compute 14.0 - 14.x x86_64 Certified\nRed Hat Virtualization 4.2 - 4.3 x86_64 Certified"
+              
+                                
+            
+                                
+HP ProLiant WS460c Gen8
+
+Red Hat Enterprise Linux 7.0 - 7.x x86_64 Certified
+
+\d.\d - \d.\w
+
+
+
+//*[@id="certifiedTable"]/div/table/tbody/tr/td[@data-label="Products"]
+//*[@id="certifiedTable"]/div/table/tbody/tr/td[@data-label="Versions"]
+//*[@id="certifiedTable"]/div/table/tbody/tr/td[@data-label="Architecture"]
+//*[@id="certifiedTable"]/div/table/tbody/tr/td[@data-label="Label"]
+
+
+//*[@id="product-cert-table"]/table/tbody/tr[7]/th[@headers="th-products"]
+//*[@id="product-cert-table"]/table/tbody/tr[7]/td[@headers="th-person1 th-version"]
+//*[@id="product-cert-table"]/table/tbody/tr[7]/td[@headers="th-person1 th-arch"]
+//*[@id="product-cert-table"]/table/tbody/tr[7]/td[@headers="th-person1 th-level"]

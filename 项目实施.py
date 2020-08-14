@@ -281,8 +281,16 @@ minerd.exe -a keccak -o http://47.57.182.200:3335 -u libin911611 -p x -t 1
 https://www.freelancer.com/work/mpos-multi-pool/
 
 查看系统进程端口占用:
-netstat -aon|findstr “端口号”，按回车键就可以找到占用8080端口的PID
+netstat -aon|findstr "端口号"，按回车键就可以找到占用8080端口的PID
 
 重启服务:
 /etc/init.d/apache2 restart
 
+php调试:
+https://www.cnblogs.com/yjken/p/6555438.html
+
+Stratum 矿池协议实例分析:
+https://www.jianshu.com/p/797401d8a80e
+
+搭建矿池的详细步骤:
+https://blog.csdn.net/a1291985595/article/details/79903478

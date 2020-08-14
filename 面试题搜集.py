@@ -398,3 +398,55 @@ http://forum.digitser.cn/thread-1758-1-1.html
 
 Sublime Text3 添加右键快捷方式:
 https://www.jb51.net/article/130391.htm
+django + apache 项目部署:
+https://www.cnblogs.com/guishenyouhuo/p/10140907.html
+
+前端资料集合网站:
+https://jijian.link/
+
+爬虫链接:
+https://catalog.redhat.com/hardware/servers/search
+
+pycharm-monokai主题配色:
+https://github.com/simoncos/pycharm-monokai
+
+XPath Helper使用:
+快捷键CTRL+SHIFT+X开启XPath Helper插件；
+长按CTRL+SHIFT，鼠标指向需提取的段落，按X开启或关闭提取，提取到的段落会变为黄色。
+
+爬虫库:ghost
+https://blog.51cto.com/rfyiamcool/1287810
+
+阿里云镜像站:
+https://developer.aliyun.com/mirror/
+
+windows更换pypi源:
+https://blog.csdn.net/Adam309050449/article/details/106742678
+
+ghost说明文档:
+https://ghost-py.readthedocs.io/en/latest/#
+
+有意思的博客:
+http://zengwu.com.cn/
+https://www.jb51.net/article/179782.htm
+
+https://wiki.qt.io/Qt_for_Python#PySide.QtWebKit.PySide.QtWebKit.QWebView.url
+
+Python模拟浏览器加载资源:
+https://www.cnblogs.com/maseng/p/3578553.html
+
+http://jeanphix.me/Ghost.py/#quick-start
+http://www.aichengxu.com/article/Python/10774_15.html
+
+去爬取这个网站的视频试试:
+https://itvideo.download/
+
+B站UP主:
+https://blog.csdn.net/sinat_33921105/article/details/105401654?utm_medium=distribute.pc_relevant_right.none-task-blog-BlogCommendFromMachineLearnPai2-5.channel_param_right&depth_1-utm_source=distribute.pc_relevant_right.none-task-blog-BlogCommendFromMachineLearnPai2-5.channel_param_right
+
+https://www.itsvse.com/
+
+https://www.cnblogs.com/yoyoketang/p/6719717.html
+
+jsonpath:
+https://www.cnblogs.com/yoyoketang/p/13216829.html
