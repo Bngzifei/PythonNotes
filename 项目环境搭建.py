@@ -38,3 +38,17 @@ sudo aptitude install libssl-dev
 
 apt-get 误删之后重现安装:
 https://jingyan.baidu.com/article/5225f26bbab600e6fa0908bb.html
+
+
+
+1.指定端口
+
+ssh -p 端口 用户@ip地址
+
+例子
+ssh -p 29565 root@182.168.1.58
+
+pkill -kill -t pts/0
+
+遇到的钱包数据库初始化失败的问题:
+https://www.itdaan.com/tw/608b50c1a172
