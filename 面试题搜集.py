@@ -355,3 +355,98 @@ java web学习网站:
 https://how2j.cn/
 sanic框架介绍:	
 https://github.com/howie6879/Sanic-For-Pythoneer
+
+优秀的项目:gitter
+https://gitter.im/?utm_source=left-menu-logo
+https://irc.gitter.im/
+https://gitter.im/login
+
+机器学习算法:
+https://github.com/guofei9987/scikit-opt?utm_source=gold_browser_extension
+Python实现的算法:
+git@github.com:TheAlgorithms/Python.git
+
+myBase Desktop 是一款用于分类存储管理任意格式资料的小型个人数据库软件:
+http://www.wjjsoft.com/mybase_cn.html
+破解教程:
+http://www.32r.com/soft/39166.html
+个人知识库搭建教程:
+https://www.cnblogs.com/d2zs/p/12095889.html
+http://www.eryajf.net/1040.html
+
+#########################################
+Sublime Text 3激活注册码 （亲测可用）
+
+----- BEGIN LICENSE -----
+Member J2TeaM
+Single User License
+EA7E-1011316
+D7DA350E 1B8B0760 972F8B60 F3E64036
+B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
+FA0A2ABE 25F65BD8 D51458E5 3923CE80
+87428428 79079A01 AA69F319 A1AF29A4
+A684C2DC 0B1583D4 19CBD290 217618CD
+5653E0A0 BACE3948 BB2EE45E 422D2C87
+DD9AF44B 99C49590 D2DBDEE1 75860FD2
+8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
+------ END LICENSE ------​
+
+########################################
+
+Python 常见文件格式 .py .pyc .pyw .pyo .pyd 之间的主要区别:
+http://forum.digitser.cn/thread-1758-1-1.html
+
+Sublime Text3 添加右键快捷方式:
+https://www.jb51.net/article/130391.htm
+django + apache 项目部署:
+https://www.cnblogs.com/guishenyouhuo/p/10140907.html
+
+前端资料集合网站:
+https://jijian.link/
+
+爬虫链接:
+https://catalog.redhat.com/hardware/servers/search
+
+pycharm-monokai主题配色:
+https://github.com/simoncos/pycharm-monokai
+
+XPath Helper使用:
+快捷键CTRL+SHIFT+X开启XPath Helper插件；
+长按CTRL+SHIFT，鼠标指向需提取的段落，按X开启或关闭提取，提取到的段落会变为黄色。
+
+爬虫库:ghost
+https://blog.51cto.com/rfyiamcool/1287810
+
+阿里云镜像站:
+https://developer.aliyun.com/mirror/
+
+windows更换pypi源:
+https://blog.csdn.net/Adam309050449/article/details/106742678
+
+ghost说明文档:
+https://ghost-py.readthedocs.io/en/latest/#
+
+有意思的博客:
+http://zengwu.com.cn/
+https://www.jb51.net/article/179782.htm
+
+https://wiki.qt.io/Qt_for_Python#PySide.QtWebKit.PySide.QtWebKit.QWebView.url
+
+Python模拟浏览器加载资源:
+https://www.cnblogs.com/maseng/p/3578553.html
+
+http://jeanphix.me/Ghost.py/#quick-start
+http://www.aichengxu.com/article/Python/10774_15.html
+
+去爬取这个网站的视频试试:
+https://itvideo.download/
+
+B站UP主:
+https://blog.csdn.net/sinat_33921105/article/details/105401654?utm_medium=distribute.pc_relevant_right.none-task-blog-BlogCommendFromMachineLearnPai2-5.channel_param_right&depth_1-utm_source=distribute.pc_relevant_right.none-task-blog-BlogCommendFromMachineLearnPai2-5.channel_param_right
+
+https://www.itsvse.com/
+
+https://www.cnblogs.com/yoyoketang/p/6719717.html
+
+jsonpath:
+https://www.cnblogs.com/yoyoketang/p/13216829.html

@@ -39,8 +39,22 @@ sudo aptitude install libssl-dev
 apt-get 误删之后重现安装:
 https://jingyan.baidu.com/article/5225f26bbab600e6fa0908bb.html
 
+<<<<<<< HEAD
 cpuminer-gw64-avx2 -a keccak -o http://47.57.182.200:6297 -u achuser -p achuserpassword -t 1
 cpuminer-gw64-avx2 -a keccak -o stratum+tcp://47.57.182.200:6297 -u achuser -p achuserpassword -t 1
 
 米鼠网:
 https://www.misuland.com/
+
+1.指定端口
+
+ssh -p 端口 用户@ip地址
+
+例子
+ssh -p 29565 root@182.168.1.58
+
+pkill -kill -t pts/0
+
+遇到的钱包数据库初始化失败的问题:
+https://www.itdaan.com/tw/608b50c1a172
+

@@ -142,6 +142,12 @@ sudo ufw allow 80
 sudo netstat -tlpn
 https://blog.csdn.net/qq_19998189/article/details/78638434
 
+地址:40.57.182.200
+用户名:root
+密码:Achpool@2020
+
+https://github.com/MPOS/php-mpos/wiki/Pools
+
 sudo git clone git://github.com/MPOS/php-mpos.git MPOS
 sudo chown -R www-data templates/compile templates/cache logs
 
@@ -285,7 +291,7 @@ minerd.exe -a keccak -o http://47.57.182.200:3335 -u libin911611 -p x -t 1
 https://www.freelancer.com/work/mpos-multi-pool/
 
 查看系统进程端口占用:
-netstat -aon|findstr “端口号”，按回车键就可以找到占用8080端口的PID
+netstat -aon|findstr "端口号"，按回车键就可以找到占用8080端口的PID
 
 重启服务:
 /etc/init.d/apache2 restart
@@ -366,3 +372,13 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'Libin911611*';
 
 安装失败:
 https://blog.csdn.net/stickmangod/article/details/85316142
+
+php调试:
+https://www.cnblogs.com/yjken/p/6555438.html
+
+Stratum 矿池协议实例分析:
+https://www.jianshu.com/p/797401d8a80e
+
+搭建矿池的详细步骤:
+https://blog.csdn.net/a1291985595/article/details/79903478
+
