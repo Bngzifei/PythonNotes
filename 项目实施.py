@@ -39,7 +39,7 @@ sudo apt-get install libboost-all-dev
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 sudo apt-get install libdb-dev libdb++-dev
 ll
-apt install -y php5-memcached php5-mysqlnd php5-curl php5-json libapa
+sudo apt-get install -y php-memcached php-mysqlnd php-curl php-json libapache2-mod-php
 
 装完同步一段时间,执行:
 ACHCOINd getinfo
@@ -56,7 +56,13 @@ ACHCOINd
 配置文件介绍:
 https://github.com/MPOS/php-mpos/wiki/Config-Setup#tx-fees
 
+解压完了先去授权:
+chmod 777 /MPOS_INFO/source_code_achcoin-master/src/leveldb/build_detect_platform
+
+进入src目录下执行 make -f makefile.unix 进行编译:
+
 8.210.102.75
+47.57.182.200
 root
 Achpool@2020
 
@@ -64,6 +70,7 @@ Achpool@2020
 
 81317632
 8274720
+
 
 修改 global.xxxx.php配置文件后,执行下面的授权操作:
 chown -R www-data /var/www/php-mpos/templates/compile /var/www/php-mpos/templates/cache /var/www/php-mpos/logs
@@ -255,6 +262,9 @@ https://pip.pypa.io/en/stable/user_guide/#configuration
 错误处理:
 PHP Fatal error:  Call to undefined function curl_init() in /var/www/MPOS/include/lib/jsonRPCClient.php on line 105
 缺失了 php5-curl包,执行 apt-get install php5-curl  安装即可
+先安装 apt-get install libcurl3
+再去安装 apt-get install php5-curl
+记得其他的包都不需要再去安装了,
 错误:mysql账号密码无权限: 创建账户,进行授权即可.
 mysqli::mysqli(): (HY000/1698): Access denied for user 'root'@'localhost' in /var/www/MPOS/include/classes/mysqlims.class.php on line 26
 
@@ -297,3 +307,62 @@ https://www.cnblogs.com/X-knight/p/9136455.html
 
 应该搜一搜这个话题:
 php-keccak
+
+redis资料:
+https://redis.io/topics/quickstart
+
+http://www.npackd.org/p/cgminer/4.9.2
+https://github.com/zone117x/node-open-mining-portal/wiki/Setting-up-NOMP-for-MPOS-usage
+https://github.com/bonesoul/CoiniumServ#hashing-algorithms
+https://github.com/ckolivas/cgminer
+
+
+rpcuser = litecoinrpc
+rpcpassword = password123456
+rpcallowip = 127.0.0.1
+rpcport = 2300
+daemon = 1
+server = 1
+gen = 0
+
+币的地址:
+MBv7YmKVuQu6BHv72nPTQXRJm45Yc1HECU
+先拿litecoin进行测试一下
+
+
+
+minerd -a scrypt -o http://47.57.182.200:2300 -O libin.user:password -t 1
+
+
+cgminer.exe -a scrypt -o http://47.57.182.200:2300 -u -p
+
+cgminer.exe -o stratum+tcp://47.57.182.200:2300 -u litecoinrpc -p password123456
+https://github.com/ckolivas/cgminer
+
+
+https://github.com/jgarzik/cpuminer
+
+https://sourceforge.net/projects/cpuminer/files/
+
+https://github.com/tpruvot/cpuminer-multi
+
+https://github.com/tpruvot/cpuminer-multi
+
+下载链接:
+https://sourceforge.net/projects/cpuminer/
+
+composer config -g repo.packlist composer https://mirrors.aliyun.com/composer/
+
+
+centos7安装mysql5.7:
+https://www.cnblogs.com/zsh-blogs/p/11497720.html
+centos7 mysql密码:Libin911611*
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Libin911611*';
+
+
+/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+/sbin/mkswap /var/swap.1
+/sbin/swapon /var/swap.1
+
+安装失败:
+https://blog.csdn.net/stickmangod/article/details/85316142

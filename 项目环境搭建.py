@@ -38,3 +38,9 @@ sudo aptitude install libssl-dev
 
 apt-get 误删之后重现安装:
 https://jingyan.baidu.com/article/5225f26bbab600e6fa0908bb.html
+
+cpuminer-gw64-avx2 -a keccak -o http://47.57.182.200:6297 -u achuser -p achuserpassword -t 1
+cpuminer-gw64-avx2 -a keccak -o stratum+tcp://47.57.182.200:6297 -u achuser -p achuserpassword -t 1
+
+米鼠网:
+https://www.misuland.com/
