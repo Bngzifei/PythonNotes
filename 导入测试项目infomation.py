@@ -982,6 +982,8 @@ https://blog.csdn.net/sinat_34104446/article/details/84637590?utm_medium=distrib
 
 注意原有磁盘上面扩容后执行 fdisk /dev/vda  命令后,先按n 新建分区,再按p新建主分区,然后就和上面的教程步骤一致了.
 
+ubuntu磁盘扩容:
+https://blog.51cto.com/12348890/2092339
 
 Centos7原有磁盘扩容:
 https://cloud.tencent.com/developer/article/1634538
