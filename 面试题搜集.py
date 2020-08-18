@@ -450,3 +450,9 @@ https://www.cnblogs.com/yoyoketang/p/6719717.html
 
 jsonpath:
 https://www.cnblogs.com/yoyoketang/p/13216829.html
+
+脚本之家python设计模式:
+https://www.jb51.net/article/87081.htm
+
+chrome插件下载:
+https://www.chromefor.com/down/?wp_file=bkhaagjahfmjljalopjnoealnfndnagc/octotree_v2.4.6.crx&tdd=1597735052
