@@ -483,3 +483,11 @@ https://v3u.cn/a_id_102
 多去知乎看看有意思的python库:
 https://www.zhihu.com/question/24590883
 做一个搜集
+
+DevOps:
+https://zhuanlan.zhihu.com/p/95309012
+
+对比工具:
+https://www.beyondcompare.cc/jiqiao/bc-ghtd.html
+
+得研究一下 Python的数据分析的三个库的使用方法,尤其是涉及到表格的操作.
