@@ -491,3 +491,13 @@ https://zhuanlan.zhihu.com/p/95309012
 https://www.beyondcompare.cc/jiqiao/bc-ghtd.html
 
 得研究一下 Python的数据分析的三个库的使用方法,尤其是涉及到表格的操作.
+
+数据分析-Pyecharts库:
+https://pyecharts.org/#/
+完整介绍:
+https://pyecharts.org/#/zh-cn/intro
+BI文档:
+https://help.finebi.com/doc-view-203.html
+
+chrome安装jsonview插件:
+https://www.cnblogs.com/songyanan/p/9224347.html
