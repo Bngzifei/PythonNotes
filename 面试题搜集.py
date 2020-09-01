@@ -501,3 +501,54 @@ https://help.finebi.com/doc-view-203.html
 
 chrome安装jsonview插件:
 https://www.cnblogs.com/songyanan/p/9224347.html
+
+chrome安装SwitchyOmega插件:
+https://github.com/FelisCatus/SwitchyOmega/releases
+
+常用网站收集:
+https://www.cnblogs.com/unleashed/p/13587790.html
+
+pypi账户:zifei
+用户名:zifeiyushui8
+bngzifei@gmail.com
+密码:huangxiba8*
+
+上传至pypi
+twine upload dist/*
+
+打包上传pypi步骤:
+https://www.cnblogs.com/felixwang2/p/9815030.html
+https://zhuanlan.zhihu.com/p/37987613
+https://www.cnblogs.com/langqi250/p/12206143.html
+https://blog.konghy.cn/2018/04/29/setup-dot-py/
+https://packaging.python.org/tutorials/packaging-projects/#uploading-your-project-to-pypi
+
+Python项目打包成wheel笔记:
+https://blog.csdn.net/T_NULL/article/details/89967641
+
+优质博客:
+https://thief.one/2017/11/08/1/
+
+相对路径通常在表示图片、网页等位置时需要用到，相比于绝对路径更不容易出错。
+如果图片与.md文件在同一目录下，那么相对路径这样表示
+
+![avatar](buildWebsites.jpg)
+其中avatar表示图片未正常加载时所显示的内容，buildWebsites.jpg为文件名
+
+Typora 设置图片保存相对路径
+https://blog.csdn.net/fantasic_van/article/details/90762627?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param
+
+IT屋视频下载:
+https://www.it1352.com/VideoTutorial/Index
+
+'gbk' codec can‘t decode byte 0x80 in position 27: illegal multibyte sequenc  解决办法:
+https://blog.csdn.net/qq_43802454/article/details/108113076
+
+
+打包步骤:
+1、python setup.py check
+2、python setup.py sdist    wheel 格式的: python setup.py bdist_wheel
+3、twine upload dist/*
+4、输入账户: zifeiyushui8
+5、输入密码
+
