@@ -560,3 +560,39 @@ https://blog.csdn.net/weixin_34395205/article/details/93589599
 
 django事务原子操作:
 https://www.cnblogs.com/thomson-fred/p/10198528.html
+
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0) —— 读取文件的坑:
+https://blog.csdn.net/longzhinuhou/article/details/86634949
+
+shell脚本遇到问题"$'\r': command not found":
+shell脚本写得一切正常，但是一执行就报错:
+line: XXX "$'\r': command not found"
+
+先 yum install dos2unix 安装 dos2unix工具,
+问题原因：文件格式问题(虽然在window和linux上选择的都是UTF-8，然而并没有用)，因为我是直接复制了一个别的文件，然后在那个基础上改的。
+解决方法：dos2unix XXX.sh
+
+然后执行脚本，问题解决。
+
+python3中zipfile模块的常用方法:
+https://www.cnblogs.com/ManyQian/p/9193199.html
+
+os.system与os.popen区别:
+https://www.cnblogs.com/jefree/p/4461979.html
+
+输出内容需要有返回的:
+output = os.popen('cat /proc/cpuinfo')
+output.read()
+
+只是返回一个状态码:
+ret = os.system('cat /proc/cpuinfo')
+ret为0,命令执行成功,否则非零执行失败
+
+如果既要状态码,又要输出内容,则使用commands模块:
+(status, output) = commands.getstatusoutput('cat /proc/cpuinfo')
+status 为0,说明执行成功,output为输出内容.
+
+os.path.dirname(path)	返回文件路径
+os.path.basename(path)	返回文件名
+
+字符串首字母大写: STR.title()
