@@ -552,3 +552,11 @@ https://blog.csdn.net/qq_43802454/article/details/108113076
 4、输入账户: zifeiyushui8
 5、输入密码
 
+python 列表中查询指定元素:
+list.count(指定元素),如果返回值0,说明没有查找到,如果返回值不为零,就是列表中该元素出现的次数
+
+django orm 中的update_or_create方法使用:
+https://blog.csdn.net/weixin_34395205/article/details/93589599
+
+django事务原子操作:
+https://www.cnblogs.com/thomson-fred/p/10198528.html
