@@ -596,3 +596,17 @@ os.path.dirname(path)	返回文件路径
 os.path.basename(path)	返回文件名
 
 字符串首字母大写: STR.title()
+
+Python有用的模块简介:
+https://www.jb51.net/article/178716.htm
+
+CMS内容管理系统
+
+python将py编译成so方法
+https://blog.csdn.net/qq_20154743/article/details/77891572
+
+RESTful:
+https://www.cnblogs.com/alex3714/articles/6808013.html
+
+Fabric是一个python的远程执行shell的库，同时它也是一个命令行工具:
+https://www.cnblogs.com/welisit/p/10995357.html
