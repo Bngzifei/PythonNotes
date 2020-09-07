@@ -610,3 +610,17 @@ https://www.cnblogs.com/alex3714/articles/6808013.html
 
 Fabric是一个python的远程执行shell的库，同时它也是一个命令行工具:
 https://www.cnblogs.com/welisit/p/10995357.html
+
+https://www.vmware.com/support/services/skyline.html?src=so_5703fb3d92c20&cid=70134000001M5td
+
+一个神奇的网站:
+https://github.com/TwoWater/Python/blob/master/Res/%E8%87%AA%E5%B7%B1%E6%90%AD%E5%BB%BAss:ssr%E6%9C%8D%E5%8A%A1%E5%99%A8.md
+
+supervisor进程监控进程，发现进程没了重新拉起。
+kill -TERM命令杀进程模拟.
+
+DRF详细文档:
+https://www.django-rest-framework.org/
+
+修改要点:
+自动创建目录,使用相对路径
