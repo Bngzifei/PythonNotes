@@ -1,0 +1,51 @@
+查看已安装包:
+rpm -qa
+
+rpm -qa | grep mysql
+
+卸载已安装包:
+rpm -e 包名
+rpm -e mysql80-community-release-el7-3.noarch
+
+查看所有库:
+yum repolist all
+
+安装 lrzsz
+yum -y install lrzsz
+
+安装 vim
+yum -y install vim
+
+查找:
+rpm -qa|grep mariadb
+卸载:
+rpm -e --nodeps mariadb-libs-5.5.60-1.el7_5.x86_64
+
+清除缓存
+sudo yum clean all
+生成缓存
+sudo yum makecache
+
+配置DNS:
+nmcli connection show
+nmcli con mod eth0 ipv4.dns "114.114.114.114 8.8.8.8"
+nmcli con up eth0
+
+配置DNS的文件:
+/etc/resolv.conf
+如果配置了DNS,就不需要再去配置hosts中的ip和域名的对应关系了.
+如果配置了hosts中的ip和域名的对应关系,也就不需要配置DNS了
+
+vim快捷键:
+https://www.cnblogs.com/markleaf/p/7808817.html
+
+
+# 注意:在ubuntu系统中,创建路径之后,没有可执行可写等权限,首先授权 chmod 777 路径
+然后使用filezilla工具才能进行文件传输.
+
+MarkupSafe==1.0
+
+注意:在ubuntu系统下面,如果使用非root用户执行vim写入操作的时候出现:
+E45: 已设定选项 'readonly' (请加 ! 强制执行)
+先执行chmod 777 文件路径
+再去执行vim 写入操作即可.

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="" lang="en" dir="ltr">
+<head>
+    <title>        Log In
+ | Red Hat IDP</title>
+
+    <script type="text/javascript">
+        function faddo(dd, upi) {
+            dd.page.category.subCategories.push("");
+            dd.page.category.subCategories.push("");
+        };
+    </script>
+<script type="text/javascript">
+
+    var digitalData = {
+      page: {
+        attributes: {
+          queryParameters: []
+        },
+        category: {
+          contentType: "",
+          contentSubType: "",
+          keyPage: false,
+          keyPageType: "",
+          pageType: "IDM",
+          primaryCategory: "auth",
+          subCategories: []
+        },
+        pageInfo: {
+          breadCrumbs: [],
+          cms: "idm ${project.version}",
+          destinationURL: "",
+          errorMessage: "",
+          errorType: "",
+          language: "en",
+          pageID: "",
+          pageName: "",
+          referringDomain: "",
+          referringURL: "",
+          syndicationIds: [],
+          sysEnv: "desktop",
+          title: ""
+        }
+      },
+      user: [{
+        profile: [{
+          profileInfo: {
+            accountID: "",
+            daysSinceLastPurchase: "",
+            daysSinceRegistration: "",
+            eloquGUID: "",
+            keyCloakID: "",
+            loggedIn: false,
+            profileID: "",
+            registered: false,
+            socialAccountsLinked: [],
+            subscriptionFrequency: "",
+            subscriptionLevel: "",
+            userAgent: ""
+          }
+        }]
+      }]
+    };
+
+
+    ( function( w, d, dd, undefined ) {
+    
+      function getCookie( name ) {
+        var value = "; " + document.cookie;
+        var parts = value.split( "; " + name + "=" );
+        if ( parts.length == 2 ) {
+          return parts.pop().split( ";" ).shift();
+        }
+      }
+      
+      function getCategories() {
+        var relURL = w.location.pathname; 
+        var categories = { primaryCategory: "", subCategories: [] },
+          url = relURL.split('?')[0].split('#')[0].split(/\//);
+        for(var i=1, l=url.length; i<l; i++) {
+          if (i !== 1 && i <= 4) {
+            categories.subCategories.push(url[i]);
+          }
+          if (i === 1) {
+            categories.primaryCategory = url[i].length > 0 ? url[i] : "root";
+          }
+        }
+        return categories;
+      }
+      
+      function getQueryParams() {
+        return w.location.href.split('?')[1] ? w.location.href.split('?')[1].replace(/=/g,':').split('&') : "";
+      }
+           
+      dd.page.attributes.queryParameters = getQueryParams();
+      var categoryObj = getCategories();
+      dd.page.category.primaryCategory = categoryObj.primaryCategory;
+      dd.page.pageInfo.destinationURL = w.location.href;
+      dd.page.pageInfo.pageID = "login.ftl"; 
+      dd.page.pageInfo.pageName = d.title.split("|")[0].trim();
+      dd.page.pageInfo.title = d.title.trim();
+
+      if ( d.referrer ) {
+        var a = d.createElement("a");
+        a.href = d.referrer;
+        dd.page.pageInfo.referringDomain = a.hostname;
+        dd.page.pageInfo.referringURL = a.href;
+      }
+      dd.page.pageInfo.sysEnv = ( w.innerWidth <= 768 ) ? "tablet" : "desktop";
+      var elqGUID = getCookie( "rh_elqCustomerGUID" );
+      
+      var upi = dd.user[ 0 ].profile[ 0 ].profileInfo; 
+      
+      if (elqGUID) {
+        upi.eloquaGUID = elqGUID;
+      }
+      
+      if(w.navigator){
+        upi.userAgent = w.navigator.userAgent;
+      }
+      
+      faddo(dd, upi);
+            
+    } )( window, document, digitalData );
+    
+</script> 
+<script id="dpal" src="https://www.redhat.com/ma/dpal.js" type="text/javascript"></script>
+
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://redhat.com/">
+    <meta property="og:determiner" content="the">
+    <meta property="og:site_name" content="Red Hat">
+    <meta property="og:title" content="Red Hat">
+
+
+<link rel="icon" href="/auth/resources/7.2.6.ga/login/rhd-theme/img/favicon.ico">
+
+<!-- RHD css start -->
+<link href="/auth/resources/7.2.6.ga/login/rhd-theme/css/rhd-20190502.css" rel="stylesheet" />
+<!-- RHD css end -->
+<link href="/auth/resources/7.2.6.ga/login/rhd-theme/css/login-20190502.css" rel="stylesheet" />
+
+
+<!-- Common JS -->
+<script type="text/javascript">
+    rhd = {
+        config: {
+            user_profile_level: "",
+            form_fields_visible: {},
+            form_fields_required: {},
+            website_current: "",
+            email_strict_check: false
+        }
+    }
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <script src="/auth/resources/7.2.6.ga/login/rhd-theme/js/vendor/jquery-20180411.js" type="text/javascript"></script>
+        <script src="/auth/resources/7.2.6.ga/login/rhd-theme/js/vendor/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="/auth/resources/7.2.6.ga/login/rhd-theme/js/vendor/hideShowPassword.js" type="text/javascript"></script>
+<script>
+    jQuery.extend( jQuery.validator.messages, {
+        required: "This field is required",
+        remote: "Please fix this field",
+        email: "Please enter a valid email address",
+        url: "Please enter a valid URL",
+        date: "Please enter a valid date",
+        dateISO: "Please enter a valid date (ISO)",
+        number: "Please enter a valid number",
+        digits: "Please enter only digits",
+        equalTo: "Please enter the same value again",
+        maxlength: jQuery.validator.format( "Please enter no more than {0} characters" ),
+        minlength: jQuery.validator.format( "Please enter at least {0} characters" ),
+        rangelength: jQuery.validator.format( "Please enter a value between {0} and {1} characters long" ),
+        range: jQuery.validator.format( "Please enter a value between {0} and {1}" ),
+        max: jQuery.validator.format( "Please enter a value less than or equal to {0}" ),
+        min: jQuery.validator.format( "Please enter a value greater than or equal to {0}" ),
+        step: jQuery.validator.format( "Please enter a multiple of {0}" )
+    } );
+    jQuery.extend( jQuery.validator.messages, {
+        bannedCharsEmail: "Email field cannot contain the following special characters ($) (^) (|) (%) (\\) (~) (*) (=).",
+        phone: "This field may only contain the following characters (0-9) (+) (-) (space) (.).",
+        bannedChars: "This field cannot contain the following special characters (&quot;) ($) (^) (&lt;) (&gt;) (|) (+) (%) (\\).",
+        bannedCharsUsername: "Red Hat Login ID cannot contain spaces, national characters or the following special characters (&quot;) ($) (^) (&lt;) (&gt;) (|) (+) (%) (/) (;) (:) (,) () (*) (=) (~) (#) (() ())",
+        remoteCustom: "Please fix this field"
+    } );
+</script>
+<script src="/auth/resources/7.2.6.ga/login/rhd-theme/js/login-account-20190924.js" type="text/javascript"></script>
+</head>
+
+<body class="home  ">
+<a href="#main-content" class="visually-hidden focusable skip-link">
+    Skip to main content
+</a>
+<div class="layout-container">
+
+<header role="banner">
+    <div class="rhd-masthead front-nav">
+        <div class="rh-universal-header">
+            <nav class="rh-nav-universal" aria-label="Red Hat Global Navigation">
+                <a class="rh-logo-wrapper" href="https://www.redhat.com/" title="Red Hat"><img class="rh-header-logo" alt="Red Hat Logo" src="/auth/resources/7.2.6.ga/login/rhd-theme/img/RHLogo_white.svg"></a>
+
+                <ul class="rhd-menu rh-universal-login">
+                    <li class="login">
+                            <a href="https://www.redhat.com/wapps/ugc/register.html?redirect=%2Fwapps%2Fugc%2F">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                Register
+                            </a>
+                    </li>
+                </ul>
+
+                <div class="menu-toggle-wrapper">
+                    <button class="menu-toggle">Menu<span class="icon"><i class="fas fa-bars"></i></span></button>
+                </div>
+            </nav>
+            <div class="region region-mobile-tray rhd-mobile-tray">
+                <div class="rhd-mobile-tray-inner">
+                    <button class="menu-toggle">Close<span class="icon"><i class="far fa-times-circle"></i></span></button>
+                    <nav role="navigation" aria-labelledby="block-rhdp-account-menu-menu" id="block-rhdp-account-menu" data-block-plugin-id="system_menu_block:account" class="block block-menu navigation menu--account">
+                        <h2 class="visually-hidden" id="block-rhdp-account-menu-menu">User account menu</h2>
+                        <ul class="rhd-menu rh-universal-login">
+                    <li class="login">
+                            <a href="https://www.redhat.com/wapps/ugc/register.html?redirect=%2Fwapps%2Fugc%2F">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                Register
+                            </a>
+                    </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="rhd-mobile-overlay"></div>
+    <main role="main">
+        <div class="container">
+            <div class="content">
+            <div class="kc-wrapper">
+                <div class="kc-card">
+                    <div class="rh-logo-page">
+                        <img alt="Red Hat Logo" src="/auth/resources/7.2.6.ga/login/rhd-theme/img/RHLogo.svg">
+                    </div>
+            <form id="kc-form-login" class=" kc-loginpage" action="https://sso.redhat.com/auth/realms/redhat-external/login-actions/authenticate?code=nB9L9OOFK_Ew3oxDw8UsuzvBTsk_fK9ka54wcUYNdls&amp;execution=42ab36f8-26fd-4425-9aba-7792a9f08f59&amp;client_id=unified-downloads&amp;tab_id=GIO6AaMMBIg" method="post">
+                <div class="slide-in-container">
+                    <section id="step1" class="slide-in from-left show">
+                        <h1 class="centered">Log in to your Red Hat account</h1>
+                        <div class="centered sub-title"><p>One account for all things Red Hat</p></div>
+
+                        <div class="field">
+                            <label for="username" class="">Red Hat login or email</label>
+                            <input id="username" class="username-input "
+                                   data-msg-required="Red Hat login or email is required"
+                                   data-msg-remote="Account doesn&#39;t exist"
+                                   name="username" value="" type="text" required="" tabindex="1"/>
+                        </div>
+                        <div class="centered form-buttons">
+                            <button id="login-show-step2" class="centered button heavy-cta" tabindex="2" data-text-static="Next" data-text-processing="Verifying ...">Next</button>
+                        </div>
+                    </section>
+
+                    <section id="step2" class="slide-in from-right ">
+                        <h1 class="centered">Welcome</h1>
+                        <div id="login-step2-username-wrapper" class="centered field"><a id="login-show-step1" href="" tabindex="-1"><i class="fas fa-user"></i> <div id="login-step2-username-id"></div> <i class="fas fa-angle-down"></i></a></div>
+
+                        <div id="passwordWrapper" class="field ">
+                            <label for="password" class="">Enter your password</label>
+                            <input id="password" class="password-input "
+                                   data-msg-required="Password is required"
+                                   name="password" type="password" tabindex="-1"/>
+                        </div>
+                        <div class="field">
+                            <div id="kc-form-buttons" class="form-buttons">
+                                <div class="centered">
+                                    <input class="button heavy-cta " name="login" id="kc-login" type="submit" value="Log in" data-value-processing="Logging in ..."/>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="centered login-forgot-pw">
+                                <a id="reset-password" href="/auth/realms/redhat-external/login-actions/reset-credentials?client_id=unified-downloads&amp;tab_id=GIO6AaMMBIg">Forgot your password?</a>
+                            </div>
+                    </section>
+                </div>
+            </form>
+            <div class="centered">
+                <span class="new-account">Don&#39;t have an account? <a href="https://www.redhat.com/wapps/ugc/register.html?redirect=%2Fwapps%2Fugc%2F">Create one now.</a></span>
+
+            </div>
+        <script type="text/javascript">
+            util.adaptProgressiveProfileLevel();
+        </script>
+	<!-- placeholder for experiences -->
+	<div id="kc-loginpage-experience">
+	</div>
+
+	<script type="text/javascript">
+        $().ready(new function() {
+            showHidePasswordCfg.wrapper.element = $("#passwordWrapper");
+            $("#password").hideShowPassword(showHidePasswordCfg);
+            var err = [];
+            var step = 1;
+            loginForm.init($("#kc-form-login"), err, step, '1592967157510.Pf7uz3AxK3RIY92hHisk+Q==');
+        });
+    </script>
+	
+                </div> 
+            </div>
+
+            </div>
+
+                <div id="kc-info" class="">
+                    <div id="kc-info-wrapper" class="">
+                    </div>
+                </div>
+        </div>
+    </main>
+<footer role="contentinfo">
+    <section class="rc-footer-traditional">
+        <div class="footer-container rc-footer-traditional-container">
+            <section class="rc-footer-traditional-section">
+                <div class="rc-footer-traditional-logo">
+                    <div class="row">
+                        <h3>Red Hat</h3>
+                    </div>
+                </div>
+                <div id="legal" class="rc-footer-traditional-legal">
+                    <div class="row">
+                        <div class="copyright">Copyright ©2020 Red Hat, Inc.</div>
+                        <ul class="menu"><li class="first leaf"><a href="https://www.redhat.com/en/about/privacy-policy">Privacy statement</a></li>
+                            <li class="leaf"><a href="https://www.redhat.com/en/about/terms-use">Terms of use</a></li>
+                            <li class="last leaf"><a href="https://www.redhat.com/en/about/all-policies-guidelines">All policies and guidelines</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rc-footer-traditional-event-logo">
+                    <div id="block-block-5" class="block block-block block-footer-promote">
+                        <a href="http://www.redhat.com/summit/"><img src="/auth/resources/7.2.6.ga/login/rhd-theme/img/logo-summit.png" alt="Red Hat Summit" style="float: right;"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</footer></div>
+
+<script>
+    initHeaderDropdown();
+    initMobileMenu();
+</script>
+<script type="text/javascript">  
+    if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {  
+        _satellite.pageBottom();  
+    } 
+    $().ready(new function() {
+      sendAsyncUDEvent();
+    });
+</script>   
+</body>
+</html>

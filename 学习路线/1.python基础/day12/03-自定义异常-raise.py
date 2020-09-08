@@ -22,13 +22,13 @@ raise 抛出异常的实例对象,然后except去拦截这个异常实例对象.
 """
 
 
-# try:
-# 	# print(a)
-# 	error_instance = NameError("name 'a' is not define")  # 创建指定异常的实例对象
-# 	print(id(error_instance))  # 2291212287760
-# 	raise error_instance  # 抛出指定的异常实例对象
-#
-#
+try:
+	# print(a)
+	error_instance = NameError("name 'a' is not define")  # 创建指定异常的实例对象
+	print(id(error_instance))  # 2291212287760
+	raise error_instance  # 抛出指定的异常实例对象
+
+
 # except NameError as error:  # 里面写了各种错误类型,根据错误去找是什么样的错误类型.
 # 	print('提示:%s' % error)  # 实际是一个NameError()类产生的一个实例对象.error实际就是一个错误类型的实例对象. 
 # 	print(id(error))  # 2291212287760
@@ -60,5 +60,5 @@ except PhoneException as error:
 	print(error)
 
 
-# var = 'df'.center(20,'*')  # 输出 : *********df*********
-# print(var)
+var = 'df'.center(20,'*')  # 输出 : *********df*********
+print(var)

@@ -2,18 +2,19 @@
 执行命令:pip list | grep virtualenv
 
 如果没有安装,则执行:
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org virtualenv
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 virtualenv
 
 
 2.安装virtualenvwrapper:
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org virtualenvwrapper
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 virtualenvwrapper
 
 3.升级pip:
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org --upgrade pip
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 --upgrade pip
 
 4.创建虚拟环境:
 	virtualenv 虚拟环境名称  例如: virtualenv bng
-
+	
+创建基于Python3的虚拟环境: virtualenv bng -p python3
 
 注意:--system-site-packages 参数就是以系统中已安装的包为基础全部安装到新建的虚拟环境中.
 
@@ -25,7 +26,7 @@ deactivate
 
 7.安装指定版本的pytest==3.3.0
 注意这一步操作之前需要先进入虚拟环境:source BNG/bin/activate
-pip install -i http://mirrors.sangfor.org/pypi/simple --trusted-host mirrors.sangfor.org pytest==3.3.0
+pip install -i pypi镜像地址 --trusted-host hosts文件中的host域名 pytest==3.3.0
 
 8.使用的时候记得加命令参数:python -m
 例如这种形式:
@@ -110,6 +111,20 @@ VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/bin/virtualenvwrapper.sh
 
+示例:
+# Python3.8虚拟环境配置
+WORKON_HOME=/BNG_INFO/VirtualEnv      #  虚拟环境所在的路径
+VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
+VIRTUALENVWRAPPER_PYTHON=/usr/local/python3/bin/python3    # 依赖的Python版本的位置  注意这里的 路径要和下面的.sh脚本在同一个目录下面
+source /usr/local/python3/bin/virtualenvwrapper.sh   # 虚拟环境shell脚本的位置,激活虚拟环境  记得使用 find / -name virtualenvwrapper.sh 工具去搜索位置
+#######################################################
+# Python3.8虚拟环境配置
+WORKON_HOME=/BNG_INFO/VirtualEnv
+VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
+VIRTUALENVWRAPPER_PYTHON=/usr/local/python3/bin/python3.8
+source /usr/local/python3/bin/virtualenvwrapper.sh
+
+最后使用下面的命令激活:
 执行: source /etc/profile 使其配置生效
 
 2.mkvirtualenv 你的环境名字: 创建虚拟环境
@@ -150,7 +165,6 @@ VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/bin/virtualenvwrapper.sh
 
 
-
 rpm安装:
 
 rpm -ivh libffi-devel-3.0.13-18.el7.x86_64.rpm
@@ -161,4 +175,34 @@ rpm -ivh libffi-devel-3.0.13-18.el7.x86_64.rpm
 ln -s /usr/local/python3/bin/python3 /usr/bin/python3
 
 
+注意: VIRTUALENVWRAPPER_PYTHON 指定python的版本
+virtualenvwrapper.sh 这个文件 使用 find / -name virtualenvwrapper.sh 去搜索所在位置
+====================================
+解决Linux新建虚拟环境virtualenvwrapper报错问题:
+which: no virtualenv in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
+解决办法：
+将python环境下的virtualenv拷贝至/usr/bin/目录下：
+[root@localhost ~]# cd /usr/bin/
+[root@localhost bin]# ls -al | grep virtualenv
+[root@localhost bin]# cd /usr/local/python3/bin/
+# 建立硬链接到/usr/bin/
+[root@localhost bin]# ln virtualenv /usr/bin/virtualenv
+[root@localhost bin]#
+>>>>>>> 24c454f584fb9a04f6871677153b5616c893f05b
 
+vim /etc/profile
+# Python3 虚拟环境配置
+WORKON_HOME=/root/RepositoryDisk/VirtualEnv
+VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--system-site-packages'
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+
+激活配置:
+source /etc/profile
+
+
+安装:
+pip install -r requirements.txt
+
+导出:
+pip freeze > requirements.txt

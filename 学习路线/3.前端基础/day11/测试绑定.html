@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+            .main_left: {
+                width: 150px;
+                height: 100%;
+                float:left;
+                background: #c0c0c0;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main_left" style="height: 100%">
+            <ul>
+                <li data-src="roadlist.html">朝阳</li>
+                <li data-src="roleList.action">海淀</li>
+                <li data-src="userVip.action">丰台</li>
+            </ul>
+        </div>
+
+        <div class="main_right">
+            <iframe frameborder="0" scolling="yes" style="width: 80%;height: 100%" src="roadlist.html" id="aa"></iframe>
+        </div>
+    </body>
+    <script type="text/javascript">
+        $(function(){
+            $(".main_left li").on("click",function(){
+                var address = $(this).attr("data-src");
+                $("iframe").attr("src",address);
+            });
+        });
+    </script>
+</html>

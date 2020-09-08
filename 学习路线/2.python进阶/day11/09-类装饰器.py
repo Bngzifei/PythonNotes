@@ -38,3 +38,51 @@ func2(56)
 3.>实现了__call__方法的实例对象是 
 
 """
+
+import time
+import six
+from oslo_log import log
+LOG = log.getLogger(__name__)
+
+
+def retry(retry_times=3, interval=5, ignore=False):
+    def _warpper(func):
+        @six.wraps(func)
+        def __warpper(*args, **kwargs):
+            Retry_obj = Retry(func, retry_times, interval, ignore)
+            return Retry_obj(*args, **kwargs)
+        return __warpper
+    return _warpper
+
+
+class Retry(object):
+    """任务重试器。"""
+
+    def __init__(self, func, retry_times=3, interval=5,
+                 ignore=False):
+        self.func = func
+        # retry_times等于-1表示重试无限次
+        self.retry_times = retry_times
+        self.attemps_times = 0
+        self.interval = interval
+        # 超出重试次数仍然失败后，是否忽略异常
+        self.ignore = ignore
+
+    def __call__(self, *args, **kwargs):
+        while True:
+            try:
+                result = self.func(*args, **kwargs)
+            except Exception as ex:
+                self.attemps_times += 1
+                LOG.error('%s time call func: %s fail, exception: %s',
+                          self.attemps_times, self.func.__name__, ex)
+
+                if self.retry_times != -1 and self.attemps_times > self.retry_times:    # noqa: E501
+                    # 忽略异常情况下直接break
+                    if self.ignore:
+                        break
+                    raise
+                else:
+                    time.sleep(self.interval)
+            else:
+                return result

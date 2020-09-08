@@ -1,0 +1,107 @@
+GPG介绍
+http://www.ruanyifeng.com/blog/2013/07/gpg.html
+
+压缩:
+zip -q -r html.zip ./fyb
+
+解压:
+unzip -o html.zip -d ./temp/
+
+参考博客:https://www.cnblogs.com/shoshana-kong/p/11003192.html
+
+在新机器上面配置git账号:
+注意:user.name必须是你Gitlab服务器上面个人信息里面设置的姓名,不能随便写。
+邮箱必须是Gitlab中设置的邮箱。
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+配置客户端长期存储用户名和密码:
+git config --global credential.helper store
+
+然后给邮箱设置秘钥:
+
+ssh-keygen -t rsa -C "johndoe@example.com"
+
+出现下面的信息:一直按 Enter键即可:
+
+	Generating public/private rsa key pair.
+	Enter file in which to save the key (/root/.ssh/id_rsa): 
+	Enter passphrase (empty for no passphrase): 
+	Enter same passphrase again: 
+	Your identification has been saved in /root/.ssh/id_rsa.
+	Your public key has been saved in /root/.ssh/id_rsa.pub.
+	The key fingerprint is:
+	SHA256:CkuWjwuduAE7pP/65DmVIgO03HsUKh0Luv5baikYNIM johndoe@example.com
+	The key's randomart image is:
+	+---[RSA 2048]----+
+	|                 |
+	| o . .           |
+	|= = + .          |
+	|EB = o           |
+	|o++ B  .S        |
+	|=oo*.Bo.         |
+	|*.+oO+o          |
+	|.= O+o           |
+	|  BBB.           |
+	+----[SHA256]-----+
+
+执行: cat /root/.ssh/id_rsa.pub  获取公钥,然后复制此公钥,
+接着使用浏览器登录GitLab服务器,在个人中心 的settings(设置)中添加ssh密钥即可.
+
+最后在终端执行:  ssh -T git@Gitlab服务器地址     服务器地址是ip的形式和域名的形式都可以
+验证配置是否成功:
+eg:ssh -T git@Gitlab服务器地址  例如: ssh -T git@366.258.899.1
+出现下面的信息即配置成功。
+Welcome to GitLab, LB123456!
+
+查看git全局配置:
+git config --global -l  或者  git config --global --list
+
+查看git配置:
+git config --list
+
+eg:
+user.name=LBwxxxx123456
+user.email=123456@xxxx.com
+user.password=libinxxxx123456
+credential.helper=store
+core.quotepath=false
+
+验证配置是否成功:
+eg:ssh -T git@Gitlab服务器地址  例如: ssh -T git@366.258.899.1
+出现下面的信息即配置成功。
+Welcome to GitLab, LB123456!
+
+如果出现:ssh: Could not resolve hostname gitlab服务器域名: Temporary failure in name resolution
+说明是无法解析域名,可以先ping gitlab服务器的ip地址,如果是通的,则去 /etc/hosts/文件中添加 gitlab服务器ip地址和域名的对应关系。如果不通，说明是网络设置的问题，不在一个局域网内，需要修改网络配置。
+
+
+如何查看域名对应的ip地址:https://blog.csdn.net/qq_42034068/article/details/88137760
+eg:nslookup 域名
+
+Name : 域名
+Address : xx.xx.xx.xx
+
+http://www.sangfor.com.cn/product/it-yun.html
+
+清除git全局配置:
+清除姓名:
+git config --unset --global user.name
+清除邮箱:
+git config --unset --global user.email
+
+
+错误排查:fatal: Unable to read current working directory: No such file or directory
+
+当执行一个命令的时候遇到上面的错误,肯定是当前所在的目录是不存在了.
+
+git优质博客:
+https://www.cnblogs.com/shoshana-kong/p/11003192.html
+
+查看git是否忽略大小写:
+git config --get core.ignorecase
+
+设置git区分大小写:
+git config --global core.ignorecase false
+相关链接:
+https://blog.csdn.net/weixin_36995644/article/details/82184863

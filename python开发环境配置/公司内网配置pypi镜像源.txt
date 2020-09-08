@@ -1,0 +1,65 @@
+1、不管是windows还是linux操作系统，都是先去配置hosts文件,添加镜像源ip和域名。
+
+2、linux下面是配置 ~/.pip/pip.conf 文件,windows下面是配置 ~/pip/pip.ini
+
+3、linux下面查找 pip.conf 配置文件的时候,可以直接 find / -name pip.conf,
+   查找hosts文件可以  find / -name hosts
+
+4、windows中 hosts 文件在  C:\Windows\System32\drivers\etc 路径下面。
+   pip.ini 是在 C:\Users\当前登录的用户名\AppData\Roaming\pip
+
+5、pip.conf 和 pip.ini文件的内容:
+
+如果有外网,直接执行:
+设为默认
+升级 pip 到最新的版本 (>=10.0.0) 后进行配置：
+
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+##########################################################
+
+[global]
+# 从清华大学镜像源 https://pypi.tuna.tsinghua.edu.cn 代理， 缓存1天
+index-url = 私有的域名
+
+# 内部私有pypi服务
+extra-index-url = 私有的域名的url
+
+[install]
+trusted-host = 私有的pypi镜像源的域名
+
+########################################################
+
+[global]
+# 从清华大学镜像源 https://pypi.tuna.tsinghua.edu.cn 代理， 缓存1天
+index-url = 私有的域名
+
+# 内部私有pypi服务
+extra-index-url = ip地址 + 端口号
+
+[install]
+trusted-host = 域名url  ip地址
+
+
+指定多个pip源
+https://blog.csdn.net/liujiong63/article/details/78795015
+
+Linux环境下创建pip配置文件：
+
+vim .pip/pip.conf
+
+[global]
+index-url=http://pypi.douban.com/simple
+extra-index-url=http://mirrors.aliyun.com/pypi/simple/
+extra-index-url=https://pypi.tuna.tsinghua.edu.cn/simple/
+extra-index-url=http://pypi.mirrors.ustc.edu.cn/simple/
+
+[install]
+trusted-host=pypi.douban.com
+trusted-host=mirrors.aliyun.com
+trusted-host=pypi.tuna.tsinghua.edu.cn
+trusted-host=pypi.mirrors.ustc.edu.cn
+
+先从index-url查找，找不到则从extra-index-url查找。

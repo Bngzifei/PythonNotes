@@ -1,5 +1,10 @@
 git 删除远端分支:
 
+忽略改动的文件:
+git checkout -- 指定的文件名
+
+git checkout * 忽略当前修改的所有文件
+
 1.先查看远端分支:git branch -a
 
 2.删除指定的远端分支: git push origin --delete 1.0.0/feture/lb-fix-test
@@ -173,7 +178,6 @@ git 使用在一个分支写完之后,可以先在这个分支的基础上新建
 git rm --cached filename/-r directory
 git commit "xxxx"
 git push
-
 
 
 
@@ -394,3 +398,62 @@ CentOS踢出已登录用户的方法:
   先按下w查看用户终端号
   
   pkill -kill -t pts/1 (pts/1为w指令看到的用户终端号)
+
+
+python依赖包安装路径:
+当存在包导包导不进去的时候,仔细检查下面两个路径下包是否都存在
+
+/usr/lib/python2.7/site-packages
+
+/usr/lib64/python2.7/site-packages
+
+
+
+Python3中 对 字典的keys()和values() 视图对象转换成列表的操作:列表推导式实现。
+
+eg:
+
+version_list = [version for version in version_no_arise_count_map.keys()]
+version_count_list = [version_count for version_count in version_no_arise_count_map.values()]
+
+优秀的github资料集合
+https://github.com/jumper2014/PyCodeComplete
+
+关于git换行符的说明设置:
+git config --global core.autocrlf true   #true的位置放你想使autocrlf成为的结果，true，false或者input
+https://blog.csdn.net/h330531987/article/details/90761143
+
+
+新建立了一个目录,存了文件,然后只提交这个目录下的所有文件:
+
+ git add dep-pkg/*
+
+ git commit -m[ADD]增加依赖包
+
+ git push origin 远程的目标分支
+
+
+忽略当前所有修改的文件：
+git checkout -- *
+
+重置当前所有的文件:
+(就是由添加到缓存区的状态回退到没有添加到缓存区的状态,由绿色变红色)
+git reset HEAD *
+
+git commit之后撤销:
+https://www.cnblogs.com/lfxiao/p/9378763.html
+
+写完代码后，我们一般这样
+
+git add . //添加所有文件
+
+git commit -m "本功能全部完成"
+
+执行完commit后，想撤回commit，怎么办？
+
+这样凉拌：
+git reset --soft HEAD^
+
+这样就成功的撤销了你的commit
+
+注意，仅仅是撤回commit操作，您写的代码仍然保留。

@@ -28,10 +28,11 @@ l1 = line(1, 1)
 # print(l1.__closure__[2].cell_contents)
 
 """
-<流畅的python>
-Python核心编程 第二版  不要看第三版 
+推荐的经典书籍：
+《流畅的python》
+《Python核心编程》 第二版  不要看第三版 
 
-硬着头皮看两遍
+要求：硬着头皮看两遍
 
 """
 

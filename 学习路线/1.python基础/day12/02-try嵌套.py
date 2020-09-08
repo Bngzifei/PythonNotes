@@ -9,21 +9,21 @@
 
 """
 
-# try:
-# 	f = open('13.txt', 'r')  # 一出错就立刻跳到except里面执行
-# 	print('---------')
-# 	try:
-# 		content = f.read()
-# 		print(content)
-# 		f.close()
-# 		print(a)
-# 	except NameError as error1:  # 这里出错,就在这里拦截
-# 		print('---:%s' % error1)
-#
-# except FileNotFoundError as error:
-# 	print('提示:%s' % error)
-#
-# print('后续代码')
+try:
+	f = open('13.txt', 'r')  # 一出错就立刻跳到except里面执行
+	print('---------')
+	try:
+		content = f.read()
+		print(content)
+		f.close()
+		print(a)
+	except NameError as error1:  # 这里出错,就在这里拦截
+		print('---:%s' % error1)
+
+except FileNotFoundError as error:
+	print('提示:%s' % error)
+
+print('后续代码')
 
 # 如果内层函数出现异常,默认由自己处理,如果它没有处理异常,会传到外层的try.
 def test1():

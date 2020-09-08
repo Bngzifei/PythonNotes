@@ -15,8 +15,8 @@
 # print(a)  # 没有变量保存的就回收了
 
 """清空"""
-# dict1 = {"name": "zhang", "age": 15, 'gender': 'male'}
-# dict1.clear()  # 清空
+dict1 = {"name": "zhang", "age": 15, 'gender': 'male'}
+dict1.clear()  # 清空
 # print(dict1)
 # # 常用pop,因为可以有返回值
 #
@@ -25,14 +25,14 @@
 # print(dict1)
 # dict1.setdefault("name1", "lisi")  # 如果key存在,什么也不做,key不存在就增加键值对
 # print(dict1)
-# dict2 = {'height': 175, "boy": True, "name": "liskk"}
-# # key存在就是修改(因为key如果存在的话新添加的key对应的value会覆盖掉原来的value),不存在就增加键值对
-# dict1.update(dict2)
+dict2 = {'height': 175, "boy": True, "name": "liskk"}
+# key存在就是修改(因为key如果存在的话新添加的key对应的value会覆盖掉原来的value),不存在就增加键值对
+dict1.update(dict2)
 # print(dict1)
 # """查询元素"""
-# # 查询的方法均有返回值
-# dict1 = {"name": "zhang", "age": 15,'gender':'male'}
-# name = dict1["name"]  # 获取指定key的value,如果获取的key不存在,报错
+# 查询的方法均有返回值
+dict1 = {"name": "zhang", "age": 15,'gender':'male'}
+name = dict1["name"]  # 获取指定key的value,如果获取的key不存在,报错
 #
 # name = dict1.get("name1")  # 获取指定key的value,如果获取的key不存在,不会报错,返回None
 # print(name)
@@ -57,30 +57,30 @@ Python2中keys获取到的就是列表[],Python3修改成了视图对象,目的�
 # # print(sys.getsizeof(keys))  # 占用48个字节
 # # print(sys.getsizeof(list1))  # 占用104个字节
 """字典.keys:获取所有的key"""
-# dict1 = {"name": "zhang", "age": 15,'gender':'male'}
-# keys = dict1.keys()  # 获取字典中所有的键
-# for key in keys:
-# 	print(key)
-# print(keys)  # 输出的是:dict_keys(['name', 'age'])
+dict1 = {"name": "zhang", "age": 15,'gender':'male'}
+keys = dict1.keys()  # 获取字典中所有的键
+for key in keys:
+	print(key)
+print(keys)  # 输出的是:dict_keys(['name', 'age'])
 """字典.values:获取所有的value"""
-# dict1 = {"name": "zhang", "age": 15,'gender':'male'}
-# values = dict1.values()  # 获取出字典中所有的值,返回的也是视图对象
-# for value in values:
-# 	print(value)
-# print(values)
+dict1 = {"name": "zhang", "age": 15,'gender':'male'}
+values = dict1.values()  # 获取出字典中所有的值,返回的也是视图对象
+for value in values:
+	print(value)
+print(values)
 """字典.items:获取所有的key-value键值对"""
 dict1 = {"name": "zhang", "age": 15,'gender':'male'}
-# items = dict1.items()  # 获取出所有的键值对,视图对象,里面是一个元组类型,且元组的个数是固定的,所以可以使用解包
-# print(items)
-# for item in items:
-# 	print(item)
-#
-# for key,value in dict1.items():  # 解包
-# 	print(key)
-# 	print(value)
-#
-# for ele in dict1:  # 遍历字典默认取到的是key ,这种最好用,最常用
-# 	print(dict1[ele])  # 通过key来取到value
+items = dict1.items()  # 获取出所有的键值对,视图对象,里面是一个元组类型,且元组的个数是固定的,所以可以使用解包
+print(items)
+for item in items:
+	print(item)
+
+for key,value in dict1.items():  # 解包
+	print(key)
+	print(value)
+
+for ele in dict1:  # 遍历字典默认取到的是key,这种最好用,最常用
+	print(dict1[ele])  # 通过key来取到value
 
 
 import sys
