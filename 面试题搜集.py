@@ -636,5 +636,21 @@ https://www.zhihu.com/question/21628833/answer/370073009
 164.50976610183716
 179.6142578125
 
-1093.7744140625
-641.87109375
+1093.7744140625 同步
+641.87109375 协程异步  773.107421875
+
+异步爬虫Pyppeteer:
+http://blog.itpub.net/69923331/viewspace-2648397/
+https://zhuanlan.zhihu.com/p/76237595
+https://miyakogi.github.io/pyppeteer/
+https://www.cnblogs.com/Summer-skr--blog/p/12020207.html
+
+NB爬虫项目:
+https://github.com/xxNB/crawl
+
+aiomultiprocess:协程与多进程结合:
+https://www.youtube.com/watch?v=0kXaLh8Fz3k
+https://cuiqingcai.com/6160.html
+
+pyecharts丨页面布局工具——Page 和 Grid
+https://www.it610.com/article/1296632175210340352.htm
