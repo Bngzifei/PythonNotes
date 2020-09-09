@@ -103,5 +103,3 @@ Red Hat Enterprise Linux 7.0 - 7.x x86_64 Certified
 //*[@id="product-cert-table"]/table/tbody/tr[7]/td[@headers="th-person1 th-arch"]
 //*[@id="product-cert-table"]/table/tbody/tr[7]/td[@headers="th-person1 th-product"]
 
-
-sudo apt-get remove libdb++-dev:amd64 libdb-dev:amd64 libdb5.1:amd64 libdb5.1++:amd64 libdb5.3:amd64 libdb5.3++:amd64 libdb5.3++-dev libdb5.3-dev -y

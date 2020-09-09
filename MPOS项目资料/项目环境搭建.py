@@ -56,3 +56,6 @@ pkill -kill -t pts/0
 
 遇到的钱包数据库初始化失败的问题:
 https://www.itdaan.com/tw/608b50c1a172
+
+
+sudo apt-get remove libdb++-dev:amd64 libdb-dev:amd64 libdb5.1:amd64 libdb5.1++:amd64 libdb5.3:amd64 libdb5.3++:amd64 libdb5.3++-dev libdb5.3-dev -y

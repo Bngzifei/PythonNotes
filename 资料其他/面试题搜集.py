@@ -374,24 +374,6 @@ http://www.32r.com/soft/39166.html
 https://www.cnblogs.com/d2zs/p/12095889.html
 http://www.eryajf.net/1040.html
 
-#########################################
-Sublime Text 3激活注册码 （亲测可用）
-
------ BEGIN LICENSE -----
-Member J2TeaM
-Single User License
-EA7E-1011316
-D7DA350E 1B8B0760 972F8B60 F3E64036
-B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
-FA0A2ABE 25F65BD8 D51458E5 3923CE80
-87428428 79079A01 AA69F319 A1AF29A4
-A684C2DC 0B1583D4 19CBD290 217618CD
-5653E0A0 BACE3948 BB2EE45E 422D2C87
-DD9AF44B 99C49590 D2DBDEE1 75860FD2
-8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
------- END LICENSE ------​
-
-########################################
 
 Python 常见文件格式 .py .pyc .pyw .pyo .pyd 之间的主要区别:
 http://forum.digitser.cn/thread-1758-1-1.html
@@ -529,8 +511,8 @@ https://blog.csdn.net/T_NULL/article/details/89967641
 优质博客:
 https://thief.one/2017/11/08/1/
 
-相对路径通常在表示图片、网页等位置时需要用到，相比于绝对路径更不容易出错。
-如果图片与.md文件在同一目录下，那么相对路径这样表示
+相对路径通常在表示图片、网页等位置时需要用到，相比使用绝对路径更不容易出错。
+如果图片与.md文件在同一目录下，那么采用相对路径方式表示
 
 ![avatar](buildWebsites.jpg)
 其中avatar表示图片未正常加载时所显示的内容，buildWebsites.jpg为文件名
@@ -654,3 +636,9 @@ https://cuiqingcai.com/6160.html
 
 pyecharts丨页面布局工具——Page 和 Grid
 https://www.it610.com/article/1296632175210340352.htm
+
+数据结构和算法 Python和C++语言描述
+数据结构和算法 Python和C++语言描述作者：(美) 戴维·M.瑞德(David M. Reed) 约翰·策勒(John Ze)
+
+curl用法:
+http://www.ruanyifeng.com/blog/2019/09/curl-reference.html
