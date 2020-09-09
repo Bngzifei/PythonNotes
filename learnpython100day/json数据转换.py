@@ -18,3 +18,16 @@ s = {
 c = json.dumps(s)
 
 print(c)
+
+# json文件转字典
+with open("/sf/data/local/TESTCASE/HW_Platform/package.json", "r+") as fd:
+    res = json.load(fd)
+    # res = fd.read()
+
+df = {
+    "1": 1
+}
+
+# 写入一个字典,列表类型  字典或者列表生成.json文件
+with open("xx.txt", "w") as fp:
+    json.dump(df, fp)

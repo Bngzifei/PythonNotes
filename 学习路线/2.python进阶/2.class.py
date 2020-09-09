@@ -47,7 +47,6 @@ class GoodsItem:
 
 
 goods = GoodsItem('橘子', 15.2, '真的很好吃')
-import pdb;pdb.set_trace
 print('商品名:', goods.name)
 print('价格:', goods.price)
 print('客户评价:', goods.comments)
