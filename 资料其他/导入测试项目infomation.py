@@ -776,7 +776,6 @@ https://www.cnblogs.com/crb912/p/8976937.html
 使用APScheduler库实现定时任务:
 https://blog.csdn.net/hui3909/article/details/46652623
 
-<<<<<<< HEAD
 paramiko执行命令实时输出的问题:
 https://zhangge.net/5122.html
 
@@ -1003,3 +1002,6 @@ robo3t连接时报错:network error while attemping to run command 'getnonce' on
 https://blog.csdn.net/xuxiaoyu122/article/details/104546339
 
 ubuntu系统下非root用户使用filezilla软件传输文件时,需要先给目的目录进行授权操作.
+
+生成api接口文档的:
+https://apidocjs.com/

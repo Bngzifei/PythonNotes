@@ -642,3 +642,18 @@ https://www.it610.com/article/1296632175210340352.htm
 
 curl用法:
 http://www.ruanyifeng.com/blog/2019/09/curl-reference.html
+
+牛人的博客-迅速提升英文阅读水平:
+https://www.cnblogs.com/best/p/6589908.html
+
+Python部署:
+https://www.deploypython.com/
+
+Python高级用法之消息队列zmq:
+https://blog.csdn.net/biheyu828/article/details/88932826
+
+Pycharm历史版本下载:
+https://www.jetbrains.com/pycharm/download/other.html
+
+sublime插件报错Anaconda.xxx错误:
+https://blog.csdn.net/qq_27755877/article/details/104833771
