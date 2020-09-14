@@ -17,8 +17,11 @@ SSE(Server Sent Events)
 Redis的 ORM  redisco Walrus
 发布/订阅模式
 asyncio框架,未来web开发不可能离开websocket等实时技术
+k8s-容器编排
 
 
+redis命令介绍:
+http://redisdoc.com/
 
 谈谈装饰器，迭代器，yield，内存管理等
 
@@ -657,3 +660,16 @@ https://www.jetbrains.com/pycharm/download/other.html
 
 sublime插件报错Anaconda.xxx错误:
 https://blog.csdn.net/qq_27755877/article/details/104833771
+
+http://c.biancheng.net/view/6376.html
+
+https://pan.baidu.com/s/1ItKPWGygd4gKVC5iHnlT7A
+密码:cagb
+
+sanic文档:
+https://howie6879.gitbooks.io/sanic/content/
+sanic扩展:
+https://sanic.readthedocs.io/en/latest/sanic/examples.html
+
+nginx+uwsgi或nginx+python中manage部署多个网站:
+https://blog.csdn.net/qq_33196814/article/details/86307939

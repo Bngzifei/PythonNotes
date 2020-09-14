@@ -29,3 +29,14 @@ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. data.proto
 data_pb2.py是服务接口映射
 
 data_pb2_grpc.py方法映射
+
+
+IDL:interface define language 接口定义语言
+
+
+IDLE:空闲的,闲置的
+
+http接口设计文档:
+https://www.jitao.tech/books/http-api-book/json.html#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B
+
+https://www.jitao.tech/
