@@ -16,7 +16,7 @@ def func1():
 
 
 def func2():
-	"""线程2  获取群居变量的值"""
+	"""线程2  获取全局变量的值"""
 	for i in range(10000):
 		global g_number
 		g_number += 1

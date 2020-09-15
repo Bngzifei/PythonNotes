@@ -673,3 +673,14 @@ https://sanic.readthedocs.io/en/latest/sanic/examples.html
 
 nginx+uwsgi或nginx+python中manage部署多个网站:
 https://blog.csdn.net/qq_33196814/article/details/86307939
+
+复习指南:
+廖雪峰教程:
+https://www.liaoxuefeng.com/wiki/1016959663602400/1017631469467456
+
+码农之家电子书下载:
+https://www.xz577.com/
+Python编程导论 PDF 中文第2版
+
+杀掉所有进程:
+sudo pkill -f uwsgi -9
