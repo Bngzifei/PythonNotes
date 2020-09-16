@@ -3,6 +3,7 @@ import threading
 import time
 
 num = 0
+# 互斥锁
 mutex = threading.Lock()
 
 

@@ -25,3 +25,5 @@ mutex.release()
 直到拥有锁的线程调用锁的release()方法释放锁之后，锁进入“unlocked”状态。
 线程调度程序从处于同步阻塞状态的线程中选择一个来获得锁，并使得该线程进入运行（running）状态。
 
+可重入锁:
+http://c.biancheng.net/view/2617.html

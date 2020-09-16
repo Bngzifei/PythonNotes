@@ -684,3 +684,6 @@ Python编程导论 PDF 中文第2版
 
 杀掉所有进程:
 sudo pkill -f uwsgi -9
+
+撤销当前提交至缓存区的所有文件:
+git restore --staged ./
