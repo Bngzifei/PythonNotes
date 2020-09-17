@@ -1,5 +1,4 @@
-print("index")
-
+# coding:utf-8
 
 def sayHello():
     print("hello index")

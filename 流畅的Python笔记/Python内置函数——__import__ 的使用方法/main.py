@@ -1,6 +1,3 @@
-print("main")
-
-
 # index = __import__("index")
 # dir(index)
 # index.sayHello()

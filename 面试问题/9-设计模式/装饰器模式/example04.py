@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import time
 
 
@@ -7,7 +8,7 @@ class MyClass:
         self._func = func
 
     def __call__(self, *args, **kwargs):
-        """可以让一个对象变成可调用的对象 就是可以以 对象()这样的形式执行  相当于装饰器函数中内层函数,调用函数"""
+        """可以让一个对象变成可调用的对象 就是可以 以 对象() 这样的形式执行  相当于装饰器函数中内层函数,调用函数"""
         # 类装饰器可以实现的功能,没有装饰器函数的强大
         print('call方法被调用了')
         res = self._func(*args, **kwargs)  # self._func() 这样也可以

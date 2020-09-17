@@ -1,5 +1,4 @@
-"""
-__import__() 函数用于动态加载类和函数 。
+### __import__() 函数用于动态加载类和函数 。
 
 如果一个模块经常变化就可以使用 __import__() 来动态载入。
 语法
@@ -18,10 +17,38 @@ name -- 模块名
 
 
 
-先定义两个模块mian.py和index.py，两个文件在同一目录下：
-
+先定义两个模块main.py和index.py，两个文件在同一目录下：
 
 执行main.py，可以证实动态加载了index.py，__import__返回的模块也是index模块
+
+```python
+# main.py
+# index = __import__("index")
+# dir(index)
+# index.sayHello()
+# index.sayHelloZhCn()
+
+archives = __import__("archives.user")
+archives.sayHello()
+archives.user
+
+```
+
+```python
+# index.py
+print("index")
+
+
+def sayHello():
+    print("hello index")
+
+
+def sayHelloZhCn():
+    print("你好, index")
+
+```
+
+
 
 
 3. __import__(package.module)相当于from package import name，如果fromlist不传入值，则返回package对应的模块，
@@ -30,6 +57,5 @@ name -- 模块名
 
 4. level参数，指定是使用绝对导入还是相对导入。 0(默认值)表示只执行绝对导入。
 
-"""
 
 

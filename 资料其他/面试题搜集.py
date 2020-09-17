@@ -687,3 +687,13 @@ sudo pkill -f uwsgi -9
 
 撤销当前提交至缓存区的所有文件:
 git restore --staged ./
+
+java 资料下载:
+https://www.seotest.cn/jishu/31878.html
+
+百度云搜索:
+http://lqkweb.com/
+https://www.torrent.org.cn/t-44199
+
+Python 数据结构与算法-中文教程:
+https://github.com/PegasusWang/python_data_structures_and_algorithms
