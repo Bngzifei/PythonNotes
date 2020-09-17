@@ -697,3 +697,7 @@ https://www.torrent.org.cn/t-44199
 
 Python 数据结构与算法-中文教程:
 https://github.com/PegasusWang/python_data_structures_and_algorithms
+https://zhuanlan.zhihu.com/p/36038003
+
+ipdb 调试:
+https://zhuanlan.zhihu.com/p/36810978
