@@ -1,6 +1,6 @@
 celery
 rabbitMQ
-zip
+ZooKeeper
 kafka
 ActiveMQ，RabbitMQ，Kafka，RocketMQ
 
