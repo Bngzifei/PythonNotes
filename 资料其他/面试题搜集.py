@@ -704,3 +704,9 @@ https://zhuanlan.zhihu.com/p/36810978
 
 南华大学:
 http://www.nhu.edu.tw/main.htm
+
+疯狂Python讲义
+https://www.xz577.com/e/786.html
+
+google编程规范:
+http://google.github.io/styleguide/pyguide.html
