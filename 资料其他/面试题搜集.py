@@ -713,3 +713,9 @@ http://google.github.io/styleguide/pyguide.html
 
 骆昊:一百天Python大师
 https://www.jb51.net/books/671456.html
+
+Git同步更新操作GitHub和码云仓库上面的代码:
+https://www.cnblogs.com/zhengqing/p/11218529.html
+https://gitee.com
+bngzifei@gmail.com
+huangxiba888*
