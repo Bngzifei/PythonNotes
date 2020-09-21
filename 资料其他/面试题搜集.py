@@ -710,3 +710,6 @@ https://www.xz577.com/e/786.html
 
 google编程规范:
 http://google.github.io/styleguide/pyguide.html
+
+骆昊:一百天Python大师
+https://www.jb51.net/books/671456.html
