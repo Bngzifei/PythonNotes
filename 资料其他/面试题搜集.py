@@ -445,6 +445,8 @@ https://www.chromefor.com/down/?wp_file=bkhaagjahfmjljalopjnoealnfndnagc/octotre
 python异步编程:
 https://blog.csdn.net/lu8000/article/details/45025987?utm_medium=distribute.pc_relevant_download.none-task-blog-blogcommendfrombaidu-1.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-blogcommendfrombaidu-1.nonecas
 
+http://aosabook.org/en/500L/a-web-crawler-with-asyncio-coroutines.html
+
 推荐系统框架:
 https://blog.csdn.net/shenziheng1/article/details/89434138?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param
 
@@ -719,3 +721,14 @@ https://www.cnblogs.com/zhengqing/p/11218529.html
 https://gitee.com
 bngzifei@gmail.com
 huangxiba888*
+
+容器云运维实战：Docker与Kubernetes集群 PDF 影印版 下载:
+https://www.xz577.com/e/21473.html
+
+找一找这种项目
+Python玩转物联网--《物联网Python开发实战》
+
+物联网项目:
+https://edu.csdn.net/course/detail/22983?utm_medium=distribute.pc_relevant.none-task-course-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-course-BlogCommendFromMachineLearnPai2-1.channel_param
+
+Python twisted 异步网络框架
