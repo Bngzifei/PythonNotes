@@ -732,3 +732,6 @@ Python玩转物联网--《物联网Python开发实战》
 https://edu.csdn.net/course/detail/22983?utm_medium=distribute.pc_relevant.none-task-course-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-course-BlogCommendFromMachineLearnPai2-1.channel_param
 
 Python twisted 异步网络框架
+
+Python个人笔记:
+https://github.com/daacheng/PythonBasic
