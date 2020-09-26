@@ -22,6 +22,47 @@ class Future:
         for fn in self._callbacks:
             fn(self)
 
+    def __iter__(self):
+        yield self
+        return self.result
+
+
+def connect(sock, address):
+    f = Future()
+    sock.setblocking(False)
+    try:
+        sock.connect(address)
+    except BlockingIOError:
+        pass
+
+    def on_connected():
+        f.set_result(None)
+
+    selector.register(sock.fileno(), EVENT_WRITE, on_connected)
+    yield from f
+    selector.unregister(sock.fileno())
+
+
+def read(sock):
+    f = Future()
+
+    def on_readable():
+        f.set_result(sock.recv(4096))
+
+    selector.register(sock.fileno(), EVENT_READ, on_readable)
+    chunk = yield from f
+    selector.unregister(sock.fileno())
+    return chunk
+
+
+def read_all(sock):
+    response = []
+    chunk = yield from read(sock)
+    while chunk:
+        response.append(chunk)
+        chunk = yield from read(sock)
+    return b"".join(response)
+
 
 class Crawler:
 
@@ -30,42 +71,15 @@ class Crawler:
         self.response = b""
 
     def fetch(self):
+        global stopped
         sock = socket.socket()
-        sock.setblocking(False)
-
-        try:
-            sock.connect(("example.com", 80))
-        except BlockingIOError:
-            pass
-
-        f = Future()
-
-        def on_connected():
-            f.set_result(None)
-
-        selector.register(sock.fileno(), EVENT_WRITE, on_connected)
-        yield f
-        selector.unregister(sock.fileno())
+        yield from connect(sock, ("example.com", 80))
         request = "GET {0} HTTP/1.0\r\nHost: example.com\r\n\r\n".format(self.url)
         sock.send(request.encode("ascii"))
-
-        global stopped
-        while True:
-            f = Future()
-
-            def on_readable():
-                f.set_result(sock.recv(4096))
-
-            selector.register(sock.fileno(), EVENT_READ, on_readable)
-            chunk = yield f
-            selector.unregister(sock.fileno())
-            if chunk:
-                self.response += chunk
-            else:
-                urls_todo.remove(self.url)
-                if not urls_todo:
-                    stopped = True
-                break
+        self.response = yield from read_all(sock)
+        urls_todo.remove(self.url)
+        if not urls_todo:
+            stopped = True
 
 
 class Task:

@@ -735,3 +735,35 @@ Python twisted 异步网络框架
 
 Python个人笔记:
 https://github.com/daacheng/PythonBasic
+
+USERNAME = "rd.sangfor@gmail.com"
+PASSWORD = "@Sangfor123"
+
+下载:
+https://www.xz577.com/e/21486.html
+https://www.xz577.com/e/21453.html
+https://www.xz577.com/e/21487.html
+https://www.xz577.com/e/24993.html
+
+
+centos7 开启telnet远程连接配置:
+https://www.cnblogs.com/nmap/p/10779658.html
+https://www.cnblogs.com/Ankh-L/p/10120355.html
+https://www.cnblogs.com/missinglihua/articles/7234667.html
+
+重新安装openssh和openssl
+https://www.cnblogs.com/v-fan/p/11026895.html
+
+查看端口开放:
+https://www.cnblogs.com/heqiuyong/p/10460150.html
+
+
+关注这几个问题:
+迭代器生成器
+深浅拷贝
+GIL锁
+垃圾回收
+三次握手四次挥手
+访问www.baidu.com的步骤
+装饰器
+单例
