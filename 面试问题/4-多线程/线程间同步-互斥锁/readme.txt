@@ -1,4 +1,4 @@
-通过互斥机制防止多个线程同时访问公共资源
+﻿通过互斥机制防止多个线程同时访问公共资源
 互斥锁同步
 上面的例子引出了多线程编程的最常见问题：数据共享。当多个线程都修改某一个共享数据的时候，需要进行同步控制。
 
@@ -27,3 +27,8 @@ mutex.release()
 
 可重入锁:
 http://c.biancheng.net/view/2617.html
+为了支持在同一线程中多次请求同一资源，python提供了“可重入锁”：threading.RLock。
+RLock内部维护着一个Lock和一个counter变量，counter记录了acquire的次数，从而使得资源可以被多次require。
+直到一个线程所有的acquire都被release，其他的线程才能获得资源。这里以例1为例，如果使用RLock代替Lock，
+则不会发生死锁。
+https://www.cnblogs.com/amengduo/p/9586514.html
