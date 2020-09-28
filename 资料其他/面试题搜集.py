@@ -767,3 +767,70 @@ GIL锁
 访问www.baidu.com的步骤
 装饰器
 单例
+
+码农之家Python书籍推荐:
+https://www.xz577.com/e/301.html
+
+Erlang 语言:
+https://www.xz577.com/e/40233.html
+
+面试经历:
+https://juejin.im/post/6875244112317317128?utm_source=gold_browser_extension
+
+Python 内置数据类型的底层实现原理?比如set list 字典
+
+自己设计实现一个set
+
+最近学了啥新技术,说说
+
+后端最拿手的技术点:
+
+RPC
+
+IO多路复用
+
+RabbitMQ
+
+Es Redis MongoDB存储的
+
+DNS 服务公司如何盈利:
+https://www.zhihu.com/question/22753490
+
+Python 内存溢出的检测方式？
+
+自行设计一个异步任务的消息队列
+
+3个方向：
+爬虫
+数据分析 
+学个新的语言
+
+抓基础，重视基础
+高度自我驱动
+
+
+厘米脚印
+
+简聊，瀑布，纷云还有那什么BearyChat等等
+
+工单系统的设计
+
+还有：字要写好，命名要规范
+
+数据分析 R语言  Julia语言 MatLab
+https://zhuanlan.zhihu.com/p/45079863
+
+竟然还有机器学习和人工智能啥的
+
+也不知道是啥:
+https://quantecon.org/
+
+元类
+
+红黑树
+B+数
+快速查找
+
+
+
+
