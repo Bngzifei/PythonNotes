@@ -754,6 +754,13 @@ https://www.cnblogs.com/missinglihua/articles/7234667.html
 重新安装openssh和openssl
 https://www.cnblogs.com/v-fan/p/11026895.html
 
+和这个链接:
+https://www.cnblogs.com/nmap/p/10779658.html
+
+注意是这个命令,不是其他的
+telnet 127.0.0.1 22
+
+
 查看端口开放:
 https://www.cnblogs.com/heqiuyong/p/10460150.html
 
@@ -833,3 +840,35 @@ B+数
 
 可以这样,在家里新建一个文件去存家里搜索的资料,在这里就在本文件下进行存储
 
+apache服务器和nginx服务器的区别
+
+就从爬虫入手吧
+
+学习一点前端
+
+Python 实现的设计模式:
+https://github.com/wklken/py-patterns
+
+Redis是如何持久化存储的?
+
+开发部署应用之类的不需要去找,需要去搜集 涉及到原理之类的问答题
+
+go资源:
+https://zhuanlan.zhihu.com/p/25493806
+
+https://github.com/wonderfo/wonderfogo/wiki
+
+https://www.lylinux.net/archives.html
+
+
+国庆期间就整理这些问题就行.
+
+数据结构与算法
+痛定思痛:shell编程
+
+perl:
+https://www.xz577.com/e/40765.html
+
+sambda服务器的搭建
+
+linux中的grep awk sed 三剑客的使用？
