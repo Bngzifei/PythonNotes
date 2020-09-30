@@ -8,7 +8,7 @@ git checkout * 忽略当前修改的所有文件
 1.先查看远端分支:git branch -a
 
 2.删除指定的远端分支: git push origin --delete 1.0.0/feture/lb-fix-test
-sangfor@vt0066 MINGW64 /d/git_pro/Python-Notes (develop-1.0.0)
+@vt0066 MINGW64 /d/git_pro/Python-Notes (develop-1.0.0)
 $ git push origin --delete 1.0.0/feture/lb-fix-test
 To https://github.com/Bngzifei/Python-Notes.git
  - [deleted]         1.0.0/feture/lb-fix-test
@@ -200,8 +200,6 @@ python -m 中的-m参数是将库中的模块用作脚本去执行.相当于 imp
 
 博客地址:
 https://www.cnblogs.com/Zzbj/default.html?page=1
-
-
 
 
 修改CentOS ll命令以 K 为单位显示文件大小
@@ -457,3 +455,9 @@ git reset --soft HEAD^
 这样就成功的撤销了你的commit
 
 注意，仅仅是撤回commit操作，您写的代码仍然保留。
+
+分支之间转移提交命令:
+git cherry-pick命令的参数，不一定是提交的哈希值，分支名也是可以的，表示转移该分支的最新提交。
+
+Cherry pick 支持一次转移多个提交。
+$ git cherry-pick <HashA> <HashB>
