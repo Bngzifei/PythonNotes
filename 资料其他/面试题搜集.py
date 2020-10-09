@@ -962,3 +962,16 @@ http://club.topsage.com/forum-931-1.html
 
 TCP/IP 下载:
 http://club.topsage.com/thread-2273478-1-1.html
+
+VScode搭建C和C++环境的图文教程
+https://juejin.im/post/6879387384669503501?utm_source=gold_browser_extension
+
+掘金浏览器插件
+https://juejin.im/extension/?utm_source=juejin.im&utm_medium=Pop-ups2&utm_campaign=extension_promotion
+
+程序员论坛:
+http://www.cx1314.cn/
+
+如何加速GitHub访问速度
+https://juejin.im/post/6876715404455051272?utm_source=gold_browser_extension
+
