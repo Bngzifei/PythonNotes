@@ -975,3 +975,25 @@ http://www.cx1314.cn/
 如何加速GitHub访问速度
 https://juejin.im/post/6876715404455051272?utm_source=gold_browser_extension
 
+聊聊 Python 数据处理全家桶(各种格式的配置文件)
+https://juejin.im/post/6880821708396183566
+
+Python 设计和历史的 27 个问题
+https://mp.weixin.qq.com/s/zabIvt4dfu_rf7SmGZXqXg
+
+Python 为什么不支持 switch 语句？
+https://juejin.im/post/6881085243009433607
+
+公众号文章:
+https://mp.weixin.qq.com/s?__biz=MzUyOTk2MTcwNg==&mid=2247483899&idx=1&sn=698a0a95ad3ce3496f960a5fe181df7f&chksm=fa58467ecd2fcf6875be2289accdb33db332c13855b17ae25d7f7456925beac4eb4f7afc30c3&scene=21#wechat_redirect
+
+面试问题集合
+https://github.com/jackfrued/Python-100-Days/blob/master/%E7%95%AA%E5%A4%96%E7%AF%87/Python%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB.md
+
+动态规划问题
+https://blog.csdn.net/mrlevo520/article/details/75676160
+https://www.zhihu.com/question/23995189
+https://mp.weixin.qq.com/s/pg-IJ8rA1duIzt5hW1Cycw
+
+markdown 中 按下 > 键即可出现书签式的那种格式
+
