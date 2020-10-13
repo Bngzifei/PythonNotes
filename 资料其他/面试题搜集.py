@@ -997,3 +997,37 @@ https://mp.weixin.qq.com/s/pg-IJ8rA1duIzt5hW1Cycw
 
 markdown 中 按下 > 键即可出现书签式的那种格式
 
+是不限语言,不限技术栈的进行开发
+
+程序员客栈: 搜集一下有意思的项目
+https://www.proginn.com/w/1290589
+程序员的那些事:
+https://www.pythonheidong.com/blog/article/498183/
+
+机器学习:go语言实现
+https://www.xz577.com/e/21453.html
+
+如何学好Python
+https://github.com/Yixiaohan/codeparkshare
+知乎:你是如何学习Python的
+https://www.zhihu.com/question/20702054
+医疗区块链项目
+https://gitee.com/medical-alliance/medical-blockchain
+SDN技术网站
+https://www.sdnlab.com/tag/SDN/
+马哥教育资料
+http://www.magedu.com/73198.html?Python_wenda_zhihu_xiujiang_ruhejieshipythonzhaungshiqi_/question/26930016
+常用正则表达式
+https://mp.weixin.qq.com/s?__biz=MzI1MTE2ODg4MA==&mid=2650069706&idx=1&sn=cd5e3c6d8f3c9fed398d8679d3e02c61&chksm=f1f76bd5c680e2c374ac4f84a6a3f8e6aaf558d0e546dfd8232d6cfebafa0c0ecafd01bddeb4&scene=21#wechat_redirect
+
+微信公众号文章
+https://mp.weixin.qq.com/s?__biz=MzI1MTE2ODg4MA==&mid=2650068864&idx=1&sn=cf066098901df92203f4ae074a5d4fee&chksm=f1f7669fc680ef8984e523aa09ed5547da653a54a5e95b19694981bea7eda12a08cc3a336e32&scene=21#wechat_redirect
+
+grequests库
+https://mp.weixin.qq.com/s?__biz=MzI1MTE2ODg4MA==&mid=2650068929&idx=1&sn=bb8126172c8c439641d117ecbeb25674&chksm=f1f766dec680efc8f56c668facec58b43c79d941d05a8d9df5bb9f459cb501c38f385867bd45&scene=21#wechat_redirect
+
+面试心得
+https://www.xz577.com/e/384.html
+
+Axure RP8实战手册:网站和APP原型制作案例精粹 PDF 彩色影印版:
+https://www.xz577.com/e/399.html
