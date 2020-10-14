@@ -1031,3 +1031,68 @@ https://www.xz577.com/e/384.html
 
 Axure RP8实战手册:网站和APP原型制作案例精粹 PDF 彩色影印版:
 https://www.xz577.com/e/399.html
+
+HTML 中常见的水平居中设置方式
+https://www.cnblogs.com/lxlw/p/11771001.html
+
+SDN网络指南(SDN Handbook) PDF 完整版
+https://www.xz577.com/e/103096.html
+
+C语言相关书籍
+https://www.xz577.com/e/103101.html
+C语言核心技术
+https://www.xz577.com/e/396.html
+
+从Excel到Python:数据分析进阶指南 PDF 高清版
+https://www.xz577.com/e/25090.html
+Python相关电子书
+https://www.xz577.com/j/25980.html
+
+ELKstack 中文指南 5.0(三斗大著) PDF 完整版
+https://www.xz577.com/e/103237.html
+
+DRF 二手书项目
+https://github.com/mtianyan/VueDjangoAntdProBookShop
+同类型的在线教育网站
+https://github.com/mtianyan/OnlineMooc
+资产管理系统CMDB
+https://github.com/open-cmdb/cmdb
+运维自动化系统
+https://github.com/xufqing/rest_xops
+台北议员选票系统
+https://github.com/FroggyTaipei/froggy-service
+微博用户情感分析
+https://github.com/Superbsco/weibo-analysis-system
+DB monitor数据库监控平台
+https://github.com/gumengkai/db_monitor
+问卷调查项目
+https://github.com/shanghaobo/wjcat-release
+工单系统
+https://github.com/itimor/one-workflow
+更nb的工单
+https://github.com/blackholll/loonflow
+仓储管理系统
+https://github.com/lihao6666/vue-django-storeManage
+
+Python讲义资料
+https://github.com/HaoZhang95/Python24
+https://github.com/coco369/knowledge
+
+Flask实现的淘票票
+https://github.com/yuansuixin/Vue_Flask_taopiaopiao
+
+golang 实验室论文
+https://github.com/yangsoon/LabAC
+
+日文奇怪的
+https://github.com/kitakou0313/Otamesi
+多抓鱼二手书
+https://www.duozhuayu.com/books/127663015842549686?utm_medium=web&utm_source=douban
+
+利用Python进行数据分析
+https://github.com/BrambleXu/pydata-notebook
+
+Python采坑计
+https://github.com/zhanghe06/python
+
+先学学Vue
