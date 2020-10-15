@@ -1035,8 +1035,14 @@ https://www.xz577.com/e/399.html
 HTML 中常见的水平居中设置方式
 https://www.cnblogs.com/lxlw/p/11771001.html
 
-SDN网络指南(SDN Handbook) PDF 完整版
+SDN网络指南(SDN Handbook) PDF 完整版  未下载
 https://www.xz577.com/e/103096.html
+
+OpenStack从零开始学 PDF 高清版  未下载
+https://www.xz577.com/e/25266.html
+
+OpenStack运维指南 PDF 中文版 未下载
+https://www.xz577.com/e/61124.html
 
 C语言相关书籍
 https://www.xz577.com/e/103101.html
@@ -1095,4 +1101,6 @@ https://github.com/BrambleXu/pydata-notebook
 Python采坑计
 https://github.com/zhanghe06/python
 
-先学学Vue
+先学学Vue,再学学shell,再学学go
+只限于会用的水平
+这要求不算高
