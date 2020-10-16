@@ -1035,14 +1035,29 @@ https://www.xz577.com/e/399.html
 HTML 中常见的水平居中设置方式
 https://www.cnblogs.com/lxlw/p/11771001.html
 
-SDN网络指南(SDN Handbook) PDF 完整版  未下载
+SDN网络指南(SDN Handbook) PDF 完整版
 https://www.xz577.com/e/103096.html
 
-OpenStack从零开始学 PDF 高清版  未下载
+OpenStack从零开始学 PDF 高清版
 https://www.xz577.com/e/25266.html
 
-OpenStack运维指南 PDF 中文版 未下载
+OpenStack运维指南 PDF 中文版
 https://www.xz577.com/e/61124.html
+
+OpenStack高可用集群（下册） PDF 影印高清版 未下载
+https://www.xz577.com/e/65851.html
+
+微服务设计原理与架构 PDF 全书高清版 未下载
+https://www.xz577.com/e/66691.html
+
+MySQL技术精粹：架构、高级特性、性能优化与集群实战 PDF 超清版  未下载
+https://www.xz577.com/e/60347.html
+
+Python编程之美：最佳实践指南 PDF 超清完整版 未下载
+https://www.xz577.com/e/47378.html
+
+Python高手之路 PDF 第3版 未下载
+https://www.xz577.com/e/40314.html
 
 C语言相关书籍
 https://www.xz577.com/e/103101.html
@@ -1077,6 +1092,9 @@ https://github.com/shanghaobo/wjcat-release
 https://github.com/itimor/one-workflow
 更nb的工单
 https://github.com/blackholll/loonflow
+工单-工作流思路
+http://loonapp.com/blog/27/
+
 仓储管理系统
 https://github.com/lihao6666/vue-django-storeManage
 
@@ -1104,3 +1122,21 @@ https://github.com/zhanghe06/python
 先学学Vue,再学学shell,再学学go
 只限于会用的水平
 这要求不算高
+
+关于go的讨论:
+https://www.zhihu.com/question/360929863
+
+Gin 都比它好用
+
+量化交易开发
+
+怎么学习 Golang？
+https://www.zhihu.com/question/23486344/answer/1204644361
+
+java与c#
+
+java转行大数据:
+https://www.zhihu.com/question/297875175/answer/855717147
+
+go开发路线图
+https://github.com/Quorafind/golang-developer-roadmap-cn/blob/master/ReadMe.md
