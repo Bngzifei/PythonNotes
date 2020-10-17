@@ -1044,13 +1044,13 @@ https://www.xz577.com/e/25266.html
 OpenStack运维指南 PDF 中文版
 https://www.xz577.com/e/61124.html
 
-OpenStack高可用集群（下册） PDF 影印高清版 未下载
+OpenStack高可用集群（下册） PDF 影印高清版
 https://www.xz577.com/e/65851.html
 
-微服务设计原理与架构 PDF 全书高清版 未下载
+微服务设计原理与架构 PDF 全书高清版
 https://www.xz577.com/e/66691.html
 
-MySQL技术精粹：架构、高级特性、性能优化与集群实战 PDF 超清版  未下载
+MySQL技术精粹：架构、高级特性、性能优化与集群实战 PDF 超清版
 https://www.xz577.com/e/60347.html
 
 Python编程之美：最佳实践指南 PDF 超清完整版 未下载
