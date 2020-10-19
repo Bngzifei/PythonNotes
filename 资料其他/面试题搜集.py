@@ -1053,10 +1053,10 @@ https://www.xz577.com/e/66691.html
 MySQL技术精粹：架构、高级特性、性能优化与集群实战 PDF 超清版
 https://www.xz577.com/e/60347.html
 
-Python编程之美：最佳实践指南 PDF 超清完整版 未下载
+Python编程之美：最佳实践指南 PDF 超清完整版
 https://www.xz577.com/e/47378.html
 
-Python高手之路 PDF 第3版 未下载
+Python高手之路 PDF 第3版 链接无效了
 https://www.xz577.com/e/40314.html
 
 C语言相关书籍
@@ -1140,3 +1140,8 @@ https://www.zhihu.com/question/297875175/answer/855717147
 
 go开发路线图
 https://github.com/Quorafind/golang-developer-roadmap-cn/blob/master/ReadMe.md
+
+过分夸大学习难度了
+
+最好的go学习网站:
+http://www.topgoer.com/
