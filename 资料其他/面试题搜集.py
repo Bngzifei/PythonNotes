@@ -751,10 +751,10 @@ https://www.cnblogs.com/nmap/p/10779658.html
 https://www.cnblogs.com/Ankh-L/p/10120355.html
 https://www.cnblogs.com/missinglihua/articles/7234667.html
 
-重新安装openssh和openssl
+重新安装openssh和openssl(直接从解压步骤开始)
 https://www.cnblogs.com/v-fan/p/11026895.html
 
-和这个链接:
+和这个链接(从里面找到下载openssh和openssl的下载链接即可):
 https://www.cnblogs.com/nmap/p/10779658.html
 
 注意是这个命令,不是其他的
@@ -1162,3 +1162,42 @@ https://juejin.im/post/6885504750758920200?utm_source=gold_browser_extension
 
 C程序设计新思维 PDF 超清第2版 未下载:
 https://www.xz577.com/e/427.html
+python算法教程 PDF 全书影印版 未下载:
+https://www.xz577.com/e/55396.html
+Python金融实战(严玉星) PDF 中文原版扫描版 未下载:
+https://www.xz577.com/e/292.html
+Python编程快速上手：让繁琐工作自动化 PDF 影印完整版 未下载:
+https://www.xz577.com/e/40595.html
+
+具体下载链接:
+https://www.xz577.com/j/25980.html
+
+Python 可以这样学 未下载:
+https://www.xz577.com/e/201.html
+
+Python全栈数据工程师养成攻略 PDF 超清视频版 未下载:
+https://www.xz577.com/e/325.html
+
+golang 数据结构:
+https://github.com/hunterhug/goa.c
+https://goa.lenggirl.com/
+
+c/c++学习:
+https://github.com/hunterhug/cmake_example
+
+gitbook转成pdf项目:
+https://github.com/fuergaosi233/gitbook2pdf
+k8s 文档:
+https://kubernetes.feisky.xyz/
+
+打造自己的出版平台:
+http://self-publishing.ebookchain.org/index.html
+
+OSError: no library called "cairo" was found 怎么解决:
+https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
+
+查个问题:
+操作系统提供的数据结构
+
+weasyprint库介绍:
+https://weasyprint.readthedocs.io/en/stable/install.html#windows
