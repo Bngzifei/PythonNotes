@@ -1132,6 +1132,7 @@ Gin 都比它好用
 
 怎么学习 Golang？
 https://www.zhihu.com/question/23486344/answer/1204644361
+https://zhuanlan.zhihu.com/p/25493806
 
 java与c#
 
@@ -1145,3 +1146,19 @@ https://github.com/Quorafind/golang-developer-roadmap-cn/blob/master/ReadMe.md
 
 最好的go学习网站:
 http://www.topgoer.com/
+
+gitbook 转成 pdf:
+https://www.mapull.com/gitbook/comscore/basic/markdown.html
+https://www.zhihu.com/question/24428806
+
+自定义Github首页:
+https://juejin.im/post/6884819225266323463?utm_source=gold_browser_extension
+
+Python算法:
+https://github.com/TheAlgorithms/Python?utm_source=gold_browser_extension
+
+Git工作流介绍:
+https://juejin.im/post/6885504750758920200?utm_source=gold_browser_extension
+
+C程序设计新思维 PDF 超清第2版 未下载:
+https://www.xz577.com/e/427.html
