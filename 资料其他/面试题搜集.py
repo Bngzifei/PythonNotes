@@ -1160,11 +1160,11 @@ https://github.com/TheAlgorithms/Python?utm_source=gold_browser_extension
 Git工作流介绍:
 https://juejin.im/post/6885504750758920200?utm_source=gold_browser_extension
 
-C程序设计新思维 PDF 超清第2版 未下载:
+C程序设计新思维 PDF 超清第2版
 https://www.xz577.com/e/427.html
-python算法教程 PDF 全书影印版 未下载:
+python算法教程 PDF 全书影印版
 https://www.xz577.com/e/55396.html
-Python金融实战(严玉星) PDF 中文原版扫描版 未下载:
+Python金融实战(严玉星) PDF 中文原版扫描版
 https://www.xz577.com/e/292.html
 Python编程快速上手：让繁琐工作自动化 PDF 影印完整版 未下载:
 https://www.xz577.com/e/40595.html
@@ -1175,7 +1175,7 @@ https://www.xz577.com/j/25980.html
 Python 可以这样学 未下载:
 https://www.xz577.com/e/201.html
 
-Python全栈数据工程师养成攻略 PDF 超清视频版 未下载:
+Python全栈数据工程师养成攻略 PDF 超清视频版:
 https://www.xz577.com/e/325.html
 
 golang 数据结构:
@@ -1201,3 +1201,9 @@ https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
 
 weasyprint库介绍:
 https://weasyprint.readthedocs.io/en/stable/install.html#windows
+
+知乎: golang 数据结构
+https://zhuanlan.zhihu.com/p/113038466
+
+计算机电子书下载:
+https://www.cnblogs.com/apachecn/p/12129061.html
