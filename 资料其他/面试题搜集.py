@@ -1207,3 +1207,5 @@ https://zhuanlan.zhihu.com/p/113038466
 
 计算机电子书下载:
 https://www.cnblogs.com/apachecn/p/12129061.html
+
+ITGW_URL = "https://nvwa-data.sangfor.com:11081/platform/nvwa/data/patch/add"
