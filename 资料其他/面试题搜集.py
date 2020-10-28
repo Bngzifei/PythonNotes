@@ -1208,4 +1208,14 @@ https://zhuanlan.zhihu.com/p/113038466
 计算机电子书下载:
 https://www.cnblogs.com/apachecn/p/12129061.html
 
-ITGW_URL = "https://nvwa-data.sangfor.com:11081/platform/nvwa/data/patch/add"
+
+问: 多线程中 thread.start() 与 thread.run() 的区别?
+Python中  dict list set 三种数据结构的底层实现
+
+漏洞:Python中获取列表中每个元素所在的位置:
+https://www.jb51.net/article/164287.htm
+注意不能使用list.index(), 是错误的使用场景,因为  list.index(obj) 是从列表中找出某个值第一个匹配项的索引位置
+应该使用enumerate()函数
+
+golang教程-异常处理
+http://www.topgoer.com/%E5%87%BD%E6%95%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.html
