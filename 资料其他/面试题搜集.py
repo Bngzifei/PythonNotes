@@ -1219,3 +1219,24 @@ https://www.jb51.net/article/164287.htm
 
 golang教程-异常处理
 http://www.topgoer.com/%E5%87%BD%E6%95%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.html
+
+相关链接:
+https://www.xz577.com/e/188.html
+
+java系列:
+https://www.xz577.com/e/293.html
+
+Python subprocess模块功能与常见用法实例详解:
+https://www.jb51.net/article/142787.htm
+
+使用示例:
+process = subprocess.Popen(cmd, 
+							shell=True,
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
+stdout = process.stdout.read()
+stderr = process.stderr.read()
+code = process.poll()
+
+京东平台数字化运营: 未下载
+https://www.xz577.com/e/1026.html
