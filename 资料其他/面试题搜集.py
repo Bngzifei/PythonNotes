@@ -1238,5 +1238,9 @@ stdout = process.stdout.read()
 stderr = process.stderr.read()
 code = process.poll()
 
-京东平台数字化运营: 未下载
+京东平台数字化运营
 https://www.xz577.com/e/1026.html
+
+linux 系列未下载:
+https://www.xz577.com/e/103366.html
+https://www.xz577.com/e/25088.html
