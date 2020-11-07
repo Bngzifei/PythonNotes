@@ -1244,3 +1244,24 @@ https://www.xz577.com/e/1026.html
 linux 系列未下载:
 https://www.xz577.com/e/103366.html
 https://www.xz577.com/e/25088.html
+https://www.xz577.com/e/40783.html
+未下载:
+https://www.xz577.com/e/333.html
+下载链接:
+https://www.xz577.com/e/513.html
+代码管理:
+https://www.xz577.com/e/338.html
+redis cookbook:
+https://www.xz577.com/e/419.html
+
+在线协调工作:
+https://docs.mattermost.com/help/settings/theme-colors.html#standard-themes
+
+golang 设计模式
+https://github.com/senghoo/golang-design-pattern
+golang 开源项目
+https://github.com/hackstoic/golang-open-source-projects
+golang教程链接
+https://github.com/yangwenmai/learning-golang
+千峰golang100天大师
+https://github.com/rubyhan1314/Golang-100-Days
