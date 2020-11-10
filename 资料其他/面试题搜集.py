@@ -1265,3 +1265,10 @@ golang教程链接
 https://github.com/yangwenmai/learning-golang
 千峰golang100天大师
 https://github.com/rubyhan1314/Golang-100-Days
+
+渗透测试方向博客链接
+https://www.xmanblog.net/web-security-interview/
+json 文件:也是配置文件的一种格式 对应关系的那种和ini格式的是一样的.
+
+优质博客
+https://blog.zxysilent.com/
