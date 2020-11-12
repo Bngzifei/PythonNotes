@@ -1272,3 +1272,37 @@ json 文件:也是配置文件的一种格式 对应关系的那种和ini格式�
 
 优质博客
 https://blog.zxysilent.com/
+
+解决国内go get 超时问题:
+https://www.sunzhongwei.com/problem-of-domestic-go-get-unable-to-download?from=sidebar_new
+十分钟了解golang:
+https://learnxinyminutes.com/docs/zh-cn/go-cn/
+
+谷歌翻译使用:无需翻墙
+https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text=%E5%A4%87%E4%BB%BDmultipath%E9%85%8D%E7%BD%AE%E6%A3%80%E6%B5%8B
+
+地鼠文档:
+http://wen.topgoer.com/
+
+<<UNIX网络编程卷1：套接字联网API>>
+
+优质博客:
+https://www.cnblogs.com/zsy/p/5370052.html
+
+Go 语言中如何开源自己写的包给别人用?
+https://www.jianshu.com/p/56c11a02b84b
+
+个人博客 go编程时光:
+http://golang.iswbm.com/
+
+
+.gitkeep 作用
+大家可能在很多的开源项目中都看到过.gitkeep这个文件，文件内没有任何内容，一个空空的文件。
+那么，它的作用到底是什么呢？
+这要从git不允许追踪(track)或者说提交一个空的文件夹说起，git本身是不允许提交一个空文件夹的，
+所有就有了.gitkeep的存在，可以把它看作是一个占位符，当然了，你也可以使用 .nofile或者其他的占位符，自行决定。
+
+http://wen.topgoer.com/docs/gomianshiti/mian15
+
+shell脚本项目
+https://github.com/chen-shang/baseshell
