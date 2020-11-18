@@ -1306,3 +1306,28 @@ http://wen.topgoer.com/docs/gomianshiti/mian15
 
 shell脚本项目
 https://github.com/chen-shang/baseshell
+
+学基本数据类型,就是学语言设计者设计这些数据结构的思想.
+
+golang中iota的使用:
+https://studygolang.com/articles/2192
+
+项目选择:日志搜集系统
+
+https://github.com/fqyshelly/interesting-python
+
+https://tonybai.com/2015/01/13/a-hole-about-variable-scope-in-golang/
+可视化在线算法:
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html 
+
+【】
+Python List remove()方法
+Python 列表 Python 列表
+
+描述
+remove() 函数用于移除列表中某个值的第一个匹配项。  注意是第一个,不是每一个,所以要注意判断条件
+
+注意下面 这种 check_items  动态的用法,是错误的,
+            for index, item in enumerate(check_items):
+                if item["module"] == "vs_cold_upgrade_check":
+                    check_items.pop(index)
