@@ -1306,3 +1306,12 @@ http://wen.topgoer.com/docs/gomianshiti/mian15
 
 shell脚本项目
 https://github.com/chen-shang/baseshell
+
+学基本数据类型,就是学语言设计者设计这些数据结构的思想.
+
+golang中iota的使用:
+https://studygolang.com/articles/2192
+
+项目选择:日志搜集系统
+
+https://github.com/fqyshelly/interesting-python
