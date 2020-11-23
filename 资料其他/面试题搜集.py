@@ -1320,7 +1320,7 @@ https://tonybai.com/2015/01/13/a-hole-about-variable-scope-in-golang/
 可视化在线算法:
 https://www.cs.usfca.edu/~galles/visualization/Algorithms.html 
 
-【】
+
 Python List remove()方法
 Python 列表 Python 列表
 
@@ -1331,3 +1331,9 @@ remove() 函数用于移除列表中某个值的第一个匹配项。  注意是
             for index, item in enumerate(check_items):
                 if item["module"] == "vs_cold_upgrade_check":
                     check_items.pop(index)
+
+http://wen.topgoer.com/docs/gomianshiti/mian28
+计算机考研复试经典考题汇总(一次刷新世界观）:
+https://zhuanlan.zhihu.com/p/161249849?utm_source=wechat_session
+一个好博客:
+http://yusure.cn/linux/213.html
