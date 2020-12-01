@@ -1337,3 +1337,10 @@ http://wen.topgoer.com/docs/gomianshiti/mian28
 https://zhuanlan.zhihu.com/p/161249849?utm_source=wechat_session
 一个好博客:
 http://yusure.cn/linux/213.html
+https://github.com/kallydev/privacy
+关于进程与线程:
+https://www.cnblogs.com/zhouyc/p/13583565.html
+Selenium with Python中文翻译文档:
+https://selenium-python-zh.readthedocs.io/en/latest/index.html
+芯片国产化的三大障碍
+http://tech.sina.com.cn/csj/2020-08-10/doc-iivhuipn7797138.shtml
