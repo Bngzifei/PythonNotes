@@ -1344,3 +1344,44 @@ Selenium with Python中文翻译文档:
 https://selenium-python-zh.readthedocs.io/en/latest/index.html
 芯片国产化的三大障碍
 http://tech.sina.com.cn/csj/2020-08-10/doc-iivhuipn7797138.shtml
+在线sql教学:
+https://www.sqlteaching.com/
+
+异步情况下调试:print或者打日志进行调试
+优质博客:
+https://lpgit.com/p/111
+
+
+golang判断key是否在map中:
+
+if _, ok := map[key]; ok {
+//存在
+}
+
+另外golang也没有提供item是否在array当中的判断方法,如果程序里面频繁用到了这种判断,
+可以将array转化为以array当中的成员为key的map 再用上面的方法进行判断,这样会提高判断的效率.
+
+遇到这种问题,直接百度搜索在golang中如何判断 xxx 的问题
+pycharm插件离线下载安装:
+https://plugins.jetbrains.com/plugin/4230-bashsupport/versions
+
+pycharm支持unicode转中文插件
+
+pdf-go实现:
+https://github.com/pdfcpu/pdfcpu
+
+golang优质博客
+https://techlog.cn/article/list/10183431
+
+todo: 待办事项的意思
+
+优质的设计模式书籍
+https://refactoringguru.cn/design-patterns/singleton/go/example
+一个奇怪的网站:
+https://geocities.restorativland.org/Hollywood/Studio/5352/supportingcast.html
+小网站集合:
+https://neustadt.fr/essays/the-small-web/
+go实现的小项目-个人博客:
+https://gitee.com/yyz116/tinybg
+GitHub CLI
+https://cli.github.com/manual/
