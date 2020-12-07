@@ -1385,3 +1385,27 @@ go实现的小项目-个人博客:
 https://gitee.com/yyz116/tinybg
 GitHub CLI
 https://cli.github.com/manual/
+
+可以把搜索引擎更换为必应搜索
+golang资料
+https://www.jb51.net/list/list_246_1.htm
+更精深的golang学习-煎鱼学golang
+https://eddycjy.gitbook.io/golang/di-1-ke-za-tan
+也是个人才:
+https://www.codercto.com/a/5605.html
+github爬虫项目:
+https://github.com/gzm1997/shadow_spider
+主题配色:
+http://color-themes.com/?view=index
+搜寻个人网站:
+https://cheapskatesguide.org/articles/personal-website-hunting.html
+在线文本差异比对:
+https://www.diffchecker.com/
+堆栈的区别:
+https://zhuanlan.zhihu.com/p/78478567
+go优质博客:
+https://segmentfault.com/a/1190000019839546
+曹大github:
+https://github.com/cch123/golang-notes/
+小工具:
+腾讯桌面整理
