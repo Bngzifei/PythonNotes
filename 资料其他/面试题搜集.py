@@ -1409,3 +1409,29 @@ https://segmentfault.com/a/1190000019839546
 https://github.com/cch123/golang-notes/
 小工具:
 腾讯桌面整理
+简历构造思路:
+https://mp.weixin.qq.com/s?__biz=MzAxMTA4Njc0OQ==&mid=2651442967&idx=2&sn=bdf8024a530894ceccef14ee51ff4caa&chksm=80bb11e5b7cc98f330259d52861c7c29bf56b21b90618d44777482f424b64d9d4dc29eaba1dc&scene=21#wechat_redirect
+定义Go语言云应用开发的“通信协议”:
+https://mp.weixin.qq.com/s?__biz=Mzg2OTU0MzE1Mg==&mid=2247483681&idx=1&sn=6025e50b16bd0f5ce8bb4a0242f1ccdd&chksm=ce9a3cbef9edb5a836faa67e030062e15cda09b93c0af5c870a53d29a890ddcee83372cb1696&scene=132#wechat_redirect
+
+perl正则部分:
+https://www.helplib.cn/hujiuxiang/validate-the-syntax-of-a-perl-compatible-regular-expression
+巡检工具下载:
+https://bbs.sangfor.com.cn/plugin.php?id=service:download&action=tool
+api状态码设计:
+https://www.kancloud.cn/kancloud/http-api-guide/56267
+
+
+需求:对列表中的字典进行按照key去重,并且要保留被去重的value
+[
+	{"boot_err01":"10.103.112.221"},
+	{"boot_err01":"10.103.112.222"},
+	{"boot_err02":"10.103.112.223"}
+]
+	
+
+最终结果:
+{
+    "boot_err01":["10.103.112.221", "10.103.112.222"],
+    "boot_err02":["10.103.112.223"]
+}
