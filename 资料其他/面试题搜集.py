@@ -1207,3 +1207,231 @@ https://zhuanlan.zhihu.com/p/113038466
 
 计算机电子书下载:
 https://www.cnblogs.com/apachecn/p/12129061.html
+
+
+问: 多线程中 thread.start() 与 thread.run() 的区别?
+Python中  dict list set 三种数据结构的底层实现
+
+漏洞:Python中获取列表中每个元素所在的位置:
+https://www.jb51.net/article/164287.htm
+注意不能使用list.index(), 是错误的使用场景,因为  list.index(obj) 是从列表中找出某个值第一个匹配项的索引位置
+应该使用enumerate()函数
+
+golang教程-异常处理
+http://www.topgoer.com/%E5%87%BD%E6%95%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.html
+
+相关链接:
+https://www.xz577.com/e/188.html
+
+java系列:
+https://www.xz577.com/e/293.html
+
+Python subprocess模块功能与常见用法实例详解:
+https://www.jb51.net/article/142787.htm
+
+使用示例:
+process = subprocess.Popen(cmd, 
+							shell=True,
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
+stdout = process.stdout.read()
+stderr = process.stderr.read()
+code = process.poll()
+
+京东平台数字化运营
+https://www.xz577.com/e/1026.html
+
+linux 系列未下载:
+https://www.xz577.com/e/103366.html
+https://www.xz577.com/e/25088.html
+https://www.xz577.com/e/40783.html
+未下载:
+https://www.xz577.com/e/333.html
+下载链接:
+https://www.xz577.com/e/513.html
+代码管理:
+https://www.xz577.com/e/338.html
+redis cookbook:
+https://www.xz577.com/e/419.html
+
+在线协调工作:
+https://docs.mattermost.com/help/settings/theme-colors.html#standard-themes
+
+golang 设计模式
+https://github.com/senghoo/golang-design-pattern
+golang 开源项目
+https://github.com/hackstoic/golang-open-source-projects
+golang教程链接
+https://github.com/yangwenmai/learning-golang
+千峰golang100天大师
+https://github.com/rubyhan1314/Golang-100-Days
+
+渗透测试方向博客链接
+https://www.xmanblog.net/web-security-interview/
+json 文件:也是配置文件的一种格式 对应关系的那种和ini格式的是一样的.
+
+优质博客
+https://blog.zxysilent.com/
+
+解决国内go get 超时问题:
+https://www.sunzhongwei.com/problem-of-domestic-go-get-unable-to-download?from=sidebar_new
+十分钟了解golang:
+https://learnxinyminutes.com/docs/zh-cn/go-cn/
+
+谷歌翻译使用:无需翻墙
+https://translate.google.cn/#view=home&op=translate&sl=zh-CN&tl=en&text=%E5%A4%87%E4%BB%BDmultipath%E9%85%8D%E7%BD%AE%E6%A3%80%E6%B5%8B
+
+地鼠文档:
+http://wen.topgoer.com/
+
+<<UNIX网络编程卷1：套接字联网API>>
+
+优质博客:
+https://www.cnblogs.com/zsy/p/5370052.html
+
+Go 语言中如何开源自己写的包给别人用?
+https://www.jianshu.com/p/56c11a02b84b
+
+个人博客 go编程时光:
+http://golang.iswbm.com/
+
+
+.gitkeep 作用
+大家可能在很多的开源项目中都看到过.gitkeep这个文件，文件内没有任何内容，一个空空的文件。
+那么，它的作用到底是什么呢？
+这要从git不允许追踪(track)或者说提交一个空的文件夹说起，git本身是不允许提交一个空文件夹的，
+所有就有了.gitkeep的存在，可以把它看作是一个占位符，当然了，你也可以使用 .nofile或者其他的占位符，自行决定。
+
+http://wen.topgoer.com/docs/gomianshiti/mian15
+
+shell脚本项目
+https://github.com/chen-shang/baseshell
+
+学基本数据类型,就是学语言设计者设计这些数据结构的思想.
+
+golang中iota的使用:
+https://studygolang.com/articles/2192
+
+项目选择:日志搜集系统
+
+https://github.com/fqyshelly/interesting-python
+
+https://tonybai.com/2015/01/13/a-hole-about-variable-scope-in-golang/
+可视化在线算法:
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html 
+
+
+Python List remove()方法
+Python 列表 Python 列表
+
+描述
+remove() 函数用于移除列表中某个值的第一个匹配项。  注意是第一个,不是每一个,所以要注意判断条件
+
+注意下面 这种 check_items  动态的用法,是错误的,
+            for index, item in enumerate(check_items):
+                if item["module"] == "vs_cold_upgrade_check":
+                    check_items.pop(index)
+
+http://wen.topgoer.com/docs/gomianshiti/mian28
+计算机考研复试经典考题汇总(一次刷新世界观）:
+https://zhuanlan.zhihu.com/p/161249849?utm_source=wechat_session
+一个好博客:
+http://yusure.cn/linux/213.html
+https://github.com/kallydev/privacy
+关于进程与线程:
+https://www.cnblogs.com/zhouyc/p/13583565.html
+Selenium with Python中文翻译文档:
+https://selenium-python-zh.readthedocs.io/en/latest/index.html
+芯片国产化的三大障碍
+http://tech.sina.com.cn/csj/2020-08-10/doc-iivhuipn7797138.shtml
+在线sql教学:
+https://www.sqlteaching.com/
+
+异步情况下调试:print或者打日志进行调试
+优质博客:
+https://lpgit.com/p/111
+
+
+golang判断key是否在map中:
+
+if _, ok := map[key]; ok {
+//存在
+}
+
+另外golang也没有提供item是否在array当中的判断方法,如果程序里面频繁用到了这种判断,
+可以将array转化为以array当中的成员为key的map 再用上面的方法进行判断,这样会提高判断的效率.
+
+遇到这种问题,直接百度搜索在golang中如何判断 xxx 的问题
+pycharm插件离线下载安装:
+https://plugins.jetbrains.com/plugin/4230-bashsupport/versions
+
+pycharm支持unicode转中文插件
+
+pdf-go实现:
+https://github.com/pdfcpu/pdfcpu
+
+golang优质博客
+https://techlog.cn/article/list/10183431
+
+todo: 待办事项的意思
+
+优质的设计模式书籍
+https://refactoringguru.cn/design-patterns/singleton/go/example
+一个奇怪的网站:
+https://geocities.restorativland.org/Hollywood/Studio/5352/supportingcast.html
+小网站集合:
+https://neustadt.fr/essays/the-small-web/
+go实现的小项目-个人博客:
+https://gitee.com/yyz116/tinybg
+GitHub CLI
+https://cli.github.com/manual/
+
+可以把搜索引擎更换为必应搜索
+golang资料
+https://www.jb51.net/list/list_246_1.htm
+更精深的golang学习-煎鱼学golang
+https://eddycjy.gitbook.io/golang/di-1-ke-za-tan
+也是个人才:
+https://www.codercto.com/a/5605.html
+github爬虫项目:
+https://github.com/gzm1997/shadow_spider
+主题配色:
+http://color-themes.com/?view=index
+搜寻个人网站:
+https://cheapskatesguide.org/articles/personal-website-hunting.html
+在线文本差异比对:
+https://www.diffchecker.com/
+堆栈的区别:
+https://zhuanlan.zhihu.com/p/78478567
+go优质博客:
+https://segmentfault.com/a/1190000019839546
+曹大github:
+https://github.com/cch123/golang-notes/
+小工具:
+腾讯桌面整理
+简历构造思路:
+https://mp.weixin.qq.com/s?__biz=MzAxMTA4Njc0OQ==&mid=2651442967&idx=2&sn=bdf8024a530894ceccef14ee51ff4caa&chksm=80bb11e5b7cc98f330259d52861c7c29bf56b21b90618d44777482f424b64d9d4dc29eaba1dc&scene=21#wechat_redirect
+定义Go语言云应用开发的“通信协议”:
+https://mp.weixin.qq.com/s?__biz=Mzg2OTU0MzE1Mg==&mid=2247483681&idx=1&sn=6025e50b16bd0f5ce8bb4a0242f1ccdd&chksm=ce9a3cbef9edb5a836faa67e030062e15cda09b93c0af5c870a53d29a890ddcee83372cb1696&scene=132#wechat_redirect
+
+perl正则部分:
+https://www.helplib.cn/hujiuxiang/validate-the-syntax-of-a-perl-compatible-regular-expression
+巡检工具下载:
+https://bbs.sangfor.com.cn/plugin.php?id=service:download&action=tool
+api状态码设计:
+https://www.kancloud.cn/kancloud/http-api-guide/56267
+
+
+需求:对列表中的字典进行按照key去重,并且要保留被去重的value
+[
+	{"boot_err01":"10.103.112.221"},
+	{"boot_err01":"10.103.112.222"},
+	{"boot_err02":"10.103.112.223"}
+]
+	
+
+最终结果:
+{
+    "boot_err01":["10.103.112.221", "10.103.112.222"],
+    "boot_err02":["10.103.112.223"]
+}

@@ -1,0 +1,52 @@
+perl的三目运算符优先级:
+https://www.cnblogs.com/rongyao/p/6515757.html
+//？：条件运算符，三目运算是从右往左分组计算的，所以先计算2>0?4:1,得到4;
+
+perl有类似于c中的break和continue,分别是last和next
+$@	命令eval的错误消息.如果为空,则表示上一次eval命令执行成功
+
+shell 脚本无法表示浮点数
+
+在 shell 中我们会见到 $0、$1、$2这样的符号，这是什么意思呢? 
+简单来说 $0 就是你写的shell脚本本身的名字，$1 是你给你写的shell脚本传的第一个参数，$2 是你给你写的shell脚本传的第二个参数
+basename  直接显示脚本名称
+
+
+-e filename 如果 filename存在，则为真
+-d filename 如果 filename为目录，则为真
+-f filename 如果 filename为常规文件，则为真
+-L filename 如果 filename为符号链接，则为真
+-r filename 如果 filename可读，则为真
+-w filename 如果 filename可写，则为真
+-x filename 如果 filename可执行，则为真
+-s filename 如果文件长度不为0，则为真
+-h filename 如果文件是软链接，则为真
+filename1 -nt filename2 如果 filename1比 filename2新，则为真。
+filename1 -ot filename2 如果 filename1比 filename2旧，则为真。
+-eq 等于
+-ne 不等于
+-gt 大于
+-ge 大于等于
+-lt 小于
+-le 小于等于
+至于！号那就是取非了呗！
+
+
+shell 脚本:
+$0  Shell本身的文件名
+$?  最后运行的命令的结束代码（返回值）即执行上一个指令的返回值 (显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误)
+$@  是传给脚本的所有参数的列表
+/dev/null 文件:  如果希望执行某个命令，但又不希望在屏幕上显示输出结果，那么可以将输出重定向到/dev/null中
+
+shell 中 [-eq] [-ne] [-gt] [-lt] [ge] [le]:
+-eq           //等于
+
+-ne           //不等于
+
+-gt            //大于
+
+-lt            //小于
+
+ge            //大于等于
+
+le            //小于等于
