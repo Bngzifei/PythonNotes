@@ -1435,3 +1435,37 @@ https://www.kancloud.cn/kancloud/http-api-guide/56267
     "boot_err01":["10.103.112.221", "10.103.112.222"],
     "boot_err02":["10.103.112.223"]
 }
+
+
+）encode的作用是，将unicode对象编码成其他编码的字符串，str.encode('utf-8'),编码成UTF-8；（2）decode的作用是将其他编码的字符串转换成Unicode编码，str.decode('UTF-8')；
+
+python2中,汉字转unicode,前面加个u,即 u"汉字",就是表示把一个汉字转为unicode编码的字符串
+
+
+下面这种结构,直接使用一个循环去遍历处理,不要使用列表推导式去一个一个多次循环,效果不好
+# err_codes = [err_code.split("{")[0] for err_code in err_codes_keys if err_code.split("{")]
+# ip_strs = [",".join(errcode2ip_info[err_code_key]) for err_code_key in err_codes_keys]
+# # 在这里先把参数和case文字描述进行拼接
+# err_cases = [self._to_en(err_details[err_code]) for err_code in err_codes]
+# 正则提取{}中的参数
+param_pattern = r"\{.+?\}"
+host_str = self._to_en(u"主机")
+for err_code in err_codes_keys:
+    # 判断,如果是默认错误码,设置默认的
+    ip_str = ",".join(errcode2ip_info[err_code])
+    if err_code == "default_err":
+        default_stdout_str = self._to_en(
+            u"{}检测项失败")
+        default_stdout = default_stdout_str.format(
+            self._to_en(inspect_info["check_item"].decode()))
+        err_desc = default_stdout
+        reason = " ".join([host_str, ip_str, err_desc])
+        reason_list.append(reason)
+    else:
+        errcode = err_code.split("{")[0]
+        res = re.findall(param_pattern, err_code, re.S)
+        # if res:
+        # 在这里就进行拼接
+        err_desc = self._to_en(err_details[errcode]).format(*res)
+        reason = " ".join([host_str, ip_str, err_desc])
+        reason_list.append(reason)
