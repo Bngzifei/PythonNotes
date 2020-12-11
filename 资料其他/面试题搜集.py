@@ -1469,3 +1469,43 @@ for err_code in err_codes_keys:
         err_desc = self._to_en(err_details[errcode]).format(*res)
         reason = " ".join([host_str, ip_str, err_desc])
         reason_list.append(reason)
+
+经验:多层循环的时候,想办法先去构造一个中间层的转换,尽量把多层循环的逻辑变成单层循环.
+双层循环:先想内循环的逻辑,再去想外循环的逻辑
+
+shell终端设置:
+PS1="[\u@\h \w]\\$"
+将相对路径设置为绝对路径
+
+字典在文件在读取的时候,记得不要去删除对应的键,可以直接重新拿一个新的字典去读取key, value,
+然后把这个新字典替换到之前需要删除的那个字典
+
+git checkout -b xxx(新分支名)  xxx(源分支名,不指定的默认为当前分支),-B表示,如果新分支名存在,则删除原来的分支再新创建该分支名
+git pull origin xxx(分支名),最好不要直接git pull,要加上仓库和分支名,否则,容易导致pull的分支不是自己想要的.
+git merge origin/xxx ,在执行merge前,最好先 fetch --all ,把远端的仓库代码同步到本地的origin
+git rebase -i xxx(节点),合并节点只能在最后提merge的时候用,开发过程中不要用.并且,如果当前分支有一个merge节点,rebase不能包括这个merge节点.
+git cherry-pick xxx(节点),最好不用
+
+打印日志或者异常信息的三要素:
+1、出现错误的位置，比如打印出出错的资源id,资源名,哪个字段,或者是第几行,哪个类下面的哪个方法
+2、错误原因，为啥出错，或者可能的原因
+3、错误解决办法或者排查思路，告诉人怎么解决
+
+单例的定义是返回同一个对象,但是对象属性和方法的缺失会给调用者埋下坑.
+要注意下这个问题
+
+非贪婪匹配: 在量词(* + ?)后面加上?就表示非贪婪匹配
+# * : 就是0次和无穷次,等价于{,}或者{0,},也可以称之为任意多次
+# + : 至少一次,等价于 {1,}
+# ? : 0次或者1次 等价于{,1}或者{0,1}
+param_pattern = r"\{.+?\}"
+err_code = "vs_meta_err02{1449}{1024}"
+res = re.findall(param_pattern, err_code, re.S)
+res = ["{1449}","{1024}"]
+如果是贪婪匹配:
+param_pattern = r"\{.*\}"
+err_code = "vs_meta_err02{1449}{1024}"
+res = re.findall(param_pattern, err_code, re.S)
+res = ["{1449}{1024}"]
+
+
