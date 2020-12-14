@@ -1508,4 +1508,39 @@ err_code = "vs_meta_err02{1449}{1024}"
 res = re.findall(param_pattern, err_code, re.S)
 res = ["{1449}{1024}"]
 
+"ascii' codec can't encode character"报错时Python2.7环境彻底解决办法:
+https://www.cnblogs.com/kevingrace/p/5893121.html
 
+
+git clone -b 分支名(远端的) 仓库地址
+就是clone指定的远端分支
+
+https://docs.pytest.org/en/latest/writing_plugins.html#well-specified-hooks
+https://docs.pytest.org/en/latest/_modules/_pytest/hookspec.html#pytest_collection
+
+模糊测试:
+这个与ClusterFuzz使用模糊引擎有关。如果想让ClusterFuzz支持python语言，可以使用python-afl引擎
+
+Python2.7 dict哈希表的实现:
+https://blog.csdn.net/shouting3901/article/details/80468735
+
+哈希表是key-value类型的数据结构，通过关键码值直接进行访问。
+通过散列函数进行键和数组的下标映射从而决定该键值应该放在哪个位置，
+哈希表可以理解为一个键值需要按一定规则存放的数组，而哈希函数就是这个规则.
+
+哈希函数就是一个映射，因此哈希函数的设定很灵活，只要使得任何关键字由此所得的哈希函数值都落在表长允许的范围之内即可.
+并不是所有的输入都只对应唯一一个输出，也就是哈希函数不可能做成一个一对一的映射关系，其本质是一个 多对一 的映射，这也就引出了下面一个概念–冲突。
+(这个意思就是字典的key必须不同,但是value可以相同,即不同的Key可以对应同一个Value)
+只要不是一对一的映射关系，冲突就必然会发生，而解决冲突的办法是开放地址法，开放地址的意思是除了哈希函数得出的地址可用，当出现冲突的时候其他的地址也一样可用，常见的开放地址思想的方法有线性探测再散列，二次探测再散列，这些方法都是在第一选择被占用的情况下的解决方法。
+
+OrderedDict的有序实际上是由一个双向链表实现的. 由于 Python 里面的list是可变对象， 一个节点list里的 PREV 和 NEXT 是对前驱和后继节点list的引用。
+
+在初始化中， 前驱和后继都指向本身节点，方便接下来实现环链
+为什么不简单使用list来进行保存， 而是要使用这种结构的双向链表？这就涉及到了链表和数组的主要用途. 两者同样是序列，数组按照 index 取值， 对于固定的静态序列数据的存取都是 O(1), 双向链表 按照 pre, next 遍历， 因为节点是可变对象， 可以被引用（对于 od来说就是 self.__map[key]的用途）， 对于 动态 的序列存取也是 O(1)。
+OrderedDic显然要维护一个动态序列， 所以链表就是一个非常好的选择。你可能想到list可以del某个元素， 但是这其实破坏了数组的规则， index已被改变， 无法按照原有的index进行存取。需要移动大量数组元素。
+OrderedDict内部维护的双向链表，他会根据元素加入的顺序来排列键的位置，第一个新加入的元素被放置在链表的末尾，对已存在的键做重新赋值，不会改变键的顺序，所以OrderedDict的大小是普通字典的2倍多，大数据使用时要考虑实际的额外开销。
+
+OrderedDict是dict的子类，它记住了内容添加的顺序.
+
+对内存消耗分析使用Python的 memory_profiler 模块
+多层字典无法直接赋值

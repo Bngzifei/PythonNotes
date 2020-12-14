@@ -50,3 +50,13 @@ shell 中 [-eq] [-ne] [-gt] [-lt] [ge] [le]:
 ge            //大于等于
 
 le            //小于等于
+
+如果字符串结尾有换行符，chomp 可以去掉它
+perl中chomp的使用介绍(chop和chomp函数区别)
+https://www.jb51.net/article/33967.htm
+
+perl中system函数和反引号` `使用区别:
+https://blog.csdn.net/c_base_jin/article/details/78635015
+调用system函数返回的是该函数执行返回值，比如0表示执行正确，-1执行错误；同时会将cmd命令的结果打印到控制台界面；
+
+而反引号` `直接返回的就是该cmd的执行结果，但是不会屏幕上表现出来
