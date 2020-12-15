@@ -328,3 +328,6 @@ https://www.yinyubo.cn/?p=352
 golang中切片去重
 
 lsof -i 8090 查看端口占用
+
+关于git reset --hard这个命令的惨痛教训:
+https://blog.csdn.net/qq_31608451/article/details/78342365
